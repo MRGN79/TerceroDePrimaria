@@ -1,0 +1,162 @@
+/*
+ * Reset + base — TerceroDePrimaria
+ * Capa transversal: tipografía base, foco visible y reduced-motion.
+ * La fuente Atkinson Hyperlegible se autoaloja vía @fontsource (import en main.tsx),
+ * NO desde CDN externo (privacidad + offline-friendly, ADR D-3).
+ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html {
+  /* base 16px = 1rem; respeta el zoom del navegador (no fijar px) */
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--tdp-font-family-base);
+  font-size: var(--tdp-font-size-sm); /* 18px — mínimo de cuerpo (A11Y-TYPO-01) */
+  line-height: var(--tdp-line-height-base); /* 1.5 (A11Y-TYPO-02) */
+  color: var(--tdp-color-text);
+  background-color: var(--tdp-color-bg);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  /* Líneas de lectura a la izquierda; nunca justificado (A11Y-TYPO-04) */
+  text-align: left;
+}
+
+img,
+picture,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+/* Botones nativos sin estilo de UA por defecto (los componentes lo definen) */
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Headings: tamaño por nivel, pero la jerarquía visual la fija cada pantalla.
+   Mantener el orden semántico sin saltos (A11Y-SR-03). */
+h1 {
+  font-family: var(--tdp-font-family-display);
+  font-size: var(--tdp-font-size-xl);
+  font-weight: var(--tdp-font-weight-black);
+  line-height: var(--tdp-line-height-tight);
+}
+h2 {
+  font-size: var(--tdp-font-size-lg);
+  font-weight: var(--tdp-font-weight-bold);
+  line-height: var(--tdp-line-height-base);
+}
+h3 {
+  font-size: var(--tdp-font-size-base);
+  font-weight: var(--tdp-font-weight-bold);
+  line-height: var(--tdp-line-height-base);
+}
+
+a {
+  color: var(--tdp-color-primary);
+}
+
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+  padding: 0;
+}
+
+/* ============================================================
+   FOCO VISIBLE — capa transversal  (§2.6, A11Y-FOCUS-01..04)
+   Anillo grande y obvio. Nunca outline:none sin sustituto.
+   :focus-visible → solo en navegación por teclado.
+   ============================================================ */
+:focus-visible {
+  outline: var(--tdp-focus-ring-width) solid var(--tdp-focus-ring-color);
+  outline-offset: var(--tdp-focus-ring-offset);
+  /* Señal doble para esta edad: anillo + halo claro intermedio (§A11Y-FOCUS-04).
+     El halo blanco garantiza contraste también sobre superficies azules de marca. */
+  box-shadow: 0 0 0 var(--tdp-focus-ring-offset) var(--tdp-paper-0);
+  border-radius: var(--tdp-radius-sm);
+}
+
+/* Quita el outline por defecto solo cuando NO es navegación por teclado */
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* Enlace "saltar al contenido" para lectores de pantalla / teclado */
+.tdp-skip-link {
+  position: absolute;
+  left: var(--tdp-space-4);
+  top: var(--tdp-space-4);
+  z-index: 100;
+  padding: var(--tdp-space-3) var(--tdp-space-4);
+  background: var(--tdp-color-surface);
+  color: var(--tdp-color-text);
+  border-radius: var(--tdp-radius-md);
+  box-shadow: var(--tdp-shadow-md);
+  transform: translateY(-150%);
+  transition: transform var(--tdp-duration-base) var(--tdp-ease-out);
+}
+.tdp-skip-link:focus {
+  transform: translateY(0);
+}
+
+/* Oculto visualmente pero accesible a lectores de pantalla */
+.tdp-visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ============================================================
+   MOVIMIENTO REDUCIDO  (§2.7, A11Y-MOTION-01..03)
+   Default seguro: la celebración llamativa vive bajo
+   @media (prefers-reduced-motion: no-preference) en cada componente.
+   Aquí neutralizamos cualquier animación residual.
+   También respeta el toggle de app: <html data-reduced-motion="true">.
+   ============================================================ */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+html[data-reduced-motion="true"] *,
+html[data-reduced-motion="true"] *::before,
+html[data-reduced-motion="true"] *::after {
+  animation-duration: 0.01ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.01ms !important;
+  scroll-behavior: auto !important;
+}

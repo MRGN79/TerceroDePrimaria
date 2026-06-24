@@ -1,0 +1,115 @@
+/*
+ * Hoja imprimible — @media print  (§7.2, A11Y-PRINT-01..05)
+ * A4 vertical, negro sólido sobre blanco, sin fondos de color (ahorro de tóner),
+ * tipografía grande, espacio de escritura manuscrita, saltos de página controlados.
+ *
+ * Convención de clases:
+ *   .tdp-no-print     → se oculta al imprimir (toda la UI interactiva)
+ *   .tdp-print-only   → solo visible al imprimir
+ *   .tdp-print-sheet  → contenedor de la ficha
+ *   .tdp-print-exercise → un ejercicio (no se parte entre páginas)
+ *   .tdp-print-solutions → hoja de soluciones (página aparte)
+ */
+
+@page {
+  size: A4 portrait;
+  margin: 15mm; /* A11Y-PRINT-05: márgenes ≥ 15mm */
+}
+
+.tdp-print-only {
+  display: none;
+}
+
+@media print {
+  /* Oculta toda la app interactiva: nav, sonido, gamificación (A11Y-PRINT-04) */
+  .tdp-no-print {
+    display: none !important;
+  }
+
+  .tdp-print-only {
+    display: block;
+  }
+
+  html,
+  body {
+    background: #fff !important;
+    color: #000 !important; /* negro sólido (A11Y-PRINT-01) */
+    font-family: var(--tdp-font-family-base);
+  }
+
+  /* Misma fuente; tamaños en pt para impresión (A11Y-PRINT-02) */
+  .tdp-print-sheet {
+    font-size: 14pt;
+    line-height: 1.5;
+    color: #000;
+  }
+
+  .tdp-print-sheet h1,
+  .tdp-print-sheet h2 {
+    color: #000;
+  }
+
+  /* Cabecera festiva ligera: línea, no relleno (no gasta tóner) */
+  .tdp-print-header {
+    border-bottom: 2px solid #000;
+    padding-bottom: 8pt;
+    margin-bottom: 12pt;
+  }
+
+  /* Campos "Mi nombre / Fecha" con línea para escribir a mano */
+  .tdp-print-field {
+    display: inline-block;
+    border-bottom: 1.5pt solid #000;
+    min-width: 50mm;
+    height: 10mm; /* espacio manuscrito ≥ 10mm (A11Y-PRINT-05) */
+  }
+
+  /* Un ejercicio: no se parte entre páginas (A11Y-PRINT-04) */
+  .tdp-print-exercise {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    margin-bottom: 14pt;
+  }
+
+  /* Operaciones de mates más grandes (A11Y-PRINT-02) */
+  .tdp-print-operation {
+    font-size: 18pt;
+    font-weight: var(--tdp-font-weight-bold);
+  }
+
+  /* Espacio de respuesta manuscrita: caja/línea ≥ 10mm de alto */
+  .tdp-print-answer-box {
+    border: 1.5pt solid #000;
+    min-height: 12mm;
+    margin-top: 6pt;
+    background: #fff;
+  }
+  .tdp-print-answer-line {
+    border-bottom: 1.5pt solid #000;
+    height: 10mm;
+    margin-top: 6pt;
+  }
+
+  /* Estrellas/recompensas como contorno negro, nunca relleno de color
+     (un amarillo en B/N es gris ilegible) — A11Y-PRINT-03 */
+  .tdp-print-star {
+    color: #000;
+    fill: none;
+    stroke: #000;
+    stroke-width: 1.5pt;
+  }
+
+  /* Hoja de soluciones en página aparte (A11Y-PRINT-04) */
+  .tdp-print-solutions {
+    break-before: page;
+    page-break-before: always;
+  }
+
+  /* Pie de ánimo, ligero */
+  .tdp-print-footer {
+    margin-top: 16pt;
+    border-top: 1pt solid #000;
+    padding-top: 6pt;
+    font-style: italic;
+  }
+}
