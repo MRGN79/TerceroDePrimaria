@@ -41,9 +41,11 @@
 
 **Criterios de aceptación:**
 - Dado que estoy en el menú, cuando lo veo, entonces aparecen las materias con icono y color claros y grandes.
-- Dado que elijo una materia, cuando entro, entonces veo sus temas, con los "Retos de 4º" marcados de forma especial.
+- Dado que elijo una materia, cuando entro, entonces veo sus temas.
 - Dado que un tema aún no tiene contenido, cuando lo veo, entonces aparece desactivado o marcado como "pronto", sin romper la navegación.
 - **(A11y)** Dado que navego por teclado, cuando recorro materias y temas, entonces cada uno es un control accesible con etiqueta y foco visible.
+
+> **Decisión del usuario (2026-06-25, gate QA — Opción B):** los **"Retos de 4º"** (conceptos de 4º marcados de forma especial dentro de cada materia) se **difieren a la siguiente ola como P1, post-MVP**. No forman parte de este release. El criterio original "ver los Retos de 4º marcados de forma especial" se traslada a la US-03b reservada a P1. El MVP entrega selección de materia y tema de 3º; el adelanto de 4º llega en la ola siguiente.
 
 ### US-04 (P0) — Resolver una sesión de ejercicios con feedback
 **Como** niño

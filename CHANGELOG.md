@@ -11,6 +11,11 @@ y el proyecto adhiere a [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ### Changed
 
+- **Alcance del MVP (decisión del usuario, gate QA — Opción B):** los "Retos de 4º"
+  (conceptos de adelanto a 4º de primaria dentro de cada materia) se difieren a la
+  siguiente ola como P1, post-MVP. El release inicial cubre el repaso de 3º; el
+  adelanto de 4º llegará en una versión posterior.
+
 ### Fixed
 
 ### Removed
