@@ -17,6 +17,12 @@ type ExerciseCardProps = {
   /** id del heading, para asociar el fieldset/grupo de respuesta vía aria-labelledby */
   promptId?: string;
   prompt: ReactNode;
+  /**
+   * Idioma del contenido (enunciado + opciones) cuando difiere del idioma de la
+   * UI — ej. Natural Science / English en EN con la interfaz en ES. Se aplica
+   * como atributo `lang` para que el lector de pantalla cambie de voz (WCAG 3.1.2).
+   */
+  contentLang?: "en" | "es";
   /** zona de respuesta inyectada por Frontend */
   children: ReactNode;
   /** feedback inline (acierto/error) — Frontend lo rellena */
@@ -28,17 +34,20 @@ type ExerciseCardProps = {
 export function ExerciseCard({
   promptId = "tdp-exercise-prompt",
   prompt,
+  contentLang,
   children,
   feedback,
   actions,
 }: ExerciseCardProps) {
   return (
     <article className={styles.card}>
-      <h2 id={promptId} className={styles.prompt}>
+      <h2 id={promptId} className={styles.prompt} lang={contentLang}>
         {prompt}
       </h2>
 
-      <div className={styles.answerZone}>{children}</div>
+      <div className={styles.answerZone} lang={contentLang}>
+        {children}
+      </div>
 
       {/* aria-live: el resultado de la respuesta se anuncia a lectores de pantalla */}
       <div className={styles.feedback} aria-live="polite" role="status">

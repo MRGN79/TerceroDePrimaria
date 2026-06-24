@@ -38,6 +38,8 @@ type SessionScreenProps = {
   total: number;
   sessionStars: number;
   prompt: ReactNode;
+  /** idioma del contenido del ejercicio si es fijo (ej. "en" para Science/English) */
+  promptLang?: "en" | "es" | null;
   kind: ResponseKind;
   /** opciones (opcion-multiple / verdadero-falso) */
   options?: OptionVM[];
@@ -68,6 +70,7 @@ export function SessionScreen({
   total,
   sessionStars,
   prompt,
+  promptLang,
   kind,
   options = [],
   numericValue = "",
@@ -84,7 +87,13 @@ export function SessionScreen({
   onSelectMatch,
   onExit,
 }: SessionScreenProps) {
-  const { t } = useTranslation("quiz");
+  const { t, i18n } = useTranslation("quiz");
+
+  // Solo etiquetamos el contenido con lang cuando difiere del idioma de la UI
+  // (ej. Natural Science / English en EN mientras la interfaz está en ES) — WCAG 3.1.2.
+  const uiLang = i18n.language.startsWith("es") ? "es" : "en";
+  const contentLang =
+    promptLang && promptLang !== uiLang ? promptLang : undefined;
 
   return (
     <PageLayout
@@ -112,6 +121,7 @@ export function SessionScreen({
       <ExerciseCard
         prompt={prompt}
         promptId="tdp-prompt"
+        contentLang={contentLang}
         feedback={feedback}
         actions={
           resolved ? (
