@@ -1,33 +1,17 @@
 /*
  * ELEGIR MATERIA → ELEGIR TEMA (flujos §3).
  * Rejilla de SubjectCard (2 col móvil / 2-3 tablet) y, cuando hay materia
- * elegida, lista de TopicCard. Datos y navegación los inyecta Frontend.
- * Las materias de ejemplo son placeholders de maquetación.
+ * elegida, lista de TopicCard. Frontend inyecta VMs ya resueltos por i18n y la
+ * navegación. Mantiene la estructura visual y las clases del Maquetador.
  */
 import { useTranslation } from "react-i18next";
 import { PageLayout, AppHeader, SubjectCard, TopicCard } from "@/components";
 import type { IconName } from "@/components";
+import type { SubjectVM, TopicVM } from "@/lib/catalog";
 import styles from "./SubjectSelectScreen.module.css";
 
-type SubjectVM = {
-  id: string;
-  titleKey: string;
-  zoneKey: string;
-  icon: IconName;
-  colorToken: string;
-  langTagKey?: string;
-  soon?: boolean;
-};
-
-type TopicVM = {
-  id: string;
-  title: string;
-  challengeG4?: boolean;
-  soon?: boolean;
-};
-
 type SubjectSelectScreenProps = {
-  subjects?: SubjectVM[];
+  subjects: SubjectVM[];
   /** si está definido, se muestra la vista de temas de esa materia */
   topics?: TopicVM[] | null;
   selectedSubjectTitle?: string;
@@ -37,17 +21,8 @@ type SubjectSelectScreenProps = {
   onHome?: () => void;
 };
 
-/* Placeholder de maquetación — Frontend lo sustituye por content/materias.json */
-const PLACEHOLDER_SUBJECTS: SubjectVM[] = [
-  { id: "matematicas", titleKey: "content:math.title", zoneKey: "content:math.zone", icon: "star", colorToken: "--tdp-subject-math" },
-  { id: "lengua", titleKey: "content:spanish.title", zoneKey: "content:spanish.zone", icon: "backpack", colorToken: "--tdp-subject-spanish" },
-  { id: "ciencias", titleKey: "content:science.title", zoneKey: "content:science.zone", icon: "rocket", colorToken: "--tdp-subject-science", langTagKey: "content:science.langTag" },
-  { id: "sociales", titleKey: "content:social.title", zoneKey: "content:social.zone", icon: "home", colorToken: "--tdp-subject-social" },
-  { id: "ingles", titleKey: "content:english.title", zoneKey: "content:english.zone", icon: "streak", colorToken: "--tdp-subject-english", langTagKey: "content:english.langTag" },
-];
-
 export function SubjectSelectScreen({
-  subjects = PLACEHOLDER_SUBJECTS,
+  subjects,
   topics = null,
   selectedSubjectTitle,
   onSelectSubject,
@@ -78,11 +53,11 @@ export function SubjectSelectScreen({
           {subjects.map((s) => (
             <li key={s.id}>
               <SubjectCard
-                title={t(s.titleKey)}
-                zone={t(s.zoneKey)}
-                icon={s.icon}
+                title={s.title}
+                zone={s.zone}
+                icon={s.icon as IconName}
                 colorToken={s.colorToken}
-                langTag={s.langTagKey ? t(s.langTagKey) : undefined}
+                langTag={s.langTag}
                 soon={s.soon}
                 onClick={() => onSelectSubject?.(s.id)}
               />

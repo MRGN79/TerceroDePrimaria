@@ -1,0 +1,38 @@
+.summary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--tdp-space-5);
+  justify-content: center;
+  margin-bottom: var(--tdp-space-6);
+}
+
+.summaryItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--tdp-space-2);
+  padding: var(--tdp-space-4);
+  background: var(--tdp-color-surface);
+  border-radius: var(--tdp-radius-lg);
+  min-width: 140px;
+}
+
+.summaryLabel {
+  font-weight: var(--tdp-font-weight-bold);
+}
+
+.badgesTitle {
+  margin-bottom: var(--tdp-space-4);
+}
+
+.badgeGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--tdp-gap-touch, 12px);
+}
+
+@media (min-width: 600px) {
+  .badgeGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

@@ -16,7 +16,7 @@ import { SettingsScreen } from "@/screens/SettingsScreen";
 import { SessionContainer } from "@/screens/SessionContainer";
 import { PrintConfigScreen } from "@/screens/PrintConfigScreen";
 import { PrintSheetScreen } from "@/screens/PrintSheetScreen";
-import { useGameStore } from "@/state/gameStore";
+import { useGameStore } from "@/state/gameContext";
 import type { Materia } from "@content/types";
 import {
   buildSubjectVMs,
@@ -25,8 +25,7 @@ import {
   type SubjectVM,
 } from "@/lib/catalog";
 import { buildPrintSheet, type PrintItem } from "@/lib/printSheet";
-import { localDateKey } from "@/lib/streak";
-import { streakDisplayVariant } from "@/lib/streak";
+import { localDateKey, streakDisplayVariant } from "@/lib/streak";
 import { nicknameKey } from "@/lib/profile";
 import { BADGES } from "@/lib/badges";
 
@@ -69,11 +68,13 @@ export function App() {
     setRoute({ name: "home" });
   }, []);
 
-  const subjectVMs = useMemo<SubjectVM[]>(() => buildSubjectVMs(t), [t, i18n.language]);
+  const subjectVMs = useMemo<SubjectVM[]>(() => buildSubjectVMs(t), [t]);
 
   const dailyGoalDoneToday = state.dailyGoal.lastDoneDate === localDateKey();
   const streakVariant = streakDisplayVariant(state.streak);
   const nickname = t(nicknameKey(state.profile.nicknameId));
+  const currentLanguage: "en" | "es" =
+    (state.preferences.language ?? i18n.language) === "es" ? "es" : "en";
 
   /* ------------------------------ onboarding ------------------------------ */
   if (!store.hasProfile) {
@@ -121,14 +122,7 @@ export function App() {
       : undefined;
     return (
       <SubjectSelectScreen
-        subjects={subjectVMs.map((s) => ({
-          id: s.id,
-          titleKey: "",
-          zoneKey: "",
-          icon: s.icon as SubjectVM["icon"] extends infer T ? T extends string ? import("@/components").IconName : never : never,
-          colorToken: s.colorToken,
-          soon: s.soon,
-        }))}
+        subjects={subjectVMs}
         topics={topics}
         selectedSubjectTitle={selectedTitle}
         onSelectSubject={(id) => setSelectedSubject(id as Materia)}
@@ -184,7 +178,7 @@ export function App() {
   if (route.name === "settings") {
     return (
       <SettingsScreen
-        language={(state.preferences.language ?? (i18n.language as "en" | "es")) === "es" ? "es" : "en"}
+        language={currentLanguage}
         sound={state.preferences.sound}
         reducedMotion={state.preferences.reducedMotion}
         onLanguage={store.setLanguage}

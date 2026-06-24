@@ -15,6 +15,9 @@ dist/
 # Caché de Vite
 .vite/
 
+# Info de build incremental de TypeScript
+*.tsbuildinfo
+
 # OS
 .DS_Store
 Thumbs.db

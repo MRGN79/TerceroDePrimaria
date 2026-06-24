@@ -10,7 +10,8 @@ import { ResultsScreen } from "./ResultsScreen";
 import { Feedback, CelebrationModal, Button } from "@/components";
 import type { Materia } from "@content/types";
 import { useSession } from "@/hooks/useSession";
-import { useGameStore, type ConsolidationResult } from "@/state/gameStore";
+import { useGameStore } from "@/state/gameContext";
+import type { ConsolidationResult } from "@/state/consolidation";
 import { badgeDef } from "@/lib/badges";
 
 type SessionContainerProps = {
