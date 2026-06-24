@@ -49,12 +49,15 @@ export function App() {
   const [includeSolutions, setIncludeSolutions] = useState(true);
   const [printItems, setPrintItems] = useState<PrintItem[]>([]);
 
-  // Sincroniza idioma elegido con i18n (si el usuario lo fijó explícitamente).
+  // Sincroniza idioma elegido con i18n (si el usuario lo fijó explícitamente)
+  // y refleja el idioma activo en <html lang> para los lectores de pantalla
+  // (WCAG 3.1.1).
   useEffect(() => {
     if (state.preferences.language && i18n.language !== state.preferences.language) {
       void i18n.changeLanguage(state.preferences.language);
     }
-  }, [state.preferences.language, i18n]);
+    document.documentElement.lang = state.preferences.language ?? i18n.language;
+  }, [state.preferences.language, i18n.language, i18n]);
 
   // Sincroniza el toggle de movimiento reducido con el DOM (lo lee base.css).
   useEffect(() => {

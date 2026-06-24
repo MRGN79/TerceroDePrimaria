@@ -38,10 +38,12 @@
   --tdp-green-200: #c6f0d2;
   --tdp-green-300: #5fd080;
   --tdp-green-700: #1b7a3e;
+  --tdp-green-800: #136332; /* texto/icono sobre fondo verde claro (≥4.5:1) */
 
   /* Rojo / Coral — error amable */
   --tdp-red-200: #fbd9d2;
   --tdp-red-600: #c7452a;
+  --tdp-red-800: #9a2d18; /* texto/icono sobre fondo rojo claro (≥4.5:1) */
 
   /* Morado — categoría/medallas especiales, Reto de 4º */
   --tdp-purple-300: #b79be8;
@@ -81,8 +83,12 @@
   /* Estados de feedback */
   --tdp-color-success: var(--tdp-green-700);
   --tdp-color-success-bg: var(--tdp-green-200);
+  /* texto/icono de acierto sobre fondo claro — contraste ≥4.5:1 (WCAG 1.4.3) */
+  --tdp-color-success-text: var(--tdp-green-800);
   --tdp-color-error: var(--tdp-red-600);
   --tdp-color-error-bg: var(--tdp-red-200);
+  /* texto/icono de error sobre fondo claro — contraste ≥4.5:1 (WCAG 1.4.3) */
+  --tdp-color-error-text: var(--tdp-red-800);
   --tdp-color-focus: var(--tdp-blue-800);
 
   /* Gamificación */

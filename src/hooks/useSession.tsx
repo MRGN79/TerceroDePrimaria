@@ -14,6 +14,7 @@ import { useCallback, useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 import type { EjercicioAny, Materia } from "@content/types";
 import { esGenerado } from "@content/types";
+import { fixedLanguageFor } from "@content/registry";
 import type { OptionStatus, MatchItem } from "@/components";
 import type { ResponseKind } from "@/screens/SessionScreen";
 import {
@@ -49,6 +50,8 @@ export interface SessionView {
   total: number;
   sessionStars: number;
   prompt: string;
+  /** idioma del contenido del ejercicio si difiere de la UI (WCAG 3.1.2) */
+  promptLang: "en" | "es" | null;
   kind: ResponseKind;
   options: OptionVM[];
   numericValue: string;
@@ -261,6 +264,7 @@ export function useSession(
         total: items.length,
         sessionStars: Math.ceil(sessionStars),
         prompt: "",
+        promptLang: null,
         kind,
         options: [],
         numericValue: "",
@@ -292,6 +296,7 @@ export function useSession(
       total: items.length,
       sessionStars: Math.ceil(sessionStars),
       prompt,
+      promptLang: fixedLanguageFor(materia),
       kind,
       options,
       numericValue,
@@ -306,6 +311,7 @@ export function useSession(
   }, [
     exercise,
     prepared,
+    materia,
     items.length,
     index,
     sessionStars,

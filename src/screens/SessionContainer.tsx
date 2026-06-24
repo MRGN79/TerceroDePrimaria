@@ -90,6 +90,7 @@ export function SessionContainer({
         total={view.total}
         sessionStars={view.sessionStars}
         prompt={view.prompt}
+        promptLang={view.promptLang}
         kind={view.kind}
         options={view.options}
         numericValue={view.numericValue}

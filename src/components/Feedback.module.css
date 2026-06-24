@@ -22,14 +22,14 @@
 .correct {
   background-color: var(--tdp-color-success-bg);
   border-color: var(--tdp-color-success);
-  color: var(--tdp-color-success);
+  color: var(--tdp-color-success-text);
 }
 
 /* Error amable: coral suave + reintentar. Sin rojo agresivo. */
 .almost {
   background-color: var(--tdp-color-error-bg);
   border-color: var(--tdp-color-error);
-  color: var(--tdp-color-error);
+  color: var(--tdp-color-error-text);
 }
 
 @media (prefers-reduced-motion: no-preference) {

@@ -80,7 +80,7 @@
   padding: 0 var(--tdp-space-2);
   font-size: var(--tdp-font-size-xs);
   font-weight: var(--tdp-font-weight-bold);
-  color: var(--tdp-color-success);
+  color: var(--tdp-color-success-text);
   background-color: var(--tdp-color-surface);
   border: var(--tdp-border-width) solid var(--tdp-color-success);
   border-radius: var(--tdp-radius-pill);

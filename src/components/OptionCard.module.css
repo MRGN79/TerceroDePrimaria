@@ -91,7 +91,7 @@
 }
 .status-correct .indicator,
 .status-correct .statusText {
-  color: var(--tdp-color-success);
+  color: var(--tdp-color-success-text);
 }
 
 /* --- Correcta no elegida, resaltada al revelar la solución --- */
@@ -103,7 +103,7 @@
 }
 .status-correct-revealed .indicator,
 .status-correct-revealed .statusText {
-  color: var(--tdp-color-success);
+  color: var(--tdp-color-success-text);
 }
 
 /* --- Incorrecta: borde rojo + icono ✗ + fondo error (error amable, no agresivo) --- */
@@ -114,5 +114,5 @@
 }
 .status-incorrect .indicator,
 .status-incorrect .statusText {
-  color: var(--tdp-color-error);
+  color: var(--tdp-color-error-text);
 }
