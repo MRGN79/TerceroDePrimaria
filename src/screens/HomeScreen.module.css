@@ -1,0 +1,88 @@
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--tdp-space-4);
+  flex-wrap: wrap;
+  max-width: 1024px;
+  margin-inline: auto;
+}
+
+.profile {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--tdp-space-3);
+  min-height: var(--tdp-touch-secondary);
+  padding: var(--tdp-space-2) var(--tdp-space-3);
+  background-color: var(--tdp-color-surface);
+  border: var(--tdp-border-width) solid var(--tdp-color-border);
+  border-radius: var(--tdp-radius-pill);
+}
+.nickname {
+  font-weight: var(--tdp-font-weight-bold);
+  color: var(--tdp-color-text);
+}
+
+.stats {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--tdp-space-3);
+  flex-wrap: wrap;
+}
+
+.welcome {
+  font-size: var(--tdp-font-size-2xl);
+  text-align: center;
+  margin-bottom: var(--tdp-space-6);
+}
+
+/* Bloque héroe: la misión del día. Evita la "card con sombra" genérica:
+   superficie cálida + borde de acento, no la tarjeta blanca de siempre. */
+.hero {
+  display: flex;
+  align-items: center;
+  gap: var(--tdp-space-5);
+  flex-wrap: wrap;
+  padding: var(--tdp-space-6);
+  background-color: var(--tdp-color-surface-warm);
+  border: var(--tdp-border-width-strong) solid var(--tdp-orange-400);
+  border-radius: var(--tdp-radius-xl);
+  margin-bottom: var(--tdp-space-6);
+}
+.heroBody {
+  display: flex;
+  flex-direction: column;
+  gap: var(--tdp-space-3);
+  flex: 1 1 260px;
+}
+.heroTitle {
+  font-family: var(--tdp-font-family-display);
+  font-size: var(--tdp-font-size-xl);
+  font-weight: var(--tdp-font-weight-black);
+  margin: 0;
+}
+.heroDesc {
+  font-size: var(--tdp-font-size-base);
+  color: var(--tdp-color-text-muted);
+  margin: 0;
+}
+.doneTag {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--tdp-space-2);
+  font-weight: var(--tdp-font-weight-bold);
+  color: var(--tdp-color-success);
+  margin: 0;
+}
+
+.accesses {
+  display: grid;
+  gap: var(--tdp-gap-touch);
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .accesses {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

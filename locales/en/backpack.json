@@ -1,0 +1,14 @@
+{
+  "title": "My backpack",
+  "stars": "Your stars",
+  "streak": {
+    "current": "Current streak",
+    "best": "Your best streak"
+  },
+  "badges": {
+    "title": "Your badges",
+    "locked": "To unlock",
+    "lockedHint": "Keep playing to earn it",
+    "unlockedOn": "Earned on {{date}}"
+  }
+}

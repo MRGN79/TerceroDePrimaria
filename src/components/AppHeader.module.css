@@ -1,0 +1,31 @@
+.bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--tdp-space-4);
+  width: 100%;
+  max-width: 1024px;
+  margin-inline: auto;
+}
+
+.left,
+.right {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--tdp-space-3);
+  flex-wrap: wrap;
+}
+
+.title {
+  font-family: var(--tdp-font-family-display);
+  font-size: var(--tdp-font-size-xl);
+  font-weight: var(--tdp-font-weight-black);
+  color: var(--tdp-color-text);
+  margin: 0;
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: var(--tdp-font-size-lg);
+  }
+}

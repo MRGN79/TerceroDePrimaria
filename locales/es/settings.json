@@ -1,0 +1,18 @@
+{
+  "title": "Ajustes",
+  "language": {
+    "label": "Idioma",
+    "es": "Español",
+    "en": "Inglés"
+  },
+  "sound": {
+    "label": "Sonido",
+    "on": "Sonido activado",
+    "off": "Sonido apagado"
+  },
+  "reducedMotion": {
+    "label": "Reducir movimiento",
+    "on": "Movimiento reducido",
+    "off": "Movimiento normal"
+  }
+}

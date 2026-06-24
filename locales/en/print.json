@@ -1,0 +1,23 @@
+{
+  "title": "Printable sheets",
+  "step": {
+    "subject": "Choose the subject",
+    "topic": "Choose the topic"
+  },
+  "includeSolutions": "Include solutions",
+  "create": "Create sheet",
+  "action": {
+    "print": "Print",
+    "back": "Change the sheet"
+  },
+  "sheet": {
+    "name": "My name",
+    "date": "Date",
+    "subjectLabel": "Subject",
+    "topicLabel": "Topic",
+    "solutionsTitle": "Solutions"
+  },
+  "footer": {
+    "cheer": "Well done! You worked like a great explorer."
+  }
+}

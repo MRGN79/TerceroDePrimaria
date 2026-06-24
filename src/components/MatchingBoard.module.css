@@ -1,0 +1,93 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  gap: var(--tdp-space-4);
+}
+
+.instruction {
+  font-size: var(--tdp-font-size-base);
+  color: var(--tdp-color-text-muted);
+  margin: 0;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--tdp-space-5);
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: var(--tdp-gap-touch); /* ≥12px entre objetivos táctiles */
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: var(--tdp-space-3);
+  width: 100%;
+  min-height: var(--tdp-touch-option); /* 64px */
+  padding: var(--tdp-space-3) var(--tdp-space-4);
+  text-align: left;
+  background-color: var(--tdp-color-surface);
+  border: var(--tdp-border-width) solid var(--tdp-color-border);
+  border-radius: var(--tdp-radius-lg);
+  box-shadow: var(--tdp-shadow-sm);
+  transition:
+    border-color var(--tdp-duration-base) var(--tdp-ease-out),
+    transform var(--tdp-duration-fast) var(--tdp-ease-bounce);
+}
+.item:hover {
+  transform: translateY(-1px);
+}
+
+.itemLabel {
+  flex: 1 1 auto;
+  font-size: var(--tdp-font-size-base);
+  color: var(--tdp-color-text);
+}
+
+/* Seleccionado (origen pendiente): borde grueso + marca de forma, no solo color */
+.selected {
+  border-color: var(--tdp-color-primary);
+  border-width: var(--tdp-border-width-strong);
+  background-color: var(--tdp-blue-100);
+}
+.selectedMark {
+  display: inline-flex;
+  color: var(--tdp-color-primary);
+}
+
+/* Emparejado: borde verde + badge con la etiqueta del par (número/forma).
+   El conector entre parejas se distingue por la etiqueta, no solo por tono
+   (A11Y-COLOR-04). */
+.matched {
+  border-color: var(--tdp-color-success);
+  border-width: var(--tdp-border-width-strong);
+  background-color: var(--tdp-color-success-bg);
+}
+.pairBadge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 28px;
+  height: 28px;
+  padding: 0 var(--tdp-space-2);
+  font-size: var(--tdp-font-size-xs);
+  font-weight: var(--tdp-font-weight-bold);
+  color: var(--tdp-color-success);
+  background-color: var(--tdp-color-surface);
+  border: var(--tdp-border-width) solid var(--tdp-color-success);
+  border-radius: var(--tdp-radius-pill);
+}
+
+@media (max-width: 480px) {
+  .board {
+    gap: var(--tdp-space-4);
+  }
+}

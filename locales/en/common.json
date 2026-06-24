@@ -1,0 +1,41 @@
+{
+  "app": {
+    "name": "Third Grade",
+    "skipToContent": "Skip to content"
+  },
+  "nav": {
+    "home": "Home",
+    "back": "Back",
+    "backToHome": "Back to home",
+    "settings": "Settings",
+    "menu": {
+      "backpack": "My backpack"
+    }
+  },
+  "mascot": {
+    "name": "Rumbo",
+    "alt": {
+      "happy": "Rumbo, the sun-compass, smiling happily",
+      "cheer": "Rumbo, the sun-compass, cheering you on",
+      "idle": "Rumbo, the sun-compass"
+    }
+  },
+  "action": {
+    "continue": "Continue",
+    "close": "Close",
+    "cancel": "Cancel",
+    "confirm": "Yes, I'm sure"
+  },
+  "state": {
+    "soon": "Soon",
+    "loading": "Loading"
+  },
+  "stars": {
+    "label_one": "{{count}} star",
+    "label_other": "{{count}} stars"
+  },
+  "streak": {
+    "days_one": "{{count}} day in a row",
+    "days_other": "{{count}} days in a row"
+  }
+}

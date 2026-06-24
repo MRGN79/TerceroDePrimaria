@@ -1,0 +1,47 @@
+{
+  "progress": {
+    "label": "Ejercicio {{current}} de {{total}}"
+  },
+  "session": {
+    "stars": "Estrellas de hoy",
+    "exit": "Salir",
+    "exitConfirm": {
+      "title": "¿Seguro que quieres salir?",
+      "stay": "Seguir jugando",
+      "leave": "Salir"
+    }
+  },
+  "answer": {
+    "trueLabel": "Verdadero",
+    "falseLabel": "Falso",
+    "numpad": {
+      "delete": "Borrar",
+      "display": "Tu respuesta"
+    },
+    "matching": {
+      "instruction": "Toca uno y luego su pareja",
+      "paired": "{{source}} con {{target}}"
+    }
+  },
+  "action": {
+    "check": "Comprobar",
+    "next": "Siguiente",
+    "retry": "Otra vez"
+  },
+  "feedback": {
+    "correct": {
+      "1": "¡Genial!",
+      "2": "¡Eres un crack!",
+      "3": "¡Bravo!",
+      "4": "¡Lo clavaste!"
+    },
+    "almost": {
+      "1": "¡Casi! Prueba otra vez",
+      "2": "¡Uy! Inténtalo de nuevo",
+      "3": "¡Ya casi lo tienes!"
+    },
+    "solution": "Esta era la respuesta",
+    "correctAnnounce": "Respuesta correcta",
+    "almostAnnounce": "Casi, prueba otra vez"
+  }
+}

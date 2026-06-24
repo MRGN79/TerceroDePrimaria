@@ -1,0 +1,18 @@
+{
+  "title": "Settings",
+  "language": {
+    "label": "Language",
+    "es": "Spanish",
+    "en": "English"
+  },
+  "sound": {
+    "label": "Sound",
+    "on": "Sound on",
+    "off": "Sound off"
+  },
+  "reducedMotion": {
+    "label": "Reduce motion",
+    "on": "Reduced motion",
+    "off": "Normal motion"
+  }
+}

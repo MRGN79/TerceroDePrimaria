@@ -1,0 +1,86 @@
+.card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: var(--tdp-space-4);
+  width: 100%;
+  min-height: 96px; /* tarjeta grande, target principal ≥60px (§4) */
+  padding: var(--tdp-space-5);
+  text-align: left;
+  background-color: var(--tdp-color-surface);
+  border: var(--tdp-border-width-strong) solid var(--subject-color);
+  border-radius: var(--tdp-radius-lg);
+  box-shadow: var(--tdp-shadow-sm);
+  transition:
+    transform var(--tdp-duration-fast) var(--tdp-ease-bounce),
+    box-shadow var(--tdp-duration-base) var(--tdp-ease-out);
+}
+.card:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: var(--tdp-shadow-md);
+}
+.card:active:not(:disabled) {
+  transform: translateY(2px);
+  box-shadow: none;
+}
+
+/* El icono va en una pastilla del color de la materia (color = relleno) */
+.iconWrap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  flex: 0 0 auto;
+  background-color: var(--subject-color);
+  color: #ffffff;
+  border-radius: var(--tdp-radius-md);
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--tdp-space-1);
+  flex: 1 1 auto;
+}
+
+/* El TÍTULO va en color de materia oscuro/neutro, no en relleno vivo: el color
+   de la materia vivo se usa en borde/pastilla, el texto es legible (A11Y-CONTRAST-03). */
+.title {
+  font-family: var(--tdp-font-family-display);
+  font-weight: var(--tdp-font-weight-black);
+  font-size: var(--tdp-font-size-lg);
+  color: var(--subject-color);
+}
+.zone {
+  font-size: var(--tdp-font-size-xs);
+  color: var(--tdp-color-text-muted);
+}
+
+.langTag {
+  align-self: flex-start;
+  font-size: 0.875rem; /* micro-etiqueta corta */
+  font-weight: var(--tdp-font-weight-bold);
+  letter-spacing: var(--tdp-letter-spacing-caps);
+  padding: var(--tdp-space-1) var(--tdp-space-2);
+  background-color: var(--tdp-purple-300);
+  color: var(--tdp-purple-700);
+  border-radius: var(--tdp-radius-sm);
+}
+
+.soon {
+  align-self: center;
+  font-size: var(--tdp-font-size-xs);
+  font-weight: var(--tdp-font-weight-bold);
+  color: var(--tdp-color-text-muted);
+  background-color: var(--tdp-paper-100);
+  padding: var(--tdp-space-1) var(--tdp-space-3);
+  border-radius: var(--tdp-radius-pill);
+}
+
+.card:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+  filter: grayscale(0.5);
+  box-shadow: none;
+}

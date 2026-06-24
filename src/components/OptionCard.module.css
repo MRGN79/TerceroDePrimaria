@@ -1,0 +1,118 @@
+/*
+ * Estado por borde (grosor + color) + icono + texto. El relleno de color es
+ * SECUNDARIO al icono/forma. Distinguible en B/N (A11Y-COLOR-02).
+ */
+.card {
+  display: flex;
+  align-items: center;
+  gap: var(--tdp-space-4);
+  width: 100%;
+  min-height: var(--tdp-touch-option); /* 64px (§4) */
+  padding: var(--tdp-space-4) var(--tdp-space-5);
+  background-color: var(--tdp-color-surface);
+  border: var(--tdp-border-width) solid var(--tdp-color-border);
+  border-radius: var(--tdp-radius-lg);
+  box-shadow: var(--tdp-shadow-sm);
+  cursor: pointer;
+  transition:
+    border-color var(--tdp-duration-base) var(--tdp-ease-out),
+    background-color var(--tdp-duration-base) var(--tdp-ease-out),
+    transform var(--tdp-duration-fast) var(--tdp-ease-bounce);
+}
+.card:hover {
+  transform: translateY(-1px);
+}
+
+/* El input radio es la fuente de verdad accesible; lo ocultamos visualmente
+   pero permanece enfocable (el foco se pinta sobre la tarjeta). */
+.input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  margin: 0;
+}
+.input:focus-visible + .indicator ~ * ,
+.input:focus-visible ~ .label {
+  /* el anillo lo dibuja la tarjeta vía :focus-within */
+}
+.card:focus-within {
+  outline: var(--tdp-focus-ring-width) solid var(--tdp-focus-ring-color);
+  outline-offset: var(--tdp-focus-ring-offset);
+  box-shadow: 0 0 0 var(--tdp-focus-ring-offset) var(--tdp-paper-0);
+}
+
+.indicator {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  flex: 0 0 auto;
+  color: var(--tdp-color-text-muted);
+}
+.dot {
+  width: 22px;
+  height: 22px;
+  border: var(--tdp-border-width-strong) solid currentColor;
+  border-radius: var(--tdp-radius-pill);
+}
+
+.label {
+  flex: 1 1 auto;
+  font-size: var(--tdp-font-size-base);
+  line-height: var(--tdp-line-height-base);
+  color: var(--tdp-color-text);
+  text-align: left;
+}
+
+.statusText {
+  flex: 0 0 auto;
+  font-size: var(--tdp-font-size-xs);
+  font-weight: var(--tdp-font-weight-bold);
+}
+
+/* --- Seleccionada: borde grueso + relleno del punto, sin depender del color --- */
+.status-selected {
+  border-color: var(--tdp-color-primary);
+  border-width: var(--tdp-border-width-strong);
+  background-color: var(--tdp-blue-100);
+}
+.status-selected .dot {
+  background-color: var(--tdp-color-primary);
+  border-color: var(--tdp-color-primary);
+}
+
+/* --- Correcta: borde verde + icono ✓ + fondo success --- */
+.status-correct {
+  border-color: var(--tdp-color-success);
+  border-width: var(--tdp-border-width-strong);
+  background-color: var(--tdp-color-success-bg);
+}
+.status-correct .indicator,
+.status-correct .statusText {
+  color: var(--tdp-color-success);
+}
+
+/* --- Correcta no elegida, resaltada al revelar la solución --- */
+.status-correct-revealed {
+  border-color: var(--tdp-color-success);
+  border-width: var(--tdp-border-width-strong);
+  border-style: dashed; /* forma distinta: no solo color */
+  background-color: var(--tdp-color-success-bg);
+}
+.status-correct-revealed .indicator,
+.status-correct-revealed .statusText {
+  color: var(--tdp-color-success);
+}
+
+/* --- Incorrecta: borde rojo + icono ✗ + fondo error (error amable, no agresivo) --- */
+.status-incorrect {
+  border-color: var(--tdp-color-error);
+  border-width: var(--tdp-border-width-strong);
+  background-color: var(--tdp-color-error-bg);
+}
+.status-incorrect .indicator,
+.status-incorrect .statusText {
+  color: var(--tdp-color-error);
+}

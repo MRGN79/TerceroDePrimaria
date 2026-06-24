@@ -1,0 +1,37 @@
+{
+  "materias": [
+    {
+      "id": "matematicas",
+      "tituloKey": "content:math.title",
+      "colorToken": "--tdp-subject-math",
+      "temas": [
+        { "id": "sumas", "tituloKey": "content:math.topic.sumas", "disponible": false },
+        { "id": "restas", "tituloKey": "content:math.topic.restas", "disponible": false }
+      ]
+    },
+    {
+      "id": "lengua",
+      "tituloKey": "content:spanish.title",
+      "colorToken": "--tdp-subject-spanish",
+      "temas": []
+    },
+    {
+      "id": "ciencias",
+      "tituloKey": "content:science.title",
+      "colorToken": "--tdp-subject-science",
+      "temas": []
+    },
+    {
+      "id": "sociales",
+      "tituloKey": "content:social.title",
+      "colorToken": "--tdp-subject-social",
+      "temas": []
+    },
+    {
+      "id": "ingles",
+      "tituloKey": "content:english.title",
+      "colorToken": "--tdp-subject-english",
+      "temas": []
+    }
+  ]
+}

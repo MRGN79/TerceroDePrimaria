@@ -1,0 +1,27 @@
+{
+  "welcome": {
+    "title": "¡Hola, explorador!",
+    "subtitle": "Hoy la isla del verano te espera"
+  },
+  "streak": {
+    "label": "Tu racha",
+    "days": "días seguidos",
+    "empty": "¡Empieza tu racha!",
+    "reset": "¡Hoy empezamos una racha nueva!"
+  },
+  "starCounter": {
+    "label": "Tus estrellas"
+  },
+  "dailyGoal": {
+    "title": "Tu misión de hoy",
+    "desc": "Una mezcla de juegos para empezar el día",
+    "start": "¡Jugar!",
+    "done": "¡Misión hecha!"
+  },
+  "play": {
+    "chooseSubject": "Elijo yo"
+  },
+  "print": {
+    "enter": "Para imprimir"
+  }
+}

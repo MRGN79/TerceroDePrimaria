@@ -1,0 +1,29 @@
+{
+  "math": { "title": "Matemáticas", "zone": "La playa de los números" },
+  "spanish": { "title": "Lengua", "zone": "El bosque de las palabras" },
+  "science": { "title": "Natural Science", "zone": "El laboratorio", "langTag": "EN" },
+  "social": { "title": "Ciencias Sociales", "zone": "El mundo" },
+  "english": { "title": "Inglés", "zone": "El faro", "langTag": "EN" },
+  "label": {
+    "challengeG4": "Reto 4º",
+    "surpriseMix": "Mezcla sorpresa"
+  },
+  "avatar": {
+    "fox": { "name": "Zorro" },
+    "turtle": { "name": "Tortuga" },
+    "parrot": { "name": "Loro" },
+    "crab": { "name": "Cangrejo" }
+  },
+  "nickname": {
+    "explorer": "Explorador",
+    "captain": "Capitán",
+    "star": "Estrella",
+    "champion": "Campeón"
+  },
+  "badge": {
+    "firstSession": { "name": "Primera sesión" },
+    "streak3": { "name": "3 días de racha" },
+    "explorer": { "name": "Explorador" },
+    "hundredStars": { "name": "100 estrellas" }
+  }
+}

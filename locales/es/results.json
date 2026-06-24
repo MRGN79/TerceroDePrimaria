@@ -1,0 +1,18 @@
+{
+  "title": "¡Lo conseguiste!",
+  "starsEarned": "Has ganado {{count}} estrellas",
+  "streak": {
+    "up": "¡Llevas {{count}} días seguidos!",
+    "first": "¡Empiezas una racha!"
+  },
+  "badge": {
+    "unlocked": "¡Nueva medalla!"
+  },
+  "dailyGoal": {
+    "done": "¡Has completado tu misión de hoy!"
+  },
+  "action": {
+    "playAgain": "Jugar otra vez",
+    "home": "Volver a la isla"
+  }
+}

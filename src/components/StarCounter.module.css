@@ -1,0 +1,28 @@
+.root {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--tdp-space-2);
+}
+
+/* Estrella: relleno amarillo + contorno oscuro ≥3:1 para que sea reconocible
+   por forma aunque el color falle o se imprima en B/N (A11Y-CONTRAST-05). */
+.star {
+  color: var(--tdp-color-star);
+  fill: var(--tdp-color-star);
+  stroke: var(--tdp-color-star-text);
+  stroke-width: 1.5;
+}
+
+/* El número va en el token de TEXTO de estrella (oscuro), no en el amarillo. */
+.number {
+  font-weight: var(--tdp-font-weight-bold);
+  color: var(--tdp-color-star-text);
+  font-variant-numeric: tabular-nums;
+}
+
+.size-md .number {
+  font-size: var(--tdp-font-size-lg);
+}
+.size-lg .number {
+  font-size: var(--tdp-font-size-2xl);
+}

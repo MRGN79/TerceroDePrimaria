@@ -1,0 +1,23 @@
+{
+  "title": "Fichas para imprimir",
+  "step": {
+    "subject": "Elige la materia",
+    "topic": "Elige el tema"
+  },
+  "includeSolutions": "Incluir soluciones",
+  "create": "Crear ficha",
+  "action": {
+    "print": "Imprimir",
+    "back": "Cambiar la ficha"
+  },
+  "sheet": {
+    "name": "Mi nombre",
+    "date": "Fecha",
+    "subjectLabel": "Materia",
+    "topicLabel": "Tema",
+    "solutionsTitle": "Soluciones"
+  },
+  "footer": {
+    "cheer": "¡Muy bien! Has trabajado como un gran explorador."
+  }
+}

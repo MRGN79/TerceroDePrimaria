@@ -1,0 +1,85 @@
+.badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--tdp-space-3);
+  margin: 0;
+  padding: var(--tdp-space-4);
+  text-align: center;
+  background-color: var(--tdp-color-surface);
+  border: var(--tdp-border-width) solid var(--tdp-color-border);
+  border-radius: var(--tdp-radius-lg);
+}
+
+.medal {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 72px;
+  height: 72px;
+  border-radius: var(--tdp-radius-pill);
+}
+
+.medalIcon {
+  width: 44px;
+  height: 44px;
+}
+
+/* Desbloqueada: a color + ilustración nítida */
+.unlocked .medal {
+  background-color: var(--tdp-paper-100);
+  border: var(--tdp-border-width-strong) solid
+    var(--badge-color, var(--tdp-color-star-text));
+}
+.unlocked .medalIcon {
+  color: var(--badge-color, var(--tdp-color-star));
+  fill: var(--badge-color, var(--tdp-color-star));
+  stroke: var(--tdp-color-star-text);
+  stroke-width: 1.5;
+}
+
+/* Bloqueada: silueta atenuada + candado (forma, no solo color) */
+.locked .medal {
+  background-color: var(--tdp-paper-50);
+  border: var(--tdp-border-width) dashed var(--tdp-color-border);
+  filter: grayscale(1);
+}
+.locked .medalIcon {
+  color: var(--tdp-ink-500);
+  fill: var(--tdp-ink-500);
+  stroke: none;
+  opacity: 0.5;
+}
+.lockChip {
+  position: absolute;
+  right: -4px;
+  bottom: -4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  background-color: var(--tdp-color-surface);
+  color: var(--tdp-color-text-muted);
+  border: var(--tdp-border-width) solid var(--tdp-color-border);
+  border-radius: var(--tdp-radius-pill);
+}
+
+.caption {
+  display: flex;
+  flex-direction: column;
+  gap: var(--tdp-space-1);
+}
+.name {
+  font-weight: var(--tdp-font-weight-bold);
+  font-size: var(--tdp-font-size-sm);
+  color: var(--tdp-color-text);
+}
+.status {
+  font-size: var(--tdp-font-size-xs);
+  color: var(--tdp-color-text-muted);
+}
+.locked .name {
+  color: var(--tdp-color-text-muted);
+}

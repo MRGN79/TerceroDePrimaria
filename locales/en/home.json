@@ -1,0 +1,27 @@
+{
+  "welcome": {
+    "title": "Hi, explorer!",
+    "subtitle": "The summer island is waiting for you today"
+  },
+  "streak": {
+    "label": "Your streak",
+    "days": "days in a row",
+    "empty": "Start your streak!",
+    "reset": "Today we start a new streak!"
+  },
+  "starCounter": {
+    "label": "Your stars"
+  },
+  "dailyGoal": {
+    "title": "Your mission today",
+    "desc": "A mix of games to start the day",
+    "start": "Play!",
+    "done": "Mission done!"
+  },
+  "play": {
+    "chooseSubject": "I'll choose"
+  },
+  "print": {
+    "enter": "To print"
+  }
+}

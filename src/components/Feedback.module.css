@@ -1,0 +1,65 @@
+.root {
+  display: flex;
+  align-items: center;
+  gap: var(--tdp-space-3);
+  padding: var(--tdp-space-4);
+  border-radius: var(--tdp-radius-lg);
+  border: var(--tdp-border-width-strong) solid transparent;
+  font-size: var(--tdp-font-size-base);
+  font-weight: var(--tdp-font-weight-bold);
+}
+
+.iconWrap {
+  display: inline-flex;
+  flex: 0 0 auto;
+}
+
+.message {
+  flex: 1 1 auto;
+}
+
+/* Acierto: verde + check. Rebote suave de entrada (solo sin reduced-motion). */
+.correct {
+  background-color: var(--tdp-color-success-bg);
+  border-color: var(--tdp-color-success);
+  color: var(--tdp-color-success);
+}
+
+/* Error amable: coral suave + reintentar. Sin rojo agresivo. */
+.almost {
+  background-color: var(--tdp-color-error-bg);
+  border-color: var(--tdp-color-error);
+  color: var(--tdp-color-error);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .correct {
+    animation: pop var(--tdp-duration-base) var(--tdp-ease-bounce);
+  }
+  /* shake pequeño, una sola vez, ≤400ms (A11Y-MOTION-06) */
+  .almost {
+    animation: shake 360ms var(--tdp-ease-out);
+  }
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(0.96);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-4px);
+  }
+  75% {
+    transform: translateX(4px);
+  }
+}

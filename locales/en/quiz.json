@@ -1,0 +1,47 @@
+{
+  "progress": {
+    "label": "Exercise {{current}} of {{total}}"
+  },
+  "session": {
+    "stars": "Today's stars",
+    "exit": "Exit",
+    "exitConfirm": {
+      "title": "Are you sure you want to leave?",
+      "stay": "Keep playing",
+      "leave": "Leave"
+    }
+  },
+  "answer": {
+    "trueLabel": "True",
+    "falseLabel": "False",
+    "numpad": {
+      "delete": "Delete",
+      "display": "Your answer"
+    },
+    "matching": {
+      "instruction": "Tap one and then its match",
+      "paired": "{{source}} with {{target}}"
+    }
+  },
+  "action": {
+    "check": "Check",
+    "next": "Next",
+    "retry": "Try again"
+  },
+  "feedback": {
+    "correct": {
+      "1": "Great!",
+      "2": "You're a star!",
+      "3": "Bravo!",
+      "4": "Nailed it!"
+    },
+    "almost": {
+      "1": "Almost! Try again",
+      "2": "Oops! Give it another go",
+      "3": "You're nearly there!"
+    },
+    "solution": "This was the answer",
+    "correctAnnounce": "Correct answer",
+    "almostAnnounce": "Almost, try again"
+  }
+}
