@@ -5,7 +5,12 @@
     "topic": "Elige el tema"
   },
   "includeSolutions": "Incluir soluciones",
+  "solutions": {
+    "on": "Soluciones incluidas",
+    "off": "Sin soluciones"
+  },
   "create": "Crear ficha",
+  "exercisesTitle": "Ejercicios",
   "action": {
     "print": "Imprimir",
     "back": "Cambiar la ficha"

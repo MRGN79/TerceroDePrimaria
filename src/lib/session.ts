@@ -1,0 +1,133 @@
+/*
+ * Motor de quiz (capa de servicio, sin React). Construye una sesión = secuencia
+ * de N ejercicios de un tema (o mezcla), resolviendo los ejercicios generados de
+ * mates en instancias concretas con sus operandos y respuesta calculada.
+ *
+ * También provee la verificación de respuesta por tipo de ejercicio. Puro y
+ * testeable: la aleatoriedad (barajado, operandos) es inyectable.
+ */
+import type { EjercicioAny, Materia } from "@content/types";
+import { esGenerado } from "@content/types";
+import {
+  exercisesByTopic,
+  exercisesBySubject,
+} from "@content/registry";
+import { generarOperandos, type GeneratedMath, type Rng } from "./randomMath";
+
+export const DEFAULT_SESSION_LENGTH = 5;
+
+/** Ejercicio listo para jugar: el generado ya tiene operandos concretos. */
+export interface PreparedExercise {
+  exercise: EjercicioAny;
+  /** instancia de mates congelada (sólo para generados) */
+  math?: GeneratedMath;
+}
+
+function shuffle<T>(arr: T[], rng: Rng): T[] {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(rng() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+/** Resuelve un ejercicio a su forma jugable, generando mates si procede. */
+export function prepareExercise(
+  exercise: EjercicioAny,
+  rng: Rng = Math.random,
+): PreparedExercise {
+  if (esGenerado(exercise)) {
+    return { exercise, math: generarOperandos(exercise.operacion, rng) };
+  }
+  return { exercise };
+}
+
+/**
+ * Construye una sesión. Para temas con ejercicios estáticos, baraja y toma
+ * hasta `length`. Para temas generados (un único ejercicio plantilla), produce
+ * `length` instancias con operandos distintos. Para "mezcla sorpresa" mezcla la
+ * materia entera.
+ */
+export function buildSession(
+  materia: Materia,
+  tema: string | null,
+  length: number = DEFAULT_SESSION_LENGTH,
+  rng: Rng = Math.random,
+): PreparedExercise[] {
+  const pool = tema ? exercisesByTopic(materia, tema) : exercisesBySubject(materia);
+  if (pool.length === 0) return [];
+
+  const generated = pool.filter(esGenerado);
+  const statics = pool.filter((e) => !esGenerado(e));
+
+  // Caso típico de cálculo: el tema es un único ejercicio generado → N instancias.
+  if (generated.length > 0 && statics.length === 0) {
+    return Array.from({ length }, () => {
+      const template = generated[Math.floor(rng() * generated.length)];
+      return prepareExercise(template, rng);
+    });
+  }
+
+  // Mezcla: baraja todo; si no llega a length, repite generados con números nuevos.
+  const shuffled = shuffle(pool, rng);
+  const out: PreparedExercise[] = [];
+  let i = 0;
+  while (out.length < length && (i < shuffled.length || generated.length > 0)) {
+    const next =
+      i < shuffled.length
+        ? shuffled[i]
+        : generated[Math.floor(rng() * generated.length)];
+    out.push(prepareExercise(next, rng));
+    i++;
+    if (i >= shuffled.length && generated.length === 0) break;
+  }
+  return out.slice(0, length);
+}
+
+/* ----------------------- Verificación de respuestas ----------------------- */
+
+/** Respuesta de emparejado: mapa origen(left) → destino(right). */
+export type MatchAnswer = Record<string, string>;
+
+export function checkOptionAnswer(
+  exercise: EjercicioAny,
+  selectedOptionId: string,
+): boolean {
+  if (esGenerado(exercise)) return false;
+  const correct = exercise.respuestaCorrecta;
+  if (Array.isArray(correct)) return correct.includes(selectedOptionId);
+  return correct === selectedOptionId;
+}
+
+export function checkNumericAnswer(prepared: PreparedExercise, value: string): boolean {
+  if (!prepared.math) return false;
+  const trimmed = value.trim();
+  if (trimmed === "") return false;
+  return Number(trimmed) === prepared.math.answer;
+}
+
+/**
+ * Verifica un emparejado completo: cada par left→right del usuario debe coincidir
+ * con los pares correctos declarados como "left:right".
+ */
+export function checkMatchAnswer(
+  exercise: EjercicioAny,
+  answer: MatchAnswer,
+): boolean {
+  if (esGenerado(exercise) || !Array.isArray(exercise.respuestaCorrecta)) {
+    return false;
+  }
+  const correctPairs = exercise.respuestaCorrecta
+    .map((p) => p.split(":"))
+    .filter((p) => p.length === 2);
+  if (correctPairs.length === 0) return false;
+  if (Object.keys(answer).length !== correctPairs.length) return false;
+  return correctPairs.every(([l, r]) => answer[l] === r);
+}
+
+/** Extrae las opciones de la columna izquierda de un emparejado (ids l*). */
+export function matchLeftIds(exercise: EjercicioAny): string[] {
+  if (esGenerado(exercise) || !Array.isArray(exercise.respuestaCorrecta)) return [];
+  return exercise.respuestaCorrecta.map((p) => p.split(":")[0]);
+}

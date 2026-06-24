@@ -1,0 +1,180 @@
+{
+  "math": {
+    "template": {
+      "operation": "{{a}} {{op}} {{b}} = ?"
+    },
+    "evenodd": {
+      "q1": { "prompt": "The number 8 is even." },
+      "q2": { "prompt": "The number 15 is even." },
+      "q3": {
+        "prompt": "Which of these numbers is odd?",
+        "a": "10",
+        "b": "7",
+        "c": "4"
+      }
+    }
+  },
+  "spanish": {
+    "syn": {
+      "q1": {
+        "prompt": "¿Cuál es un sinónimo de «contento»?",
+        "a": "alegre",
+        "b": "triste",
+        "c": "cansado"
+      },
+      "q2": {
+        "prompt": "Une cada palabra con su sinónimo",
+        "l1": "rápido",
+        "l2": "bonito",
+        "l3": "grande",
+        "r1": "enorme",
+        "r2": "veloz",
+        "r3": "hermoso"
+      }
+    },
+    "noun": {
+      "q1": {
+        "prompt": "¿Cuál de estas palabras es un nombre propio?",
+        "a": "ciudad",
+        "b": "Madrid",
+        "c": "perro"
+      },
+      "q2": { "prompt": "«Las niñas» está en plural y en femenino." }
+    },
+    "mpmb": {
+      "q1": {
+        "prompt": "Elige la palabra escrita correctamente:",
+        "a": "campo",
+        "b": "canpo"
+      },
+      "q2": {
+        "prompt": "Elige la palabra escrita correctamente:",
+        "a": "tanbor",
+        "b": "tambor"
+      }
+    }
+  },
+  "science": {
+    "common": { "true": "True", "false": "False" },
+    "animals": {
+      "q1": {
+        "prompt": "Which of these animals is a mammal?",
+        "a": "Shark",
+        "b": "Dolphin",
+        "c": "Eagle"
+      },
+      "q2": { "prompt": "Insects are vertebrate animals." },
+      "q3": {
+        "prompt": "Match each animal with its group",
+        "l1": "Frog",
+        "l2": "Sparrow",
+        "l3": "Snake",
+        "r1": "Bird",
+        "r2": "Reptile",
+        "r3": "Amphibian"
+      }
+    },
+    "senses": {
+      "q1": {
+        "prompt": "Which sense do we use to enjoy music?",
+        "a": "Sight",
+        "b": "Smell",
+        "c": "Hearing"
+      },
+      "q2": { "prompt": "We use our skin for the sense of touch." }
+    },
+    "states": {
+      "q1": {
+        "prompt": "Which is the solid state of water?",
+        "a": "Ice",
+        "b": "Steam",
+        "c": "Rain"
+      },
+      "q2": {
+        "prompt": "Match each thing with its state of matter",
+        "l1": "Rock",
+        "l2": "Milk",
+        "l3": "Air",
+        "r1": "Liquid",
+        "r2": "Solid",
+        "r3": "Gas"
+      }
+    }
+  },
+  "social": {
+    "universe": {
+      "q1": {
+        "prompt": "Which star gives us light and heat?",
+        "a": "The Sun",
+        "b": "The Moon",
+        "c": "Mars"
+      },
+      "q2": { "prompt": "The Earth orbits around the Sun." },
+      "q3": {
+        "prompt": "Which movement of the Earth causes day and night?",
+        "a": "Its orbit",
+        "b": "The tides",
+        "c": "Its rotation"
+      }
+    },
+    "maps": {
+      "q1": {
+        "prompt": "Where does the Sun rise?",
+        "a": "In the West",
+        "b": "In the East",
+        "c": "In the North",
+        "d": "In the South"
+      },
+      "q2": {
+        "prompt": "Match each compass point with its opposite",
+        "l1": "North",
+        "l2": "East",
+        "r1": "West",
+        "r2": "South"
+      }
+    }
+  },
+  "english": {
+    "common": { "true": "True", "false": "False" },
+    "colors": {
+      "q1": {
+        "prompt": "What colour is the sky on a sunny day?",
+        "a": "Green",
+        "b": "Red",
+        "c": "Blue"
+      },
+      "q2": {
+        "prompt": "Match each word with the right group",
+        "l1": "Yellow",
+        "l2": "Circle",
+        "l3": "Green",
+        "r1": "Shape",
+        "r2": "Colour",
+        "r3": "Colour"
+      }
+    },
+    "animals": {
+      "q1": {
+        "prompt": "Which animal says \"meow\"?",
+        "a": "Cat",
+        "b": "Dog",
+        "c": "Cow"
+      },
+      "q2": { "prompt": "A \"fish\" lives in the water." }
+    },
+    "greetings": {
+      "q1": {
+        "prompt": "How do you reply to \"How are you?\"",
+        "a": "Goodbye!",
+        "b": "I'm fine, thank you.",
+        "c": "My name is Ana."
+      },
+      "q2": {
+        "prompt": "Which one do you say in the morning?",
+        "a": "Good morning!",
+        "b": "Good night!",
+        "c": "See you!"
+      }
+    }
+  }
+}

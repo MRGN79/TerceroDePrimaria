@@ -1,9 +1,51 @@
 {
-  "math": { "title": "Maths", "zone": "The beach of numbers" },
-  "spanish": { "title": "Spanish", "zone": "The forest of words" },
-  "science": { "title": "Natural Science", "zone": "The laboratory", "langTag": "EN" },
-  "social": { "title": "Social Science", "zone": "The world" },
-  "english": { "title": "English", "zone": "The lighthouse", "langTag": "EN" },
+  "math": {
+    "title": "Maths",
+    "zone": "The beach of numbers",
+    "topic": {
+      "add_carry": "Carrying addition",
+      "times_tables": "Times tables",
+      "division_intro": "Exact division",
+      "even_odd": "Even and odd"
+    }
+  },
+  "spanish": {
+    "title": "Spanish",
+    "zone": "The forest of words",
+    "topic": {
+      "synonyms_antonyms": "Sinónimos y antónimos",
+      "noun": "El sustantivo",
+      "mp_mb": "Reglas mp y mb"
+    }
+  },
+  "science": {
+    "title": "Natural Science",
+    "zone": "The laboratory",
+    "langTag": "EN",
+    "topic": {
+      "animals": "Animals",
+      "senses": "The senses",
+      "states": "States of matter"
+    }
+  },
+  "social": {
+    "title": "Social Science",
+    "zone": "The world",
+    "topic": {
+      "universe": "The Solar System",
+      "maps": "Maps and compass points"
+    }
+  },
+  "english": {
+    "title": "English",
+    "zone": "The lighthouse",
+    "langTag": "EN",
+    "topic": {
+      "colors_shapes": "Colors and shapes",
+      "animals": "Animals",
+      "greetings": "Greetings"
+    }
+  },
   "label": {
     "challengeG4": "Grade 4 challenge",
     "surpriseMix": "Surprise mix"
@@ -21,9 +63,11 @@
     "champion": "Champion"
   },
   "badge": {
-    "firstSession": { "name": "First session" },
-    "streak3": { "name": "3-day streak" },
-    "explorer": { "name": "Explorer" },
-    "hundredStars": { "name": "100 stars" }
+    "firstSession": { "name": "First session", "hint": "Complete your first session" },
+    "streak3": { "name": "3-day streak", "hint": "Play 3 days in a row" },
+    "streak7": { "name": "7-day streak", "hint": "Play 7 days in a row" },
+    "tablesMaster": { "name": "Times-tables master", "hint": "Get 10 times-tables right" },
+    "explorer": { "name": "Explorer", "hint": "Try all 5 subjects" },
+    "hundredStars": { "name": "100 stars", "hint": "Earn 100 stars" }
   }
 }

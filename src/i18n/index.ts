@@ -23,6 +23,7 @@ import enBackpack from "@locales/en/backpack.json";
 import enPrint from "@locales/en/print.json";
 import enSettings from "@locales/en/settings.json";
 import enContent from "@locales/en/content.json";
+import enExercises from "@locales/en/exercises.json";
 
 import esCommon from "@locales/es/common.json";
 import esHome from "@locales/es/home.json";
@@ -34,6 +35,7 @@ import esBackpack from "@locales/es/backpack.json";
 import esPrint from "@locales/es/print.json";
 import esSettings from "@locales/es/settings.json";
 import esContent from "@locales/es/content.json";
+import esExercises from "@locales/es/exercises.json";
 
 export const NAMESPACES = [
   "common",
@@ -46,6 +48,7 @@ export const NAMESPACES = [
   "print",
   "settings",
   "content",
+  "exercises",
 ] as const;
 
 const resources = {
@@ -60,6 +63,7 @@ const resources = {
     print: enPrint,
     settings: enSettings,
     content: enContent,
+    exercises: enExercises,
   },
   es: {
     common: esCommon,
@@ -72,6 +76,7 @@ const resources = {
     print: esPrint,
     settings: esSettings,
     content: esContent,
+    exercises: esExercises,
   },
 } as const;
 

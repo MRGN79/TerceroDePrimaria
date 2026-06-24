@@ -5,7 +5,12 @@
     "topic": "Choose the topic"
   },
   "includeSolutions": "Include solutions",
+  "solutions": {
+    "on": "Solutions included",
+    "off": "No solutions"
+  },
   "create": "Create sheet",
+  "exercisesTitle": "Exercises",
   "action": {
     "print": "Print",
     "back": "Change the sheet"

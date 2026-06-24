@@ -50,6 +50,38 @@ export interface Ejercicio {
   imprimible: boolean;
 }
 
+/*
+ * Ejercicio generado (mates D-6, ADR §7). En lugar de enunciado y respuesta
+ * fijos, declara una operación generable; Frontend produce los operandos al
+ * montar (o congelados para imprimir) y CALCULA la respuesta.
+ */
+export type OperacionMate =
+  | "add"
+  | "sub"
+  | "times-tables"
+  | "multiply-one-digit"
+  | "division-exact";
+
+export interface EjercicioGenerado {
+  id: string;
+  materia: "matematicas";
+  tema: string;
+  nivel: Nivel;
+  tipo: "respuesta-corta";
+  /** operación a generar (ver randomMath.ts) */
+  operacion: OperacionMate;
+  /** plantilla i18n con interpolación, ej. "math.template.operation" = "{{a}} {{op}} {{b}}" */
+  plantillaKey: string;
+  imprimible: boolean;
+}
+
+/** Cualquier ejercicio del contenido: estático o generado. */
+export type EjercicioAny = Ejercicio | EjercicioGenerado;
+
+export function esGenerado(e: EjercicioAny): e is EjercicioGenerado {
+  return (e as EjercicioGenerado).operacion !== undefined;
+}
+
 /** Entrada del índice ligero de materias/temas (materias.json). */
 export interface TemaIndice {
   /** clave de tema, ej. "sumas-llevando" */
@@ -68,5 +100,13 @@ export interface MateriaIndice {
   tituloKey: string;
   /** token de color de materia, ej. "--tdp-subject-math" */
   colorToken: string;
+  /** nombre de icono del sistema de diseño */
+  icon: string;
+  /** micro-etiqueta de idioma fijo (ej. clave de "EN") para science/english */
+  langTagKey?: string;
   temas: TemaIndice[];
+}
+
+export interface CatalogoMaterias {
+  materias: MateriaIndice[];
 }
