@@ -72,6 +72,8 @@ export interface SessionSummary {
   correctByTopic: Record<string, number>;
   materia: Materia;
   subjectsTried: Materia[];
+  /** ids de ejercicios estáticos respondidos correctamente en esta sesión */
+  newlyCorrectIds: string[];
 }
 
 export interface UseSessionResult {
@@ -90,12 +92,13 @@ export function useSession(
   tema: string | null,
   length?: number,
   prebuilt?: PreparedExercise[],
+  excludeIds?: ReadonlySet<string>,
 ): UseSessionResult {
   const { t } = useTranslation(["quiz", "exercises"]);
 
   // La secuencia se construye una sola vez por montaje de la sesión.
   const [items] = useState<PreparedExercise[]>(() =>
-    prebuilt ?? buildSession(materia, tema, length),
+    prebuilt ?? buildSession(materia, tema, length, Math.random, excludeIds),
   );
 
   const [index, setIndex] = useState(0);
@@ -106,6 +109,7 @@ export function useSession(
   const [liveMessage, setLiveMessage] = useState("");
   const [sessionStars, setSessionStars] = useState(0);
   const [correctByTopic, setCorrectByTopic] = useState<Record<string, number>>({});
+  const [newlyCorrectIds, setNewlyCorrectIds] = useState<string[]>([]);
 
   // Respuestas por tipo
   const [selectedOption, setSelectedOption] = useState<string | null>(null);
@@ -212,6 +216,11 @@ export function useSession(
         ...m,
         [exercise.tema]: (m[exercise.tema] ?? 0) + 1,
       }));
+      if (!esGenerado(exercise)) {
+        setNewlyCorrectIds((ids) =>
+          ids.includes(exercise.id) ? ids : [...ids, exercise.id],
+        );
+      }
       setResolvedCorrect(true);
       setFeedback({
         kind: "correct",
@@ -347,8 +356,9 @@ export function useSession(
       correctByTopic,
       materia,
       subjectsTried,
+      newlyCorrectIds,
     }),
-    [sessionStars, correctByTopic, materia, subjectsTried],
+    [sessionStars, correctByTopic, materia, subjectsTried, newlyCorrectIds],
   );
 
   return {

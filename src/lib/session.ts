@@ -49,15 +49,21 @@ export function prepareExercise(
  * hasta `length`. Para temas generados (un único ejercicio plantilla), produce
  * `length` instancias con operandos distintos. Para "mezcla sorpresa" mezcla la
  * materia entera.
+ *
+ * `excludeIds`: ids de ejercicios estáticos ya dominados. Si excluirlos deja el pool
+ * vacío, se usa el pool completo (el niño ha terminado la asignatura: empieza de nuevo).
  */
 export function buildSession(
   materia: Materia,
   tema: string | null,
   length: number = DEFAULT_SESSION_LENGTH,
   rng: Rng = Math.random,
+  excludeIds: ReadonlySet<string> = new Set(),
 ): PreparedExercise[] {
-  const pool = tema ? exercisesByTopic(materia, tema) : exercisesBySubject(materia);
-  if (pool.length === 0) return [];
+  const fullPool = tema ? exercisesByTopic(materia, tema) : exercisesBySubject(materia);
+  if (fullPool.length === 0) return [];
+  const filtered = fullPool.filter((e) => !excludeIds.has(e.id));
+  const pool = filtered.length > 0 ? filtered : fullPool;
 
   const generated = pool.filter(esGenerado);
   const statics = pool.filter((e) => !esGenerado(e));
@@ -136,8 +142,15 @@ export function matchLeftIds(exercise: EjercicioAny): string[] {
 /**
  * Sesión de misión diaria: 3 ejercicios de cada asignatura mezclados.
  * El orden se baraja para que no salgan todas las mates juntas, etc.
+ * `excludeIds` filtra las preguntas ya dominadas por el niño.
  */
-export function buildDailySession(perSubject = 3, rng: Rng = Math.random): PreparedExercise[] {
-  const all = ALL_SUBJECTS.flatMap((materia) => buildSession(materia, null, perSubject, rng));
+export function buildDailySession(
+  perSubject = 3,
+  rng: Rng = Math.random,
+  excludeIds: ReadonlySet<string> = new Set(),
+): PreparedExercise[] {
+  const all = ALL_SUBJECTS.flatMap((materia) =>
+    buildSession(materia, null, perSubject, rng, excludeIds),
+  );
   return shuffle(all, rng);
 }

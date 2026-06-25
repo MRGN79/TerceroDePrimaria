@@ -35,7 +35,10 @@ export function SessionContainer({
   onPlayAgain,
 }: SessionContainerProps) {
   const { t } = useTranslation(["quiz", "results", "common", "content"]);
-  const { consolidateSession } = useGameStore();
+  const { consolidateSession, state } = useGameStore();
+
+  // Captura los IDs ya dominados al montar (antes de ganar más en esta sesión)
+  const excludeIds = useRef(new Set(state.progress.correctExerciseIds)).current;
 
   const {
     view,
@@ -46,7 +49,7 @@ export function SessionContainer({
     check,
     next,
     summary,
-  } = useSession(materia, tema, undefined, prebuilt);
+  } = useSession(materia, tema, undefined, prebuilt, excludeIds);
 
   const [confirmExit, setConfirmExit] = useState(false);
   const [result, setResult] = useState<ConsolidationResult | null>(null);
@@ -60,6 +63,7 @@ export function SessionContainer({
         starsEarned: summary.starsEarned,
         correctByTopic: summary.correctByTopic,
         subjectsTried: summary.subjectsTried,
+        newlyCorrectIds: summary.newlyCorrectIds,
         isDailyGoal,
       });
       setResult(r);

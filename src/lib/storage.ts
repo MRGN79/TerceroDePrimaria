@@ -44,6 +44,8 @@ export interface PersistedState {
     correctByTopic: Record<string, number>;
     /** ids de materia probadas al menos una vez */
     subjectsTried: string[];
+    /** ids de ejercicios estáticos respondidos correctamente (excluidos del pool hasta agotar la asignatura) */
+    correctExerciseIds: string[];
   };
 }
 
@@ -56,7 +58,7 @@ export function defaultState(): PersistedState {
     stars: { total: 0 },
     badges: { unlocked: {} },
     dailyGoal: { lastDoneDate: null },
-    progress: { correctByTopic: {}, subjectsTried: [] },
+    progress: { correctByTopic: {}, subjectsTried: [], correctExerciseIds: [] },
   };
 }
 
@@ -99,6 +101,11 @@ export function parseState(raw: unknown): PersistedState | null {
     progress.subjectsTried.every((v) => typeof v === "string")
       ? (progress.subjectsTried as string[])
       : [];
+  const correctExerciseIds =
+    Array.isArray(progress.correctExerciseIds) &&
+    progress.correctExerciseIds.every((v) => typeof v === "string")
+      ? (progress.correctExerciseIds as string[])
+      : [];
 
   return {
     schemaVersion: SCHEMA_VERSION,
@@ -128,7 +135,7 @@ export function parseState(raw: unknown): PersistedState | null {
       lastDoneDate:
         typeof dailyGoal.lastDoneDate === "string" ? dailyGoal.lastDoneDate : null,
     },
-    progress: { correctByTopic, subjectsTried },
+    progress: { correctByTopic, subjectsTried, correctExerciseIds },
   };
 }
 
