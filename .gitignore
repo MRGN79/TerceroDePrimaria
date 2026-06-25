@@ -9,6 +9,12 @@ node_modules/
 .venv/
 vendor/
 
+# Build estático de Vite (se genera en CI, no se commitea)
+dist/
+
+# Caché de Vite
+.vite/
+
 # OS
 .DS_Store
 Thumbs.db

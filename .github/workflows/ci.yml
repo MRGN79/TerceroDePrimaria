@@ -1,0 +1,40 @@
+name: CI
+
+# Gate de calidad para Pull Requests: lint + build.
+# No despliega — el deploy a producción vive en deploy.yml (push a main).
+# CI verde es requisito para hacer merge (configurar branch protection en GitHub:
+# ver docs/devops/github-pages-setup.md).
+
+on:
+  pull_request:
+    branches: [main]
+  # Permite ejecutar el CI manualmente desde la pestaña Actions.
+  workflow_dispatch:
+
+# Cancela ejecuciones antiguas del mismo PR si llega un push nuevo.
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Lint + Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Build
+        run: npm run build
