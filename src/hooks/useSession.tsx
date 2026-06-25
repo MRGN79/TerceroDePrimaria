@@ -70,6 +70,7 @@ export interface SessionView {
 export interface SessionSummary {
   starsEarned: number; // redondeado al alza para la celebración
   correctByTopic: Record<string, number>;
+  correctBySubject: Record<string, number>;
   materia: Materia;
   subjectsTried: Materia[];
   /** ids de ejercicios estáticos respondidos correctamente en esta sesión */
@@ -109,6 +110,7 @@ export function useSession(
   const [liveMessage, setLiveMessage] = useState("");
   const [sessionStars, setSessionStars] = useState(0);
   const [correctByTopic, setCorrectByTopic] = useState<Record<string, number>>({});
+  const [correctBySubject, setCorrectBySubject] = useState<Record<string, number>>({});
   const [newlyCorrectIds, setNewlyCorrectIds] = useState<string[]>([]);
 
   // Respuestas por tipo
@@ -215,6 +217,10 @@ export function useSession(
       setCorrectByTopic((m) => ({
         ...m,
         [exercise.tema]: (m[exercise.tema] ?? 0) + 1,
+      }));
+      setCorrectBySubject((m) => ({
+        ...m,
+        [exercise.materia]: (m[exercise.materia] ?? 0) + 1,
       }));
       if (!esGenerado(exercise)) {
         setNewlyCorrectIds((ids) =>
@@ -354,11 +360,12 @@ export function useSession(
     () => ({
       starsEarned: Math.ceil(sessionStars),
       correctByTopic,
+      correctBySubject,
       materia,
       subjectsTried,
       newlyCorrectIds,
     }),
-    [sessionStars, correctByTopic, materia, subjectsTried, newlyCorrectIds],
+    [sessionStars, correctByTopic, correctBySubject, materia, subjectsTried, newlyCorrectIds],
   );
 
   return {

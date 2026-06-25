@@ -3,9 +3,12 @@
     "heading": "Choose your character"
   },
   "nickname": {
-    "heading": "Choose your nickname"
+    "heading": "Choose your nickname",
+    "customPlaceholder": "Or type your own name…",
+    "customLabel": "Custom name"
   },
   "continue": "Let's go!",
   "skip": "Skip",
+  "save": "Save changes",
   "step": "Step {{current}} of {{total}}"
 }

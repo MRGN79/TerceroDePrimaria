@@ -12,6 +12,7 @@ function consolidation(over: Partial<SessionConsolidation> = {}): SessionConsoli
   return {
     starsEarned: 3,
     correctByTopic: {},
+    correctBySubject: {},
     subjectsTried: ["matematicas"],
     newlyCorrectIds: [],
     isDailyGoal: true,

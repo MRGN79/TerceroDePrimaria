@@ -4,7 +4,8 @@
     "skipToContent": "Skip to content"
   },
   "footer": {
-    "description": "Summer review exercises for 3rd Grade"
+    "description": "Summer review exercises for 3rd Grade",
+    "privacy": "This app does not send any data to any server. Everything is saved only on this device."
   },
   "nav": {
     "home": "Home",

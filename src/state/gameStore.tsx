@@ -18,6 +18,7 @@ import {
   loadState,
   saveState,
   isStorageAvailable,
+  defaultState,
   type PersistedState,
   type Language,
 } from "@/lib/storage";
@@ -48,8 +49,17 @@ export function GameProvider({ children }: { children: ReactNode }) {
     setState((s) => ({ ...s, preferences: { ...s.preferences, reducedMotion } }));
   }, []);
 
-  const setProfile = useCallback((avatarId: string, nicknameId: string) => {
-    setState((s) => ({ ...s, profile: { avatarId, nicknameId } }));
+  const setProfile = useCallback(
+    (avatarId: string, nicknameId: string | null, nicknameCustom: string | null = null) => {
+      setState((s) => ({ ...s, profile: { avatarId, nicknameId, nicknameCustom } }));
+    },
+    [],
+  );
+
+  const clearData = useCallback(() => {
+    const fresh = defaultState();
+    stateRef.current = fresh;
+    setState(fresh);
   }, []);
 
   const consolidateSession = useCallback<GameStore["consolidateSession"]>(
@@ -71,6 +81,7 @@ export function GameProvider({ children }: { children: ReactNode }) {
       setSound,
       setReducedMotion,
       setProfile,
+      clearData,
       hasProfile: state.profile.avatarId !== null,
       consolidateSession,
     }),
@@ -81,6 +92,7 @@ export function GameProvider({ children }: { children: ReactNode }) {
       setSound,
       setReducedMotion,
       setProfile,
+      clearData,
       consolidateSession,
     ],
   );

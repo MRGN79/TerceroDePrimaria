@@ -54,6 +54,7 @@ export function SessionContainer({
   const [confirmExit, setConfirmExit] = useState(false);
   const [result, setResult] = useState<ConsolidationResult | null>(null);
   const consolidated = useRef(false);
+  const autoAdvanceTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   // Al terminar la secuencia, consolidar una sola vez.
   useEffect(() => {
@@ -62,6 +63,7 @@ export function SessionContainer({
       const r = consolidateSession({
         starsEarned: summary.starsEarned,
         correctByTopic: summary.correctByTopic,
+        correctBySubject: summary.correctBySubject,
         subjectsTried: summary.subjectsTried,
         newlyCorrectIds: summary.newlyCorrectIds,
         isDailyGoal,
@@ -69,6 +71,29 @@ export function SessionContainer({
       setResult(r);
     }
   }, [view?.finished, consolidateSession, summary, materia, isDailyGoal]);
+
+  // Avance automático tras resolver: ~3.5 s en acierto, ~5 s en revelación.
+  const resolvedKey = view?.resolved && !view?.finished;
+  const feedbackKind = view?.feedback?.kind;
+  useEffect(() => {
+    if (!resolvedKey) {
+      if (autoAdvanceTimer.current) {
+        clearTimeout(autoAdvanceTimer.current);
+        autoAdvanceTimer.current = null;
+      }
+      return;
+    }
+    const delay = feedbackKind === "correct" ? 3500 : 5000;
+    autoAdvanceTimer.current = setTimeout(() => {
+      next();
+    }, delay);
+    return () => {
+      if (autoAdvanceTimer.current) {
+        clearTimeout(autoAdvanceTimer.current);
+        autoAdvanceTimer.current = null;
+      }
+    };
+  }, [resolvedKey, feedbackKind, next]);
 
   const handleExit = useCallback(() => setConfirmExit(true), []);
 
@@ -112,6 +137,11 @@ export function SessionContainer({
         canCheck={view.canCheck}
         resolved={view.resolved}
         onCheck={check}
+        autoAdvanceMs={
+          view.resolved && !view.finished
+            ? view.feedback?.kind === "correct" ? 3500 : 5000
+            : undefined
+        }
         onNext={next}
         onSelectOption={selectOption}
         onDigit={inputDigit}

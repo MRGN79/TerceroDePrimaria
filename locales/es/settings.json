@@ -14,5 +14,16 @@
     "label": "Reducir movimiento",
     "on": "Movimiento reducido",
     "off": "Movimiento normal"
+  },
+  "profile": {
+    "label": "Personaje y apodo",
+    "edit": "Cambiar personaje o apodo"
+  },
+  "clearData": {
+    "label": "Borrar todos mis datos",
+    "confirmTitle": "¿Estás seguro?",
+    "confirmBody": "Se borrarán permanentemente todas tus estrellas, racha, medallas y progreso. Esta acción no tiene vuelta atrás.",
+    "confirmButton": "Sí, borrarlo todo",
+    "cancel": "Cancelar"
   }
 }

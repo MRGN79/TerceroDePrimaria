@@ -56,6 +56,8 @@ type SessionScreenProps = {
   canCheck?: boolean;
   /** muestra "siguiente" en vez de "comprobar" tras responder */
   resolved?: boolean;
+  /** duración del temporizador de auto-avance en ms (undefined = no activo) */
+  autoAdvanceMs?: number;
   onCheck?: () => void;
   onNext?: () => void;
   onSelectOption?: (id: string) => void;
@@ -82,6 +84,7 @@ export function SessionScreen({
   feedback,
   canCheck = false,
   resolved = false,
+  autoAdvanceMs,
   onCheck,
   onNext,
   onSelectOption,
@@ -128,10 +131,20 @@ export function SessionScreen({
         feedback={feedback}
         actions={
           resolved ? (
-            <Button variant="primary" size="lg" onClick={onNext}>
-              {t("action.next")}
-              <Icon name="chevron-right" size={24} aria-hidden="true" />
-            </Button>
+            <div className={styles.nextWrapper}>
+              <Button variant="primary" size="lg" onClick={onNext}>
+                {t("action.next")}
+                <Icon name="chevron-right" size={24} aria-hidden="true" />
+              </Button>
+              {autoAdvanceMs ? (
+                <div
+                  key={autoAdvanceMs}
+                  className={styles.timerBar}
+                  style={{ animationDuration: `${autoAdvanceMs}ms` }}
+                  aria-hidden="true"
+                />
+              ) : null}
+            </div>
           ) : (
             <Button
               variant="primary"

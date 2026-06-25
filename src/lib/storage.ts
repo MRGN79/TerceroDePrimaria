@@ -23,6 +23,7 @@ export interface PersistedState {
   profile: {
     avatarId: string | null;
     nicknameId: string | null;
+    nicknameCustom: string | null;
   };
   streak: {
     current: number;
@@ -38,10 +39,13 @@ export interface PersistedState {
   };
   dailyGoal: {
     lastDoneDate: string | null; // "YYYY-MM-DD"
+    totalCompleted: number;
   };
   progress: {
     /** topicId → número de aciertos acumulados */
     correctByTopic: Record<string, number>;
+    /** materiaId → número de aciertos acumulados */
+    correctBySubject: Record<string, number>;
     /** ids de materia probadas al menos una vez */
     subjectsTried: string[];
     /** ids de ejercicios estáticos respondidos correctamente (excluidos del pool hasta agotar la asignatura) */
@@ -53,12 +57,12 @@ export function defaultState(): PersistedState {
   return {
     schemaVersion: SCHEMA_VERSION,
     preferences: { language: null, sound: true, reducedMotion: false },
-    profile: { avatarId: null, nicknameId: null },
+    profile: { avatarId: null, nicknameId: null, nicknameCustom: null },
     streak: { current: 0, longest: 0, lastPlayedDate: null },
     stars: { total: 0 },
     badges: { unlocked: {} },
-    dailyGoal: { lastDoneDate: null },
-    progress: { correctByTopic: {}, subjectsTried: [], correctExerciseIds: [] },
+    dailyGoal: { lastDoneDate: null, totalCompleted: 0 },
+    progress: { correctByTopic: {}, correctBySubject: {}, subjectsTried: [], correctExerciseIds: [] },
   };
 }
 
@@ -96,6 +100,11 @@ export function parseState(raw: unknown): PersistedState | null {
     Object.values(progress.correctByTopic).every((v) => typeof v === "number")
       ? (progress.correctByTopic as Record<string, number>)
       : {};
+  const correctBySubject =
+    isPlainObject(progress.correctBySubject) &&
+    Object.values(progress.correctBySubject).every((v) => typeof v === "number")
+      ? (progress.correctBySubject as Record<string, number>)
+      : {};
   const subjectsTried =
     Array.isArray(progress.subjectsTried) &&
     progress.subjectsTried.every((v) => typeof v === "string")
@@ -120,6 +129,7 @@ export function parseState(raw: unknown): PersistedState | null {
     profile: {
       avatarId: typeof profile.avatarId === "string" ? profile.avatarId : null,
       nicknameId: typeof profile.nicknameId === "string" ? profile.nicknameId : null,
+      nicknameCustom: typeof profile.nicknameCustom === "string" ? profile.nicknameCustom : null,
     },
     streak: {
       current: typeof streak.current === "number" ? streak.current : 0,
@@ -134,8 +144,10 @@ export function parseState(raw: unknown): PersistedState | null {
     dailyGoal: {
       lastDoneDate:
         typeof dailyGoal.lastDoneDate === "string" ? dailyGoal.lastDoneDate : null,
+      totalCompleted:
+        typeof dailyGoal.totalCompleted === "number" ? dailyGoal.totalCompleted : 0,
     },
-    progress: { correctByTopic, subjectsTried, correctExerciseIds },
+    progress: { correctByTopic, correctBySubject, subjectsTried, correctExerciseIds },
   };
 }
 

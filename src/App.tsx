@@ -27,7 +27,7 @@ import {
 import { buildPrintSheet, type PrintItem } from "@/lib/printSheet";
 import { buildDailySession, type PreparedExercise } from "@/lib/session";
 import { localDateKey, streakDisplayVariant } from "@/lib/streak";
-import { nicknameKey } from "@/lib/profile";
+import { nicknameKey, DEFAULT_NICKNAME } from "@/lib/profile";
 import { BADGES } from "@/lib/badges";
 
 type Route =
@@ -36,6 +36,7 @@ type Route =
   | { name: "session"; materia: Materia; tema: string | null; isDailyGoal: boolean; prebuilt?: PreparedExercise[] }
   | { name: "backpack" }
   | { name: "settings" }
+  | { name: "editProfile" }
   | { name: "print" }
   | { name: "printSheet"; materia: Materia; tema: string | null };
 
@@ -76,7 +77,9 @@ export function App() {
 
   const dailyGoalDoneToday = state.dailyGoal.lastDoneDate === localDateKey();
   const streakVariant = streakDisplayVariant(state.streak);
-  const nickname = t(nicknameKey(state.profile.nicknameId));
+  const nickname = state.profile.nicknameCustom
+    ? state.profile.nicknameCustom
+    : t(nicknameKey(state.profile.nicknameId));
   const currentLanguage: "en" | "es" =
     (state.preferences.language ?? i18n.language) === "es" ? "es" : "en";
 
@@ -84,8 +87,8 @@ export function App() {
   if (!store.hasProfile) {
     return (
       <OnboardingScreen
-        onComplete={(avatarId, nicknameId) => {
-          store.setProfile(avatarId, nicknameId);
+        onComplete={(avatarId, nicknameId, nicknameCustom) => {
+          store.setProfile(avatarId, nicknameId ?? DEFAULT_NICKNAME, nicknameCustom ?? null);
           setRoute({ name: "home" });
         }}
       />
@@ -196,8 +199,28 @@ export function App() {
         onLanguage={store.setLanguage}
         onSound={store.setSound}
         onReducedMotion={store.setReducedMotion}
+        onEditProfile={() => setRoute({ name: "editProfile" })}
+        onClearData={() => {
+          store.clearData();
+          setRoute({ name: "home" });
+        }}
         onHome={goHome}
         onBack={goHome}
+      />
+    );
+  }
+
+  if (route.name === "editProfile") {
+    return (
+      <OnboardingScreen
+        editMode
+        initialAvatarId={state.profile.avatarId}
+        initialNicknameId={state.profile.nicknameId}
+        initialNicknameCustom={state.profile.nicknameCustom}
+        onComplete={(avatarId, nicknameId, nicknameCustom) => {
+          store.setProfile(avatarId, nicknameId, nicknameCustom);
+          setRoute({ name: "settings" });
+        }}
       />
     );
   }
