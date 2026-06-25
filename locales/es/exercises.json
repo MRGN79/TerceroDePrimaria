@@ -422,7 +422,30 @@
         "a": "La traslación",
         "b": "Las mareas",
         "c": "La rotación"
-      }
+      },
+      "q4": {
+        "prompt": "¿Cuántos planetas hay en el Sistema Solar?",
+        "a": "7",
+        "b": "8",
+        "c": "9"
+      },
+      "q5": { "prompt": "La Luna es un planeta." },
+      "q6": {
+        "prompt": "¿Cuál es el planeta más grande del Sistema Solar?",
+        "a": "Saturno",
+        "b": "Marte",
+        "c": "Júpiter"
+      },
+      "q7": {
+        "prompt": "Une cada astro con su tipo",
+        "l1": "Sol",
+        "l2": "Luna",
+        "l3": "Marte",
+        "r1": "planeta",
+        "r2": "estrella",
+        "r3": "satélite"
+      },
+      "q8": { "prompt": "El movimiento de traslación de la Tierra dura un año." }
     },
     "maps": {
       "q1": {
@@ -438,7 +461,150 @@
         "l2": "Este",
         "r1": "Oeste",
         "r2": "Sur"
+      },
+      "q3": {
+        "prompt": "¿Cuántos puntos cardinales hay?",
+        "a": "2",
+        "b": "3",
+        "c": "4"
+      },
+      "q4": { "prompt": "El Sur está en la parte de arriba de los mapas." },
+      "q5": {
+        "prompt": "¿Qué instrumento se usa para orientarse en el campo?",
+        "a": "el telescopio",
+        "b": "la brújula",
+        "c": "el microscopio"
+      },
+      "q6": { "prompt": "Un mapa es una representación de la realidad vista desde arriba." },
+      "q7": {
+        "prompt": "Si el Norte está delante de ti, ¿dónde está el Este?",
+        "a": "a tu izquierda",
+        "b": "detrás de ti",
+        "c": "a tu derecha"
+      },
+      "q8": {
+        "prompt": "Une cada símbolo de mapa con lo que representa",
+        "l1": "línea azul",
+        "l2": "zona verde",
+        "l3": "zona marrón",
+        "r1": "montaña",
+        "r2": "río",
+        "r3": "bosque"
       }
+    },
+    "spain": {
+      "q1": {
+        "prompt": "¿Cuántas comunidades autónomas tiene España?",
+        "a": "15",
+        "b": "17",
+        "c": "20"
+      },
+      "q2": { "prompt": "Madrid es la capital de España." },
+      "q3": {
+        "prompt": "¿Cuál es el río más largo de España?",
+        "a": "el Tajo",
+        "b": "el Ebro",
+        "c": "el Guadalquivir"
+      },
+      "q4": { "prompt": "España es una isla." },
+      "q5": {
+        "prompt": "¿Cómo se llama la península en la que se encuentra España?",
+        "a": "Itálica",
+        "b": "Ibérica",
+        "c": "Balcánica"
+      },
+      "q6": {
+        "prompt": "Une cada ciudad con su comunidad autónoma",
+        "l1": "Barcelona",
+        "l2": "Sevilla",
+        "l3": "Valencia",
+        "r1": "Comunidad Valenciana",
+        "r2": "Cataluña",
+        "r3": "Andalucía"
+      },
+      "q7": {
+        "prompt": "¿Cuál es la montaña más alta de España?",
+        "a": "El Teide",
+        "b": "El Mulhacén",
+        "c": "Los Pirineos"
+      },
+      "q8": { "prompt": "El mar Mediterráneo baña la costa este de España." }
+    },
+    "pop": {
+      "q1": {
+        "prompt": "¿Cómo se llama el conjunto de personas que viven en un lugar?",
+        "a": "la familia",
+        "b": "la población",
+        "c": "el municipio"
+      },
+      "q2": { "prompt": "El municipio es la unidad básica de organización del territorio en España." },
+      "q3": {
+        "prompt": "¿Cuál de estos trabajos pertenece al sector primario?",
+        "a": "agricultor",
+        "b": "médico",
+        "c": "maestro"
+      },
+      "q4": { "prompt": "Los bomberos y los policías trabajan para la comunidad." },
+      "q5": {
+        "prompt": "¿Qué es un ayuntamiento?",
+        "a": "un hospital",
+        "b": "el gobierno de un municipio",
+        "c": "una escuela"
+      },
+      "q6": {
+        "prompt": "Une cada trabajador con su sector",
+        "l1": "pescador",
+        "l2": "obrero de fábrica",
+        "l3": "camarero",
+        "r1": "sector terciario",
+        "r2": "sector primario",
+        "r3": "sector secundario"
+      },
+      "q7": {
+        "prompt": "¿Quién gobierna una comunidad autónoma?",
+        "a": "el alcalde",
+        "b": "el presidente autonómico",
+        "c": "el rey"
+      },
+      "q8": { "prompt": "El alcalde es el jefe del gobierno de un municipio." }
+    },
+    "time": {
+      "q1": {
+        "prompt": "¿Cuáles son los tres tiempos históricos básicos?",
+        "a": "mañana, tarde y noche",
+        "b": "pasado, presente y futuro",
+        "c": "ayer, hoy y mañana"
+      },
+      "q2": { "prompt": "Una línea del tiempo sirve para ordenar hechos según cuándo ocurrieron." },
+      "q3": {
+        "prompt": "¿Qué ocurrió antes?",
+        "a": "el nacimiento de tus padres",
+        "b": "el nacimiento de tus abuelos",
+        "c": "tu nacimiento"
+      },
+      "q4": { "prompt": "La Historia se divide en Prehistoria e Historia." },
+      "q5": {
+        "prompt": "¿Cuántos años tiene un siglo?",
+        "a": "10",
+        "b": "50",
+        "c": "100"
+      },
+      "q6": {
+        "prompt": "Une cada época con un invento o acontecimiento",
+        "l1": "Prehistoria",
+        "l2": "Edad Media",
+        "l3": "Actualidad",
+        "r1": "Internet",
+        "r2": "herramientas de piedra",
+        "r3": "los castillos"
+      },
+      "q7": {
+        "prompt": "¿Qué es una fuente histórica?",
+        "a": "un río antiguo",
+        "b": "algo que nos da información sobre el pasado",
+        "c": "un libro de cuentos"
+      },
+      "q8": { "prompt": "Las fotografías pueden ser fuentes históricas." }
     }
   },
   "english": {

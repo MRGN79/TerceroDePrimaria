@@ -38,7 +38,10 @@
     "zone": "El mundo",
     "topic": {
       "universe": "El Sistema Solar",
-      "maps": "Mapas y puntos cardinales"
+      "maps": "Mapas y puntos cardinales",
+      "spain": "España: relieve y comunidades",
+      "population": "La población y el trabajo",
+      "time": "El tiempo histórico"
     }
   },
   "english": {

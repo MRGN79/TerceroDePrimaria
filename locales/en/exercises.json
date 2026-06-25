@@ -422,7 +422,30 @@
         "a": "Its orbit",
         "b": "The tides",
         "c": "Its rotation"
-      }
+      },
+      "q4": {
+        "prompt": "How many planets are there in the Solar System?",
+        "a": "7",
+        "b": "8",
+        "c": "9"
+      },
+      "q5": { "prompt": "The Moon is a planet." },
+      "q6": {
+        "prompt": "Which is the largest planet in the Solar System?",
+        "a": "Saturn",
+        "b": "Mars",
+        "c": "Jupiter"
+      },
+      "q7": {
+        "prompt": "Match each space object with its type",
+        "l1": "Sun",
+        "l2": "Moon",
+        "l3": "Mars",
+        "r1": "planet",
+        "r2": "star",
+        "r3": "satellite"
+      },
+      "q8": { "prompt": "The Earth's orbit around the Sun takes one year." }
     },
     "maps": {
       "q1": {
@@ -438,7 +461,150 @@
         "l2": "East",
         "r1": "West",
         "r2": "South"
+      },
+      "q3": {
+        "prompt": "How many cardinal points are there?",
+        "a": "2",
+        "b": "3",
+        "c": "4"
+      },
+      "q4": { "prompt": "South is at the top of maps." },
+      "q5": {
+        "prompt": "Which instrument is used to find direction in the countryside?",
+        "a": "the telescope",
+        "b": "the compass",
+        "c": "the microscope"
+      },
+      "q6": { "prompt": "A map is a representation of reality seen from above." },
+      "q7": {
+        "prompt": "If North is in front of you, where is East?",
+        "a": "on your left",
+        "b": "behind you",
+        "c": "on your right"
+      },
+      "q8": {
+        "prompt": "Match each map symbol with what it represents",
+        "l1": "blue line",
+        "l2": "green area",
+        "l3": "brown area",
+        "r1": "mountain",
+        "r2": "river",
+        "r3": "forest"
       }
+    },
+    "spain": {
+      "q1": {
+        "prompt": "How many autonomous communities does Spain have?",
+        "a": "15",
+        "b": "17",
+        "c": "20"
+      },
+      "q2": { "prompt": "Madrid is the capital of Spain." },
+      "q3": {
+        "prompt": "Which is the longest river in Spain?",
+        "a": "the Tagus",
+        "b": "the Ebro",
+        "c": "the Guadalquivir"
+      },
+      "q4": { "prompt": "Spain is an island." },
+      "q5": {
+        "prompt": "What is the name of the peninsula where Spain is located?",
+        "a": "Italian",
+        "b": "Iberian",
+        "c": "Balkan"
+      },
+      "q6": {
+        "prompt": "Match each city with its autonomous community",
+        "l1": "Barcelona",
+        "l2": "Seville",
+        "l3": "Valencia",
+        "r1": "Valencian Community",
+        "r2": "Catalonia",
+        "r3": "Andalusia"
+      },
+      "q7": {
+        "prompt": "Which is the highest mountain in Spain?",
+        "a": "Mount Teide",
+        "b": "Mulhacén",
+        "c": "The Pyrenees"
+      },
+      "q8": { "prompt": "The Mediterranean Sea washes the east coast of Spain." }
+    },
+    "pop": {
+      "q1": {
+        "prompt": "What do we call the group of people who live in a place?",
+        "a": "the family",
+        "b": "the population",
+        "c": "the municipality"
+      },
+      "q2": { "prompt": "The municipality is the basic unit of territorial organisation in Spain." },
+      "q3": {
+        "prompt": "Which of these jobs belongs to the primary sector?",
+        "a": "farmer",
+        "b": "doctor",
+        "c": "teacher"
+      },
+      "q4": { "prompt": "Firefighters and police officers work for the community." },
+      "q5": {
+        "prompt": "What is a town hall?",
+        "a": "a hospital",
+        "b": "the government of a municipality",
+        "c": "a school"
+      },
+      "q6": {
+        "prompt": "Match each worker with their sector",
+        "l1": "fisherman",
+        "l2": "factory worker",
+        "l3": "waiter",
+        "r1": "tertiary sector",
+        "r2": "primary sector",
+        "r3": "secondary sector"
+      },
+      "q7": {
+        "prompt": "Who governs an autonomous community?",
+        "a": "the mayor",
+        "b": "the regional president",
+        "c": "the king"
+      },
+      "q8": { "prompt": "The mayor is the head of a municipality's government." }
+    },
+    "time": {
+      "q1": {
+        "prompt": "What are the three basic historical time periods?",
+        "a": "morning, afternoon and night",
+        "b": "past, present and future",
+        "c": "yesterday, today and tomorrow"
+      },
+      "q2": { "prompt": "A timeline is used to put events in order of when they happened." },
+      "q3": {
+        "prompt": "What came first?",
+        "a": "your parents' birth",
+        "b": "your grandparents' birth",
+        "c": "your birth"
+      },
+      "q4": { "prompt": "History is divided into Prehistory and History." },
+      "q5": {
+        "prompt": "How many years are in a century?",
+        "a": "10",
+        "b": "50",
+        "c": "100"
+      },
+      "q6": {
+        "prompt": "Match each era with an invention or event",
+        "l1": "Prehistory",
+        "l2": "Middle Ages",
+        "l3": "Today",
+        "r1": "the Internet",
+        "r2": "stone tools",
+        "r3": "castles"
+      },
+      "q7": {
+        "prompt": "What is a historical source?",
+        "a": "an old river",
+        "b": "something that gives us information about the past",
+        "c": "a storybook"
+      },
+      "q8": { "prompt": "Photographs can be historical sources." }
     }
   },
   "english": {

@@ -47,7 +47,10 @@
       "icon": "home",
       "temas": [
         { "id": "earth_universe.universe", "tituloKey": "content:social.topic.universe", "disponible": true },
-        { "id": "landscape.maps", "tituloKey": "content:social.topic.maps", "disponible": true }
+        { "id": "landscape.maps", "tituloKey": "content:social.topic.maps", "disponible": true },
+        { "id": "landscape.spain", "tituloKey": "content:social.topic.spain", "disponible": true },
+        { "id": "society.population", "tituloKey": "content:social.topic.population", "disponible": true },
+        { "id": "history.time", "tituloKey": "content:social.topic.time", "disponible": true }
       ]
     },
     {

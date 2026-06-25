@@ -38,7 +38,10 @@
     "zone": "The world",
     "topic": {
       "universe": "The Solar System",
-      "maps": "Maps and compass points"
+      "maps": "Maps and compass points",
+      "spain": "Spain: landscape and regions",
+      "population": "Population and work",
+      "time": "Historical time"
     }
   },
   "english": {
