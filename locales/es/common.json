@@ -3,6 +3,9 @@
     "name": "Tercero de Primaria",
     "skipToContent": "Saltar al contenido"
   },
+  "footer": {
+    "description": "Actividades de repaso de verano para 3.º de Primaria"
+  },
   "nav": {
     "home": "Inicio",
     "back": "Volver",

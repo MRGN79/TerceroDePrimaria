@@ -3,6 +3,9 @@
     "name": "Third Grade",
     "skipToContent": "Skip to content"
   },
+  "footer": {
+    "description": "Summer review exercises for 3rd Grade"
+  },
   "nav": {
     "home": "Home",
     "back": "Back",
