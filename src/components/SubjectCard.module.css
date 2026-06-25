@@ -8,23 +8,24 @@
   padding: var(--tdp-space-5);
   text-align: left;
   background-color: var(--tdp-color-surface);
-  border: var(--tdp-border-width-strong) solid var(--subject-color);
-  border-radius: var(--tdp-radius-lg);
-  box-shadow: 4px 4px 0 0 var(--subject-color);
+  background-color: color-mix(in srgb, var(--subject-color) 6%, var(--tdp-paper-0));
+  border: 3px solid var(--subject-color);
+  border-radius: 28px;
+  box-shadow: 5px 5px 0 0 var(--subject-color);
   transition:
     transform var(--tdp-duration-fast) var(--tdp-ease-bounce),
     box-shadow var(--tdp-duration-base) var(--tdp-ease-out);
 }
 .card:hover:not(:disabled) {
-  transform: translate(-2px, -2px);
-  box-shadow: 6px 6px 0 0 var(--subject-color);
+  transform: translate(-3px, -3px);
+  box-shadow: 8px 8px 0 0 var(--subject-color);
 }
 .card:active:not(:disabled) {
-  transform: translate(4px, 4px);
+  transform: translate(5px, 5px);
   box-shadow: none;
 }
 
-/* El icono va en una pastilla del color de la materia (color = relleno) */
+/* El icono va en un círculo del color de la materia */
 .iconWrap {
   display: inline-flex;
   align-items: center;
@@ -34,7 +35,7 @@
   flex: 0 0 auto;
   background-color: var(--subject-color);
   color: #ffffff;
-  border-radius: var(--tdp-radius-md);
+  border-radius: var(--tdp-radius-pill);
 }
 
 .body {

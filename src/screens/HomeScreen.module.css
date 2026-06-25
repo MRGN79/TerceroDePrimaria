@@ -45,9 +45,12 @@
   flex-wrap: wrap;
   padding: var(--tdp-space-6);
   background-color: var(--tdp-color-surface-warm);
-  border: var(--tdp-border-width-strong) solid var(--tdp-orange-400);
+  border: 4px solid var(--tdp-orange-400);
   border-radius: var(--tdp-radius-xl);
   margin-bottom: var(--tdp-space-6);
+  box-shadow:
+    0 0 0 3px color-mix(in srgb, var(--tdp-orange-400) 28%, transparent),
+    var(--tdp-shadow-sm);
 }
 .heroBody {
   display: flex;

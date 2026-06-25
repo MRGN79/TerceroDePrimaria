@@ -36,7 +36,7 @@
   min-height: var(--tdp-touch-primary); /* 60px */
   font-size: var(--tdp-font-size-lg);
   padding: var(--tdp-space-4) var(--tdp-space-6);
-  border-radius: var(--tdp-radius-lg);
+  border-radius: var(--tdp-radius-pill);
 }
 .size-md {
   min-height: var(--tdp-touch-secondary); /* 48px */
