@@ -30,6 +30,50 @@
         "r1": "enorme",
         "r2": "veloz",
         "r3": "hermoso"
+      },
+      "q3": {
+        "prompt": "¿Cuál es un antónimo de «rápido»?",
+        "a": "veloz",
+        "b": "lento",
+        "c": "ágil"
+      },
+      "q4": { "prompt": "«Oscuro» y «claro» son sinónimos." },
+      "q5": {
+        "prompt": "¿Cuál es un sinónimo de «mirar»?",
+        "a": "correr",
+        "b": "saltar",
+        "c": "observar"
+      },
+      "q6": { "prompt": "«Enorme» y «gigante» son sinónimos." },
+      "q7": {
+        "prompt": "Une cada palabra con su antónimo",
+        "l1": "frío",
+        "l2": "largo",
+        "l3": "alto",
+        "r1": "corto",
+        "r2": "bajo",
+        "r3": "caliente"
+      },
+      "q8": {
+        "prompt": "¿Cuál es un antónimo de «oscuro»?",
+        "a": "claro",
+        "b": "negro",
+        "c": "sombra"
+      },
+      "q9": {
+        "prompt": "¿Cuál es un sinónimo de «hablar»?",
+        "a": "callar",
+        "b": "conversar",
+        "c": "escuchar"
+      },
+      "q10": {
+        "prompt": "Une cada palabra con su sinónimo",
+        "l1": "bonito",
+        "l2": "alegre",
+        "l3": "pequeño",
+        "r1": "contento",
+        "r2": "hermoso",
+        "r3": "chico"
       }
     },
     "noun": {
@@ -39,7 +83,48 @@
         "b": "Madrid",
         "c": "perro"
       },
-      "q2": { "prompt": "«Las niñas» está en plural y en femenino." }
+      "q2": { "prompt": "«Las niñas» está en plural y en femenino." },
+      "q3": {
+        "prompt": "¿Cuál de estas palabras es un sustantivo común?",
+        "a": "Madrid",
+        "b": "Ana",
+        "c": "perro"
+      },
+      "q4": { "prompt": "El sustantivo «mesa» está en femenino y plural." },
+      "q5": {
+        "prompt": "¿Cuál es el plural de «flor»?",
+        "a": "flores",
+        "b": "flors",
+        "c": "florees"
+      },
+      "q6": {
+        "prompt": "Une cada sustantivo con su plural",
+        "l1": "niño",
+        "l2": "flor",
+        "l3": "ciudad",
+        "r1": "ciudades",
+        "r2": "niños",
+        "r3": "flores"
+      },
+      "q7": {
+        "prompt": "¿Cuál es el femenino de «actor»?",
+        "a": "actora",
+        "b": "actriz",
+        "c": "actores"
+      },
+      "q8": { "prompt": "«Las sillas» está en singular y femenino." },
+      "q9": {
+        "prompt": "¿Cuál de estas palabras es un sustantivo colectivo?",
+        "a": "árbol",
+        "b": "niño",
+        "c": "bosque"
+      },
+      "q10": {
+        "prompt": "¿Cuál es el plural de «pez»?",
+        "a": "peces",
+        "b": "pezs",
+        "c": "pezes"
+      }
     },
     "mpmb": {
       "q1": {
@@ -51,7 +136,229 @@
         "prompt": "Elige la palabra escrita correctamente:",
         "a": "tanbor",
         "b": "tambor"
+      },
+      "q3": { "prompt": "La palabra «campo» se escribe con «mp»." },
+      "q4": { "prompt": "La palabra «sombra» se escribe con «np»." },
+      "q5": {
+        "prompt": "Elige la palabra escrita correctamente:",
+        "a": "enpeñar",
+        "b": "empeñar"
+      },
+      "q6": {
+        "prompt": "Elige la palabra escrita correctamente:",
+        "a": "lombriz",
+        "b": "lonbriz"
+      },
+      "q7": {
+        "prompt": "Une cada palabra incompleta con su forma correcta",
+        "l1": "cu___bre",
+        "l2": "ca___ana",
+        "l3": "ha___re",
+        "r1": "campana",
+        "r2": "cumbre",
+        "r3": "hambre"
+      },
+      "q8": {
+        "prompt": "¿Cuál de estas palabras lleva «mb»?",
+        "a": "trampa",
+        "b": "campus",
+        "c": "sombrero"
       }
+    },
+    "adj": {
+      "q1": {
+        "prompt": "¿Qué es un adjetivo?",
+        "a": "Una acción",
+        "b": "Una palabra que describe al sustantivo",
+        "c": "Un nombre de persona"
+      },
+      "q2": { "prompt": "En «el perro negro», «negro» es un adjetivo." },
+      "q3": {
+        "prompt": "¿Cuál de estas palabras es un adjetivo?",
+        "a": "bonito",
+        "b": "correr",
+        "c": "mesa"
+      },
+      "q4": { "prompt": "Los adjetivos no cambian de género ni de número." },
+      "q5": {
+        "prompt": "¿Cuál es el femenino de «simpático»?",
+        "a": "simpáticoa",
+        "b": "simpáticos",
+        "c": "simpática"
+      },
+      "q6": {
+        "prompt": "Une cada sustantivo con el adjetivo que concuerda",
+        "l1": "niña",
+        "l2": "niños",
+        "l3": "coches",
+        "r1": "estudiosa",
+        "r2": "rápidos",
+        "r3": "listos"
+      },
+      "q7": {
+        "prompt": "¿Cuál es el plural de «pequeño»?",
+        "a": "pequeñas",
+        "b": "pequeños",
+        "c": "pequeñoe"
+      },
+      "q8": { "prompt": "«Altas», «bonitas» y «simpáticas» son adjetivos en femenino plural." }
+    },
+    "verb": {
+      "q1": {
+        "prompt": "¿Cuál de estas palabras es un verbo?",
+        "a": "pelota",
+        "b": "rojo",
+        "c": "saltar"
+      },
+      "q2": { "prompt": "Los verbos expresan acciones, estados o procesos." },
+      "q3": {
+        "prompt": "¿En qué tiempo está el verbo «jugué»?",
+        "a": "pasado",
+        "b": "presente",
+        "c": "futuro"
+      },
+      "q4": {
+        "prompt": "¿En qué tiempo está el verbo «cantaré»?",
+        "a": "pasado",
+        "b": "futuro",
+        "c": "presente"
+      },
+      "q5": {
+        "prompt": "Une cada verbo con su tiempo",
+        "l1": "comí",
+        "l2": "beberé",
+        "l3": "estudio",
+        "r1": "presente",
+        "r2": "pasado",
+        "r3": "futuro"
+      },
+      "q6": { "prompt": "«Mañana» y «árbol» son verbos." },
+      "q7": {
+        "prompt": "¿Cuál es la forma correcta de «ir» en presente para «yo»?",
+        "a": "yo iba",
+        "b": "yo iré",
+        "c": "yo voy"
+      },
+      "q8": {
+        "prompt": "¿Cuál de estos verbos está en infinitivo?",
+        "a": "estudiar",
+        "b": "estudio",
+        "c": "estudié"
+      }
+    },
+    "bv": {
+      "q1": {
+        "prompt": "Elige la palabra escrita correctamente:",
+        "a": "beber",
+        "b": "vever"
+      },
+      "q2": {
+        "prompt": "Elige la palabra escrita correctamente:",
+        "a": "baca",
+        "b": "vaca"
+      },
+      "q3": { "prompt": "La palabra «barco» se escribe con b." },
+      "q4": {
+        "prompt": "Elige la palabra escrita correctamente:",
+        "a": "burro",
+        "b": "vurro"
+      },
+      "q5": {
+        "prompt": "Elige la palabra escrita correctamente:",
+        "a": "bela",
+        "b": "vela"
+      },
+      "q6": { "prompt": "La palabra «ventana» se escribe con b." },
+      "q7": {
+        "prompt": "Elige la palabra escrita correctamente:",
+        "a": "biblioteca",
+        "b": "viblioteca"
+      },
+      "q8": {
+        "prompt": "Une cada palabra incompleta con su forma correcta",
+        "l1": "_aca",
+        "l2": "_arca",
+        "l3": "_olar",
+        "r1": "barca",
+        "r2": "volar",
+        "r3": "vaca"
+      }
+    },
+    "acc": {
+      "q1": {
+        "prompt": "¿Cómo se llaman las palabras que llevan la sílaba tónica al final?",
+        "a": "llanas",
+        "b": "esdrújulas",
+        "c": "agudas"
+      },
+      "q2": { "prompt": "Las palabras esdrújulas siempre llevan tilde." },
+      "q3": {
+        "prompt": "La palabra «árbol» es...",
+        "a": "aguda",
+        "b": "llana",
+        "c": "esdrújula"
+      },
+      "q4": {
+        "prompt": "Clasifica cada palabra según su tipo",
+        "l1": "cama",
+        "l2": "camión",
+        "l3": "música",
+        "r1": "aguda",
+        "r2": "esdrújula",
+        "r3": "llana"
+      },
+      "q5": { "prompt": "Las palabras agudas siempre llevan tilde." },
+      "q6": {
+        "prompt": "¿Cuál de estas palabras es esdrújula?",
+        "a": "pájaro",
+        "b": "canción",
+        "c": "mesa"
+      },
+      "q7": {
+        "prompt": "¿Cuál de estas palabras lleva tilde?",
+        "a": "mesa",
+        "b": "reloj",
+        "c": "camión"
+      },
+      "q8": { "prompt": "«Árbol» es llana y lleva tilde porque termina en consonante que no es n ni s." }
+    },
+    "pun": {
+      "q1": {
+        "prompt": "¿Qué signo se usa al final de una oración que afirma algo?",
+        "a": "!",
+        "b": ".",
+        "c": "?"
+      },
+      "q2": { "prompt": "Los signos de interrogación van al principio y al final de la pregunta." },
+      "q3": {
+        "prompt": "¿Para qué sirve la coma?",
+        "a": "Para separar elementos de una enumeración",
+        "b": "Para terminar una oración",
+        "c": "Para hacer una pregunta"
+      },
+      "q4": { "prompt": "El punto y seguido se usa para empezar un párrafo nuevo." },
+      "q5": {
+        "prompt": "Une cada signo con su uso",
+        "l1": ".",
+        "l2": "?",
+        "l3": "!",
+        "r1": "exclamación o sorpresa",
+        "r2": "fin de oración",
+        "r3": "pregunta"
+      },
+      "q6": {
+        "prompt": "¿Cuál de estas oraciones está bien puntuada?",
+        "a": "¿Cómo te llamas.",
+        "b": "Me llamo Ana?",
+        "c": "¿Cómo te llamas?"
+      },
+      "q7": {
+        "prompt": "¿Qué signo se usa para separar palabras en una lista?",
+        "a": "el punto",
+        "b": "la coma",
+        "c": "los dos puntos"
+      },
+      "q8": { "prompt": "La oración «¡Qué bonito día!» usa correctamente los signos de exclamación." }
     }
   },
   "science": {

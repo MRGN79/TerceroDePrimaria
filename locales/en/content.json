@@ -15,7 +15,12 @@
     "topic": {
       "synonyms_antonyms": "Sinónimos y antónimos",
       "noun": "El sustantivo",
-      "mp_mb": "Reglas mp y mb"
+      "adjective": "El adjetivo",
+      "verb": "El verbo",
+      "mp_mb": "Reglas mp y mb",
+      "b_v": "Reglas b y v",
+      "accents": "Acentuación",
+      "punctuation": "Signos de puntuación"
     }
   },
   "science": {

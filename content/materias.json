@@ -20,7 +20,12 @@
       "temas": [
         { "id": "vocabulary.synonyms_antonyms", "tituloKey": "content:spanish.topic.synonyms_antonyms", "disponible": true },
         { "id": "grammar.noun", "tituloKey": "content:spanish.topic.noun", "disponible": true },
-        { "id": "spelling.mp_mb", "tituloKey": "content:spanish.topic.mp_mb", "disponible": true }
+        { "id": "grammar.adjective", "tituloKey": "content:spanish.topic.adjective", "disponible": true },
+        { "id": "grammar.verb", "tituloKey": "content:spanish.topic.verb", "disponible": true },
+        { "id": "spelling.mp_mb", "tituloKey": "content:spanish.topic.mp_mb", "disponible": true },
+        { "id": "spelling.b_v", "tituloKey": "content:spanish.topic.b_v", "disponible": true },
+        { "id": "spelling.accents", "tituloKey": "content:spanish.topic.accents", "disponible": true },
+        { "id": "punctuation", "tituloKey": "content:spanish.topic.punctuation", "disponible": true }
       ]
     },
     {
