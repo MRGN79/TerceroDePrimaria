@@ -4,6 +4,20 @@ Items anotados para implementar en el futuro, ordenados por aparición. No impli
 
 ---
 
+## Diseño visual
+
+- **Revisión general de estilos.** Pasar por todos los componentes y pantallas con ojo crítico, buscando coherencia, jerarquía y personalidad visual. Incluye revisar tipografía, espaciados, sombras y el sistema de colores.
+
+- **Fondo texturizado personalizado por asignatura.** En lugar de un fondo liso, aplicar una textura sutil (papel, trama geométrica, etc.) que varíe según la materia activa. El tono de color base ya cambia por asignatura; la textura añadiría una capa de identidad visual sin sobrecargar.
+
+---
+
+## Experiencia de sesión
+
+- **Botón "Siguiente" como temporizador automático.** Tras resolver una pregunta (acierto o revelación de solución), el botón "Siguiente" avanza automáticamente pasado un tiempo razonable (~3-4 s en acierto, ~5-6 s tras revelar). El temporizador se visualiza como una barra de progreso o un anillo que se vacía sobre el propio botón. El niño puede pulsar antes de que expire. Movimiento reducido: auto-avance sin animación del temporizador.
+
+---
+
 ## Contenido
 
 - **Ampliar catálogo a 250 preguntas por asignatura.** Actualmente hay ~10–20 ejercicios por materia. Hay que redactar y añadir contenido hasta llegar a 250 estáticos + los generados de mates. Trabajo de contenido, no de ingeniería.
