@@ -180,10 +180,12 @@
   /* ============================================================
      4. RADIOS, SOMBRAS, BORDES  (§2.5)
      ============================================================ */
+  --tdp-radius-xs: 4px;
   --tdp-radius-sm: 8px;
   --tdp-radius-md: 16px;
   --tdp-radius-lg: 24px;
   --tdp-radius-xl: 32px;
+  --tdp-radius-2xl: 48px;
   --tdp-radius-pill: 999px;
 
   --tdp-shadow-sm: 0 2px 0 0 rgba(30, 36, 51, 0.12);

@@ -7,19 +7,22 @@
   padding: var(--tdp-space-4) var(--tdp-space-5);
   text-align: left;
   background-color: var(--tdp-color-surface);
-  border: var(--tdp-border-width) solid var(--tdp-color-border);
-  border-radius: var(--tdp-radius-md);
+  border: none;
+  border-left: 4px solid var(--tdp-color-border);
+  border-radius: var(--tdp-radius-xs) var(--tdp-radius-lg) var(--tdp-radius-lg) var(--tdp-radius-xs);
   box-shadow: var(--tdp-shadow-sm);
   transition:
     transform var(--tdp-duration-fast) var(--tdp-ease-bounce),
-    border-color var(--tdp-duration-base) var(--tdp-ease-out);
+    border-color var(--tdp-duration-base) var(--tdp-ease-out),
+    box-shadow var(--tdp-duration-base) var(--tdp-ease-out);
 }
 .card:hover:not(:disabled) {
-  transform: translateY(-1px);
-  border-color: var(--tdp-color-primary);
+  transform: translateX(3px);
+  border-left-color: var(--tdp-color-primary);
+  box-shadow: var(--tdp-shadow-md);
 }
 .card:active:not(:disabled) {
-  transform: translateY(2px);
+  transform: translateX(0px);
   box-shadow: none;
 }
 

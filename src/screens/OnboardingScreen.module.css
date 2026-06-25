@@ -37,12 +37,17 @@
   padding: var(--tdp-space-4);
   background: var(--tdp-color-surface);
   border: 3px solid var(--tdp-color-border, #d8cdbb);
-  border-radius: var(--tdp-radius-lg);
+  border-radius: 12px;
+  transition:
+    transform var(--tdp-duration-fast) var(--tdp-ease-bounce),
+    border-color var(--tdp-duration-base) var(--tdp-ease-out),
+    background-color var(--tdp-duration-base) var(--tdp-ease-out);
 }
 
 .choice.selected {
   border-color: var(--tdp-color-primary);
-  background: var(--tdp-paper-0, #fff);
+  background: var(--tdp-color-primary-subtle);
+  transform: scale(1.04);
 }
 
 .emoji {
@@ -82,7 +87,8 @@
 
 .chip.selected {
   border-color: var(--tdp-color-primary);
-  color: var(--tdp-color-primary);
+  background: var(--tdp-color-primary);
+  color: #ffffff;
 }
 
 .actions {
