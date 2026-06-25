@@ -11,6 +11,26 @@
         "a": "10",
         "b": "7",
         "c": "4"
+      },
+      "q4": { "prompt": "The number 23 is even." },
+      "q5": {
+        "prompt": "Which of these numbers is even?",
+        "a": "13",
+        "b": "18",
+        "c": "25"
+      },
+      "q6": { "prompt": "Numbers ending in 0, 2, 4, 6 or 8 are always even." },
+      "q7": {
+        "prompt": "How many even numbers are there from 1 to 10?",
+        "a": "3",
+        "b": "5",
+        "c": "6"
+      },
+      "q8": {
+        "prompt": "Which of these numbers is odd?",
+        "a": "100",
+        "b": "44",
+        "c": "37"
       }
     }
   },

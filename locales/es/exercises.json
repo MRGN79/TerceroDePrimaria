@@ -11,6 +11,26 @@
         "a": "10",
         "b": "7",
         "c": "4"
+      },
+      "q4": { "prompt": "El número 23 es par." },
+      "q5": {
+        "prompt": "¿Cuál de estos números es par?",
+        "a": "13",
+        "b": "18",
+        "c": "25"
+      },
+      "q6": { "prompt": "Los números terminados en 0, 2, 4, 6 u 8 son siempre pares." },
+      "q7": {
+        "prompt": "¿Cuántos números pares hay del 1 al 10?",
+        "a": "3",
+        "b": "5",
+        "c": "6"
+      },
+      "q8": {
+        "prompt": "¿Cuál de estos números es impar?",
+        "a": "100",
+        "b": "44",
+        "c": "37"
       }
     }
   },
