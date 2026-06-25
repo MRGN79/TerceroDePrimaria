@@ -24,6 +24,32 @@
   font-weight: var(--tdp-font-weight-bold);
 }
 
+.avatarRow {
+  display: flex;
+  align-items: center;
+  gap: var(--tdp-space-2);
+  margin-top: var(--tdp-space-3);
+}
+
+.avatarEmoji {
+  font-size: 1.8rem;
+  line-height: 1;
+}
+
+.avatarName {
+  font-size: 1.1rem;
+  font-weight: var(--tdp-font-weight-bold);
+}
+
+@media print {
+  .avatarEmoji {
+    font-size: 18pt;
+  }
+  .avatarName {
+    font-size: 13pt;
+  }
+}
+
 .fields {
   display: flex;
   flex-wrap: wrap;
