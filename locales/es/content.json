@@ -6,7 +6,14 @@
       "add_carry": "Sumas con llevadas",
       "times_tables": "Tablas de multiplicar",
       "division_intro": "Divisiones exactas",
-      "even_odd": "Pares e impares"
+      "even_odd": "Pares e impares",
+      "place_value": "Valor posicional",
+      "ordering": "Comparar y ordenar",
+      "rounding": "Redondeo",
+      "shapes": "Figuras y geometría",
+      "time": "El tiempo",
+      "length": "Longitud y medida",
+      "fractions": "Fracciones"
     }
   },
   "spanish": {

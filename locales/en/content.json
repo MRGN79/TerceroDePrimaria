@@ -6,7 +6,14 @@
       "add_carry": "Carrying addition",
       "times_tables": "Times tables",
       "division_intro": "Exact division",
-      "even_odd": "Even and odd"
+      "even_odd": "Even and odd",
+      "place_value": "Place value",
+      "ordering": "Ordering numbers",
+      "rounding": "Rounding",
+      "shapes": "Shapes and geometry",
+      "time": "Time and measurement",
+      "length": "Length and distance",
+      "fractions": "Fractions"
     }
   },
   "spanish": {

@@ -9,7 +9,14 @@
         { "id": "operations.add_carry", "tituloKey": "content:math.topic.add_carry", "disponible": true },
         { "id": "operations.times_tables", "tituloKey": "content:math.topic.times_tables", "disponible": true },
         { "id": "operations.division_intro", "tituloKey": "content:math.topic.division_intro", "disponible": true },
-        { "id": "numbers.even_odd", "tituloKey": "content:math.topic.even_odd", "disponible": true }
+        { "id": "numbers.even_odd", "tituloKey": "content:math.topic.even_odd", "disponible": true },
+        { "id": "numbers.place_value", "tituloKey": "content:math.topic.place_value", "disponible": true },
+        { "id": "numbers.ordering", "tituloKey": "content:math.topic.ordering", "disponible": true },
+        { "id": "numbers.rounding", "tituloKey": "content:math.topic.rounding", "disponible": true },
+        { "id": "geometry.shapes", "tituloKey": "content:math.topic.shapes", "disponible": true },
+        { "id": "measurement.time", "tituloKey": "content:math.topic.time", "disponible": true },
+        { "id": "measurement.length", "tituloKey": "content:math.topic.length", "disponible": true },
+        { "id": "numbers.fractions", "tituloKey": "content:math.topic.fractions", "disponible": true }
       ]
     },
     {
