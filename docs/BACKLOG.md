@@ -28,6 +28,14 @@ Items anotados para implementar en el futuro, ordenados por aparición. No impli
 
 ---
 
+## Vista de impresión
+
+- **Espacio para escribir las respuestas en la hoja impresa.** Cada ejercicio debe incluir una línea o recuadro en blanco donde el niño pueda escribir a mano. Actualmente el layout de impresión no reserva ese espacio.
+
+- **Soluciones en página separada (tras salto de página).** El bloque de soluciones debe ir precedido de un `page-break-before` CSS para que quede en una hoja física independiente. Así los padres pueden imprimir, guardar la hoja de soluciones y entregar al niño solo la hoja de preguntas sin que las respuestas estén a la vista.
+
+---
+
 ## Pie de página
 
 - **Opción para eliminar los datos guardados.** Botón discreto en el pie de página (o en Ajustes). Flujo de doble confirmación: primer clic → modal explicando que se borrarán estrellas, racha, medallas y progreso y que la acción no tiene vuelta atrás → segundo clic para confirmar → localStorage limpio → volver al onboarding.
