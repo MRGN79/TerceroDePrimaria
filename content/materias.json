@@ -36,7 +36,9 @@
       "langTagKey": "content:science.langTag",
       "temas": [
         { "id": "living_things.animals", "tituloKey": "content:science.topic.animals", "disponible": true },
+        { "id": "living_things.plants", "tituloKey": "content:science.topic.plants", "disponible": true },
         { "id": "human_body.senses", "tituloKey": "content:science.topic.senses", "disponible": true },
+        { "id": "human_body.nutrition", "tituloKey": "content:science.topic.nutrition", "disponible": true },
         { "id": "matter_energy.states", "tituloKey": "content:science.topic.states", "disponible": true }
       ]
     },

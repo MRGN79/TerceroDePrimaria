@@ -29,7 +29,9 @@
     "langTag": "EN",
     "topic": {
       "animals": "Animals",
+      "plants": "Plants",
       "senses": "The senses",
+      "nutrition": "Health and nutrition",
       "states": "States of matter"
     }
   },

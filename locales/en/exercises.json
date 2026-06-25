@@ -379,6 +379,64 @@
         "r1": "Bird",
         "r2": "Reptile",
         "r3": "Amphibian"
+      },
+      "q4": {
+        "prompt": "What do we call animals that lay eggs?",
+        "a": "Viviparous",
+        "b": "Oviparous",
+        "c": "Mammals"
+      },
+      "q5": { "prompt": "Fish breathe through gills." },
+      "q6": {
+        "prompt": "Which of these animals is a reptile?",
+        "a": "Frog",
+        "b": "Parrot",
+        "c": "Lizard"
+      },
+      "q7": { "prompt": "All mammals are covered in feathers." },
+      "q8": {
+        "prompt": "Which group do birds belong to?",
+        "a": "Invertebrates",
+        "b": "Vertebrates",
+        "c": "Reptiles"
+      }
+    },
+    "plants": {
+      "q1": {
+        "prompt": "What do plants need to make their own food?",
+        "a": "Meat and water",
+        "b": "Sunlight, water and air",
+        "c": "Soil and stones"
+      },
+      "q2": { "prompt": "Plants are living things." },
+      "q3": {
+        "prompt": "What is the process by which plants make their own food?",
+        "a": "Respiration",
+        "b": "Digestion",
+        "c": "Photosynthesis"
+      },
+      "q4": { "prompt": "The roots of a plant absorb water from the soil." },
+      "q5": {
+        "prompt": "Which part of the plant makes food using sunlight?",
+        "a": "The root",
+        "b": "The stem",
+        "c": "The leaf"
+      },
+      "q6": {
+        "prompt": "Match each plant part with its function",
+        "l1": "root",
+        "l2": "leaf",
+        "l3": "stem",
+        "r1": "transports water",
+        "r2": "absorbs water from soil",
+        "r3": "makes food using sunlight"
+      },
+      "q7": { "prompt": "Some plants lose their leaves in autumn." },
+      "q8": {
+        "prompt": "Which of these is NOT a part of a plant?",
+        "a": "Leaf",
+        "b": "Gill",
+        "c": "Root"
       }
     },
     "senses": {
@@ -388,7 +446,74 @@
         "b": "Smell",
         "c": "Hearing"
       },
-      "q2": { "prompt": "We use our skin for the sense of touch." }
+      "q2": { "prompt": "We use our skin for the sense of touch." },
+      "q3": {
+        "prompt": "How many senses do humans have?",
+        "a": "3",
+        "b": "4",
+        "c": "5"
+      },
+      "q4": { "prompt": "We use our eyes for the sense of sight." },
+      "q5": {
+        "prompt": "Which sense organ do we use to taste food?",
+        "a": "The nose",
+        "b": "The tongue",
+        "c": "The ear"
+      },
+      "q6": {
+        "prompt": "Match each sense with its organ",
+        "l1": "Sight",
+        "l2": "Hearing",
+        "l3": "Smell",
+        "r1": "ear",
+        "r2": "nose",
+        "r3": "eye"
+      },
+      "q7": { "prompt": "The sense of smell is linked to our nose." },
+      "q8": {
+        "prompt": "Which sense helps us avoid danger, for example touching something hot?",
+        "a": "Sight",
+        "b": "Hearing",
+        "c": "Touch"
+      }
+    },
+    "nutrition": {
+      "q1": {
+        "prompt": "Which food group gives us the most energy?",
+        "a": "Vegetables",
+        "b": "Carbohydrates",
+        "c": "Water"
+      },
+      "q2": { "prompt": "We should drink water every day to stay healthy." },
+      "q3": {
+        "prompt": "How many meals a day is it healthy to eat?",
+        "a": "1",
+        "b": "2",
+        "c": "5"
+      },
+      "q4": { "prompt": "Fruit and vegetables are good for our health." },
+      "q5": {
+        "prompt": "Which of these is a protein-rich food?",
+        "a": "Rice",
+        "b": "Chicken",
+        "c": "Oil"
+      },
+      "q6": {
+        "prompt": "Match each food with its group",
+        "l1": "bread",
+        "l2": "chicken",
+        "l3": "apple",
+        "r1": "fruit",
+        "r2": "carbohydrates",
+        "r3": "proteins"
+      },
+      "q7": { "prompt": "We should eat more sweets than fruit." },
+      "q8": {
+        "prompt": "What may happen if we do not get enough vitamins?",
+        "a": "We grow taller",
+        "b": "We may get ill",
+        "c": "We run faster"
+      }
     },
     "states": {
       "q1": {
@@ -405,6 +530,35 @@
         "r1": "Liquid",
         "r2": "Solid",
         "r3": "Gas"
+      },
+      "q3": {
+        "prompt": "What are the three states of matter?",
+        "a": "Hot, warm and cold",
+        "b": "Solid, liquid and gas",
+        "c": "Hard, soft and smooth"
+      },
+      "q4": { "prompt": "Water can exist in all three states of matter." },
+      "q5": {
+        "prompt": "What happens to water when it freezes?",
+        "a": "It becomes a gas",
+        "b": "It becomes a solid",
+        "c": "It disappears"
+      },
+      "q6": { "prompt": "Gas has a fixed shape." },
+      "q7": {
+        "prompt": "What is it called when liquid water turns into water vapour?",
+        "a": "Freezing",
+        "b": "Melting",
+        "c": "Evaporation"
+      },
+      "q8": {
+        "prompt": "Match each material with its state of matter",
+        "l1": "iron",
+        "l2": "orange juice",
+        "l3": "steam",
+        "r1": "liquid",
+        "r2": "gas",
+        "r3": "solid"
       }
     }
   },
