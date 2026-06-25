@@ -1,0 +1,49 @@
+.root {
+  display: inline-flex;
+  flex: 0 0 auto;
+  line-height: 0;
+}
+
+.svg {
+  width: 100%;
+  height: 100%;
+}
+
+.size-xs {
+  width: 48px;
+  height: 48px;
+}
+.size-sm {
+  width: 72px;
+  height: 72px;
+}
+.size-md {
+  width: 120px;
+  height: 120px;
+}
+.size-lg {
+  width: 180px;
+  height: 180px;
+}
+
+/* Rotación lenta y sutil de los rayos: festivo, nunca estridente.
+   Solo cuando el usuario no pide movimiento reducido (A11Y-MOTION-02).
+   Es un giro continuo y suave: jamás parpadea (A11Y-MOTION-04). */
+.rays {
+  transform-origin: 32px 32px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .root[data-expression="happy"] .rays {
+    animation: rumbo-spin 14s linear infinite;
+  }
+}
+
+@keyframes rumbo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,33 @@
+.root {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--tdp-space-2);
+  padding: var(--tdp-space-2) var(--tdp-space-4);
+  background-color: var(--tdp-color-surface);
+  border: var(--tdp-border-width) solid var(--tdp-color-border);
+  border-radius: var(--tdp-radius-pill);
+}
+
+/* Fuego de racha en color coral; el número/texto en oscuro (contraste) */
+.icon {
+  color: var(--tdp-color-streak);
+  fill: var(--tdp-coral-300);
+  flex: 0 0 auto;
+}
+
+.number {
+  font-weight: var(--tdp-font-weight-bold);
+  font-size: var(--tdp-font-size-lg);
+  color: var(--tdp-color-text);
+  font-variant-numeric: tabular-nums;
+}
+
+.text {
+  font-size: var(--tdp-font-size-xs);
+  color: var(--tdp-color-text-muted);
+}
+
+.muted .icon {
+  color: var(--tdp-color-text-muted);
+  fill: none;
+}

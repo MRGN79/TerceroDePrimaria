@@ -1,0 +1,64 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  gap: var(--tdp-space-4);
+  max-width: 320px;
+  margin-inline: auto;
+}
+
+.display {
+  display: block;
+  min-height: 64px;
+  padding: var(--tdp-space-3) var(--tdp-space-4);
+  font-size: var(--tdp-font-size-2xl);
+  font-weight: var(--tdp-font-weight-bold);
+  font-variant-numeric: tabular-nums;
+  text-align: center;
+  color: var(--tdp-color-text);
+  background-color: var(--tdp-color-surface);
+  border: var(--tdp-border-width-strong) solid var(--tdp-color-primary);
+  border-radius: var(--tdp-radius-md);
+}
+
+.keys {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--tdp-gap-touch); /* ≥12px entre teclas */
+}
+
+.key {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: var(--tdp-touch-numpad); /* 56px */
+  min-height: var(--tdp-touch-numpad);
+  font-size: var(--tdp-font-size-xl);
+  font-weight: var(--tdp-font-weight-bold);
+  font-variant-numeric: tabular-nums;
+  color: var(--tdp-color-text);
+  background-color: var(--tdp-color-surface);
+  border: var(--tdp-border-width) solid var(--tdp-color-border);
+  border-radius: var(--tdp-radius-md);
+  box-shadow: var(--tdp-shadow-sm);
+  transition: transform var(--tdp-duration-fast) var(--tdp-ease-bounce);
+}
+.key:hover:not(:disabled) {
+  transform: translateY(-1px);
+}
+.key:active:not(:disabled) {
+  transform: translateY(2px);
+  box-shadow: none;
+}
+
+/* El "0" ocupa el centro de la última fila; borrar va a la derecha, separada,
+   y con color de acento distinto (acción de signo opuesto). */
+.delete {
+  color: var(--tdp-color-accent);
+  border-color: var(--tdp-color-accent);
+}
+
+.key:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  box-shadow: none;
+}

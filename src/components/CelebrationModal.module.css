@@ -1,0 +1,115 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--tdp-space-5);
+  /* Velo suave, NO un destello de gran área a pleno contraste (A11Y-MOTION-05) */
+  background-color: rgba(30, 36, 51, 0.45);
+}
+
+.dialog {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--tdp-space-4);
+  width: min(440px, 100%);
+  padding: var(--tdp-space-6);
+  text-align: center;
+  background-color: var(--tdp-color-surface);
+  border-radius: var(--tdp-radius-xl);
+  box-shadow: var(--tdp-shadow-lg);
+}
+
+.title {
+  font-family: var(--tdp-font-family-display);
+  font-weight: var(--tdp-font-weight-black);
+  font-size: var(--tdp-font-size-2xl);
+  color: var(--tdp-color-text);
+  margin: 0;
+}
+
+.stars {
+  margin: var(--tdp-space-2) 0;
+}
+
+.extra {
+  font-size: var(--tdp-font-size-base);
+  color: var(--tdp-color-text-muted);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--tdp-space-3);
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.closeIcon {
+  position: absolute;
+  top: var(--tdp-space-3);
+  right: var(--tdp-space-3);
+  width: var(--tdp-touch-secondary);
+  height: var(--tdp-touch-secondary);
+  font-size: var(--tdp-font-size-xl);
+  line-height: 1;
+  color: var(--tdp-color-text-muted);
+  border-radius: var(--tdp-radius-pill);
+}
+.closeIcon:hover {
+  background-color: var(--tdp-paper-100);
+}
+
+/* --- Confeti: solo cuando el usuario no pide movimiento reducido --- */
+.confetti {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+.piece {
+  position: absolute;
+  top: -16px;
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+  opacity: 0;
+}
+.piece[data-i="0"] { left: 8%; background: var(--tdp-coral-300); }
+.piece[data-i="1"] { left: 20%; background: var(--tdp-yellow-300); }
+.piece[data-i="2"] { left: 34%; background: var(--tdp-teal-300); }
+.piece[data-i="3"] { left: 50%; background: var(--tdp-blue-300); }
+.piece[data-i="4"] { left: 66%; background: var(--tdp-purple-300); }
+.piece[data-i="5"] { left: 80%; background: var(--tdp-orange-400); }
+.piece[data-i="6"] { left: 92%; background: var(--tdp-green-300); }
+
+/* Default seguro: sin preferencia explícita NO se anima la caída (A11Y-MOTION-02).
+   Solo cae el confeti cuando el usuario no ha pedido reducir movimiento. */
+@media (prefers-reduced-motion: no-preference) {
+  .piece {
+    animation: confetti-fall var(--tdp-duration-slow) var(--tdp-ease-out) forwards;
+  }
+  .piece:nth-child(even) {
+    animation-delay: 120ms;
+  }
+  .piece:nth-child(3n) {
+    animation-delay: 240ms;
+  }
+}
+
+/* Caída suave, una sola vez, sin parpadeo (A11Y-MOTION-04). */
+@keyframes confetti-fall {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(90vh) rotate(220deg);
+    opacity: 1;
+  }
+}

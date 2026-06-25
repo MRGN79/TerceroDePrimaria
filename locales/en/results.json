@@ -1,0 +1,18 @@
+{
+  "title": "You did it!",
+  "starsEarned": "You earned {{count}} stars",
+  "streak": {
+    "up": "You're on a {{count}}-day streak!",
+    "first": "You're starting a streak!"
+  },
+  "badge": {
+    "unlocked": "New badge!"
+  },
+  "dailyGoal": {
+    "done": "You completed your mission today!"
+  },
+  "action": {
+    "playAgain": "Play again",
+    "home": "Back to the island"
+  }
+}

@@ -1,0 +1,60 @@
+.celebration {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--tdp-space-4);
+  text-align: center;
+  padding-top: var(--tdp-space-6);
+}
+
+.title {
+  font-family: var(--tdp-font-family-display);
+  font-size: var(--tdp-font-size-3xl);
+  font-weight: var(--tdp-font-weight-black);
+  margin: 0;
+}
+
+.starsLine {
+  margin: var(--tdp-space-2) 0 0;
+}
+.starsText {
+  font-size: var(--tdp-font-size-lg);
+  font-weight: var(--tdp-font-weight-bold);
+  color: var(--tdp-color-text-muted);
+  margin: 0;
+}
+
+.streakLine {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--tdp-space-2);
+  margin: var(--tdp-space-3) 0;
+}
+.streakText {
+  font-size: var(--tdp-font-size-base);
+  color: var(--tdp-color-text);
+}
+
+.badgeBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--tdp-space-3);
+  padding: var(--tdp-space-5);
+  background-color: var(--tdp-color-surface-warm);
+  border-radius: var(--tdp-radius-xl);
+}
+.badgeTitle {
+  font-weight: var(--tdp-font-weight-bold);
+  color: var(--tdp-color-challenge);
+  margin: 0;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--tdp-space-4);
+  justify-content: center;
+  margin-top: var(--tdp-space-5);
+}

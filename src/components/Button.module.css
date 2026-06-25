@@ -1,0 +1,125 @@
+/*
+ * Botón "caramelo". La sombra inferior (--tdp-shadow-sm) da la sensación física
+ * de tecla pulsable; al :active el botón se hunde 2px y la sombra desaparece.
+ * El hover sube 1px con un pelín de overshoot. No es "transition: all .3s ease".
+ */
+.button {
+  --btn-translate: 0px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--tdp-space-2);
+  padding: var(--tdp-space-3) var(--tdp-space-5);
+  font-family: var(--tdp-font-family-base);
+  font-weight: var(--tdp-font-weight-bold);
+  font-size: var(--tdp-font-size-base);
+  border-radius: var(--tdp-radius-md);
+  border: var(--tdp-border-width) solid transparent;
+  text-align: center;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  transform: translateY(var(--btn-translate));
+  transition:
+    transform var(--tdp-duration-fast) var(--tdp-ease-bounce),
+    box-shadow var(--tdp-duration-fast) var(--tdp-ease-out),
+    background-color var(--tdp-duration-base) var(--tdp-ease-out);
+}
+
+.label {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--tdp-space-2);
+}
+
+/* --- Tamaños (alturas táctiles §4) --- */
+.size-lg {
+  min-height: var(--tdp-touch-primary); /* 60px */
+  font-size: var(--tdp-font-size-lg);
+  padding: var(--tdp-space-4) var(--tdp-space-6);
+  border-radius: var(--tdp-radius-lg);
+}
+.size-md {
+  min-height: var(--tdp-touch-secondary); /* 48px */
+}
+.size-icon {
+  min-height: var(--tdp-touch-secondary); /* 48px */
+  min-width: var(--tdp-touch-secondary);
+  padding: var(--tdp-space-3);
+  border-radius: var(--tdp-radius-pill);
+}
+/* Control principal de un niño (mute): hit-area 60px */
+.emphasized.size-icon {
+  min-height: var(--tdp-touch-primary);
+  min-width: var(--tdp-touch-primary);
+}
+
+/* --- Variante primary --- */
+.variant-primary {
+  background-color: var(--tdp-color-primary);
+  color: var(--tdp-color-text-on-primary);
+  box-shadow:
+    0 4px 0 0 var(--tdp-color-primary-strong),
+    var(--tdp-shadow-sm);
+}
+.variant-primary:hover {
+  --btn-translate: -1px;
+  background-color: var(--tdp-color-primary-strong);
+}
+
+/* --- Variante secondary --- */
+.variant-secondary {
+  background-color: var(--tdp-color-surface);
+  color: var(--tdp-color-secondary);
+  border-color: var(--tdp-color-secondary);
+  box-shadow: var(--tdp-shadow-sm);
+}
+.variant-secondary:hover {
+  --btn-translate: -1px;
+  background-color: var(--tdp-paper-100);
+}
+
+/* --- Variante ghost (navegación sutil) --- */
+.variant-ghost {
+  background-color: transparent;
+  color: var(--tdp-color-text-muted);
+}
+.variant-ghost:hover {
+  background-color: var(--tdp-paper-100);
+  color: var(--tdp-color-text);
+}
+
+/* --- Variante subject (color de materia, vía --btn-subject) --- */
+.variant-subject {
+  background-color: var(--tdp-color-surface);
+  color: var(--btn-subject, var(--tdp-color-primary));
+  border-color: var(--btn-subject, var(--tdp-color-primary));
+  border-width: var(--tdp-border-width-strong);
+  box-shadow: var(--tdp-shadow-sm);
+}
+.variant-subject:hover {
+  --btn-translate: -1px;
+}
+
+/* --- :active: el botón se hunde (sensación física), sombra inferior colapsa --- */
+.variant-primary:active {
+  --btn-translate: 3px;
+  box-shadow:
+    0 1px 0 0 var(--tdp-color-primary-strong),
+    var(--tdp-shadow-sm);
+}
+.variant-secondary:active,
+.variant-subject:active,
+.variant-ghost:active {
+  --btn-translate: 2px;
+  box-shadow: none;
+}
+
+/* --- Deshabilitado: nunca solo color (opacidad + cursor + aria-disabled) --- */
+.button:disabled,
+.button[aria-disabled="true"] {
+  cursor: not-allowed;
+  opacity: 0.55;
+  --btn-translate: 0px;
+  box-shadow: none;
+  filter: grayscale(0.4);
+}

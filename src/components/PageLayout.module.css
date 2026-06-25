@@ -1,0 +1,39 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+  background-color: var(--tdp-color-bg);
+}
+
+.header {
+  padding: var(--tdp-space-4) max(var(--tdp-screen-edge), 4vw);
+}
+
+.main {
+  flex: 1 1 auto;
+  width: 100%;
+  margin-inline: auto;
+  /* margen de borde ≥16px por el agarre de la tablet (A11Y-TOUCH-04) */
+  padding: var(--tdp-space-5) max(var(--tdp-screen-edge), 4vw) var(--tdp-space-7);
+}
+.main:focus {
+  outline: none;
+}
+
+.width-narrow {
+  max-width: 720px;
+}
+.width-wide {
+  max-width: 1024px;
+}
+
+.footer {
+  padding: var(--tdp-space-4) max(var(--tdp-screen-edge), 4vw)
+    var(--tdp-space-6);
+}
+
+@media (min-width: 768px) {
+  .main {
+    padding-block: var(--tdp-space-7);
+  }
+}

@@ -1,0 +1,26 @@
+.toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--tdp-space-3);
+  min-height: var(--tdp-touch-primary); /* 60px — control principal de un niño */
+  padding: var(--tdp-space-3) var(--tdp-space-5);
+  font-weight: var(--tdp-font-weight-bold);
+  font-size: var(--tdp-font-size-sm);
+  color: var(--tdp-color-text);
+  background-color: var(--tdp-color-surface);
+  border: var(--tdp-border-width-strong) solid var(--tdp-color-border);
+  border-radius: var(--tdp-radius-pill);
+  box-shadow: var(--tdp-shadow-sm);
+  transition: border-color var(--tdp-duration-base) var(--tdp-ease-out);
+}
+
+/* Activo (sonido on): borde primario. Apagado: neutro. Estado por borde + icono
+   + texto, nunca solo color. */
+.toggle[aria-pressed="true"] {
+  border-color: var(--tdp-color-primary);
+  color: var(--tdp-color-primary);
+}
+
+.label {
+  white-space: nowrap;
+}

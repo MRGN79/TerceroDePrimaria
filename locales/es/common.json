@@ -1,0 +1,41 @@
+{
+  "app": {
+    "name": "Tercero de Primaria",
+    "skipToContent": "Saltar al contenido"
+  },
+  "nav": {
+    "home": "Inicio",
+    "back": "Volver",
+    "backToHome": "Volver al inicio",
+    "settings": "Ajustes",
+    "menu": {
+      "backpack": "Mi mochila"
+    }
+  },
+  "mascot": {
+    "name": "Rumbo",
+    "alt": {
+      "happy": "Rumbo, la brújula-sol, sonriendo contento",
+      "cheer": "Rumbo, la brújula-sol, animándote",
+      "idle": "Rumbo, la brújula-sol"
+    }
+  },
+  "action": {
+    "continue": "Seguir",
+    "close": "Cerrar",
+    "cancel": "Cancelar",
+    "confirm": "Sí, seguro"
+  },
+  "state": {
+    "soon": "Pronto",
+    "loading": "Cargando"
+  },
+  "stars": {
+    "label_one": "{{count}} estrella",
+    "label_other": "{{count}} estrellas"
+  },
+  "streak": {
+    "days_one": "{{count}} día seguido",
+    "days_other": "{{count}} días seguidos"
+  }
+}

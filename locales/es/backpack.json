@@ -1,0 +1,14 @@
+{
+  "title": "Mi mochila",
+  "stars": "Tus estrellas",
+  "streak": {
+    "current": "Racha actual",
+    "best": "Tu mejor racha"
+  },
+  "badges": {
+    "title": "Tus medallas",
+    "locked": "Por conseguir",
+    "lockedHint": "Sigue jugando para conseguirla",
+    "unlockedOn": "Conseguida el {{date}}"
+  }
+}

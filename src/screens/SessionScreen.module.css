@@ -1,0 +1,51 @@
+.sessionBar {
+  display: flex;
+  align-items: center;
+  gap: var(--tdp-space-4);
+  max-width: 720px;
+  margin-inline: auto;
+}
+
+.progress {
+  flex: 1 1 auto;
+}
+
+.barRight {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--tdp-space-4); /* ≥24px de "salir" a estrellas: signo opuesto */
+}
+
+/* "Salir" en color de acento, separada de la zona de respuesta (A11Y-TOUCH-02) */
+.exit {
+  color: var(--tdp-color-accent);
+}
+
+.fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.optionGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--tdp-gap-touch);
+}
+
+/* V/F: dos tarjetas grandes lado a lado en tablet, apiladas en móvil */
+.trueFalse {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--tdp-gap-touch);
+}
+
+@media (min-width: 768px) {
+  /* opción múltiple en rejilla 2×2 en tablet (§7.1) */
+  .optionGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .trueFalse {
+    grid-template-columns: 1fr 1fr;
+  }
+}

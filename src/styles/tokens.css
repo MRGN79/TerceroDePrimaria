@@ -1,0 +1,196 @@
+/*
+ * Tokens de diseño — TerceroDePrimaria
+ * Fuente de verdad: docs/design/00-universo-visual-y-sistema-de-diseno.md §2
+ *
+ * Dos capas:
+ *   1. Primitivos  (--tdp-blue-600, valor crudo)
+ *   2. Semánticos  (--tdp-color-primary, rol)  ← los componentes SOLO usan estos.
+ *
+ * Ningún componente usa valores literales: siempre el token semántico.
+ */
+
+:root {
+  /* ============================================================
+     1. COLOR — primitivos  (§2.1)
+     ============================================================ */
+
+  /* Azules — primario, cielo/mar de verano */
+  --tdp-blue-100: #dceffb;
+  --tdp-blue-300: #5fc4e8;
+  --tdp-blue-600: #0b7fb0;
+  --tdp-blue-800: #075a7d;
+
+  /* Turquesa — secundario fresco */
+  --tdp-teal-300: #4fd1c5;
+  --tdp-teal-700: #117768;
+
+  /* Coral / Naranja — acento cálido, energía */
+  --tdp-coral-300: #ff9e80;
+  --tdp-coral-600: #c7452a;
+  --tdp-orange-400: #ffb23e;
+  --tdp-orange-700: #9a5b00;
+
+  /* Amarillo — estrellas, recompensa, brillo */
+  --tdp-yellow-300: #ffd84d;
+  --tdp-yellow-700: #8a6300;
+
+  /* Verde — acierto */
+  --tdp-green-200: #c6f0d2;
+  --tdp-green-300: #5fd080;
+  --tdp-green-700: #1b7a3e;
+  --tdp-green-800: #136332; /* texto/icono sobre fondo verde claro (≥4.5:1) */
+
+  /* Rojo / Coral — error amable */
+  --tdp-red-200: #fbd9d2;
+  --tdp-red-600: #c7452a;
+  --tdp-red-800: #9a2d18; /* texto/icono sobre fondo rojo claro (≥4.5:1) */
+
+  /* Morado — categoría/medallas especiales, Reto de 4º */
+  --tdp-purple-300: #b79be8;
+  --tdp-purple-700: #5e3ba5;
+
+  /* Neutros — texto y superficies */
+  --tdp-ink-900: #1e2433;
+  --tdp-ink-700: #3d4660;
+  --tdp-ink-500: #6b7393;
+  --tdp-paper-0: #ffffff;
+  --tdp-paper-50: #fff9f0;
+  --tdp-paper-100: #fbefd9;
+  --tdp-border-200: #e7d9bf;
+
+  /* ============================================================
+     1.b COLOR — semánticos  (§2.1.b)  ← los que usan los componentes
+     ============================================================ */
+
+  /* Marca y acción */
+  --tdp-color-primary: var(--tdp-blue-600);
+  --tdp-color-primary-strong: var(--tdp-blue-800);
+  --tdp-color-secondary: var(--tdp-teal-700);
+  --tdp-color-accent: var(--tdp-coral-600);
+
+  /* Superficies */
+  --tdp-color-bg: var(--tdp-paper-50);
+  --tdp-color-surface: var(--tdp-paper-0);
+  --tdp-color-surface-warm: var(--tdp-paper-100);
+  --tdp-color-border: var(--tdp-border-200);
+
+  /* Texto */
+  --tdp-color-text: var(--tdp-ink-900);
+  --tdp-color-text-muted: var(--tdp-ink-700);
+  --tdp-color-text-disabled: var(--tdp-ink-500);
+  --tdp-color-text-on-primary: #ffffff;
+
+  /* Estados de feedback */
+  --tdp-color-success: var(--tdp-green-700);
+  --tdp-color-success-bg: var(--tdp-green-200);
+  /* texto/icono de acierto sobre fondo claro — contraste ≥4.5:1 (WCAG 1.4.3) */
+  --tdp-color-success-text: var(--tdp-green-800);
+  --tdp-color-error: var(--tdp-red-600);
+  --tdp-color-error-bg: var(--tdp-red-200);
+  /* texto/icono de error sobre fondo claro — contraste ≥4.5:1 (WCAG 1.4.3) */
+  --tdp-color-error-text: var(--tdp-red-800);
+  --tdp-color-focus: var(--tdp-blue-800);
+
+  /* Gamificación */
+  --tdp-color-star: var(--tdp-yellow-300);
+  --tdp-color-star-text: var(--tdp-yellow-700);
+  --tdp-color-streak: var(--tdp-coral-600);
+  --tdp-color-challenge: var(--tdp-purple-700);
+
+  /* ============================================================
+     1.c COLOR por materia (zonas de la isla)  (§2.1.c)
+     ============================================================ */
+  --tdp-subject-math: var(--tdp-blue-600);
+  --tdp-subject-spanish: var(--tdp-coral-600);
+  --tdp-subject-science: var(--tdp-green-700);
+  --tdp-subject-social: var(--tdp-orange-700);
+  --tdp-subject-english: var(--tdp-purple-700);
+
+  /* ============================================================
+     2. TIPOGRAFÍA  (§2.3)
+     ============================================================ */
+  --tdp-font-family-base:
+    "Atkinson Hyperlegible", system-ui, "Segoe UI", Roboto, sans-serif;
+  --tdp-font-family-display:
+    "Nunito", "Atkinson Hyperlegible", system-ui, sans-serif;
+
+  --tdp-font-size-xs: 1rem; /* 16px — auxiliar. NUNCA por debajo */
+  --tdp-font-size-sm: 1.125rem; /* 18px — cuerpo / UI (mínimo cuerpo) */
+  --tdp-font-size-base: 1.25rem; /* 20px — cuerpo cómodo y enunciados */
+  --tdp-font-size-lg: 1.5rem; /* 24px — enunciados destacados */
+  --tdp-font-size-xl: 2rem; /* 32px — títulos de pantalla */
+  --tdp-font-size-2xl: 2.75rem; /* 44px — números grandes, titular home */
+  --tdp-font-size-3xl: 3.5rem; /* 56px — celebración */
+
+  --tdp-font-weight-regular: 400;
+  --tdp-font-weight-bold: 700;
+  --tdp-font-weight-black: 800;
+
+  --tdp-line-height-tight: 1.2;
+  --tdp-line-height-base: 1.5;
+  --tdp-line-height-loose: 1.6;
+
+  --tdp-letter-spacing-base: 0;
+  --tdp-letter-spacing-caps: 0.02em;
+
+  /* ============================================================
+     3. ESPACIADO  (§2.4)  — escala base 4px
+     ============================================================ */
+  --tdp-space-1: 0.25rem; /* 4px */
+  --tdp-space-2: 0.5rem; /* 8px */
+  --tdp-space-3: 0.75rem; /* 12px */
+  --tdp-space-4: 1rem; /* 16px */
+  --tdp-space-5: 1.5rem; /* 24px */
+  --tdp-space-6: 2rem; /* 32px */
+  --tdp-space-7: 3rem; /* 48px */
+  --tdp-space-8: 4rem; /* 64px */
+
+  --tdp-gap-touch: 0.75rem; /* 12px — separación mínima entre objetivos táctiles */
+  --tdp-screen-edge: 1rem; /* 16px — margen de borde de pantalla (A11Y-TOUCH-04) */
+
+  /* ============================================================
+     4. RADIOS, SOMBRAS, BORDES  (§2.5)
+     ============================================================ */
+  --tdp-radius-sm: 8px;
+  --tdp-radius-md: 16px;
+  --tdp-radius-lg: 24px;
+  --tdp-radius-xl: 32px;
+  --tdp-radius-pill: 999px;
+
+  --tdp-shadow-sm: 0 2px 0 0 rgba(30, 36, 51, 0.12);
+  --tdp-shadow-md: 0 6px 16px -4px rgba(30, 36, 51, 0.18);
+  --tdp-shadow-lg: 0 12px 32px -8px rgba(30, 36, 51, 0.22);
+
+  --tdp-border-width: 2px;
+  --tdp-border-width-strong: 3px;
+
+  /* ============================================================
+     5. FOCO VISIBLE  (§2.6)
+     ============================================================ */
+  --tdp-focus-ring-width: 3px;
+  --tdp-focus-ring-offset: 2px;
+  --tdp-focus-ring-color: var(--tdp-color-focus);
+
+  /* ============================================================
+     6. MOVIMIENTO  (§2.7)
+     ============================================================ */
+  --tdp-duration-fast: 120ms; /* micro-feedback (pulsar) */
+  --tdp-duration-base: 220ms; /* transiciones de UI */
+  --tdp-duration-slow: 450ms; /* celebraciones */
+  --tdp-ease-bounce: cubic-bezier(0.34, 1.56, 0.64, 1); /* overshoot festivo */
+  --tdp-ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* ============================================================
+     7. OBJETIVOS TÁCTILES  (§4)  — alturas mínimas de control
+     ============================================================ */
+  --tdp-touch-primary: 60px; /* botones de respuesta, materias, ¡Jugar! */
+  --tdp-touch-option: 64px; /* OptionCard (objetivo 64-72px) */
+  --tdp-touch-numpad: 56px; /* teclas NumPad */
+  --tdp-touch-secondary: 48px; /* siguiente, repetir, volver */
+  --tdp-touch-min: 44px; /* mínimo absoluto, nunca por debajo */
+
+  /* ============================================================
+     8. BREAKPOINTS (referencia; se usan en media queries)  (§7.1)
+     --tdp-bp-sm: 480px  | --tdp-bp-md: 768px | --tdp-bp-lg: 1024px
+     ============================================================ */
+}

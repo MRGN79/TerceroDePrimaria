@@ -1,0 +1,45 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  gap: var(--tdp-space-2);
+  width: 100%;
+}
+
+.track {
+  position: relative;
+  height: 20px;
+  background-color: var(--tdp-paper-100);
+  border: var(--tdp-border-width) solid var(--tdp-color-border);
+  border-radius: var(--tdp-radius-pill);
+  overflow: visible;
+}
+
+.fill {
+  position: relative;
+  height: 100%;
+  min-width: 20px;
+  background-color: var(--tdp-color-primary);
+  border-radius: var(--tdp-radius-pill);
+  transition: width var(--tdp-duration-slow) var(--tdp-ease-out);
+}
+
+/* Rumbo avanza sobre la barra: refuerzo del progreso, no solo color */
+.marker {
+  position: absolute;
+  right: -14px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 36px;
+  height: 36px;
+}
+.marker > * {
+  width: 36px;
+  height: 36px;
+}
+
+.text {
+  font-size: var(--tdp-font-size-sm);
+  font-weight: var(--tdp-font-weight-bold);
+  color: var(--tdp-color-text-muted);
+  margin: 0;
+}

@@ -1,0 +1,73 @@
+{
+  "math": {
+    "title": "Matemáticas",
+    "zone": "La playa de los números",
+    "topic": {
+      "add_carry": "Sumas con llevadas",
+      "times_tables": "Tablas de multiplicar",
+      "division_intro": "Divisiones exactas",
+      "even_odd": "Pares e impares"
+    }
+  },
+  "spanish": {
+    "title": "Lengua",
+    "zone": "El bosque de las palabras",
+    "topic": {
+      "synonyms_antonyms": "Sinónimos y antónimos",
+      "noun": "El sustantivo",
+      "mp_mb": "Reglas mp y mb"
+    }
+  },
+  "science": {
+    "title": "Natural Science",
+    "zone": "El laboratorio",
+    "langTag": "EN",
+    "topic": {
+      "animals": "Animals",
+      "senses": "The senses",
+      "states": "States of matter"
+    }
+  },
+  "social": {
+    "title": "Ciencias Sociales",
+    "zone": "El mundo",
+    "topic": {
+      "universe": "El Sistema Solar",
+      "maps": "Mapas y puntos cardinales"
+    }
+  },
+  "english": {
+    "title": "Inglés",
+    "zone": "El faro",
+    "langTag": "EN",
+    "topic": {
+      "colors_shapes": "Colors and shapes",
+      "animals": "Animals",
+      "greetings": "Greetings"
+    }
+  },
+  "label": {
+    "challengeG4": "Reto 4º",
+    "surpriseMix": "Mezcla sorpresa"
+  },
+  "avatar": {
+    "fox": { "name": "Zorro" },
+    "turtle": { "name": "Tortuga" },
+    "parrot": { "name": "Loro" },
+    "crab": { "name": "Cangrejo" }
+  },
+  "nickname": {
+    "explorer": "Explorador",
+    "captain": "Capitán",
+    "star": "Estrella",
+    "champion": "Campeón"
+  },
+  "badge": {
+    "firstSession": { "name": "Primera sesión", "hint": "Completa tu primera sesión" },
+    "streak3": { "name": "3 días de racha", "hint": "Juega 3 días seguidos" },
+    "streak7": { "name": "7 días de racha", "hint": "Juega 7 días seguidos" },
+    "tablesMaster": { "name": "Maestro de las tablas", "hint": "Acierta 10 tablas de multiplicar" },
+    "explorer": { "name": "Explorador", "hint": "Prueba las 5 materias" },
+    "hundredStars": { "name": "100 estrellas", "hint": "Consigue 100 estrellas" }
+  }
+}

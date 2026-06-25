@@ -1,0 +1,11 @@
+{
+  "avatar": {
+    "heading": "Choose your character"
+  },
+  "nickname": {
+    "heading": "Choose your nickname"
+  },
+  "continue": "Let's go!",
+  "skip": "Skip",
+  "step": "Step {{current}} of {{total}}"
+}

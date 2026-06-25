@@ -1,0 +1,71 @@
+.card {
+  display: flex;
+  align-items: center;
+  gap: var(--tdp-space-3);
+  width: 100%;
+  min-height: var(--tdp-touch-primary); /* 60px */
+  padding: var(--tdp-space-4) var(--tdp-space-5);
+  text-align: left;
+  background-color: var(--tdp-color-surface);
+  border: var(--tdp-border-width) solid var(--tdp-color-border);
+  border-radius: var(--tdp-radius-md);
+  box-shadow: var(--tdp-shadow-sm);
+  transition:
+    transform var(--tdp-duration-fast) var(--tdp-ease-bounce),
+    border-color var(--tdp-duration-base) var(--tdp-ease-out);
+}
+.card:hover:not(:disabled) {
+  transform: translateY(-1px);
+  border-color: var(--tdp-color-primary);
+}
+.card:active:not(:disabled) {
+  transform: translateY(2px);
+  box-shadow: none;
+}
+
+.title {
+  flex: 1 1 auto;
+  font-size: var(--tdp-font-size-base);
+  font-weight: var(--tdp-font-weight-bold);
+  color: var(--tdp-color-text);
+}
+
+.chevron {
+  flex: 0 0 auto;
+  color: var(--tdp-color-text-muted);
+}
+
+/* Reto 4º: borde morado + etiqueta con icono cohete + texto */
+.challenge {
+  border-color: var(--tdp-color-challenge);
+}
+.challengeTag {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--tdp-space-1);
+  flex: 0 0 auto;
+  font-size: var(--tdp-font-size-xs);
+  font-weight: var(--tdp-font-weight-bold);
+  letter-spacing: var(--tdp-letter-spacing-caps);
+  color: var(--tdp-color-challenge);
+  background-color: var(--tdp-purple-300);
+  padding: var(--tdp-space-1) var(--tdp-space-3);
+  border-radius: var(--tdp-radius-pill);
+}
+
+.soon {
+  flex: 0 0 auto;
+  font-size: var(--tdp-font-size-xs);
+  font-weight: var(--tdp-font-weight-bold);
+  color: var(--tdp-color-text-muted);
+  background-color: var(--tdp-paper-100);
+  padding: var(--tdp-space-1) var(--tdp-space-3);
+  border-radius: var(--tdp-radius-pill);
+}
+
+.card:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+  filter: grayscale(0.4);
+  box-shadow: none;
+}
