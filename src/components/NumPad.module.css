@@ -19,6 +19,11 @@
   border: var(--tdp-border-width-strong) solid var(--tdp-color-primary);
   border-radius: var(--tdp-radius-md);
 }
+.displayRevealed {
+  border-color: var(--tdp-color-success);
+  color: var(--tdp-color-success-text);
+  background-color: var(--tdp-color-success-bg);
+}
 
 .keys {
   display: grid;
