@@ -10,17 +10,17 @@
   background-color: var(--tdp-color-surface);
   border: var(--tdp-border-width-strong) solid var(--subject-color);
   border-radius: var(--tdp-radius-lg);
-  box-shadow: var(--tdp-shadow-sm);
+  box-shadow: 4px 4px 0 0 var(--subject-color);
   transition:
     transform var(--tdp-duration-fast) var(--tdp-ease-bounce),
     box-shadow var(--tdp-duration-base) var(--tdp-ease-out);
 }
 .card:hover:not(:disabled) {
-  transform: translateY(-2px);
-  box-shadow: var(--tdp-shadow-md);
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0 0 var(--subject-color);
 }
 .card:active:not(:disabled) {
-  transform: translateY(2px);
+  transform: translate(4px, 4px);
   box-shadow: none;
 }
 
