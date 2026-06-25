@@ -16,3 +16,8 @@ Items anotados para implementar en el futuro, ordenados por aparición. No impli
 
 - **Ampliar a 12 los personajes disponibles.** Actualmente hay 4 opciones en el onboarding. Diseñar y añadir 8 personajes más con sus avatares en los tamaños xs/sm/md/lg.
 
+---
+
+## Vista de impresión
+
+- **Mostrar el personaje y el apodo del niño en la cabecera de la ficha.** El emoji del avatar elegido y el apodo deben aparecer en la parte superior de la hoja impresa, junto al campo de nombre/fecha, para que el niño sienta que la ficha es suya.
