@@ -13,11 +13,13 @@ import { useSession } from "@/hooks/useSession";
 import { useGameStore } from "@/state/gameContext";
 import type { ConsolidationResult } from "@/state/consolidation";
 import { badgeDef } from "@/lib/badges";
+import type { PreparedExercise } from "@/lib/session";
 
 type SessionContainerProps = {
   materia: Materia;
   tema: string | null;
   isDailyGoal: boolean;
+  prebuilt?: PreparedExercise[];
   onExit: () => void;
   onHome: () => void;
   onPlayAgain: () => void;
@@ -27,6 +29,7 @@ export function SessionContainer({
   materia,
   tema,
   isDailyGoal,
+  prebuilt,
   onExit,
   onHome,
   onPlayAgain,
@@ -43,7 +46,7 @@ export function SessionContainer({
     check,
     next,
     summary,
-  } = useSession(materia, tema);
+  } = useSession(materia, tema, undefined, prebuilt);
 
   const [confirmExit, setConfirmExit] = useState(false);
   const [result, setResult] = useState<ConsolidationResult | null>(null);
@@ -56,7 +59,7 @@ export function SessionContainer({
       const r = consolidateSession({
         starsEarned: summary.starsEarned,
         correctByTopic: summary.correctByTopic,
-        subjectTried: materia,
+        subjectsTried: summary.subjectsTried,
         isDailyGoal,
       });
       setResult(r);

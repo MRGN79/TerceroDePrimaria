@@ -10,7 +10,7 @@ import { newlyEarnedBadges } from "@/lib/badges";
 export interface SessionConsolidation {
   starsEarned: number;
   correctByTopic: Record<string, number>;
-  subjectTried: string;
+  subjectsTried: string[];
   /** la sesión cuenta como la "misión del día" completada */
   isDailyGoal: boolean;
 }
@@ -33,9 +33,10 @@ export function applyConsolidation(
   for (const [topic, n] of Object.entries(c.correctByTopic)) {
     correctByTopic[topic] = (correctByTopic[topic] ?? 0) + n;
   }
-  const subjectsTried = prev.progress.subjectsTried.includes(c.subjectTried)
-    ? prev.progress.subjectsTried
-    : [...prev.progress.subjectsTried, c.subjectTried];
+  const subjectsTried = [...prev.progress.subjectsTried];
+  for (const s of c.subjectsTried) {
+    if (!subjectsTried.includes(s)) subjectsTried.push(s);
+  }
 
   const withProgress: PersistedState = {
     ...prev,

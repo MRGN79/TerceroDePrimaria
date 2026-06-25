@@ -69,6 +69,7 @@ export interface SessionSummary {
   starsEarned: number; // redondeado al alza para la celebración
   correctByTopic: Record<string, number>;
   materia: Materia;
+  subjectsTried: Materia[];
 }
 
 export interface UseSessionResult {
@@ -86,12 +87,13 @@ export function useSession(
   materia: Materia,
   tema: string | null,
   length?: number,
+  prebuilt?: PreparedExercise[],
 ): UseSessionResult {
   const { t } = useTranslation(["quiz", "exercises"]);
 
   // La secuencia se construye una sola vez por montaje de la sesión.
   const [items] = useState<PreparedExercise[]>(() =>
-    buildSession(materia, tema, length),
+    prebuilt ?? buildSession(materia, tema, length),
   );
 
   const [index, setIndex] = useState(0);
@@ -296,7 +298,7 @@ export function useSession(
       total: items.length,
       sessionStars: Math.ceil(sessionStars),
       prompt,
-      promptLang: fixedLanguageFor(materia),
+      promptLang: fixedLanguageFor(exercise.materia),
       kind,
       options,
       numericValue,
@@ -328,13 +330,19 @@ export function useSession(
     t,
   ]);
 
+  const subjectsTried = useMemo<Materia[]>(
+    () => [...new Set(items.map((p) => p.exercise.materia as Materia))],
+    [items],
+  );
+
   const summary: SessionSummary = useMemo(
     () => ({
       starsEarned: Math.ceil(sessionStars),
       correctByTopic,
       materia,
+      subjectsTried,
     }),
-    [sessionStars, correctByTopic, materia],
+    [sessionStars, correctByTopic, materia, subjectsTried],
   );
 
   return {
