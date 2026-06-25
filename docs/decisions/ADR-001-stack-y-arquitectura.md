@@ -202,22 +202,48 @@ de PDF (jsPDF / react-pdf) en la primera versión.
 - El usuario imprime en papel o "imprime a PDF" desde el propio navegador (función
   estándar del SO), obteniendo un PDF sin que la app cargue ninguna librería pesada.
 
-### 6. Estrategia de deploy: **Cloudflare Pages (recomendado)**
+### 6. Estrategia de deploy: **GitHub Pages (decisión del usuario)**
 
-Recomendación para DevOps (a ejecutar en su fase, no ahora): desplegar el sitio estático
-en **Cloudflare Pages**.
+El usuario ha decidido desplegar en **GitHub Pages**. DevOps configura un workflow de
+**GitHub Actions** que construye el sitio (`vite build`) y publica el artefacto estático
+(carpeta `dist`) en GitHub Pages.
 
-- Build estático, hosting gratuito generoso, CDN global con buena latencia desde España,
-  HTTPS automático, despliegues por push a la rama. Cero servidor que mantener, coherente
-  con la naturaleza estática del proyecto.
-- **Alternativas igualmente válidas** (decisión final de DevOps según comodidad):
-  **Netlify**, **Vercel** y **GitHub Pages**. Las tres sirven SPA estáticas sin coste para
-  este volumen. GitHub Pages es la opción más simple si ya se usa GitHub y no se necesitan
-  funciones extra; requiere atención al *base path* del repo y al fallback de SPA.
-- Requisito transversal para cualquier host elegido: configurar el **SPA fallback**
-  (servir `index.html` en rutas no encontradas) o usar `HashRouter`, y **excluir del
-  artefacto desplegado** los archivos privados del scaffold (`.claude/`, `CLAUDE.md`,
-  `.github/`, `docs/`, `CHANGELOG.md`) según la política del proyecto.
+- Hosting gratuito, HTTPS automático, integración nativa con el repo de GitHub. Cero
+  servidor que mantener, coherente con la naturaleza estática del proyecto.
+- **Atención al `base path`:** si el sitio se sirve desde `https://<usuario>.github.io/TerceroDePrimaria/`,
+  Vite debe configurarse con `base: "/TerceroDePrimaria/"`. Si se usa un dominio propio o
+  GitHub Pages de usuario/organización (raíz), `base` es `/`. DevOps fija el valor correcto.
+- **SPA fallback:** GitHub Pages no reescribe rutas a `index.html`. Para evitar 404 en rutas
+  de cliente, usar **`HashRouter`** (recomendado, cero configuración de host) o el truco de
+  `404.html` que copia `index.html`. Frontend usa `HashRouter` salvo indicación contraria.
+- **Exclusión de archivos privados:** el artefacto publicado debe excluir `.claude/`,
+  `CLAUDE.md`, `.github/`, `docs/`, `CHANGELOG.md`. Como el deploy publica solo `dist`
+  (resultado del build, que no incluye esos archivos), la exclusión es automática; DevOps
+  lo verifica igualmente.
+
+### 7. Números aleatorios en Matemáticas (D-6) — rangos por operación
+
+Los ejercicios de cálculo de Matemáticas generan sus operandos aleatoriamente en cada
+sesión. Rangos fijados para 3º de primaria (apropiados al currículo y a la edad):
+
+| Operación | Rango de operandos | Restricciones |
+|---|---|---|
+| Sumas | sumandos de 1 a 9.999 | resultado ≤ 9.999; con y sin llevadas según el tema |
+| Restas | minuendo y sustraendo de 1 a 9.999 | resultado siempre ≥ 0 (nunca negativo) |
+| Multiplicaciones (tablas) | factor 1 a 10 × factor 1 a 10 | tablas del 1 al 10 |
+| Multiplicaciones (por una cifra) | número de 2-3 cifras × 1 cifra (1-9) | introducción a productos mayores |
+| Divisiones (exactas) | dividendo generado como `divisor × cociente` | divisor 1-9, cociente ≤ 99, **resto 0** (exactas en 3º) |
+| Problemas (un paso) | magnitudes coherentes con la operación subyacente | números "redondos" cuando el contexto lo pide (dinero, unidades) |
+
+- La generación se implementa con una función pura `generarOperandos(tipo, rango)` que el
+  Frontend invoca al montar el ejercicio. **Semilla opcional**: para la versión imprimible
+  se genera una instancia concreta y se **congela** (se guardan los valores generados) para
+  que la ficha y su hoja de soluciones sean coherentes.
+- El esquema `Ejercicio` se extiende para los ejercicios generados: en lugar de
+  `enunciadoKey` con valores fijos, el enunciado usa una **plantilla i18n con
+  interpolación** (ej. `math.add.template` = `"{{a}} + {{b}} = ?"`) y la respuesta correcta
+  se **calcula** a partir de los operandos generados, no se almacena. Frontend define el
+  tipo `EjercicioGenerado` que añade `plantilla`, `generador` y `calcularRespuesta`.
 
 ## Consecuencias
 

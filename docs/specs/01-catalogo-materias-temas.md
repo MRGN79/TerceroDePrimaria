@@ -96,9 +96,11 @@ Materia (subject)
 
 ---
 
-## C. Ciencias Naturales (`science`)
+## C. Natural Science (`science`) — contenido en inglés (D-5)
 
-### Bloque: El cuerpo humano (`human_body`)
+> **Decisión pedagógica del usuario (D-5):** esta materia se presenta como **"Natural Science"** y **todo su contenido va en inglés** (título, temas, enunciados, opciones, respuestas y feedback de ejercicio). El niño cursa la asignatura en inglés y la practica en su idioma de estudio. Como Lengua e Inglés, **no se traduce** con el selector de UI: el idioma de la materia es fijo (inglés). Los `id` de bloque/tema se mantienen como están; los textos de contenido de esta materia se redactan directamente en inglés.
+
+### Bloque: The human body (`human_body`)
 - `human_body.systems` — Aparatos: digestivo, respiratorio, circulatorio (introducción).
 - `human_body.senses` — Los sentidos.
 - `human_body.health_habits` — Hábitos saludables: alimentación, higiene, ejercicio.
