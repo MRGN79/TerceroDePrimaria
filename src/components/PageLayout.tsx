@@ -4,6 +4,7 @@
  * Mobile-first; en tablet (dispositivo objetivo) respira más (§7.1).
  */
 import type { ReactNode } from "react";
+import { useTranslation } from "react-i18next";
 import styles from "./PageLayout.module.css";
 
 type PageLayoutProps = {
@@ -20,6 +21,7 @@ export function PageLayout({
   footer,
   width = "wide",
 }: PageLayoutProps) {
+  const { t } = useTranslation("common");
   return (
     <div className={styles.page}>
       {header ? <header className={styles.header}>{header}</header> : null}
@@ -31,6 +33,10 @@ export function PageLayout({
         {children}
       </main>
       {footer ? <footer className={styles.footer}>{footer}</footer> : null}
+      <footer className={styles.siteFooter} aria-label="Información de la aplicación">
+        <span>{t("footer.description")}</span>
+        <span className={styles.version}>v{__APP_VERSION__}</span>
+      </footer>
     </div>
   );
 }
