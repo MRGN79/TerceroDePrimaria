@@ -778,6 +778,35 @@
         "r1": "Shape",
         "r2": "Colour",
         "r3": "Colour"
+      },
+      "q3": {
+        "prompt": "What colour do you get when you mix red and yellow?",
+        "a": "Green",
+        "b": "Purple",
+        "c": "Orange"
+      },
+      "q4": { "prompt": "A square has four equal sides." },
+      "q5": {
+        "prompt": "Which shape has three sides?",
+        "a": "Circle",
+        "b": "Triangle",
+        "c": "Square"
+      },
+      "q6": { "prompt": "The colour of grass is red." },
+      "q7": {
+        "prompt": "What colour is a banana?",
+        "a": "Blue",
+        "b": "Yellow",
+        "c": "Pink"
+      },
+      "q8": {
+        "prompt": "Match each colour with what you see",
+        "l1": "White",
+        "l2": "Orange",
+        "l3": "Black",
+        "r1": "night sky",
+        "r2": "snow",
+        "r3": "pumpkin"
       }
     },
     "animals": {
@@ -787,7 +816,36 @@
         "b": "Dog",
         "c": "Cow"
       },
-      "q2": { "prompt": "A \"fish\" lives in the water." }
+      "q2": { "prompt": "A \"fish\" lives in the water." },
+      "q3": {
+        "prompt": "Which animal can fly?",
+        "a": "Fish",
+        "b": "Dog",
+        "c": "Eagle"
+      },
+      "q4": { "prompt": "A spider has eight legs." },
+      "q5": {
+        "prompt": "Where does a frog live?",
+        "a": "In the desert",
+        "b": "Near water",
+        "c": "On top of a mountain"
+      },
+      "q6": { "prompt": "A whale is a fish." },
+      "q7": {
+        "prompt": "Match each animal with the sound it makes",
+        "l1": "Cat",
+        "l2": "Dog",
+        "l3": "Cow",
+        "r1": "barks",
+        "r2": "moos",
+        "r3": "meows"
+      },
+      "q8": {
+        "prompt": "What is the young of a dog called?",
+        "a": "Kitten",
+        "b": "Puppy",
+        "c": "Cub"
+      }
     },
     "greetings": {
       "q1": {
@@ -801,7 +859,112 @@
         "a": "Good morning!",
         "b": "Good night!",
         "c": "See you!"
+      },
+      "q3": {
+        "prompt": "What do you say when you meet someone for the first time?",
+        "a": "See you later!",
+        "b": "Nice to meet you!",
+        "c": "Goodbye!"
+      },
+      "q4": { "prompt": "\"Good afternoon\" is used in the morning." },
+      "q5": {
+        "prompt": "How old are you? — I __ ten.",
+        "a": "is",
+        "b": "am",
+        "c": "are"
+      },
+      "q6": { "prompt": "\"What's your name?\" is a question about where you live." },
+      "q7": {
+        "prompt": "What is the correct answer to \"Where are you from?\"",
+        "a": "I am from Spain.",
+        "b": "I am eight.",
+        "c": "I am fine."
+      },
+      "q8": {
+        "prompt": "Match each question with the right answer",
+        "l1": "How are you?",
+        "l2": "What's your name?",
+        "l3": "How old are you?",
+        "r1": "I'm Ana.",
+        "r2": "I'm nine.",
+        "r3": "I'm fine."
       }
+    },
+    "numbers": {
+      "q1": {
+        "prompt": "How do you say \"20\" in English?",
+        "a": "Twelve",
+        "b": "Twenty",
+        "c": "Two"
+      },
+      "q2": { "prompt": "\"Eleven\" is the English word for 11." },
+      "q3": {
+        "prompt": "What is fifteen plus five?",
+        "a": "Nineteen",
+        "b": "Twenty",
+        "c": "Sixteen"
+      },
+      "q4": { "prompt": "\"Thirty\" is greater than \"thirteen\"." },
+      "q5": {
+        "prompt": "Which number comes after nineteen?",
+        "a": "Eighteen",
+        "b": "Ninety",
+        "c": "Twenty"
+      },
+      "q6": {
+        "prompt": "Match each number with its English word",
+        "l1": "12",
+        "l2": "40",
+        "l3": "100",
+        "r1": "forty",
+        "r2": "one hundred",
+        "r3": "twelve"
+      },
+      "q7": {
+        "prompt": "How do you say \"50\" in English?",
+        "a": "Fifteen",
+        "b": "Fifty",
+        "c": "Five"
+      },
+      "q8": { "prompt": "\"One hundred\" is the English word for 1000." }
+    },
+    "family": {
+      "q1": {
+        "prompt": "What is the English word for \"madre\"?",
+        "a": "Sister",
+        "b": "Mother",
+        "c": "Daughter"
+      },
+      "q2": { "prompt": "\"Brother\" means hermano in Spanish." },
+      "q3": {
+        "prompt": "What do you call your mother's mother?",
+        "a": "Aunt",
+        "b": "Sister",
+        "c": "Grandmother"
+      },
+      "q4": { "prompt": "\"Father\" and \"Dad\" can both mean \"padre\"." },
+      "q5": {
+        "prompt": "What is the English word for \"hijo\"?",
+        "a": "Son",
+        "b": "Brother",
+        "c": "Cousin"
+      },
+      "q6": {
+        "prompt": "Match each English word with its Spanish translation",
+        "l1": "uncle",
+        "l2": "sister",
+        "l3": "grandfather",
+        "r1": "hermana",
+        "r2": "abuelo",
+        "r3": "tío"
+      },
+      "q7": {
+        "prompt": "What is the English word for \"bebé\"?",
+        "a": "Child",
+        "b": "Baby",
+        "c": "Boy"
+      },
+      "q8": { "prompt": "\"Parents\" refers to your mother and father." }
     }
   }
 }

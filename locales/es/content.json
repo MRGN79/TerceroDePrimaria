@@ -53,7 +53,9 @@
     "topic": {
       "colors_shapes": "Colors and shapes",
       "animals": "Animals",
-      "greetings": "Greetings"
+      "greetings": "Greetings",
+      "numbers": "Numbers",
+      "family": "Family"
     }
   },
   "label": {
