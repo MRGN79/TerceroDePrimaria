@@ -15,10 +15,18 @@ export interface NicknameDef {
 }
 
 export const AVATARS: AvatarDef[] = [
-  { id: "fox", nameKey: "content:avatar.fox.name", emoji: "🦊" },
-  { id: "turtle", nameKey: "content:avatar.turtle.name", emoji: "🐢" },
-  { id: "parrot", nameKey: "content:avatar.parrot.name", emoji: "🦜" },
-  { id: "crab", nameKey: "content:avatar.crab.name", emoji: "🦀" },
+  { id: "fox",       nameKey: "content:avatar.fox.name",       emoji: "🦊" },
+  { id: "turtle",    nameKey: "content:avatar.turtle.name",    emoji: "🐢" },
+  { id: "parrot",    nameKey: "content:avatar.parrot.name",    emoji: "🦜" },
+  { id: "crab",      nameKey: "content:avatar.crab.name",      emoji: "🦀" },
+  { id: "lion",      nameKey: "content:avatar.lion.name",      emoji: "🦁" },
+  { id: "penguin",   nameKey: "content:avatar.penguin.name",   emoji: "🐧" },
+  { id: "elephant",  nameKey: "content:avatar.elephant.name",  emoji: "🐘" },
+  { id: "butterfly", nameKey: "content:avatar.butterfly.name", emoji: "🦋" },
+  { id: "owl",       nameKey: "content:avatar.owl.name",       emoji: "🦉" },
+  { id: "dolphin",   nameKey: "content:avatar.dolphin.name",   emoji: "🐬" },
+  { id: "bear",      nameKey: "content:avatar.bear.name",      emoji: "🐻" },
+  { id: "rabbit",    nameKey: "content:avatar.rabbit.name",    emoji: "🐰" },
 ];
 
 export const NICKNAMES: NicknameDef[] = [

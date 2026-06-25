@@ -63,10 +63,18 @@
     "surpriseMix": "Mezcla sorpresa"
   },
   "avatar": {
-    "fox": { "name": "Zorro" },
-    "turtle": { "name": "Tortuga" },
-    "parrot": { "name": "Loro" },
-    "crab": { "name": "Cangrejo" }
+    "fox":       { "name": "Zorro" },
+    "turtle":    { "name": "Tortuga" },
+    "parrot":    { "name": "Loro" },
+    "crab":      { "name": "Cangrejo" },
+    "lion":      { "name": "León" },
+    "penguin":   { "name": "Pingüino" },
+    "elephant":  { "name": "Elefante" },
+    "butterfly": { "name": "Mariposa" },
+    "owl":       { "name": "Búho" },
+    "dolphin":   { "name": "Delfín" },
+    "bear":      { "name": "Oso" },
+    "rabbit":    { "name": "Conejo" }
   },
   "nickname": {
     "explorer": "Explorador",
