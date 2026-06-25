@@ -41,7 +41,7 @@ export const matematicas: EjercicioAny[] = [
     imprimible: true,
   },
 
-  // --- Pares e impares (estático, varios tipos) ---
+  // ─── Pares e impares ──────────────────────────────────────────────────────
   {
     id: "mat-3-evenodd-001",
     materia: "matematicas",
@@ -83,6 +83,79 @@ export const matematicas: EjercicioAny[] = [
       { id: "c", textoKey: "exercises:math.evenodd.q3.c" },
     ],
     respuestaCorrecta: "b",
+    imprimible: true,
+  },
+  {
+    id: "mat-3-evenodd-004",
+    materia: "matematicas",
+    tema: "numbers.even_odd",
+    nivel: "3",
+    tipo: "verdadero-falso",
+    enunciadoKey: "exercises:math.evenodd.q4.prompt",
+    opciones: [
+      { id: "true", textoKey: "quiz:answer.trueLabel" },
+      { id: "false", textoKey: "quiz:answer.falseLabel" },
+    ],
+    respuestaCorrecta: "false",
+    imprimible: true,
+  },
+  {
+    id: "mat-3-evenodd-005",
+    materia: "matematicas",
+    tema: "numbers.even_odd",
+    nivel: "3",
+    tipo: "opcion-multiple",
+    enunciadoKey: "exercises:math.evenodd.q5.prompt",
+    opciones: [
+      { id: "a", textoKey: "exercises:math.evenodd.q5.a" },
+      { id: "b", textoKey: "exercises:math.evenodd.q5.b" },
+      { id: "c", textoKey: "exercises:math.evenodd.q5.c" },
+    ],
+    respuestaCorrecta: "b",
+    imprimible: true,
+  },
+  {
+    id: "mat-3-evenodd-006",
+    materia: "matematicas",
+    tema: "numbers.even_odd",
+    nivel: "3",
+    tipo: "verdadero-falso",
+    enunciadoKey: "exercises:math.evenodd.q6.prompt",
+    opciones: [
+      { id: "true", textoKey: "quiz:answer.trueLabel" },
+      { id: "false", textoKey: "quiz:answer.falseLabel" },
+    ],
+    respuestaCorrecta: "true",
+    imprimible: true,
+  },
+  {
+    id: "mat-3-evenodd-007",
+    materia: "matematicas",
+    tema: "numbers.even_odd",
+    nivel: "3",
+    tipo: "opcion-multiple",
+    enunciadoKey: "exercises:math.evenodd.q7.prompt",
+    opciones: [
+      { id: "a", textoKey: "exercises:math.evenodd.q7.a" },
+      { id: "b", textoKey: "exercises:math.evenodd.q7.b" },
+      { id: "c", textoKey: "exercises:math.evenodd.q7.c" },
+    ],
+    respuestaCorrecta: "b",
+    imprimible: true,
+  },
+  {
+    id: "mat-3-evenodd-008",
+    materia: "matematicas",
+    tema: "numbers.even_odd",
+    nivel: "3",
+    tipo: "opcion-multiple",
+    enunciadoKey: "exercises:math.evenodd.q8.prompt",
+    opciones: [
+      { id: "a", textoKey: "exercises:math.evenodd.q8.a" },
+      { id: "b", textoKey: "exercises:math.evenodd.q8.b" },
+      { id: "c", textoKey: "exercises:math.evenodd.q8.c" },
+    ],
+    respuestaCorrecta: "c",
     imprimible: true,
   },
 ];

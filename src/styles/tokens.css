@@ -54,17 +54,46 @@
   --tdp-ink-700: #3d4660;
   --tdp-ink-500: #6b7393;
   --tdp-paper-0: #ffffff;
-  --tdp-paper-50: #fff9f0;
-  --tdp-paper-100: #fbefd9;
-  --tdp-border-200: #e7d9bf;
+  --tdp-paper-50: #f4ede0;
+  --tdp-paper-100: #e8dfd0;
+  --tdp-border-200: #d4c5ab;
+
+  /* Navy — primario renovado */
+  --tdp-navy-100: #dde4f0;
+  --tdp-navy-700: #2d4163;
+  --tdp-navy-900: #1e3a5f;
+  --tdp-navy-950: #0f1d2e;
+
+  /* Rust / Terracota — Matemáticas */
+  --tdp-rust-600: #c04d00;
+  --tdp-rust-800: #7c2f00;
+
+  /* Índigo — Ciencias */
+  --tdp-indigo-100: #eef2ff;
+  --tdp-indigo-600: #4338ca;
+  --tdp-indigo-800: #2f288a;
+
+  /* Forest — Lengua */
+  --tdp-forest-700: #166534;
+  --tdp-forest-900: #0a3a1a;
+
+  /* Océano — Social */
+  --tdp-ocean-600: #0f766e;
+  --tdp-ocean-900: #07403a;
+
+  /* Ámbar — English */
+  --tdp-amber-100: #fef3c7;
+  --tdp-amber-700: #92400e;
+  --tdp-amber-900: #5c2508;
 
   /* ============================================================
      1.b COLOR — semánticos  (§2.1.b)  ← los que usan los componentes
      ============================================================ */
 
   /* Marca y acción */
-  --tdp-color-primary: var(--tdp-blue-600);
-  --tdp-color-primary-strong: var(--tdp-blue-800);
+  --tdp-color-primary: var(--tdp-navy-900);
+  --tdp-color-primary-strong: var(--tdp-navy-950);
+  --tdp-color-primary-subtle: var(--tdp-navy-100);
   --tdp-color-secondary: var(--tdp-teal-700);
   --tdp-color-accent: var(--tdp-coral-600);
 
@@ -89,7 +118,7 @@
   --tdp-color-error-bg: var(--tdp-red-200);
   /* texto/icono de error sobre fondo claro — contraste ≥4.5:1 (WCAG 1.4.3) */
   --tdp-color-error-text: var(--tdp-red-800);
-  --tdp-color-focus: var(--tdp-blue-800);
+  --tdp-color-focus: var(--tdp-navy-900);
 
   /* Gamificación */
   --tdp-color-star: var(--tdp-yellow-300);
@@ -100,11 +129,11 @@
   /* ============================================================
      1.c COLOR por materia (zonas de la isla)  (§2.1.c)
      ============================================================ */
-  --tdp-subject-math: var(--tdp-blue-600);
-  --tdp-subject-spanish: var(--tdp-coral-600);
-  --tdp-subject-science: var(--tdp-green-700);
-  --tdp-subject-social: var(--tdp-orange-700);
-  --tdp-subject-english: var(--tdp-purple-700);
+  --tdp-subject-math: var(--tdp-rust-600);
+  --tdp-subject-spanish: var(--tdp-forest-700);
+  --tdp-subject-science: var(--tdp-indigo-600);
+  --tdp-subject-social: var(--tdp-ocean-600);
+  --tdp-subject-english: var(--tdp-amber-700);
 
   /* ============================================================
      2. TIPOGRAFÍA  (§2.3)

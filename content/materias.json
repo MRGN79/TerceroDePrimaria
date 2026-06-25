@@ -20,7 +20,12 @@
       "temas": [
         { "id": "vocabulary.synonyms_antonyms", "tituloKey": "content:spanish.topic.synonyms_antonyms", "disponible": true },
         { "id": "grammar.noun", "tituloKey": "content:spanish.topic.noun", "disponible": true },
-        { "id": "spelling.mp_mb", "tituloKey": "content:spanish.topic.mp_mb", "disponible": true }
+        { "id": "grammar.adjective", "tituloKey": "content:spanish.topic.adjective", "disponible": true },
+        { "id": "grammar.verb", "tituloKey": "content:spanish.topic.verb", "disponible": true },
+        { "id": "spelling.mp_mb", "tituloKey": "content:spanish.topic.mp_mb", "disponible": true },
+        { "id": "spelling.b_v", "tituloKey": "content:spanish.topic.b_v", "disponible": true },
+        { "id": "spelling.accents", "tituloKey": "content:spanish.topic.accents", "disponible": true },
+        { "id": "punctuation", "tituloKey": "content:spanish.topic.punctuation", "disponible": true }
       ]
     },
     {
@@ -31,7 +36,9 @@
       "langTagKey": "content:science.langTag",
       "temas": [
         { "id": "living_things.animals", "tituloKey": "content:science.topic.animals", "disponible": true },
+        { "id": "living_things.plants", "tituloKey": "content:science.topic.plants", "disponible": true },
         { "id": "human_body.senses", "tituloKey": "content:science.topic.senses", "disponible": true },
+        { "id": "human_body.nutrition", "tituloKey": "content:science.topic.nutrition", "disponible": true },
         { "id": "matter_energy.states", "tituloKey": "content:science.topic.states", "disponible": true }
       ]
     },
@@ -42,7 +49,10 @@
       "icon": "home",
       "temas": [
         { "id": "earth_universe.universe", "tituloKey": "content:social.topic.universe", "disponible": true },
-        { "id": "landscape.maps", "tituloKey": "content:social.topic.maps", "disponible": true }
+        { "id": "landscape.maps", "tituloKey": "content:social.topic.maps", "disponible": true },
+        { "id": "landscape.spain", "tituloKey": "content:social.topic.spain", "disponible": true },
+        { "id": "society.population", "tituloKey": "content:social.topic.population", "disponible": true },
+        { "id": "history.time", "tituloKey": "content:social.topic.time", "disponible": true }
       ]
     },
     {
@@ -54,7 +64,9 @@
       "temas": [
         { "id": "en_vocabulary.colors_shapes", "tituloKey": "content:english.topic.colors_shapes", "disponible": true },
         { "id": "en_vocabulary.animals", "tituloKey": "content:english.topic.animals", "disponible": true },
-        { "id": "en_basics.greetings", "tituloKey": "content:english.topic.greetings", "disponible": true }
+        { "id": "en_basics.greetings", "tituloKey": "content:english.topic.greetings", "disponible": true },
+        { "id": "en_vocabulary.numbers", "tituloKey": "content:english.topic.numbers", "disponible": true },
+        { "id": "en_vocabulary.family", "tituloKey": "content:english.topic.family", "disponible": true }
       ]
     }
   ]

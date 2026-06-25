@@ -76,7 +76,7 @@
 .status-selected {
   border-color: var(--tdp-color-primary);
   border-width: var(--tdp-border-width-strong);
-  background-color: var(--tdp-blue-100);
+  background-color: var(--tdp-color-primary-subtle);
 }
 .status-selected .dot {
   background-color: var(--tdp-color-primary);

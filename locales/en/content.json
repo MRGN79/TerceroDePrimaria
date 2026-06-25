@@ -15,7 +15,12 @@
     "topic": {
       "synonyms_antonyms": "Sinónimos y antónimos",
       "noun": "El sustantivo",
-      "mp_mb": "Reglas mp y mb"
+      "adjective": "El adjetivo",
+      "verb": "El verbo",
+      "mp_mb": "Reglas mp y mb",
+      "b_v": "Reglas b y v",
+      "accents": "Acentuación",
+      "punctuation": "Signos de puntuación"
     }
   },
   "science": {
@@ -24,7 +29,9 @@
     "langTag": "EN",
     "topic": {
       "animals": "Animals",
+      "plants": "Plants",
       "senses": "The senses",
+      "nutrition": "Health and nutrition",
       "states": "States of matter"
     }
   },
@@ -33,7 +40,10 @@
     "zone": "The world",
     "topic": {
       "universe": "The Solar System",
-      "maps": "Maps and compass points"
+      "maps": "Maps and compass points",
+      "spain": "Spain: landscape and regions",
+      "population": "Population and work",
+      "time": "Historical time"
     }
   },
   "english": {
@@ -43,7 +53,9 @@
     "topic": {
       "colors_shapes": "Colors and shapes",
       "animals": "Animals",
-      "greetings": "Greetings"
+      "greetings": "Greetings",
+      "numbers": "Numbers",
+      "family": "Family"
     }
   },
   "label": {
