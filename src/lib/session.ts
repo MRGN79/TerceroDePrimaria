@@ -15,6 +15,7 @@ import {
 import { generarOperandos, type GeneratedMath, type Rng } from "./randomMath";
 
 export const DEFAULT_SESSION_LENGTH = 5;
+export const ALL_SUBJECTS: Materia[] = ["matematicas", "lengua", "ciencias", "sociales", "ingles"];
 
 /** Ejercicio listo para jugar: el generado ya tiene operandos concretos. */
 export interface PreparedExercise {
@@ -130,4 +131,13 @@ export function checkMatchAnswer(
 export function matchLeftIds(exercise: EjercicioAny): string[] {
   if (esGenerado(exercise) || !Array.isArray(exercise.respuestaCorrecta)) return [];
   return exercise.respuestaCorrecta.map((p) => p.split(":")[0]);
+}
+
+/**
+ * Sesión de misión diaria: 3 ejercicios de cada asignatura mezclados.
+ * El orden se baraja para que no salgan todas las mates juntas, etc.
+ */
+export function buildDailySession(perSubject = 3, rng: Rng = Math.random): PreparedExercise[] {
+  const all = ALL_SUBJECTS.flatMap((materia) => buildSession(materia, null, perSubject, rng));
+  return shuffle(all, rng);
 }

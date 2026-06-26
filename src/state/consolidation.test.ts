@@ -12,7 +12,7 @@ function consolidation(over: Partial<SessionConsolidation> = {}): SessionConsoli
   return {
     starsEarned: 3,
     correctByTopic: {},
-    subjectTried: "matematicas",
+    subjectsTried: ["matematicas"],
     isDailyGoal: true,
     ...over,
   };
@@ -56,7 +56,7 @@ describe("applyConsolidation", () => {
   it("no duplica la materia en subjectsTried si ya estaba", () => {
     const prev = defaultState();
     prev.progress.subjectsTried = ["matematicas"];
-    const { next } = applyConsolidation(prev, consolidation({ subjectTried: "matematicas" }), "2026-06-25");
+    const { next } = applyConsolidation(prev, consolidation({ subjectsTried: ["matematicas"] }), "2026-06-25");
     expect(next.progress.subjectsTried).toEqual(["matematicas"]);
   });
 

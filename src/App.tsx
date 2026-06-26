@@ -25,6 +25,7 @@ import {
   type SubjectVM,
 } from "@/lib/catalog";
 import { buildPrintSheet, type PrintItem } from "@/lib/printSheet";
+import { buildDailySession, type PreparedExercise } from "@/lib/session";
 import { localDateKey, streakDisplayVariant } from "@/lib/streak";
 import { nicknameKey } from "@/lib/profile";
 import { BADGES } from "@/lib/badges";
@@ -32,7 +33,7 @@ import { BADGES } from "@/lib/badges";
 type Route =
   | { name: "home" }
   | { name: "subjects" }
-  | { name: "session"; materia: Materia; tema: string | null; isDailyGoal: boolean }
+  | { name: "session"; materia: Materia; tema: string | null; isDailyGoal: boolean; prebuilt?: PreparedExercise[] }
   | { name: "backpack" }
   | { name: "settings" }
   | { name: "print" }
@@ -102,7 +103,7 @@ export function App() {
         streakVariant={streakVariant}
         dailyGoalDone={dailyGoalDoneToday}
         onStartDailyGoal={() =>
-          setRoute({ name: "session", materia: "matematicas", tema: null, isDailyGoal: true })
+          setRoute({ name: "session", materia: "matematicas", tema: null, isDailyGoal: true, prebuilt: buildDailySession() })
         }
         onChooseSubject={() => {
           setSelectedSubject(null);
@@ -145,6 +146,7 @@ export function App() {
         materia={route.materia}
         tema={route.tema}
         isDailyGoal={route.isDailyGoal}
+        prebuilt={route.prebuilt}
         onExit={goHome}
         onHome={goHome}
         onPlayAgain={() => {
