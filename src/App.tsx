@@ -102,9 +102,16 @@ export function App() {
         streakDays={state.streak.current}
         streakVariant={streakVariant}
         dailyGoalDone={dailyGoalDoneToday}
-        onStartDailyGoal={() =>
-          setRoute({ name: "session", materia: "matematicas", tema: null, isDailyGoal: true, prebuilt: buildDailySession() })
-        }
+        onStartDailyGoal={() => {
+          const excludeIds = new Set(state.progress.correctExerciseIds);
+          setRoute({
+            name: "session",
+            materia: "matematicas",
+            tema: null,
+            isDailyGoal: true,
+            prebuilt: buildDailySession(3, Math.random, excludeIds),
+          });
+        }}
         onChooseSubject={() => {
           setSelectedSubject(null);
           setRoute({ name: "subjects" });

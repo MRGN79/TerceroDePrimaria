@@ -11,6 +11,8 @@ export interface SessionConsolidation {
   starsEarned: number;
   correctByTopic: Record<string, number>;
   subjectsTried: string[];
+  /** ids de ejercicios estáticos respondidos correctamente en esta sesión */
+  newlyCorrectIds: string[];
   /** la sesión cuenta como la "misión del día" completada */
   isDailyGoal: boolean;
 }
@@ -38,6 +40,11 @@ export function applyConsolidation(
     if (!subjectsTried.includes(s)) subjectsTried.push(s);
   }
 
+  const correctExerciseIds = [...new Set([
+    ...prev.progress.correctExerciseIds,
+    ...c.newlyCorrectIds,
+  ])];
+
   const withProgress: PersistedState = {
     ...prev,
     streak: streakResult.state,
@@ -45,7 +52,7 @@ export function applyConsolidation(
     dailyGoal: {
       lastDoneDate: c.isDailyGoal ? today : prev.dailyGoal.lastDoneDate,
     },
-    progress: { correctByTopic, subjectsTried },
+    progress: { correctByTopic, subjectsTried, correctExerciseIds },
   };
 
   const earned = newlyEarnedBadges(withProgress);
