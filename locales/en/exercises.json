@@ -419,7 +419,116 @@
         "a": "Invertebrates",
         "b": "Vertebrates",
         "c": "Reptiles"
-      }
+      },
+      "q9": { "prompt": "Bats are mammals even though they can fly." },
+      "q10": {
+        "prompt": "Which of these animals is an amphibian?",
+        "a": "Crocodile",
+        "b": "Salamander",
+        "c": "Tortoise"
+      },
+      "q11": {
+        "prompt": "Match each animal with its covering",
+        "l1": "Bird",
+        "l2": "Fish",
+        "l3": "Mammal",
+        "r1": "fur",
+        "r2": "feathers",
+        "r3": "scales"
+      },
+      "q12": { "prompt": "Spiders have six legs." },
+      "q13": {
+        "prompt": "What do we call animals that give birth to live young?",
+        "a": "Oviparous",
+        "b": "Viviparous",
+        "c": "Invertebrates"
+      },
+      "q14": { "prompt": "A whale is the largest mammal on Earth." },
+      "q15": {
+        "prompt": "Which of these is an invertebrate?",
+        "a": "Cat",
+        "b": "Snail",
+        "c": "Robin"
+      },
+      "q16": {
+        "prompt": "Match each animal with its habitat",
+        "l1": "Penguin",
+        "l2": "Camel",
+        "l3": "Clownfish",
+        "r1": "ocean",
+        "r2": "polar region",
+        "r3": "desert"
+      },
+      "q17": { "prompt": "Reptiles are cold-blooded animals." },
+      "q18": {
+        "prompt": "How many legs does an insect have?",
+        "a": "4",
+        "b": "6",
+        "c": "8"
+      },
+      "q19": { "prompt": "Dolphins breathe through gills like fish." },
+      "q20": {
+        "prompt": "Which of these animals is a bird?",
+        "a": "Bat",
+        "b": "Penguin",
+        "c": "Flying squirrel"
+      },
+      "q21": {
+        "prompt": "Match each animal with what it eats",
+        "l1": "Lion",
+        "l2": "Rabbit",
+        "l3": "Bear",
+        "r1": "plants and meat",
+        "r2": "meat",
+        "r3": "plants"
+      },
+      "q22": { "prompt": "A caterpillar turns into a butterfly through metamorphosis." },
+      "q23": {
+        "prompt": "Which of these animals hibernates in winter?",
+        "a": "Elephant",
+        "b": "Bear",
+        "c": "Parrot"
+      },
+      "q24": { "prompt": "All birds can fly." },
+      "q25": {
+        "prompt": "What is the correct term for animals that eat only plants?",
+        "a": "Carnivores",
+        "b": "Omnivores",
+        "c": "Herbivores"
+      },
+      "q26": {
+        "prompt": "Match each baby animal with its adult",
+        "l1": "Kitten",
+        "l2": "Foal",
+        "l3": "Cub",
+        "r1": "bear",
+        "r2": "cat",
+        "r3": "horse"
+      },
+      "q27": { "prompt": "Fish are vertebrate animals." },
+      "q28": {
+        "prompt": "Which of these animals lives both on land and in water?",
+        "a": "Lizard",
+        "b": "Frog",
+        "c": "Shark"
+      },
+      "q29": { "prompt": "Insects have three body parts: head, thorax and abdomen." },
+      "q30": {
+        "prompt": "Which sense do most nocturnal animals rely on the most?",
+        "a": "Sight in daylight",
+        "b": "Hearing and smell",
+        "c": "Taste"
+      },
+      "q31": {
+        "prompt": "Match each animal with its type of reproduction",
+        "l1": "Chicken",
+        "l2": "Dog",
+        "l3": "Salmon",
+        "r1": "oviparous (fish)",
+        "r2": "oviparous (bird)",
+        "r3": "viviparous"
+      },
+      "q32": { "prompt": "Crabs are invertebrate animals with an external skeleton." }
     },
     "plants": {
       "q1": {
@@ -457,7 +566,116 @@
         "a": "Leaf",
         "b": "Gill",
         "c": "Root"
-      }
+      },
+      "q9": { "prompt": "Flowers help plants to reproduce." },
+      "q10": {
+        "prompt": "What gas do plants release during photosynthesis?",
+        "a": "Carbon dioxide",
+        "b": "Oxygen",
+        "c": "Nitrogen"
+      },
+      "q11": {
+        "prompt": "Match each plant type with an example",
+        "l1": "Tree",
+        "l2": "Shrub",
+        "l3": "Herb",
+        "r1": "parsley",
+        "r2": "oak",
+        "r3": "rosebush"
+      },
+      "q12": { "prompt": "All plants need sunlight to grow." },
+      "q13": {
+        "prompt": "What is the role of seeds in plants?",
+        "a": "To absorb water",
+        "b": "To reproduce and grow into new plants",
+        "c": "To make food from sunlight"
+      },
+      "q14": { "prompt": "Cactus plants can store water in their stems." },
+      "q15": {
+        "prompt": "Which of these is a fruit?",
+        "a": "Carrot",
+        "b": "Potato",
+        "c": "Apple"
+      },
+      "q16": {
+        "prompt": "Match each plant product with where it comes from",
+        "l1": "Wood",
+        "l2": "Cotton",
+        "l3": "Olive oil",
+        "r1": "olive tree",
+        "r2": "tree trunk",
+        "r3": "cotton plant"
+      },
+      "q17": { "prompt": "Plants breathe in oxygen and breathe out carbon dioxide during photosynthesis." },
+      "q18": {
+        "prompt": "Which part of a plant anchors it to the ground?",
+        "a": "The flower",
+        "b": "The leaf",
+        "c": "The root"
+      },
+      "q19": { "prompt": "Bees help plants to pollinate." },
+      "q20": {
+        "prompt": "What do we call plants that keep their leaves all year round?",
+        "a": "Deciduous",
+        "b": "Evergreen",
+        "c": "Annual"
+      },
+      "q21": {
+        "prompt": "Match each part of a flower with its role",
+        "l1": "Petal",
+        "l2": "Stamen",
+        "l3": "Pistil",
+        "r1": "female part that forms seeds",
+        "r2": "attracts insects",
+        "r3": "produces pollen"
+      },
+      "q22": { "prompt": "Mushrooms are plants because they grow in soil." },
+      "q23": {
+        "prompt": "How do some seeds travel to new places?",
+        "a": "They walk",
+        "b": "By wind, water or animals",
+        "c": "By digging underground"
+      },
+      "q24": { "prompt": "The stem of a plant supports the leaves and carries water upwards." },
+      "q25": {
+        "prompt": "Which of these is a vegetable?",
+        "a": "Strawberry",
+        "b": "Spinach",
+        "c": "Banana"
+      },
+      "q26": {
+        "prompt": "Match each plant with its habitat",
+        "l1": "Water lily",
+        "l2": "Cactus",
+        "l3": "Pine tree",
+        "r1": "mountain forest",
+        "r2": "pond",
+        "r3": "desert"
+      },
+      "q27": { "prompt": "Plants produce oxygen that animals and humans need to breathe." },
+      "q28": {
+        "prompt": "What is the green pigment in leaves called?",
+        "a": "Melanin",
+        "b": "Chlorophyll",
+        "c": "Keratin"
+      },
+      "q29": { "prompt": "A sunflower always turns to face the Sun." },
+      "q30": {
+        "prompt": "Which of these plants has thorns?",
+        "a": "Daisy",
+        "b": "Rose",
+        "c": "Tulip"
+      },
+      "q31": {
+        "prompt": "Match each season with what happens to deciduous trees",
+        "l1": "Spring",
+        "l2": "Autumn",
+        "l3": "Winter",
+        "r1": "no leaves",
+        "r2": "new leaves grow",
+        "r3": "leaves fall"
+      },
+      "q32": { "prompt": "Seaweed is a plant that lives in the sea." }
     },
     "senses": {
       "q1": {
@@ -495,7 +713,116 @@
         "a": "Sight",
         "b": "Hearing",
         "c": "Touch"
-      }
+      },
+      "q9": { "prompt": "The tongue can detect four basic tastes: sweet, salty, sour and bitter." },
+      "q10": {
+        "prompt": "Which part of the eye lets in light?",
+        "a": "The eyelid",
+        "b": "The pupil",
+        "c": "The eyebrow"
+      },
+      "q11": {
+        "prompt": "Match each action with the sense used",
+        "l1": "Smelling a flower",
+        "l2": "Hearing a bell",
+        "l3": "Touching ice",
+        "r1": "touch",
+        "r2": "smell",
+        "r3": "hearing"
+      },
+      "q12": { "prompt": "We can smell things because tiny particles float through the air to our nose." },
+      "q13": {
+        "prompt": "What protects our eyes from dust and bright light?",
+        "a": "Eyelashes and eyelids",
+        "b": "The nose",
+        "c": "The ears"
+      },
+      "q14": { "prompt": "The ears are the organs of hearing." },
+      "q15": {
+        "prompt": "Which sense do we use to read a book?",
+        "a": "Taste",
+        "b": "Sight",
+        "c": "Smell"
+      },
+      "q16": {
+        "prompt": "Match each sense with something you experience",
+        "l1": "Taste",
+        "l2": "Sight",
+        "l3": "Touch",
+        "r1": "feeling sand between your fingers",
+        "r2": "eating a lemon",
+        "r3": "watching a rainbow"
+      },
+      "q17": { "prompt": "We can lose the sense of smell when we have a cold." },
+      "q18": {
+        "prompt": "Which of these is NOT one of the five senses?",
+        "a": "Taste",
+        "b": "Thought",
+        "c": "Touch"
+      },
+      "q19": { "prompt": "Sound reaches our brain through the auditory nerve." },
+      "q20": {
+        "prompt": "What do taste buds do?",
+        "a": "They help us see colours",
+        "b": "They detect flavours in food",
+        "c": "They protect our skin"
+      },
+      "q21": {
+        "prompt": "Match each part of the ear with its role",
+        "l1": "Eardrum",
+        "l2": "Ear canal",
+        "l3": "Outer ear",
+        "r1": "collects sounds",
+        "r2": "vibrates with sound",
+        "r3": "carries sound inward"
+      },
+      "q22": { "prompt": "Our skin has nerve endings that detect heat, cold, pain and pressure." },
+      "q23": {
+        "prompt": "Which sense do we mainly use to enjoy a beautiful painting?",
+        "a": "Hearing",
+        "b": "Sight",
+        "c": "Smell"
+      },
+      "q24": { "prompt": "Smell and taste work closely together when we eat food." },
+      "q25": {
+        "prompt": "Which of these animals has a much stronger sense of smell than humans?",
+        "a": "Goldfish",
+        "b": "Dog",
+        "c": "Butterfly"
+      },
+      "q26": {
+        "prompt": "Match each sense with how we take care of it",
+        "l1": "Sight",
+        "l2": "Hearing",
+        "l3": "Touch",
+        "r1": "avoid very hot surfaces",
+        "r2": "wear sunglasses in bright light",
+        "r3": "avoid very loud noises"
+      },
+      "q27": { "prompt": "Both eyes working together help us judge distance." },
+      "q28": {
+        "prompt": "What happens to our pupils in a dark room?",
+        "a": "They become smaller",
+        "b": "They become larger",
+        "c": "They change colour"
+      },
+      "q29": { "prompt": "Blind people often develop a sharper sense of hearing and touch." },
+      "q30": {
+        "prompt": "Which part of the tongue detects sweet tastes?",
+        "a": "The back",
+        "b": "The tip",
+        "c": "The sides"
+      },
+      "q31": {
+        "prompt": "Match each sense organ with what it contains",
+        "l1": "Eye",
+        "l2": "Ear",
+        "l3": "Nose",
+        "r1": "olfactory cells",
+        "r2": "retina",
+        "r3": "eardrum"
+      },
+      "q32": { "prompt": "We take care of our senses by visiting the doctor for regular check-ups." }
     },
     "nutrition": {
       "q1": {
@@ -533,7 +860,116 @@
         "a": "We grow taller",
         "b": "We may get ill",
         "c": "We run faster"
-      }
+      },
+      "q9": { "prompt": "Dairy products such as milk and cheese are rich in calcium." },
+      "q10": {
+        "prompt": "Which nutrient helps build and repair our muscles?",
+        "a": "Fat",
+        "b": "Protein",
+        "c": "Sugar"
+      },
+      "q11": {
+        "prompt": "Match each vitamin with its benefit",
+        "l1": "Vitamin C",
+        "l2": "Vitamin D",
+        "l3": "Vitamin A",
+        "r1": "healthy bones",
+        "r2": "good eyesight",
+        "r3": "strong immune system"
+      },
+      "q12": { "prompt": "Exercise is good for our health." },
+      "q13": {
+        "prompt": "Which of these foods contains the most fat?",
+        "a": "Lettuce",
+        "b": "Butter",
+        "c": "Apple"
+      },
+      "q14": { "prompt": "Breakfast is the most important meal of the day." },
+      "q15": {
+        "prompt": "How many glasses of water should a child drink each day?",
+        "a": "1–2",
+        "b": "6–8",
+        "c": "15–20"
+      },
+      "q16": {
+        "prompt": "Match each food with its main nutrient",
+        "l1": "egg",
+        "l2": "pasta",
+        "l3": "orange",
+        "r1": "vitamin C",
+        "r2": "protein",
+        "r3": "carbohydrate"
+      },
+      "q17": { "prompt": "Sugary drinks are a healthy choice for every day." },
+      "q18": {
+        "prompt": "What does fibre in food help our body do?",
+        "a": "See better",
+        "b": "Digest food properly",
+        "c": "Hear sounds"
+      },
+      "q19": { "prompt": "Iron helps our blood carry oxygen around the body." },
+      "q20": {
+        "prompt": "Which of these is a legume?",
+        "a": "Carrot",
+        "b": "Lentil",
+        "c": "Potato"
+      },
+      "q21": {
+        "prompt": "Match each mealtime with what we typically eat",
+        "l1": "Breakfast",
+        "l2": "Lunch",
+        "l3": "Dinner",
+        "r1": "the lightest meal",
+        "r2": "cereal and milk",
+        "r3": "the main meal"
+      },
+      "q22": { "prompt": "Eating a variety of foods helps us get all the nutrients we need." },
+      "q23": {
+        "prompt": "Which of these foods is rich in calcium?",
+        "a": "Bread",
+        "b": "Cheese",
+        "c": "Rice"
+      },
+      "q24": { "prompt": "Fast food should be eaten every day as part of a healthy diet." },
+      "q25": {
+        "prompt": "What is the role of carbohydrates in our diet?",
+        "a": "They give us energy",
+        "b": "They repair muscles",
+        "c": "They help us see"
+      },
+      "q26": {
+        "prompt": "Match each food with its origin",
+        "l1": "yoghurt",
+        "l2": "olive oil",
+        "l3": "steak",
+        "r1": "animal (beef)",
+        "r2": "dairy",
+        "r3": "plant (olive)"
+      },
+      "q27": { "prompt": "Washing your hands before eating helps prevent illness." },
+      "q28": {
+        "prompt": "Which food is a source of healthy fats?",
+        "a": "Sweets",
+        "b": "Avocado",
+        "c": "Cola drink"
+      },
+      "q29": { "prompt": "Sleep and rest are also important for good health." },
+      "q30": {
+        "prompt": "Which of these is NOT a nutrient?",
+        "a": "Protein",
+        "b": "Vitamin",
+        "c": "Plastic"
+      },
+      "q31": {
+        "prompt": "Match each organ with its role in digestion",
+        "l1": "Mouth",
+        "l2": "Stomach",
+        "l3": "Small intestine",
+        "r1": "absorbs nutrients",
+        "r2": "chews and mixes food with saliva",
+        "r3": "breaks food down with acid"
+      },
+      "q32": { "prompt": "Proteins are found in foods like meat, fish, eggs and pulses." }
     },
     "states": {
       "q1": {
@@ -579,7 +1015,557 @@
         "r1": "liquid",
         "r2": "gas",
         "r3": "solid"
-      }
+      },
+      "q9": { "prompt": "Solids have a fixed shape and volume." },
+      "q10": {
+        "prompt": "What is it called when a solid turns into a liquid?",
+        "a": "Evaporation",
+        "b": "Condensation",
+        "c": "Melting"
+      },
+      "q11": {
+        "prompt": "Match each change of state with its name",
+        "l1": "Liquid → Gas",
+        "l2": "Solid → Liquid",
+        "l3": "Liquid → Solid",
+        "r1": "freezing",
+        "r2": "evaporation",
+        "r3": "melting"
+      },
+      "q12": { "prompt": "Liquids take the shape of the container they are poured into." },
+      "q13": {
+        "prompt": "At what temperature does water freeze?",
+        "a": "100 °C",
+        "b": "50 °C",
+        "c": "0 °C"
+      },
+      "q14": { "prompt": "Wood is a solid material." },
+      "q15": {
+        "prompt": "Which of these is a gas at room temperature?",
+        "a": "Gold",
+        "b": "Water",
+        "c": "Oxygen"
+      },
+      "q16": {
+        "prompt": "Match each everyday example with its state",
+        "l1": "Candle wax (melted)",
+        "l2": "Snow",
+        "l3": "Perfume smell",
+        "r1": "solid",
+        "r2": "gas",
+        "r3": "liquid"
+      },
+      "q17": { "prompt": "At 100 °C, water boils and turns into steam." },
+      "q18": {
+        "prompt": "What is condensation?",
+        "a": "Water vapour turning into liquid water",
+        "b": "Water freezing into ice",
+        "c": "Ice melting into water"
+      },
+      "q19": { "prompt": "Gases can be compressed into a smaller space." },
+      "q20": {
+        "prompt": "Which of these best describes a liquid?",
+        "a": "Fixed shape and volume",
+        "b": "No fixed shape, fixed volume",
+        "c": "No fixed shape, no fixed volume"
+      },
+      "q21": {
+        "prompt": "Match each material property with its state of matter",
+        "l1": "Can be poured",
+        "l2": "Can be compressed easily",
+        "l3": "Keeps its own shape",
+        "r1": "solid",
+        "r2": "liquid",
+        "r3": "gas"
+      },
+      "q22": { "prompt": "When you breathe on a cold window, the moisture condenses into small water drops." },
+      "q23": {
+        "prompt": "Which change happens when you heat an ice cube?",
+        "a": "It evaporates instantly",
+        "b": "It melts into water",
+        "c": "It becomes a gas"
+      },
+      "q24": { "prompt": "All metals are solids at room temperature." },
+      "q25": {
+        "prompt": "What state of matter is honey?",
+        "a": "Solid",
+        "b": "Liquid",
+        "c": "Gas"
+      },
+      "q26": {
+        "prompt": "Match each process with what happens to temperature",
+        "l1": "Freezing",
+        "l2": "Melting",
+        "l3": "Evaporation",
+        "r1": "temperature rises",
+        "r2": "temperature drops",
+        "r3": "temperature rises a lot"
+      },
+      "q27": { "prompt": "Sand is a solid material." },
+      "q28": {
+        "prompt": "Which of the following is an example of evaporation in everyday life?",
+        "a": "Ice forming on a lake",
+        "b": "Wet clothes drying in the sun",
+        "c": "Chocolate hardening in the fridge"
+      },
+      "q29": { "prompt": "Matter is made up of very tiny particles called atoms and molecules." },
+      "q30": {
+        "prompt": "Which state of matter fills all the available space in a container?",
+        "a": "Solid",
+        "b": "Liquid",
+        "c": "Gas"
+      },
+      "q31": {
+        "prompt": "Match each substance with its state at room temperature",
+        "l1": "Butter",
+        "l2": "Vinegar",
+        "l3": "Helium",
+        "r1": "liquid",
+        "r2": "gas",
+        "r3": "solid"
+      },
+      "q32": { "prompt": "The same substance can change from one state to another when heated or cooled." }
+    },
+    "skeleton": {
+      "q1": {
+        "prompt": "What is the main function of the skeleton?",
+        "a": "To digest food",
+        "b": "To support and protect the body",
+        "c": "To pump blood"
+      },
+      "q2": { "prompt": "Adults have 206 bones in their body." },
+      "q3": {
+        "prompt": "Which bone protects the brain?",
+        "a": "The ribcage",
+        "b": "The skull",
+        "c": "The spine"
+      },
+      "q4": { "prompt": "Muscles are attached to bones by tendons." },
+      "q5": {
+        "prompt": "What do we call the place where two bones meet?",
+        "a": "A tendon",
+        "b": "A joint",
+        "c": "A muscle"
+      },
+      "q6": {
+        "prompt": "Match each bone with the body part it belongs to",
+        "l1": "Femur",
+        "l2": "Humerus",
+        "l3": "Ribs",
+        "r1": "chest",
+        "r2": "upper arm",
+        "r3": "upper leg"
+      },
+      "q7": { "prompt": "Bones are alive and can grow and repair themselves." },
+      "q8": {
+        "prompt": "Which of these protects the heart and lungs?",
+        "a": "The spine",
+        "b": "The skull",
+        "c": "The ribcage"
+      },
+      "q9": { "prompt": "The spine is made up of small bones called vertebrae." },
+      "q10": {
+        "prompt": "What substance makes bones hard and strong?",
+        "a": "Iron",
+        "b": "Calcium",
+        "c": "Vitamin C"
+      },
+      "q11": {
+        "prompt": "Match each joint type with an example",
+        "l1": "Hinge joint",
+        "l2": "Ball-and-socket joint",
+        "l3": "Fixed joint",
+        "r1": "skull bones",
+        "r2": "knee",
+        "r3": "hip"
+      },
+      "q12": { "prompt": "Babies are born with more bones than adults." },
+      "q13": {
+        "prompt": "Which type of muscle moves the bones?",
+        "a": "Cardiac muscle",
+        "b": "Smooth muscle",
+        "c": "Skeletal muscle"
+      },
+      "q14": { "prompt": "Ligaments connect bones to other bones at joints." },
+      "q15": {
+        "prompt": "How do muscles make bones move?",
+        "a": "They push the bones away",
+        "b": "They contract (shorten) and pull the bones",
+        "c": "They melt and flow"
+      },
+      "q16": {
+        "prompt": "Match each bone with its job",
+        "l1": "Skull",
+        "l2": "Spine",
+        "l3": "Femur",
+        "r1": "holds the body upright",
+        "r2": "strongest bone for walking",
+        "r3": "protects the brain"
+      },
+      "q17": { "prompt": "Exercise helps to keep bones and muscles strong." },
+      "q18": {
+        "prompt": "What is the longest bone in the human body?",
+        "a": "The humerus",
+        "b": "The femur",
+        "c": "The tibia"
+      },
+      "q19": { "prompt": "Muscles can only pull, not push." },
+      "q20": {
+        "prompt": "Which nutrient is most important for strong bones?",
+        "a": "Protein",
+        "b": "Calcium",
+        "c": "Fibre"
+      },
+      "q21": {
+        "prompt": "Match each body movement with the joint used",
+        "l1": "Bending the elbow",
+        "l2": "Rotating the shoulder",
+        "l3": "Nodding the head",
+        "r1": "pivot joint (neck)",
+        "r2": "hinge joint (elbow)",
+        "r3": "ball-and-socket (shoulder)"
+      },
+      "q22": { "prompt": "The kneecap is called the patella." },
+      "q23": {
+        "prompt": "Which of these is a symptom of a broken bone?",
+        "a": "Sneezing",
+        "b": "Pain and swelling at the injury site",
+        "c": "A headache"
+      },
+      "q24": { "prompt": "The human hand contains 27 small bones." },
+      "q25": {
+        "prompt": "What is the function of red bone marrow?",
+        "a": "To produce blood cells",
+        "b": "To store food",
+        "c": "To help us breathe"
+      },
+      "q26": {
+        "prompt": "Match each muscle group with its location",
+        "l1": "Biceps",
+        "l2": "Quadriceps",
+        "l3": "Abdominals",
+        "r1": "belly area",
+        "r2": "upper arm (front)",
+        "r3": "front of thigh"
+      },
+      "q27": { "prompt": "Posture is important: sitting and standing straight protects the spine." },
+      "q28": {
+        "prompt": "What happens to muscles if we do not use them for a long time?",
+        "a": "They get bigger",
+        "b": "They get weaker and smaller",
+        "c": "They turn into fat only"
+      },
+      "q29": { "prompt": "The ribcage also protects the stomach and liver." },
+      "q30": {
+        "prompt": "Which of these activities is best for building strong bones?",
+        "a": "Reading a book",
+        "b": "Watching television",
+        "c": "Running and jumping"
+      },
+      "q31": {
+        "prompt": "Match each term with its definition",
+        "l1": "Tendon",
+        "l2": "Ligament",
+        "l3": "Cartilage",
+        "r1": "cushions joints",
+        "r2": "connects muscle to bone",
+        "r3": "connects bone to bone"
+      },
+      "q32": { "prompt": "The skeleton of a baby is mostly made of soft cartilage that slowly hardens into bone." }
+    },
+    "forces": {
+      "q1": {
+        "prompt": "What is a force?",
+        "a": "A type of material",
+        "b": "A push or a pull that can change the motion of an object",
+        "c": "A measurement of temperature"
+      },
+      "q2": { "prompt": "Gravity is a force that pulls objects towards the Earth." },
+      "q3": {
+        "prompt": "What happens to a ball when you kick it?",
+        "a": "It stays still",
+        "b": "It moves because of the force applied",
+        "c": "It changes colour"
+      },
+      "q4": { "prompt": "Friction always speeds objects up." },
+      "q5": {
+        "prompt": "Which of these is an example of a pulling force?",
+        "a": "Kicking a ball",
+        "b": "Pushing a door open",
+        "c": "A magnet attracting a pin"
+      },
+      "q6": {
+        "prompt": "Match each force with an example",
+        "l1": "Gravity",
+        "l2": "Friction",
+        "l3": "Magnetism",
+        "r1": "fridge magnet sticking to metal",
+        "r2": "apple falling from a tree",
+        "r3": "bike slowing down on the road"
+      },
+      "q7": { "prompt": "An object at rest will stay at rest unless a force acts on it." },
+      "q8": {
+        "prompt": "What does friction do to a moving object?",
+        "a": "It speeds it up",
+        "b": "It slows it down",
+        "c": "It makes it float"
+      },
+      "q9": { "prompt": "The unit of force is called the Newton." },
+      "q10": {
+        "prompt": "Which surface produces more friction?",
+        "a": "Ice",
+        "b": "Rough concrete",
+        "c": "Smooth glass"
+      },
+      "q11": {
+        "prompt": "Match each situation with the type of force",
+        "l1": "Stretching a rubber band",
+        "l2": "A book sitting on a table",
+        "l3": "Sliding on a slide",
+        "r1": "friction",
+        "r2": "tension",
+        "r3": "gravity and normal force"
+      },
+      "q12": { "prompt": "Forces can change the shape of objects." },
+      "q13": {
+        "prompt": "What force keeps the planets in orbit around the Sun?",
+        "a": "Friction",
+        "b": "Magnetism",
+        "c": "Gravity"
+      },
+      "q14": { "prompt": "When two equal forces act in opposite directions the object does not move." },
+      "q15": {
+        "prompt": "Which of these reduces friction?",
+        "a": "A rough surface",
+        "b": "Oil or grease",
+        "c": "More weight"
+      },
+      "q16": {
+        "prompt": "Match each action with the type of force applied",
+        "l1": "Squeezing a sponge",
+        "l2": "Pulling a rope in tug of war",
+        "l3": "Pushing a trolley in a supermarket",
+        "r1": "push",
+        "r2": "compression",
+        "r3": "pull"
+      },
+      "q17": { "prompt": "Heavier objects always fall faster than lighter ones." },
+      "q18": {
+        "prompt": "What do we use to measure force?",
+        "a": "A thermometer",
+        "b": "A Newton meter (force meter)",
+        "c": "A ruler"
+      },
+      "q19": { "prompt": "Air resistance is a type of friction that acts on objects moving through the air." },
+      "q20": {
+        "prompt": "Why does a parachute slow a person's fall?",
+        "a": "It creates more gravity",
+        "b": "It increases air resistance",
+        "c": "It repels the ground"
+      },
+      "q21": {
+        "prompt": "Match each simple machine with how it helps",
+        "l1": "Ramp (inclined plane)",
+        "l2": "Wheel and axle",
+        "l3": "Lever",
+        "r1": "lifts heavy loads more easily",
+        "r2": "easier to move heavy loads upward",
+        "r3": "reduces friction when moving"
+      },
+      "q22": { "prompt": "A spring scale measures force in Newtons." },
+      "q23": {
+        "prompt": "If you push an object harder, what happens to its speed?",
+        "a": "It slows down",
+        "b": "It goes faster",
+        "c": "Nothing changes"
+      },
+      "q24": { "prompt": "Magnets can attract objects made of iron or steel." },
+      "q25": {
+        "prompt": "Which of these is an example of gravity at work?",
+        "a": "A magnet sticking to a fridge",
+        "b": "Rain falling from clouds",
+        "c": "A rubber band stretching"
+      },
+      "q26": {
+        "prompt": "Match each material with whether a magnet attracts it",
+        "l1": "Iron nail",
+        "l2": "Plastic bottle",
+        "l3": "Steel spoon",
+        "r1": "attracted",
+        "r2": "attracted",
+        "r3": "not attracted"
+      },
+      "q27": { "prompt": "The Moon has less gravity than the Earth." },
+      "q28": {
+        "prompt": "What is weight?",
+        "a": "The amount of matter in an object",
+        "b": "The force of gravity acting on an object's mass",
+        "c": "The size of an object"
+      },
+      "q29": { "prompt": "A bicycle brake works by using friction to slow the wheel." },
+      "q30": {
+        "prompt": "Which of these objects would fall to the ground if dropped?",
+        "a": "A balloon filled with helium",
+        "b": "A rock",
+        "c": "Both fall at the same rate"
+      },
+      "q31": {
+        "prompt": "Match each force effect with an example",
+        "l1": "Force changes shape",
+        "l2": "Force starts movement",
+        "l3": "Force stops movement",
+        "r1": "applying brakes on a bike",
+        "r2": "kicking a ball from rest",
+        "r3": "squashing clay"
+      },
+      "q32": { "prompt": "Without gravity, objects on Earth would float away into space." }
+    },
+    "solar_system": {
+      "q1": {
+        "prompt": "What is at the centre of our Solar System?",
+        "a": "The Moon",
+        "b": "The Earth",
+        "c": "The Sun"
+      },
+      "q2": { "prompt": "The Sun is a star." },
+      "q3": {
+        "prompt": "How many planets are there in our Solar System?",
+        "a": "7",
+        "b": "8",
+        "c": "9"
+      },
+      "q4": { "prompt": "The Moon is a natural satellite of the Earth." },
+      "q5": {
+        "prompt": "Which planet is closest to the Sun?",
+        "a": "Venus",
+        "b": "Earth",
+        "c": "Mercury"
+      },
+      "q6": {
+        "prompt": "Match each planet with a key feature",
+        "l1": "Mars",
+        "l2": "Saturn",
+        "l3": "Jupiter",
+        "r1": "largest planet",
+        "r2": "the red planet",
+        "r3": "famous rings"
+      },
+      "q7": { "prompt": "The Earth takes 365 days to orbit the Sun." },
+      "q8": {
+        "prompt": "What causes day and night on Earth?",
+        "a": "The Earth orbiting the Sun",
+        "b": "The Earth rotating on its axis",
+        "c": "The Moon blocking the Sun"
+      },
+      "q9": { "prompt": "Venus is hotter than Mercury even though Mercury is closer to the Sun." },
+      "q10": {
+        "prompt": "What do we call objects made of rock and metal that orbit the Sun between Mars and Jupiter?",
+        "a": "Comets",
+        "b": "Asteroids",
+        "c": "Meteors"
+      },
+      "q11": {
+        "prompt": "Match each space object with its description",
+        "l1": "Comet",
+        "l2": "Asteroid",
+        "l3": "Meteor",
+        "r1": "rock that burns in Earth's atmosphere",
+        "r2": "ice and rock with a bright tail",
+        "r3": "rocky object in the asteroid belt"
+      },
+      "q12": { "prompt": "The Sun provides light and heat to all the planets in the Solar System." },
+      "q13": {
+        "prompt": "Which planet is known as the Red Planet?",
+        "a": "Jupiter",
+        "b": "Mars",
+        "c": "Venus"
+      },
+      "q14": { "prompt": "Earth is the only planet known to support life." },
+      "q15": {
+        "prompt": "Which is the largest planet in the Solar System?",
+        "a": "Saturn",
+        "b": "Neptune",
+        "c": "Jupiter"
+      },
+      "q16": {
+        "prompt": "Match each planet with its position from the Sun",
+        "l1": "Mercury",
+        "l2": "Earth",
+        "l3": "Mars",
+        "r1": "4th",
+        "r2": "1st",
+        "r3": "3rd"
+      },
+      "q17": { "prompt": "The Moon has mountains and craters on its surface." },
+      "q18": {
+        "prompt": "How long does it take the Moon to orbit the Earth?",
+        "a": "1 day",
+        "b": "1 week",
+        "c": "About 28 days"
+      },
+      "q19": { "prompt": "Astronauts can travel to space in a rocket." },
+      "q20": {
+        "prompt": "Which planet has the most visible rings around it?",
+        "a": "Jupiter",
+        "b": "Saturn",
+        "c": "Uranus"
+      },
+      "q21": {
+        "prompt": "Match each planet with its type",
+        "l1": "Mercury",
+        "l2": "Jupiter",
+        "l3": "Earth",
+        "r1": "rocky planet with life",
+        "r2": "small rocky inner planet",
+        "r3": "gas giant"
+      },
+      "q22": { "prompt": "A light year is the distance light travels in one year." },
+      "q23": {
+        "prompt": "What are the phases of the Moon caused by?",
+        "a": "The Earth's shadow on the Moon",
+        "b": "The Moon moving closer to the Sun",
+        "c": "The changing angle of sunlight on the Moon as it orbits Earth"
+      },
+      "q24": { "prompt": "The Sun is much bigger than any of the planets." },
+      "q25": {
+        "prompt": "Which of these is a dwarf planet?",
+        "a": "Mars",
+        "b": "Pluto",
+        "c": "Neptune"
+      },
+      "q26": {
+        "prompt": "Match each moon phase with its appearance",
+        "l1": "New Moon",
+        "l2": "Full Moon",
+        "l3": "Half Moon",
+        "r1": "half the Moon is lit",
+        "r2": "not visible from Earth",
+        "r3": "the whole Moon is lit"
+      },
+      "q27": { "prompt": "The International Space Station orbits the Earth." },
+      "q28": {
+        "prompt": "What is a solar eclipse?",
+        "a": "When the Earth passes between the Sun and the Moon",
+        "b": "When the Moon passes between the Sun and the Earth, blocking sunlight",
+        "c": "When the Sun disappears permanently"
+      },
+      "q29": { "prompt": "Uranus and Neptune are sometimes called the ice giants." },
+      "q30": {
+        "prompt": "Which planet is farthest from the Sun?",
+        "a": "Saturn",
+        "b": "Uranus",
+        "c": "Neptune"
+      },
+      "q31": {
+        "prompt": "Match each space term with its meaning",
+        "l1": "Orbit",
+        "l2": "Rotation",
+        "l3": "Gravity",
+        "r1": "spinning on an axis",
+        "r2": "path around another object",
+        "r3": "force that attracts objects"
+      },
+      "q32": { "prompt": "The word 'galaxy' refers to a vast collection of stars, gas and dust held together by gravity." }
     }
   },
   "social": {

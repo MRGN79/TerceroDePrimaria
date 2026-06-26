@@ -32,7 +32,10 @@
       "plants": "Plants",
       "senses": "The senses",
       "nutrition": "Health and nutrition",
-      "states": "States of matter"
+      "states": "States of matter",
+      "skeleton": "The Skeleton and Muscles",
+      "forces": "Forces and Movement",
+      "solar_system": "The Solar System"
     }
   },
   "social": {
@@ -63,10 +66,18 @@
     "surpriseMix": "Surprise mix"
   },
   "avatar": {
-    "fox": { "name": "Fox" },
-    "turtle": { "name": "Turtle" },
-    "parrot": { "name": "Parrot" },
-    "crab": { "name": "Crab" }
+    "fox":       { "name": "Fox" },
+    "turtle":    { "name": "Turtle" },
+    "parrot":    { "name": "Parrot" },
+    "crab":      { "name": "Crab" },
+    "lion":      { "name": "Lion" },
+    "penguin":   { "name": "Penguin" },
+    "elephant":  { "name": "Elephant" },
+    "butterfly": { "name": "Butterfly" },
+    "owl":       { "name": "Owl" },
+    "dolphin":   { "name": "Dolphin" },
+    "bear":      { "name": "Bear" },
+    "rabbit":    { "name": "Rabbit" }
   },
   "nickname": {
     "explorer": "Explorer",

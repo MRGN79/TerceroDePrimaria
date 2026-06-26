@@ -39,7 +39,10 @@
         { "id": "living_things.plants", "tituloKey": "content:science.topic.plants", "disponible": true },
         { "id": "human_body.senses", "tituloKey": "content:science.topic.senses", "disponible": true },
         { "id": "human_body.nutrition", "tituloKey": "content:science.topic.nutrition", "disponible": true },
-        { "id": "matter_energy.states", "tituloKey": "content:science.topic.states", "disponible": true }
+        { "id": "matter_energy.states", "tituloKey": "content:science.topic.states", "disponible": true },
+        { "id": "human_body.skeleton", "tituloKey": "content:science.topic.skeleton", "disponible": true },
+        { "id": "matter_energy.forces", "tituloKey": "content:science.topic.forces", "disponible": true },
+        { "id": "earth_space.solar_system", "tituloKey": "content:science.topic.solar_system", "disponible": true }
       ]
     },
     {
