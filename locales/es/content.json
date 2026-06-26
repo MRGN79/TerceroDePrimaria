@@ -65,6 +65,17 @@
       "family": "Family"
     }
   },
+  "cuarto4": {
+    "title": "Intro a 4º de Primaria",
+    "zone": "El siguiente nivel",
+    "topic": {
+      "math": "Matemáticas de 4º",
+      "spanish": "Lengua de 4º",
+      "science": "Naturales de 4º",
+      "social": "Sociales de 4º",
+      "english": "Inglés de 4º"
+    }
+  },
   "label": {
     "challengeG4": "Reto 4º",
     "surpriseMix": "Mezcla sorpresa"

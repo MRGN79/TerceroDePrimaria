@@ -13,7 +13,8 @@ export type Materia =
   | "lengua"
   | "ingles"
   | "ciencias"
-  | "sociales";
+  | "sociales"
+  | "cuarto";
 
 export type Nivel = "3" | "4";
 

@@ -9,6 +9,7 @@ import { lengua } from "./exercises/lengua";
 import { ciencias } from "./exercises/ciencias";
 import { sociales } from "./exercises/sociales";
 import { ingles } from "./exercises/ingles";
+import { cuarto } from "./exercises/cuarto";
 
 export const ALL_EXERCISES: EjercicioAny[] = [
   ...matematicas,
@@ -16,6 +17,7 @@ export const ALL_EXERCISES: EjercicioAny[] = [
   ...ciencias,
   ...sociales,
   ...ingles,
+  ...cuarto,
 ];
 
 /**
@@ -30,6 +32,7 @@ export const FIXED_LANGUAGE_SUBJECTS: Record<Materia, "en" | "es" | null> = {
   lengua: "es", // sólo ES
   ciencias: "en", // Natural Science: sólo EN
   ingles: "en", // English: sólo EN
+  cuarto: null, // sigue la UI
 };
 
 export function fixedLanguageFor(materia: Materia): "en" | "es" | null {

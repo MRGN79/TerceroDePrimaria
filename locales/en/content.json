@@ -68,6 +68,17 @@
       "family": "Family"
     }
   },
+  "cuarto4": {
+    "title": "4th Grade Preview",
+    "zone": "The next level",
+    "topic": {
+      "math": "Maths preview",
+      "spanish": "Spanish preview",
+      "science": "Science preview",
+      "social": "Social Science preview",
+      "english": "English preview"
+    }
+  },
   "label": {
     "challengeG4": "Grade 4 challenge",
     "surpriseMix": "Surprise mix"

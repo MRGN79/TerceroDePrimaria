@@ -16,6 +16,7 @@ const CONTENT_KEY: Record<Materia, string> = {
   ciencias: "science",
   sociales: "social",
   ingles: "english",
+  cuarto: "cuarto4",
 };
 
 export function contentKeyFor(materia: Materia): string {
