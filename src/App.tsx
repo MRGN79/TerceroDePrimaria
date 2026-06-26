@@ -27,7 +27,7 @@ import {
 import { buildPrintSheet, type PrintItem } from "@/lib/printSheet";
 import { buildDailySession, type PreparedExercise } from "@/lib/session";
 import { localDateKey, streakDisplayVariant } from "@/lib/streak";
-import { nicknameKey, DEFAULT_NICKNAME } from "@/lib/profile";
+import { nicknameKey, DEFAULT_NICKNAME, avatarById } from "@/lib/profile";
 import { BADGES } from "@/lib/badges";
 
 type Route =
@@ -266,6 +266,8 @@ export function App() {
         topicTitle={topicTitle}
         items={printItems}
         includeSolutions={includeSolutions}
+        nickname={nickname}
+        avatarEmoji={avatarById(state.profile.avatarId).emoji}
         onBack={() => setRoute({ name: "print" })}
         onHome={goHome}
       />

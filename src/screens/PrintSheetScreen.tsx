@@ -19,6 +19,8 @@ type PrintSheetScreenProps = {
   topicTitle: string;
   items: PrintItem[];
   includeSolutions: boolean;
+  nickname?: string;
+  avatarEmoji?: string;
   onBack: () => void;
   onHome: () => void;
 };
@@ -28,6 +30,8 @@ export function PrintSheetScreen({
   topicTitle,
   items,
   includeSolutions,
+  nickname,
+  avatarEmoji,
   onBack,
   onHome,
 }: PrintSheetScreenProps) {
@@ -57,6 +61,12 @@ export function PrintSheetScreen({
           <p className={styles.meta}>
             {t("print:sheet.topicLabel")}: {topicTitle}
           </p>
+          {(avatarEmoji || nickname) ? (
+            <p className={styles.avatarRow} aria-label={nickname}>
+              {avatarEmoji ? <span className={styles.avatarEmoji} aria-hidden="true">{avatarEmoji}</span> : null}
+              {nickname ? <span className={styles.avatarName}>{nickname}</span> : null}
+            </p>
+          ) : null}
           <p className={styles.fields}>
             <span>
               {t("print:sheet.name")}: <span className="tdp-print-field" />
