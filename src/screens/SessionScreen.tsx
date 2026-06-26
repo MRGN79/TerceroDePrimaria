@@ -45,6 +45,8 @@ type SessionScreenProps = {
   options?: OptionVM[];
   /** valor del display del NumPad (respuesta-corta) */
   numericValue?: string;
+  /** true cuando el display muestra la solución revelada (dos fallos) */
+  numericRevealed?: boolean;
   /** columnas del emparejado */
   matchLeft?: MatchItem[];
   matchRight?: MatchItem[];
@@ -74,6 +76,7 @@ export function SessionScreen({
   kind,
   options = [],
   numericValue = "",
+  numericRevealed = false,
   matchLeft = [],
   matchRight = [],
   feedback,
@@ -168,7 +171,13 @@ export function SessionScreen({
         )}
 
         {kind === "respuesta-corta" && (
-          <NumPad value={numericValue} onDigit={onDigit} onDelete={onDelete} />
+          <NumPad
+            value={numericValue}
+            revealed={numericRevealed}
+            disabled={resolved}
+            onDigit={onDigit}
+            onDelete={onDelete}
+          />
         )}
 
         {kind === "emparejar" && (

@@ -97,6 +97,7 @@ export function SessionContainer({
         kind={view.kind}
         options={view.options}
         numericValue={view.numericValue}
+        numericRevealed={view.numericRevealed}
         matchLeft={view.matchLeft}
         matchRight={view.matchRight}
         feedback={

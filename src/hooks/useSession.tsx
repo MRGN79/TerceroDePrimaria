@@ -55,6 +55,8 @@ export interface SessionView {
   kind: ResponseKind;
   options: OptionVM[];
   numericValue: string;
+  /** true cuando revealed=true en respuesta-corta: el display muestra la solución */
+  numericRevealed: boolean;
   matchLeft: MatchItem[];
   matchRight: MatchItem[];
   feedback: { kind: "correct" | "almost"; message: string } | null;
@@ -270,6 +272,7 @@ export function useSession(
         kind,
         options: [],
         numericValue: "",
+        numericRevealed: false,
         matchLeft: [],
         matchRight: [],
         feedback: null,
@@ -301,7 +304,10 @@ export function useSession(
       promptLang: fixedLanguageFor(exercise.materia),
       kind,
       options,
-      numericValue,
+      numericValue: revealed && kind === "respuesta-corta" && prepared.math
+        ? String(prepared.math.answer)
+        : numericValue,
+      numericRevealed: revealed && kind === "respuesta-corta",
       matchLeft: left,
       matchRight: right,
       feedback,

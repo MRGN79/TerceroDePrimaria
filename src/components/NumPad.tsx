@@ -16,6 +16,8 @@ import styles from "./NumPad.module.css";
 type NumPadProps = {
   /** texto que se muestra en el display (lo gobierna Frontend) */
   value: string;
+  /** true cuando se muestra la solución revelada tras dos fallos */
+  revealed?: boolean;
   onDigit?: (digit: string) => void;
   onDelete?: () => void;
   disabled?: boolean;
@@ -23,13 +25,13 @@ type NumPadProps = {
 
 const KEYS = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
 
-export function NumPad({ value, onDigit, onDelete, disabled = false }: NumPadProps) {
+export function NumPad({ value, revealed = false, onDigit, onDelete, disabled = false }: NumPadProps) {
   const { t } = useTranslation("quiz");
 
   return (
     <div className={styles.root}>
       <output
-        className={styles.display}
+        className={[styles.display, revealed ? styles.displayRevealed : ""].join(" ").trim()}
         aria-live="polite"
         aria-label={t("answer.numpad.display")}
       >
