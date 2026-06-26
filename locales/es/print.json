@@ -24,5 +24,9 @@
   },
   "footer": {
     "cheer": "¡Muy bien! Has trabajado como un gran explorador."
-  }
+  },
+  "doodle": {
+    "label": "¡Colorea estos dibujos!"
+  },
+  "solutionsHint": "Las soluciones estarán en la página siguiente al imprimir"
 }

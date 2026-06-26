@@ -20,6 +20,28 @@
   display: none;
 }
 
+/* Visible también en el preview de pantalla (colores claros) */
+.tdp-print-answer-line {
+  border-bottom: 1.5px solid #bbb;
+  height: 10mm;
+  margin-top: 4pt;
+}
+
+.tdp-print-answer-box {
+  border: 1.5px solid #bbb;
+  min-height: 12mm;
+  margin-top: 4pt;
+}
+
+/* Dibujos para colorear: fila en pantalla */
+.tdp-print-doodles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 12px;
+  color: #555;
+}
+
 @media print {
   /* Oculta toda la app interactiva: nav, sonido, gamificación (A11Y-PRINT-04) */
   .tdp-no-print {
@@ -88,6 +110,15 @@
     border-bottom: 1.5pt solid #000;
     height: 10mm;
     margin-top: 6pt;
+  }
+
+  /* Dibujos para colorear: contorno negro en impresión */
+  .tdp-print-doodles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12pt;
+    margin-top: 10pt;
+    color: #000;
   }
 
   /* Estrellas/recompensas como contorno negro, nunca relleno de color
