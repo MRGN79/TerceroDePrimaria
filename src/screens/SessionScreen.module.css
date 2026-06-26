@@ -49,3 +49,29 @@
     grid-template-columns: 1fr 1fr;
   }
 }
+
+/* Temporizador de avance automático bajo el botón "Siguiente" */
+.nextWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--tdp-space-2);
+  width: 100%;
+}
+
+.timerBar {
+  height: 5px;
+  border-radius: var(--tdp-radius-pill);
+  background: var(--tdp-color-primary);
+  transform-origin: left center;
+  animation: tdp-timer-deplete linear forwards;
+}
+
+@keyframes tdp-timer-deplete {
+  from { transform: scaleX(1); }
+  to   { transform: scaleX(0); }
+}
+
+/* Movimiento reducido: ocultar la barra animada (el avance sigue activo) */
+[data-reduced-motion="true"] .timerBar {
+  display: none;
+}

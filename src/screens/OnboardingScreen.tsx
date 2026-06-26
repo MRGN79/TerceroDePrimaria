@@ -1,6 +1,6 @@
 /*
- * ONBOARDING — elegir avatar y apodo (flujos §1). Solo en el primer arranque.
- * Lista CERRADA (D-2), nunca texto libre. Saltable: el default deja jugar igual.
+ * ONBOARDING — elegir avatar y apodo (flujos §1). Solo en el primer arranque,
+ * o en modo edición (desde Ajustes). Lista CERRADA de avatares + apodo libre.
  * Selección por toque/teclado; estado por borde + ✓, no solo color.
  */
 import { useState } from "react";
@@ -9,20 +9,49 @@ import { PageLayout, Button, Mascot, Icon } from "@/components";
 import { AVATARS, NICKNAMES, DEFAULT_AVATAR, DEFAULT_NICKNAME } from "@/lib/profile";
 import styles from "./OnboardingScreen.module.css";
 
+const MAX_NICKNAME_LENGTH = 20;
+
 type OnboardingScreenProps = {
-  onComplete: (avatarId: string, nicknameId: string) => void;
+  editMode?: boolean;
+  initialAvatarId?: string | null;
+  initialNicknameId?: string | null;
+  initialNicknameCustom?: string | null;
+  onComplete: (avatarId: string, nicknameId: string | null, nicknameCustom: string | null) => void;
 };
 
-export function OnboardingScreen({ onComplete }: OnboardingScreenProps) {
+export function OnboardingScreen({
+  editMode = false,
+  initialAvatarId,
+  initialNicknameId,
+  initialNicknameCustom,
+  onComplete,
+}: OnboardingScreenProps) {
   const { t } = useTranslation(["onboarding", "content", "common"]);
-  const [avatar, setAvatar] = useState<string | null>(null);
-  const [nickname, setNickname] = useState<string | null>(null);
+  const [avatar, setAvatar] = useState<string | null>(initialAvatarId ?? null);
+  const [nickname, setNickname] = useState<string | null>(initialNicknameId ?? null);
+  const [nicknameCustom, setNicknameCustom] = useState(initialNicknameCustom ?? "");
+
+  const handleCustomInput = (value: string) => {
+    const filtered = value.replace(/[<>"&]/g, "").slice(0, MAX_NICKNAME_LENGTH);
+    setNicknameCustom(filtered);
+    if (filtered) setNickname(null);
+  };
+
+  const handleChipSelect = (id: string) => {
+    setNickname(id);
+    setNicknameCustom("");
+  };
 
   const finish = (skip: boolean) => {
     if (skip) {
-      onComplete(DEFAULT_AVATAR, DEFAULT_NICKNAME);
+      onComplete(DEFAULT_AVATAR, DEFAULT_NICKNAME, null);
+      return;
+    }
+    const customTrimmed = nicknameCustom.trim();
+    if (customTrimmed) {
+      onComplete(avatar ?? DEFAULT_AVATAR, null, customTrimmed);
     } else {
-      onComplete(avatar ?? DEFAULT_AVATAR, nickname ?? DEFAULT_NICKNAME);
+      onComplete(avatar ?? DEFAULT_AVATAR, nickname ?? DEFAULT_NICKNAME, null);
     }
   };
 
@@ -70,7 +99,7 @@ export function OnboardingScreen({ onComplete }: OnboardingScreenProps) {
           </h2>
           <ul className={styles.chips} role="list">
             {NICKNAMES.map((n) => {
-              const selected = nickname === n.id;
+              const selected = nickname === n.id && !nicknameCustom;
               return (
                 <li key={n.id}>
                   <button
@@ -79,7 +108,7 @@ export function OnboardingScreen({ onComplete }: OnboardingScreenProps) {
                       .filter(Boolean)
                       .join(" ")}
                     aria-pressed={selected}
-                    onClick={() => setNickname(n.id)}
+                    onClick={() => handleChipSelect(n.id)}
                   >
                     {selected ? (
                       <Icon name="check" size={18} aria-hidden="true" />
@@ -90,15 +119,26 @@ export function OnboardingScreen({ onComplete }: OnboardingScreenProps) {
               );
             })}
           </ul>
+          <input
+            type="text"
+            className={styles.customInput}
+            value={nicknameCustom}
+            maxLength={MAX_NICKNAME_LENGTH}
+            placeholder={t("onboarding:nickname.customPlaceholder")}
+            aria-label={t("onboarding:nickname.customLabel")}
+            onChange={(e) => handleCustomInput(e.target.value)}
+          />
         </section>
 
         <div className={styles.actions}>
           <Button variant="primary" size="lg" onClick={() => finish(false)}>
-            {t("onboarding:continue")}
+            {editMode ? t("onboarding:save") : t("onboarding:continue")}
           </Button>
-          <Button variant="ghost" size="lg" onClick={() => finish(true)}>
-            {t("onboarding:skip")}
-          </Button>
+          {!editMode ? (
+            <Button variant="ghost" size="lg" onClick={() => finish(true)}>
+              {t("onboarding:skip")}
+            </Button>
+          ) : null}
         </div>
       </div>
     </PageLayout>

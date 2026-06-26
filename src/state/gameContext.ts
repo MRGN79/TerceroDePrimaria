@@ -15,7 +15,8 @@ export interface GameStore {
   setLanguage: (lang: Language) => void;
   setSound: (on: boolean) => void;
   setReducedMotion: (on: boolean) => void;
-  setProfile: (avatarId: string, nicknameId: string) => void;
+  setProfile: (avatarId: string, nicknameId: string | null, nicknameCustom?: string | null) => void;
+  clearData: () => void;
   hasProfile: boolean;
   consolidateSession: (c: SessionConsolidation) => ConsolidationResult;
 }

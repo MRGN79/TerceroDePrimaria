@@ -91,6 +91,33 @@
   color: #ffffff;
 }
 
+.customInput {
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  margin: var(--tdp-space-4) auto 0;
+  padding: var(--tdp-space-3) var(--tdp-space-4);
+  font-size: 1rem;
+  font-family: inherit;
+  font-weight: var(--tdp-font-weight-bold);
+  color: var(--tdp-color-text);
+  background: var(--tdp-color-surface);
+  border: 3px solid var(--tdp-color-border);
+  border-radius: var(--tdp-radius-pill);
+  text-align: center;
+  outline-offset: 3px;
+}
+
+.customInput:focus {
+  border-color: var(--tdp-color-primary);
+  outline: 2px solid var(--tdp-color-primary);
+}
+
+.customInput::placeholder {
+  color: var(--tdp-color-text-disabled);
+  font-weight: normal;
+}
+
 .actions {
   display: flex;
   flex-direction: column;

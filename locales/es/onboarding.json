@@ -3,9 +3,12 @@
     "heading": "Elige tu personaje"
   },
   "nickname": {
-    "heading": "Elige tu apodo"
+    "heading": "Elige tu apodo",
+    "customPlaceholder": "O escribe tu nombre…",
+    "customLabel": "Nombre personalizado"
   },
   "continue": "¡Vamos!",
   "skip": "Saltar",
+  "save": "Guardar cambios",
   "step": "Paso {{current}} de {{total}}"
 }

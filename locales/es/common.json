@@ -4,7 +4,8 @@
     "skipToContent": "Saltar al contenido"
   },
   "footer": {
-    "description": "Actividades de repaso de verano para 3.º de Primaria"
+    "description": "Actividades de repaso de verano para 3.º de Primaria",
+    "privacy": "Esta aplicación no envía ningún dato a ningún servidor. Todo se guarda únicamente en este dispositivo."
   },
   "nav": {
     "home": "Inicio",
