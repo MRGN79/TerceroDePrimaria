@@ -5647,6 +5647,96 @@
       },
       "q32": {
         "prompt": "A triangle has no area."
+      },
+      "q33": {
+        "prompt": "A cube has 6 faces."
+      },
+      "q34": {
+        "prompt": "What is 1/4 + 1/4?",
+        "a": "1/2",
+        "b": "2/8",
+        "c": "1/8"
+      },
+      "q35": {
+        "prompt": "The Roman numeral for 50 is L."
+      },
+      "q36": {
+        "prompt": "What is 0.1 + 0.1 + 0.1?",
+        "a": "0.3",
+        "b": "3",
+        "c": "0.03"
+      },
+      "q37": {
+        "prompt": "A straight angle measures 180°."
+      },
+      "q38": {
+        "prompt": "How many edges does a cube have?",
+        "a": "8",
+        "b": "10",
+        "c": "12"
+      },
+      "q39": {
+        "prompt": "1/2 = 2/4 = 4/8"
+      },
+      "q40": {
+        "prompt": "What is 250 × 4?",
+        "a": "800",
+        "b": "900",
+        "c": "1,000"
+      },
+      "q41": {
+        "prompt": "A cylinder has two flat circular faces and one curved surface."
+      },
+      "q42": {
+        "prompt": "Which fraction is bigger: 3/4 or 2/3?",
+        "a": "2/3",
+        "b": "3/4",
+        "c": "They are equal"
+      },
+      "q43": {
+        "prompt": "The number -5 is less than 0."
+      },
+      "q44": {
+        "prompt": "What is the area of a triangle with base 8 cm and height 6 cm?",
+        "a": "24 cm²",
+        "b": "48 cm²",
+        "c": "14 cm²"
+      },
+      "q45": {
+        "prompt": "1 km = 1,000 m"
+      },
+      "q46": {
+        "prompt": "What is 0.75 as a fraction?",
+        "a": "3/5",
+        "b": "3/4",
+        "c": "7/5"
+      },
+      "q47": {
+        "prompt": "A reflex angle is greater than 180°."
+      },
+      "q48": {
+        "prompt": "How many faces does a triangular prism have?",
+        "a": "3",
+        "b": "4",
+        "c": "5"
+      },
+      "q49": {
+        "prompt": "The Roman numeral for 100 is C."
+      },
+      "q50": {
+        "prompt": "What is 1,500 ÷ 3?",
+        "a": "400",
+        "b": "500",
+        "c": "600"
+      },
+      "q51": {
+        "prompt": "The number 0.5 is greater than 0.45."
+      },
+      "q52": {
+        "prompt": "What is 3/4 of 40?",
+        "a": "25",
+        "b": "30",
+        "c": "35"
       }
     },
     "spanish": {
@@ -5790,6 +5880,90 @@
       },
       "q32": {
         "prompt": "The simple past of the verb 'to go' is 'went'."
+      },
+      "q33": {
+        "prompt": "The conditional tense expresses what would happen (e.g., 'cantaría': 'I would sing')."
+      },
+      "q34": {
+        "prompt": "Which is the conditional of 'hablar' (to speak)?",
+        "a": "hablé",
+        "b": "hablaría",
+        "c": "hablaré"
+      },
+      "q35": {
+        "prompt": "The indirect object answers the question 'to whom?' or 'for whom?'."
+      },
+      "q36": {
+        "prompt": "What is a subordinate clause?",
+        "a": "A main sentence on its own",
+        "b": "A clause that depends on the main clause",
+        "c": "A sentence without a verb"
+      },
+      "q37": {
+        "prompt": "The suffix '-ción' forms nouns from verbs (e.g., 'cantar' → 'canción')."
+      },
+      "q38": {
+        "prompt": "What does an argumentative text do?",
+        "a": "Tells a story",
+        "b": "Gives opinions supported by reasons",
+        "c": "Describes a place"
+      },
+      "q39": {
+        "prompt": "In Spanish, a question mark appears at both the beginning (¿) and the end (?) of the sentence."
+      },
+      "q40": {
+        "prompt": "Which of these is an example of hyperbole?",
+        "a": "'The sun smiled on us'",
+        "b": "'I have told you a thousand times'",
+        "c": "'As fast as a bullet'"
+      },
+      "q41": {
+        "prompt": "An adverbial clause of time answers the question 'when?'."
+      },
+      "q42": {
+        "prompt": "What type of connective introduces a contrast?",
+        "a": "and / y",
+        "b": "because / porque",
+        "c": "however / sin embargo"
+      },
+      "q43": {
+        "prompt": "The word 'quickly' (rápidamente) is an adverb of manner."
+      },
+      "q44": {
+        "prompt": "Which of these words contains a prefix meaning 'before'?",
+        "a": "antibiótico",
+        "b": "prehistoria",
+        "c": "supermercado"
+      },
+      "q45": {
+        "prompt": "Connectors help link ideas within a text."
+      },
+      "q46": {
+        "prompt": "What is an allegory?",
+        "a": "A story where characters or objects represent abstract ideas",
+        "b": "A short funny poem",
+        "c": "A type of haiku"
+      },
+      "q47": {
+        "prompt": "The present perfect ('he comido': 'I have eaten') refers to a past action with present relevance."
+      },
+      "q48": {
+        "prompt": "Which sentence contains a simile?",
+        "a": "'La luna es una moneda en el cielo'",
+        "b": "'Es tan callada como un ratón'",
+        "c": "'El viento me habló'"
+      },
+      "q49": {
+        "prompt": "The conjunction 'although' (aunque) introduces a concessive clause."
+      },
+      "q50": {
+        "prompt": "Which type of text uses numbered steps and diagrams?",
+        "a": "Narrative / Narrativo",
+        "b": "Instructional / Instructivo",
+        "c": "Argumentative / Argumentativo"
+      },
+      "q51": {
+        "prompt": "A neologism is a newly coined word or expression."
       }
     },
     "science": {
@@ -5933,6 +6107,90 @@
       },
       "q32": {
         "prompt": "An ecosystem includes both living things and their environment."
+      },
+      "q33": {
+        "prompt": "The skeletal system gives the body structure and protects internal organs."
+      },
+      "q34": {
+        "prompt": "What is the main function of the heart?",
+        "a": "To break down food",
+        "b": "To pump blood around the body",
+        "c": "To breathe"
+      },
+      "q35": {
+        "prompt": "The lungs are part of the respiratory system."
+      },
+      "q36": {
+        "prompt": "How many chambers does the human heart have?",
+        "a": "2",
+        "b": "3",
+        "c": "4"
+      },
+      "q37": {
+        "prompt": "Muscles can only pull; they cannot push."
+      },
+      "q38": {
+        "prompt": "What is the main function of the nervous system?",
+        "a": "To digest food",
+        "b": "To send and receive signals to and from the brain",
+        "c": "To carry oxygen"
+      },
+      "q39": {
+        "prompt": "Red blood cells carry oxygen around the body."
+      },
+      "q40": {
+        "prompt": "Which organ controls all the body's functions?",
+        "a": "The heart",
+        "b": "The stomach",
+        "c": "The brain"
+      },
+      "q41": {
+        "prompt": "An electric circuit needs a complete, unbroken loop for electricity to flow."
+      },
+      "q42": {
+        "prompt": "What type of rock is formed when layers of sediment are compressed?",
+        "a": "Igneous / Ígnea",
+        "b": "Sedimentary / Sedimentaria",
+        "c": "Metamorphic / Metamórfica"
+      },
+      "q43": {
+        "prompt": "A magnet attracts objects made of iron, steel, nickel and cobalt."
+      },
+      "q44": {
+        "prompt": "What is the main organ of the digestive system?",
+        "a": "The brain",
+        "b": "The lungs",
+        "c": "The stomach"
+      },
+      "q45": {
+        "prompt": "Erosion is the wearing away of rocks and soil by wind, water or ice."
+      },
+      "q46": {
+        "prompt": "Which planet is closest to the Sun?",
+        "a": "Earth / La Tierra",
+        "b": "Venus",
+        "c": "Mercury / Mercurio"
+      },
+      "q47": {
+        "prompt": "Conductors allow electricity to flow through them."
+      },
+      "q48": {
+        "prompt": "What is biodiversity?",
+        "a": "The variety of living things in an area",
+        "b": "The study of rocks",
+        "c": "The movement of water"
+      },
+      "q49": {
+        "prompt": "The digestive system breaks food down into nutrients the body can use."
+      },
+      "q50": {
+        "prompt": "Which type of energy comes directly from the Sun?",
+        "a": "Wind energy / Energía eólica",
+        "b": "Nuclear energy / Energía nuclear",
+        "c": "Solar energy / Energía solar"
+      },
+      "q51": {
+        "prompt": "Metamorphic rocks are formed when rocks are changed by heat and pressure."
       }
     },
     "social": {
@@ -6076,6 +6334,90 @@
       },
       "q32": {
         "prompt": "Antarctica is the coldest continent on Earth."
+      },
+      "q33": {
+        "prompt": "Spain is a constitutional monarchy."
+      },
+      "q34": {
+        "prompt": "How many autonomous communities does Spain have?",
+        "a": "15",
+        "b": "17",
+        "c": "19"
+      },
+      "q35": {
+        "prompt": "The River Ebro is the longest river entirely within Spain."
+      },
+      "q36": {
+        "prompt": "Who were the Catholic Monarchs of Spain?",
+        "a": "Charles I and Philip II",
+        "b": "Ferdinand and Isabella",
+        "c": "Alfonso XIII and Victoria Eugenia"
+      },
+      "q37": {
+        "prompt": "Christopher Columbus reached America in 1492."
+      },
+      "q38": {
+        "prompt": "What is the capital city of Germany?",
+        "a": "Munich / Múnich",
+        "b": "Vienna / Viena",
+        "c": "Berlin / Berlín"
+      },
+      "q39": {
+        "prompt": "The European Union has more than 20 member states."
+      },
+      "q40": {
+        "prompt": "Which of these is an autonomous community of Spain?",
+        "a": "Porto",
+        "b": "Catalonia / Cataluña",
+        "c": "Algarve"
+      },
+      "q41": {
+        "prompt": "The Atlantic Ocean lies to the west of Europe."
+      },
+      "q42": {
+        "prompt": "What do we call people who move to another country to live permanently?",
+        "a": "Tourists / Turistas",
+        "b": "Immigrants / Inmigrantes",
+        "c": "Traders / Comerciantes"
+      },
+      "q43": {
+        "prompt": "The primary sector produces raw materials directly from nature."
+      },
+      "q44": {
+        "prompt": "Which is the highest peak in mainland Spain?",
+        "a": "Teide",
+        "b": "Mulhacén",
+        "c": "Aneto"
+      },
+      "q45": {
+        "prompt": "Spain joined the European Union in 1986."
+      },
+      "q46": {
+        "prompt": "What language is spoken in Brazil?",
+        "a": "Spanish / Español",
+        "b": "Portuguese / Portugués",
+        "c": "English / Inglés"
+      },
+      "q47": {
+        "prompt": "The Mediterranean climate has hot, dry summers and mild, wet winters."
+      },
+      "q48": {
+        "prompt": "Which civilization built the Colosseum in Rome?",
+        "a": "The Greeks / Los griegos",
+        "b": "The Romans / Los romanos",
+        "c": "The Egyptians / Los egipcios"
+      },
+      "q49": {
+        "prompt": "The Industrial Revolution began in Britain in the 18th century."
+      },
+      "q50": {
+        "prompt": "What is the capital of Italy?",
+        "a": "Milan / Milán",
+        "b": "Naples / Nápoles",
+        "c": "Rome / Roma"
+      },
+      "q51": {
+        "prompt": "The Alps mountain range is located in Central Europe."
       }
     },
     "english": {
@@ -6219,6 +6561,90 @@
       },
       "q32": {
         "prompt": "'Did you see that film?' is a correct question in the past tense."
+      },
+      "q33": {
+        "prompt": "The present perfect is formed with 'have/has + past participle'."
+      },
+      "q34": {
+        "prompt": "Which sentence uses the present perfect?",
+        "a": "I eat pizza",
+        "b": "I have eaten pizza",
+        "c": "I ate pizza"
+      },
+      "q35": {
+        "prompt": "'Must' expresses obligation or necessity."
+      },
+      "q36": {
+        "prompt": "What is the future tense of 'she goes'?",
+        "a": "she went",
+        "b": "she will go",
+        "c": "she has gone"
+      },
+      "q37": {
+        "prompt": "'Should' is used to give advice (e.g., 'You should study more')."
+      },
+      "q38": {
+        "prompt": "Which sentence is in the passive voice?",
+        "a": "The dog bit the boy",
+        "b": "The boy was bitten by the dog",
+        "c": "The boy bit the dog"
+      },
+      "q39": {
+        "prompt": "The first conditional uses 'if + present simple + will + infinitive'."
+      },
+      "q40": {
+        "prompt": "What is the past participle of 'break'?",
+        "a": "broke",
+        "b": "broken",
+        "c": "breaked"
+      },
+      "q41": {
+        "prompt": "'Might' expresses possibility (e.g., 'It might rain')."
+      },
+      "q42": {
+        "prompt": "Which is the correct reported speech of 'I am happy'?",
+        "a": "She said she was happy",
+        "b": "She said she is happy",
+        "c": "She said she were happy"
+      },
+      "q43": {
+        "prompt": "Adjectives in English normally go before the noun they describe."
+      },
+      "q44": {
+        "prompt": "Which preposition completes: 'I have been here ___ three hours'?",
+        "a": "since",
+        "b": "for",
+        "c": "during"
+      },
+      "q45": {
+        "prompt": "The second conditional is used for unreal or hypothetical situations."
+      },
+      "q46": {
+        "prompt": "What does 'I have just finished' mean?",
+        "a": "I finished a long time ago",
+        "b": "I finished very recently",
+        "c": "I will finish soon"
+      },
+      "q47": {
+        "prompt": "'Since' is used with a specific point in time (e.g., 'since Monday')."
+      },
+      "q48": {
+        "prompt": "Which sentence is grammatically correct?",
+        "a": "She don't like cats",
+        "b": "She doesn't likes cats",
+        "c": "She doesn't like cats"
+      },
+      "q49": {
+        "prompt": "Adverbs of frequency (always, usually, never) go before the main verb."
+      },
+      "q50": {
+        "prompt": "What is the superlative of 'good'?",
+        "a": "better",
+        "b": "gooder",
+        "c": "best"
+      },
+      "q51": {
+        "prompt": "The passive voice is formed with 'to be + past participle'."
       }
     }
   }

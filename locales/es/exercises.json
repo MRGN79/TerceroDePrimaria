@@ -4389,6 +4389,96 @@
       },
       "q32": {
         "prompt": "Un triángulo no tiene área."
+      },
+      "q33": {
+        "prompt": "Un cubo tiene 6 caras."
+      },
+      "q34": {
+        "prompt": "¿Cuánto es 1/4 + 1/4?",
+        "a": "1/2",
+        "b": "2/8",
+        "c": "1/8"
+      },
+      "q35": {
+        "prompt": "El número romano para 50 es L."
+      },
+      "q36": {
+        "prompt": "¿Cuánto es 0,1 + 0,1 + 0,1?",
+        "a": "0,3",
+        "b": "3",
+        "c": "0,03"
+      },
+      "q37": {
+        "prompt": "Un ángulo llano mide 180°."
+      },
+      "q38": {
+        "prompt": "¿Cuántas aristas tiene un cubo?",
+        "a": "8",
+        "b": "10",
+        "c": "12"
+      },
+      "q39": {
+        "prompt": "1/2 = 2/4 = 4/8"
+      },
+      "q40": {
+        "prompt": "¿Cuánto es 250 × 4?",
+        "a": "800",
+        "b": "900",
+        "c": "1.000"
+      },
+      "q41": {
+        "prompt": "Un cilindro tiene dos caras planas circulares y una superficie curva."
+      },
+      "q42": {
+        "prompt": "¿Qué fracción es mayor: 3/4 o 2/3?",
+        "a": "2/3",
+        "b": "3/4",
+        "c": "Son iguales"
+      },
+      "q43": {
+        "prompt": "El número −5 es menor que 0."
+      },
+      "q44": {
+        "prompt": "¿Cuánto mide el área de un triángulo de base 8 cm y altura 6 cm?",
+        "a": "24 cm²",
+        "b": "48 cm²",
+        "c": "14 cm²"
+      },
+      "q45": {
+        "prompt": "1 km = 1.000 m"
+      },
+      "q46": {
+        "prompt": "¿Cómo se escribe 0,75 como fracción?",
+        "a": "3/5",
+        "b": "3/4",
+        "c": "7/5"
+      },
+      "q47": {
+        "prompt": "Un ángulo reflejo es mayor de 180°."
+      },
+      "q48": {
+        "prompt": "¿Cuántas caras tiene un prisma triangular?",
+        "a": "3",
+        "b": "4",
+        "c": "5"
+      },
+      "q49": {
+        "prompt": "El número romano para 100 es C."
+      },
+      "q50": {
+        "prompt": "¿Cuánto es 1.500 ÷ 3?",
+        "a": "400",
+        "b": "500",
+        "c": "600"
+      },
+      "q51": {
+        "prompt": "El número 0,5 es mayor que 0,45."
+      },
+      "q52": {
+        "prompt": "¿Cuánto es 3/4 de 40?",
+        "a": "25",
+        "b": "30",
+        "c": "35"
       }
     },
     "spanish": {
@@ -4532,6 +4622,90 @@
       },
       "q32": {
         "prompt": "El pretérito indefinido del verbo 'ir' es 'fui'."
+      },
+      "q33": {
+        "prompt": "El condicional expresa lo que ocurriría (p. ej., 'cantaría')."
+      },
+      "q34": {
+        "prompt": "¿Cuál es el condicional de 'hablar'?",
+        "a": "hablé",
+        "b": "hablaría",
+        "c": "hablaré"
+      },
+      "q35": {
+        "prompt": "El complemento indirecto responde a '¿a quién?' o '¿para quién?'."
+      },
+      "q36": {
+        "prompt": "¿Qué es una oración subordinada?",
+        "a": "Una oración principal por sí sola",
+        "b": "Una oración que depende de la principal",
+        "c": "Una oración sin verbo"
+      },
+      "q37": {
+        "prompt": "El sufijo '-ción' forma sustantivos a partir de verbos (p. ej., 'cantar' → 'canción')."
+      },
+      "q38": {
+        "prompt": "¿Qué hace un texto argumentativo?",
+        "a": "Cuenta una historia",
+        "b": "Da opiniones apoyadas en razones",
+        "c": "Describe un lugar"
+      },
+      "q39": {
+        "prompt": "En español, la pregunta lleva signos de interrogación al principio (¿) y al final (?)."
+      },
+      "q40": {
+        "prompt": "¿Cuál de estos es un ejemplo de hipérbole?",
+        "a": "'El sol nos sonrió'",
+        "b": "'Te lo he dicho mil veces'",
+        "c": "'Rápido como una bala'"
+      },
+      "q41": {
+        "prompt": "Una oración adverbial de tiempo responde a la pregunta '¿cuándo?'."
+      },
+      "q42": {
+        "prompt": "¿Qué tipo de conector introduce un contraste?",
+        "a": "y",
+        "b": "porque",
+        "c": "sin embargo"
+      },
+      "q43": {
+        "prompt": "La palabra 'rápidamente' es un adverbio de modo."
+      },
+      "q44": {
+        "prompt": "¿Cuál de estas palabras contiene un prefijo que significa 'antes'?",
+        "a": "antibiótico",
+        "b": "prehistoria",
+        "c": "supermercado"
+      },
+      "q45": {
+        "prompt": "Los conectores ayudan a unir ideas dentro de un texto."
+      },
+      "q46": {
+        "prompt": "¿Qué es una alegoría?",
+        "a": "Una historia donde personajes u objetos representan ideas abstractas",
+        "b": "Un poema corto y divertido",
+        "c": "Un tipo de haiku"
+      },
+      "q47": {
+        "prompt": "El pretérito perfecto ('he comido') se refiere a una acción pasada con relevancia en el presente."
+      },
+      "q48": {
+        "prompt": "¿Qué oración contiene un símil?",
+        "a": "'La luna es una moneda en el cielo'",
+        "b": "'Es tan callada como un ratón'",
+        "c": "'El viento me habló'"
+      },
+      "q49": {
+        "prompt": "La conjunción 'aunque' introduce una oración concesiva."
+      },
+      "q50": {
+        "prompt": "¿Qué tipo de texto usa pasos numerados y diagramas?",
+        "a": "Narrativo",
+        "b": "Instructivo",
+        "c": "Argumentativo"
+      },
+      "q51": {
+        "prompt": "Un neologismo es una palabra o expresión de nueva creación."
       }
     },
     "science": {
@@ -4675,6 +4849,90 @@
       },
       "q32": {
         "prompt": "Un ecosistema incluye tanto los seres vivos como su entorno."
+      },
+      "q33": {
+        "prompt": "El sistema esquelético da estructura al cuerpo y protege los órganos internos."
+      },
+      "q34": {
+        "prompt": "¿Cuál es la función principal del corazón?",
+        "a": "Descomponer los alimentos",
+        "b": "Bombear la sangre por el cuerpo",
+        "c": "Respirar"
+      },
+      "q35": {
+        "prompt": "Los pulmones forman parte del sistema respiratorio."
+      },
+      "q36": {
+        "prompt": "¿Cuántas cavidades tiene el corazón humano?",
+        "a": "2",
+        "b": "3",
+        "c": "4"
+      },
+      "q37": {
+        "prompt": "Los músculos solo pueden tirar; no pueden empujar."
+      },
+      "q38": {
+        "prompt": "¿Cuál es la función principal del sistema nervioso?",
+        "a": "Digerir los alimentos",
+        "b": "Enviar y recibir señales hacia y desde el cerebro",
+        "c": "Transportar oxígeno"
+      },
+      "q39": {
+        "prompt": "Los glóbulos rojos transportan oxígeno por el cuerpo."
+      },
+      "q40": {
+        "prompt": "¿Qué órgano controla todas las funciones del cuerpo?",
+        "a": "El corazón",
+        "b": "El estómago",
+        "c": "El cerebro"
+      },
+      "q41": {
+        "prompt": "Un circuito eléctrico necesita un circuito cerrado y continuo para que fluya la electricidad."
+      },
+      "q42": {
+        "prompt": "¿Qué tipo de roca se forma cuando capas de sedimento son comprimidas?",
+        "a": "Ígnea",
+        "b": "Sedimentaria",
+        "c": "Metamórfica"
+      },
+      "q43": {
+        "prompt": "Un imán atrae objetos de hierro, acero, níquel y cobalto."
+      },
+      "q44": {
+        "prompt": "¿Cuál es el órgano principal del sistema digestivo?",
+        "a": "El cerebro",
+        "b": "Los pulmones",
+        "c": "El estómago"
+      },
+      "q45": {
+        "prompt": "La erosión es el desgaste de rocas y suelo causado por el viento, el agua o el hielo."
+      },
+      "q46": {
+        "prompt": "¿Qué planeta está más cerca del Sol?",
+        "a": "La Tierra",
+        "b": "Venus",
+        "c": "Mercurio"
+      },
+      "q47": {
+        "prompt": "Los conductores permiten que la electricidad fluya a través de ellos."
+      },
+      "q48": {
+        "prompt": "¿Qué es la biodiversidad?",
+        "a": "La variedad de seres vivos en un área",
+        "b": "El estudio de las rocas",
+        "c": "El movimiento del agua"
+      },
+      "q49": {
+        "prompt": "El sistema digestivo descompone los alimentos en nutrientes que el cuerpo puede utilizar."
+      },
+      "q50": {
+        "prompt": "¿Qué tipo de energía proviene directamente del Sol?",
+        "a": "Energía eólica",
+        "b": "Energía nuclear",
+        "c": "Energía solar"
+      },
+      "q51": {
+        "prompt": "Las rocas metamórficas se forman cuando las rocas son transformadas por el calor y la presión."
       }
     },
     "social": {
@@ -4818,6 +5076,90 @@
       },
       "q32": {
         "prompt": "La Antártida es el continente más frío de la Tierra."
+      },
+      "q33": {
+        "prompt": "España es una monarquía constitucional."
+      },
+      "q34": {
+        "prompt": "¿Cuántas comunidades autónomas tiene España?",
+        "a": "15",
+        "b": "17",
+        "c": "19"
+      },
+      "q35": {
+        "prompt": "El río Ebro es el río más largo que discurre íntegramente por España."
+      },
+      "q36": {
+        "prompt": "¿Quiénes fueron los Reyes Católicos de España?",
+        "a": "Carlos I y Felipe II",
+        "b": "Fernando e Isabel",
+        "c": "Alfonso XIII y Victoria Eugenia"
+      },
+      "q37": {
+        "prompt": "Cristóbal Colón llegó a América en 1492."
+      },
+      "q38": {
+        "prompt": "¿Cuál es la capital de Alemania?",
+        "a": "Múnich",
+        "b": "Viena",
+        "c": "Berlín"
+      },
+      "q39": {
+        "prompt": "La Unión Europea tiene más de 20 estados miembros."
+      },
+      "q40": {
+        "prompt": "¿Cuál de estas es una comunidad autónoma de España?",
+        "a": "Porto",
+        "b": "Cataluña",
+        "c": "Algarve"
+      },
+      "q41": {
+        "prompt": "El océano Atlántico se encuentra al oeste de Europa."
+      },
+      "q42": {
+        "prompt": "¿Cómo se llaman las personas que se trasladan a otro país para vivir de forma permanente?",
+        "a": "Turistas",
+        "b": "Inmigrantes",
+        "c": "Comerciantes"
+      },
+      "q43": {
+        "prompt": "El sector primario obtiene materias primas directamente de la naturaleza."
+      },
+      "q44": {
+        "prompt": "¿Cuál es el pico más alto de la España peninsular?",
+        "a": "Teide",
+        "b": "Mulhacén",
+        "c": "Aneto"
+      },
+      "q45": {
+        "prompt": "España se incorporó a la Unión Europea en 1986."
+      },
+      "q46": {
+        "prompt": "¿Qué idioma se habla en Brasil?",
+        "a": "Español",
+        "b": "Portugués",
+        "c": "Inglés"
+      },
+      "q47": {
+        "prompt": "El clima mediterráneo tiene veranos calurosos y secos, e inviernos suaves y lluviosos."
+      },
+      "q48": {
+        "prompt": "¿Qué civilización construyó el Coliseo de Roma?",
+        "a": "Los griegos",
+        "b": "Los romanos",
+        "c": "Los egipcios"
+      },
+      "q49": {
+        "prompt": "La Revolución Industrial comenzó en Gran Bretaña en el siglo XVIII."
+      },
+      "q50": {
+        "prompt": "¿Cuál es la capital de Italia?",
+        "a": "Milán",
+        "b": "Nápoles",
+        "c": "Roma"
+      },
+      "q51": {
+        "prompt": "La cordillera de los Alpes se encuentra en Europa Central."
       }
     },
     "english": {
@@ -4961,6 +5303,90 @@
       },
       "q32": {
         "prompt": "'Did you see that film?' es una pregunta correcta en pasado."
+      },
+      "q33": {
+        "prompt": "El presente perfecto se forma con 'have/has + participio pasado'."
+      },
+      "q34": {
+        "prompt": "¿Qué oración usa el presente perfecto?",
+        "a": "I eat pizza",
+        "b": "I have eaten pizza",
+        "c": "I ate pizza"
+      },
+      "q35": {
+        "prompt": "'Must' expresa obligación o necesidad."
+      },
+      "q36": {
+        "prompt": "¿Cuál es el futuro de 'she goes'?",
+        "a": "she went",
+        "b": "she will go",
+        "c": "she has gone"
+      },
+      "q37": {
+        "prompt": "'Should' se usa para dar consejos (p. ej., 'You should study more')."
+      },
+      "q38": {
+        "prompt": "¿Qué oración está en voz pasiva?",
+        "a": "The dog bit the boy",
+        "b": "The boy was bitten by the dog",
+        "c": "The boy bit the dog"
+      },
+      "q39": {
+        "prompt": "El primer condicional usa 'if + presente simple + will + infinitivo'."
+      },
+      "q40": {
+        "prompt": "¿Cuál es el participio pasado de 'break'?",
+        "a": "broke",
+        "b": "broken",
+        "c": "breaked"
+      },
+      "q41": {
+        "prompt": "'Might' expresa posibilidad (p. ej., 'It might rain')."
+      },
+      "q42": {
+        "prompt": "¿Cuál es el estilo indirecto correcto de 'I am happy'?",
+        "a": "She said she was happy",
+        "b": "She said she is happy",
+        "c": "She said she were happy"
+      },
+      "q43": {
+        "prompt": "Los adjetivos en inglés normalmente van antes del sustantivo al que describen."
+      },
+      "q44": {
+        "prompt": "¿Qué preposición completa: 'I have been here ___ three hours'?",
+        "a": "since",
+        "b": "for",
+        "c": "during"
+      },
+      "q45": {
+        "prompt": "El segundo condicional se usa para situaciones irreales o hipotéticas."
+      },
+      "q46": {
+        "prompt": "¿Qué significa 'I have just finished'?",
+        "a": "Terminé hace mucho tiempo",
+        "b": "Terminé muy recientemente",
+        "c": "Terminaré pronto"
+      },
+      "q47": {
+        "prompt": "'Since' se usa con un momento específico en el tiempo (p. ej., 'since Monday')."
+      },
+      "q48": {
+        "prompt": "¿Qué oración es gramaticalmente correcta?",
+        "a": "She don't like cats",
+        "b": "She doesn't likes cats",
+        "c": "She doesn't like cats"
+      },
+      "q49": {
+        "prompt": "Los adverbios de frecuencia (always, usually, never) van antes del verbo principal."
+      },
+      "q50": {
+        "prompt": "¿Cuál es el superlativo de 'good'?",
+        "a": "better",
+        "b": "gooder",
+        "c": "best"
+      },
+      "q51": {
+        "prompt": "La voz pasiva se forma con 'to be + participio pasado'."
       }
     }
   }
