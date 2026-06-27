@@ -4177,6 +4177,228 @@
         "r1": "night sky",
         "r2": "snow",
         "r3": "pumpkin"
+      },
+      "q9": {
+        "prompt": "What colour is the sun?",
+        "a": "green",
+        "b": "blue",
+        "c": "yellow"
+      },
+      "q10": {
+        "prompt": "A strawberry is red."
+      },
+      "q11": {
+        "prompt": "How many sides does a square have?",
+        "a": "three",
+        "b": "four",
+        "c": "five"
+      },
+      "q12": {
+        "prompt": "A triangle has four corners."
+      },
+      "q13": {
+        "prompt": "What colour is an elephant?",
+        "a": "pink",
+        "b": "grey",
+        "c": "orange"
+      },
+      "q14": {
+        "prompt": "Oranges are orange."
+      },
+      "q15": {
+        "prompt": "Match each colour to its Spanish word.",
+        "l1": "red",
+        "l2": "blue",
+        "l3": "green",
+        "r1": "verde",
+        "r2": "rojo",
+        "r3": "azul"
+      },
+      "q16": {
+        "prompt": "Which shape is round like a pizza?",
+        "a": "triangle",
+        "b": "square",
+        "c": "circle"
+      },
+      "q17": {
+        "prompt": "Snow is white."
+      },
+      "q18": {
+        "prompt": "What colour is a pumpkin?",
+        "a": "yellow",
+        "b": "purple",
+        "c": "orange"
+      },
+      "q19": {
+        "prompt": "A rectangle has two pairs of equal sides."
+      },
+      "q20": {
+        "prompt": "What colour is a rose?",
+        "a": "blue",
+        "b": "red",
+        "c": "green"
+      },
+      "q21": {
+        "prompt": "The sea is usually green."
+      },
+      "q22": {
+        "prompt": "Match each shape to the number of sides.",
+        "l1": "triangle",
+        "l2": "square",
+        "l3": "pentagon",
+        "r1": "5",
+        "r2": "3",
+        "r3": "4"
+      },
+      "q23": {
+        "prompt": "What colour is coal?",
+        "a": "black",
+        "b": "white",
+        "c": "brown"
+      },
+      "q24": {
+        "prompt": "Purple and violet are similar colours."
+      },
+      "q25": {
+        "prompt": "Which shape has no sides?",
+        "a": "triangle",
+        "b": "rectangle",
+        "c": "circle"
+      },
+      "q26": {
+        "prompt": "A banana is purple."
+      },
+      "q27": {
+        "prompt": "What colour is chocolate?",
+        "a": "black",
+        "b": "brown",
+        "c": "red"
+      },
+      "q28": {
+        "prompt": "A star has five points."
+      },
+      "q29": {
+        "prompt": "Match each colour to an animal of that colour.",
+        "l1": "white",
+        "l2": "orange",
+        "l3": "black",
+        "r1": "tiger",
+        "r2": "polar bear",
+        "r3": "crow"
+      },
+      "q30": {
+        "prompt": "What colour is a lemon?",
+        "a": "green",
+        "b": "orange",
+        "c": "yellow"
+      },
+      "q31": {
+        "prompt": "A heart shape has straight sides."
+      },
+      "q32": {
+        "prompt": "What colour is a flamingo?",
+        "a": "pink",
+        "b": "white",
+        "c": "yellow"
+      },
+      "q33": {
+        "prompt": "Blue and red make purple."
+      },
+      "q34": {
+        "prompt": "How many corners does a rectangle have?",
+        "a": "two",
+        "b": "three",
+        "c": "four"
+      },
+      "q35": {
+        "prompt": "Grass is always brown."
+      },
+      "q36": {
+        "prompt": "Match each colour to what you see in the sky.",
+        "l1": "blue",
+        "l2": "white",
+        "l3": "yellow",
+        "r1": "clouds",
+        "r2": "the sky",
+        "r3": "the sun"
+      },
+      "q37": {
+        "prompt": "What colour is a frog?",
+        "a": "red",
+        "b": "green",
+        "c": "orange"
+      },
+      "q38": {
+        "prompt": "An oval is a stretched circle."
+      },
+      "q39": {
+        "prompt": "What colour is a carrot?",
+        "a": "yellow",
+        "b": "red",
+        "c": "orange"
+      },
+      "q40": {
+        "prompt": "White and black make grey."
+      },
+      "q41": {
+        "prompt": "Which of these shapes has all sides equal?",
+        "a": "rectangle",
+        "b": "square",
+        "c": "oval"
+      },
+      "q42": {
+        "prompt": "Blueberries are blue."
+      },
+      "q43": {
+        "prompt": "What colour is a tiger?",
+        "a": "grey",
+        "b": "white",
+        "c": "orange"
+      },
+      "q44": {
+        "prompt": "A diamond shape has four sides."
+      },
+      "q45": {
+        "prompt": "Match each colour to a food of that colour.",
+        "l1": "red",
+        "l2": "yellow",
+        "l3": "green",
+        "r1": "banana",
+        "r2": "tomato",
+        "r3": "lime"
+      },
+      "q46": {
+        "prompt": "What colour is the night sky?",
+        "a": "yellow",
+        "b": "dark blue",
+        "c": "bright green"
+      },
+      "q47": {
+        "prompt": "Pink is a light shade of red."
+      },
+      "q48": {
+        "prompt": "How many sides does a pentagon have?",
+        "a": "four",
+        "b": "five",
+        "c": "six"
+      },
+      "q49": {
+        "prompt": "Yellow and blue make green."
+      },
+      "q50": {
+        "prompt": "What colour is a ripe cherry?",
+        "a": "orange",
+        "b": "yellow",
+        "c": "red"
+      },
+      "q51": {
+        "prompt": "A square is a type of rectangle."
+      },
+      "q52": {
+        "prompt": "What is the colour of the sky on a sunny day?",
+        "a": "grey",
+        "b": "blue",
+        "c": "purple"
       }
     },
     "animals": {
@@ -4221,6 +4443,237 @@
         "a": "Kitten",
         "b": "Puppy",
         "c": "Cub"
+      },
+      "q9": {
+        "prompt": "What sound does a duck make?",
+        "a": "moo",
+        "b": "quack",
+        "c": "oink"
+      },
+      "q10": {
+        "prompt": "A fish can live on land."
+      },
+      "q11": {
+        "prompt": "Which animal has a long neck?",
+        "a": "elephant",
+        "b": "giraffe",
+        "c": "hippo"
+      },
+      "q12": {
+        "prompt": "Cats have four legs."
+      },
+      "q13": {
+        "prompt": "Match each animal to where it lives.",
+        "l1": "fish",
+        "l2": "bird",
+        "l3": "rabbit",
+        "r1": "burrow",
+        "r2": "pond",
+        "r3": "tree"
+      },
+      "q14": {
+        "prompt": "What do cows give us?",
+        "a": "eggs",
+        "b": "milk",
+        "c": "wool"
+      },
+      "q15": {
+        "prompt": "Spiders are insects."
+      },
+      "q16": {
+        "prompt": "Which animal lays eggs?",
+        "a": "dog",
+        "b": "rabbit",
+        "c": "hen"
+      },
+      "q17": {
+        "prompt": "Butterflies have wings."
+      },
+      "q18": {
+        "prompt": "Match each animal to its young.",
+        "l1": "dog",
+        "l2": "cat",
+        "l3": "cow",
+        "r1": "calf",
+        "r2": "kitten",
+        "r3": "puppy"
+      },
+      "q19": {
+        "prompt": "What do bees make?",
+        "a": "honey",
+        "b": "milk",
+        "c": "wool"
+      },
+      "q20": {
+        "prompt": "Elephants are the biggest land animals."
+      },
+      "q21": {
+        "prompt": "Which animal has a shell?",
+        "a": "frog",
+        "b": "tortoise",
+        "c": "rabbit"
+      },
+      "q22": {
+        "prompt": "Penguins can fly."
+      },
+      "q23": {
+        "prompt": "Match each animal to what it eats.",
+        "l1": "rabbit",
+        "l2": "lion",
+        "l3": "panda",
+        "r1": "meat",
+        "r2": "bamboo",
+        "r3": "carrots"
+      },
+      "q24": {
+        "prompt": "How many legs does a spider have?",
+        "a": "six",
+        "b": "eight",
+        "c": "ten"
+      },
+      "q25": {
+        "prompt": "Dolphins are fish."
+      },
+      "q26": {
+        "prompt": "Which animal is known as the king of the jungle?",
+        "a": "tiger",
+        "b": "elephant",
+        "c": "lion"
+      },
+      "q27": {
+        "prompt": "Frogs start their lives in water."
+      },
+      "q28": {
+        "prompt": "Match each animal to its sound.",
+        "l1": "cow",
+        "l2": "pig",
+        "l3": "sheep",
+        "r1": "oink",
+        "r2": "moo",
+        "r3": "baa"
+      },
+      "q29": {
+        "prompt": "Which of these is a reptile?",
+        "a": "frog",
+        "b": "snake",
+        "c": "toad"
+      },
+      "q30": {
+        "prompt": "Bats can fly."
+      },
+      "q31": {
+        "prompt": "What is a baby sheep called?",
+        "a": "puppy",
+        "b": "calf",
+        "c": "lamb"
+      },
+      "q32": {
+        "prompt": "Birds have feathers."
+      },
+      "q33": {
+        "prompt": "Match each animal to how it moves.",
+        "l1": "fish",
+        "l2": "bird",
+        "l3": "snake",
+        "r1": "slithers",
+        "r2": "swims",
+        "r3": "flies"
+      },
+      "q34": {
+        "prompt": "Which animal makes a web?",
+        "a": "bee",
+        "b": "spider",
+        "c": "ant"
+      },
+      "q35": {
+        "prompt": "Camels store water in their humps."
+      },
+      "q36": {
+        "prompt": "What do you call a group of wolves?",
+        "a": "flock",
+        "b": "pack",
+        "c": "herd"
+      },
+      "q37": {
+        "prompt": "Owls are active during the day."
+      },
+      "q38": {
+        "prompt": "Match each animal to its group name.",
+        "l1": "fish",
+        "l2": "sheep",
+        "l3": "wolves",
+        "r1": "pack",
+        "r2": "flock",
+        "r3": "shoal"
+      },
+      "q39": {
+        "prompt": "Which animal has a trunk?",
+        "a": "giraffe",
+        "b": "elephant",
+        "c": "hippo"
+      },
+      "q40": {
+        "prompt": "Penguins live in hot countries."
+      },
+      "q41": {
+        "prompt": "What is a baby frog called?",
+        "a": "tadpole",
+        "b": "kitten",
+        "c": "cub"
+      },
+      "q42": {
+        "prompt": "Whales are the biggest animals on Earth."
+      },
+      "q43": {
+        "prompt": "Match each animal to its home.",
+        "l1": "bee",
+        "l2": "bird",
+        "l3": "fox",
+        "r1": "nest",
+        "r2": "hive",
+        "r3": "den"
+      },
+      "q44": {
+        "prompt": "Which animal is a nocturnal hunter?",
+        "a": "cow",
+        "b": "sheep",
+        "c": "owl"
+      },
+      "q45": {
+        "prompt": "A caterpillar becomes a butterfly."
+      },
+      "q46": {
+        "prompt": "Which animal lives both in water and on land?",
+        "a": "horse",
+        "b": "frog",
+        "c": "cat"
+      },
+      "q47": {
+        "prompt": "All birds can fly."
+      },
+      "q48": {
+        "prompt": "Match each animal to its habitat.",
+        "l1": "polar bear",
+        "l2": "camel",
+        "l3": "parrot",
+        "r1": "rainforest",
+        "r2": "desert",
+        "r3": "Arctic"
+      },
+      "q49": {
+        "prompt": "What is the fastest land animal?",
+        "a": "lion",
+        "b": "cheetah",
+        "c": "horse"
+      },
+      "q50": {
+        "prompt": "A snail carries its home on its back."
+      },
+      "q51": {
+        "prompt": "Which animal produces silk?",
+        "a": "bee",
+        "b": "spider",
+        "c": "silkworm"
       }
     },
     "greetings": {
@@ -4268,6 +4721,237 @@
         "r1": "I'm Ana.",
         "r2": "I'm nine.",
         "r3": "I'm fine."
+      },
+      "q9": {
+        "prompt": "How do you greet someone in the morning?",
+        "a": "Good night",
+        "b": "Good morning",
+        "c": "Good afternoon"
+      },
+      "q10": {
+        "prompt": "We say 'Good night' when we arrive somewhere."
+      },
+      "q11": {
+        "prompt": "What do you say when you meet someone for the first time?",
+        "a": "See you later",
+        "b": "Nice to meet you",
+        "c": "Goodbye"
+      },
+      "q12": {
+        "prompt": "'Hello' and 'Hi' have the same meaning."
+      },
+      "q13": {
+        "prompt": "Match each greeting to the time of day.",
+        "l1": "Good morning",
+        "l2": "Good afternoon",
+        "l3": "Good evening",
+        "r1": "3 p.m.",
+        "r2": "8 p.m.",
+        "r3": "8 a.m."
+      },
+      "q14": {
+        "prompt": "What do you say to a friend when you leave school?",
+        "a": "Good morning",
+        "b": "Goodbye",
+        "c": "Thank you"
+      },
+      "q15": {
+        "prompt": "'How are you?' is a question about someone's wellbeing."
+      },
+      "q16": {
+        "prompt": "What is a good answer to 'How are you?'",
+        "a": "I am eight",
+        "b": "I am fine, thank you",
+        "c": "I like cats"
+      },
+      "q17": {
+        "prompt": "'Nice to meet you' is used when you say goodbye."
+      },
+      "q18": {
+        "prompt": "Match each phrase to its Spanish translation.",
+        "l1": "Hello",
+        "l2": "Goodbye",
+        "l3": "Please",
+        "r1": "Por favor",
+        "r2": "Hola",
+        "r3": "Adiós"
+      },
+      "q19": {
+        "prompt": "How do you introduce yourself?",
+        "a": "My name is...",
+        "b": "I like...",
+        "c": "I have..."
+      },
+      "q20": {
+        "prompt": "'Please' is a polite word."
+      },
+      "q21": {
+        "prompt": "What do you say to thank someone?",
+        "a": "Excuse me",
+        "b": "Sorry",
+        "c": "Thank you"
+      },
+      "q22": {
+        "prompt": "'You're welcome' is the reply to 'Goodbye'."
+      },
+      "q23": {
+        "prompt": "Match each phrase to its use.",
+        "l1": "Thank you",
+        "l2": "Sorry",
+        "l3": "Excuse me",
+        "r1": "when you bump into someone",
+        "r2": "to apologise",
+        "r3": "to show gratitude"
+      },
+      "q24": {
+        "prompt": "What does 'Where are you from?' mean?",
+        "a": "¿Dónde estás?",
+        "b": "¿De dónde eres?",
+        "c": "¿Cómo te llamas?"
+      },
+      "q25": {
+        "prompt": "'See you tomorrow' means you will see someone the next day."
+      },
+      "q26": {
+        "prompt": "What does 'How old are you?' mean?",
+        "a": "¿Cuántos años tienes?",
+        "b": "¿Cómo te llamas?",
+        "c": "¿Dónde vives?"
+      },
+      "q27": {
+        "prompt": "In English, 'please' can come at the beginning or end of a sentence."
+      },
+      "q28": {
+        "prompt": "Match each question to its correct answer.",
+        "l1": "What's your name?",
+        "l2": "How old are you?",
+        "l3": "Where are you from?",
+        "r1": "I am from Spain",
+        "r2": "I am nine years old",
+        "r3": "My name is Ana"
+      },
+      "q29": {
+        "prompt": "What does 'I don't understand' mean?",
+        "a": "No lo sé",
+        "b": "No entiendo",
+        "c": "No me gusta"
+      },
+      "q30": {
+        "prompt": "'Can you repeat, please?' is a polite way to ask someone to say something again."
+      },
+      "q31": {
+        "prompt": "How do you ask someone's age?",
+        "a": "How are you?",
+        "b": "What's your name?",
+        "c": "How old are you?"
+      },
+      "q32": {
+        "prompt": "'What is your name?' and 'What's your name?' mean the same thing."
+      },
+      "q33": {
+        "prompt": "Match each phrase to its Spanish equivalent.",
+        "l1": "Good morning",
+        "l2": "Good night",
+        "l3": "Good afternoon",
+        "r1": "Buenas tardes",
+        "r2": "Buenos días",
+        "r3": "Buenas noches"
+      },
+      "q34": {
+        "prompt": "What do you say when you don't know the answer?",
+        "a": "I know",
+        "b": "I don't know",
+        "c": "I don't like it"
+      },
+      "q35": {
+        "prompt": "'Can I help you?' is an offer to assist someone."
+      },
+      "q36": {
+        "prompt": "Which phrase is more informal?",
+        "a": "How do you do?",
+        "b": "Hey, how's it going?",
+        "c": "Good afternoon"
+      },
+      "q37": {
+        "prompt": "We can use 'Sir' or 'Madam' to address someone formally."
+      },
+      "q38": {
+        "prompt": "Match each classroom phrase to its Spanish meaning.",
+        "l1": "May I go to the toilet?",
+        "l2": "Can I open the window?",
+        "l3": "I have a question",
+        "r1": "Tengo una pregunta",
+        "r2": "¿Puedo ir al baño?",
+        "r3": "¿Puedo abrir la ventana?"
+      },
+      "q39": {
+        "prompt": "What does 'Cheers!' mean informally?",
+        "a": "Hello",
+        "b": "Thank you",
+        "c": "Goodbye"
+      },
+      "q40": {
+        "prompt": "'I'm sorry' is used to apologise."
+      },
+      "q41": {
+        "prompt": "How do you ask where the bathroom is?",
+        "a": "Where is the toilet, please?",
+        "b": "What time is it?",
+        "c": "Can you help me?"
+      },
+      "q42": {
+        "prompt": "'See you later' means you will see someone immediately."
+      },
+      "q43": {
+        "prompt": "Match each phrase to when you use it.",
+        "l1": "See you later",
+        "l2": "Nice to meet you",
+        "l3": "Good luck",
+        "r1": "when wishing someone well",
+        "r2": "when leaving",
+        "r3": "when meeting someone new"
+      },
+      "q44": {
+        "prompt": "What does 'Excuse me' mean?",
+        "a": "Perdona",
+        "b": "Gracias",
+        "c": "Por favor"
+      },
+      "q45": {
+        "prompt": "'How are you doing?' is a formal greeting."
+      },
+      "q46": {
+        "prompt": "Which is the correct response to 'Thank you'?",
+        "a": "Please",
+        "b": "You're welcome",
+        "c": "Sorry"
+      },
+      "q47": {
+        "prompt": "In English, everyone always shakes hands when meeting."
+      },
+      "q48": {
+        "prompt": "Match each phrase to its category.",
+        "l1": "Hello",
+        "l2": "Goodbye",
+        "l3": "Please",
+        "r1": "politeness word",
+        "r2": "farewell",
+        "r3": "greeting"
+      },
+      "q49": {
+        "prompt": "What does 'I'm fine' mean?",
+        "a": "Estoy bien",
+        "b": "Estoy cansado",
+        "c": "Estoy enfermo"
+      },
+      "q50": {
+        "prompt": "'How do you do?' is a very formal greeting."
+      },
+      "q51": {
+        "prompt": "Which phrase is used to ask for help?",
+        "a": "Thank you",
+        "b": "Can you help me?",
+        "c": "Goodbye"
       }
     },
     "numbers": {
@@ -4312,6 +4996,237 @@
       },
       "q8": {
         "prompt": "\"One hundred\" is the English word for 1000."
+      },
+      "q9": {
+        "prompt": "How do you say 15 in English?",
+        "a": "Fifteen",
+        "b": "Fifty",
+        "c": "Thirteen"
+      },
+      "q10": {
+        "prompt": "'Twenty' is spelled T-W-E-N-T-Y."
+      },
+      "q11": {
+        "prompt": "What is 'doce' in English?",
+        "a": "Two",
+        "b": "Twelve",
+        "c": "Twenty"
+      },
+      "q12": {
+        "prompt": "The number after 'nineteen' is 'twenty'."
+      },
+      "q13": {
+        "prompt": "Match each number to its English word.",
+        "l1": "11",
+        "l2": "12",
+        "l3": "13",
+        "r1": "thirteen",
+        "r2": "eleven",
+        "r3": "twelve"
+      },
+      "q14": {
+        "prompt": "How do you say 100 in English?",
+        "a": "One thousand",
+        "b": "One hundred",
+        "c": "Ten"
+      },
+      "q15": {
+        "prompt": "'Forty' has a 'u' in it."
+      },
+      "q16": {
+        "prompt": "What is 'thirty' in Spanish?",
+        "a": "trece",
+        "b": "treinta",
+        "c": "tres"
+      },
+      "q17": {
+        "prompt": "The number 50 is called 'fifteen' in English."
+      },
+      "q18": {
+        "prompt": "Match each number word to its value.",
+        "l1": "twenty",
+        "l2": "fifty",
+        "l3": "hundred",
+        "r1": "50",
+        "r2": "20",
+        "r3": "100"
+      },
+      "q19": {
+        "prompt": "How many seconds are in a minute?",
+        "a": "sixty",
+        "b": "one hundred",
+        "c": "twelve"
+      },
+      "q20": {
+        "prompt": "'Eleven' and 'twelve' are irregular because they don't follow the '-teen' pattern."
+      },
+      "q21": {
+        "prompt": "What comes after 'ninth' in ordinal numbers?",
+        "a": "tenth",
+        "b": "eighth",
+        "c": "seventh"
+      },
+      "q22": {
+        "prompt": "The word 'first' is an ordinal number."
+      },
+      "q23": {
+        "prompt": "Match each ordinal number to its meaning.",
+        "l1": "first",
+        "l2": "second",
+        "l3": "third",
+        "r1": "3rd",
+        "r2": "1st",
+        "r3": "2nd"
+      },
+      "q24": {
+        "prompt": "How do you say 'veinte' in English?",
+        "a": "Twelve",
+        "b": "Twenty",
+        "c": "Two"
+      },
+      "q25": {
+        "prompt": "'Thousand' means 100 in English."
+      },
+      "q26": {
+        "prompt": "What is 7 + 8?",
+        "a": "fourteen",
+        "b": "fifteen",
+        "c": "sixteen"
+      },
+      "q27": {
+        "prompt": "The word 'zero' is used for the number 0."
+      },
+      "q28": {
+        "prompt": "Match each English number to its Spanish equivalent.",
+        "l1": "four",
+        "l2": "nine",
+        "l3": "seven",
+        "r1": "siete",
+        "r2": "cuatro",
+        "r3": "nueve"
+      },
+      "q29": {
+        "prompt": "How do you say 16 in English?",
+        "a": "Sixty",
+        "b": "Sixteen",
+        "c": "Sixth"
+      },
+      "q30": {
+        "prompt": "'Fourteen' ends with 'teen'."
+      },
+      "q31": {
+        "prompt": "What is 'cuarenta' in English?",
+        "a": "Fourteen",
+        "b": "Forty",
+        "c": "Four"
+      },
+      "q32": {
+        "prompt": "The number 13 is called 'thirteen'."
+      },
+      "q33": {
+        "prompt": "Match each maths operation to its symbol.",
+        "l1": "plus",
+        "l2": "minus",
+        "l3": "times",
+        "r1": "×",
+        "r2": "+",
+        "r3": "−"
+      },
+      "q34": {
+        "prompt": "What does 'half' mean?",
+        "a": "the same",
+        "b": "double",
+        "c": "one of two equal parts"
+      },
+      "q35": {
+        "prompt": "'A quarter' means one of four equal parts."
+      },
+      "q36": {
+        "prompt": "How do you say '2nd' in English?",
+        "a": "Two",
+        "b": "Second",
+        "c": "Twice"
+      },
+      "q37": {
+        "prompt": "'Odd numbers' can be divided by two exactly."
+      },
+      "q38": {
+        "prompt": "Match each number to its double.",
+        "l1": "5",
+        "l2": "6",
+        "l3": "7",
+        "r1": "12",
+        "r2": "10",
+        "r3": "14"
+      },
+      "q39": {
+        "prompt": "What is 10 × 3?",
+        "a": "thirteen",
+        "b": "thirty",
+        "c": "three"
+      },
+      "q40": {
+        "prompt": "'A hundred' and 'one hundred' mean the same thing."
+      },
+      "q41": {
+        "prompt": "What does 'subtract' mean?",
+        "a": "add",
+        "b": "multiply",
+        "c": "take away"
+      },
+      "q42": {
+        "prompt": "'Dozen' means twelve."
+      },
+      "q43": {
+        "prompt": "Match each English word to its Spanish equivalent.",
+        "l1": "add",
+        "l2": "subtract",
+        "l3": "multiply",
+        "r1": "restar",
+        "r2": "multiplicar",
+        "r3": "sumar"
+      },
+      "q44": {
+        "prompt": "How do you say 'quince' in English?",
+        "a": "Five",
+        "b": "Fifty",
+        "c": "Fifteen"
+      },
+      "q45": {
+        "prompt": "'Score' means twenty in old English."
+      },
+      "q46": {
+        "prompt": "What is 20 ÷ 4?",
+        "a": "four",
+        "b": "five",
+        "c": "six"
+      },
+      "q47": {
+        "prompt": "Even numbers always end in 0, 2, 4, 6, or 8."
+      },
+      "q48": {
+        "prompt": "Match each ordinal word to its place.",
+        "l1": "fourth",
+        "l2": "fifth",
+        "l3": "sixth",
+        "r1": "5th",
+        "r2": "6th",
+        "r3": "4th"
+      },
+      "q49": {
+        "prompt": "What is 'cien' in English?",
+        "a": "One hundred",
+        "b": "Ten",
+        "c": "Thousand"
+      },
+      "q50": {
+        "prompt": "Negative numbers are less than zero."
+      },
+      "q51": {
+        "prompt": "Which number is 'treinta y tres' in English?",
+        "a": "Thirty-two",
+        "b": "Thirty-three",
+        "c": "Thirty-four"
       }
     },
     "family": {
@@ -4356,6 +5271,237 @@
       },
       "q8": {
         "prompt": "\"Parents\" refers to your mother and father."
+      },
+      "q9": {
+        "prompt": "What do you call your mother's sister?",
+        "a": "cousin",
+        "b": "niece",
+        "c": "aunt"
+      },
+      "q10": {
+        "prompt": "A grandparent is older than a parent."
+      },
+      "q11": {
+        "prompt": "What is a female sibling?",
+        "a": "brother",
+        "b": "sister",
+        "c": "cousin"
+      },
+      "q12": {
+        "prompt": "A nephew is the son of your sibling."
+      },
+      "q13": {
+        "prompt": "Match each family member to their relationship.",
+        "l1": "grandfather",
+        "l2": "uncle",
+        "l3": "cousin",
+        "r1": "father's brother",
+        "r2": "child of your aunt",
+        "r3": "father's father"
+      },
+      "q14": {
+        "prompt": "What is the word for the children of your uncle or aunt?",
+        "a": "siblings",
+        "b": "nephews",
+        "c": "cousins"
+      },
+      "q15": {
+        "prompt": "A stepmother is your father's new wife."
+      },
+      "q16": {
+        "prompt": "What do you call your father's mother?",
+        "a": "grandmother",
+        "b": "aunt",
+        "c": "sister"
+      },
+      "q17": {
+        "prompt": "Twins are two children born at the same time to the same mother."
+      },
+      "q18": {
+        "prompt": "Match each family member to their Spanish name.",
+        "l1": "brother",
+        "l2": "sister",
+        "l3": "cousin",
+        "r1": "prima/primo",
+        "r2": "hermano",
+        "r3": "hermana"
+      },
+      "q19": {
+        "prompt": "What is a 'toddler'?",
+        "a": "a very old person",
+        "b": "a teenage boy",
+        "c": "a young child learning to walk"
+      },
+      "q20": {
+        "prompt": "'Only child' means a child with no brothers or sisters."
+      },
+      "q21": {
+        "prompt": "What do you call your sibling's daughter?",
+        "a": "niece",
+        "b": "cousin",
+        "c": "aunt"
+      },
+      "q22": {
+        "prompt": "Your parents are your father and your mother."
+      },
+      "q23": {
+        "prompt": "Match each phrase to its meaning.",
+        "l1": "eldest child",
+        "l2": "youngest child",
+        "l3": "middle child",
+        "r1": "born between older and younger siblings",
+        "r2": "born last",
+        "r3": "born first"
+      },
+      "q24": {
+        "prompt": "What does 'relative' mean?",
+        "a": "a friend",
+        "b": "a family member",
+        "c": "a neighbour"
+      },
+      "q25": {
+        "prompt": "A half-brother shares only one parent with you."
+      },
+      "q26": {
+        "prompt": "What is your mother's father called?",
+        "a": "stepfather",
+        "b": "grandfather",
+        "c": "uncle"
+      },
+      "q27": {
+        "prompt": "Grandparents are the parents of your parents."
+      },
+      "q28": {
+        "prompt": "Match each English word to its Spanish equivalent.",
+        "l1": "grandmother",
+        "l2": "grandfather",
+        "l3": "grandparents",
+        "r1": "abuelos",
+        "r2": "abuela",
+        "r3": "abuelo"
+      },
+      "q29": {
+        "prompt": "Which word describes a family with many members?",
+        "a": "small",
+        "b": "nuclear",
+        "c": "extended"
+      },
+      "q30": {
+        "prompt": "'Nuclear family' means parents and their children."
+      },
+      "q31": {
+        "prompt": "What is a brother-in-law?",
+        "a": "your brother's friend",
+        "b": "your sister's husband",
+        "c": "your father's brother"
+      },
+      "q32": {
+        "prompt": "A godparent is not usually a blood relative."
+      },
+      "q33": {
+        "prompt": "Match each family role to the correct person.",
+        "l1": "breadwinner",
+        "l2": "carer",
+        "l3": "sibling",
+        "r1": "brother or sister",
+        "r2": "person who earns money",
+        "r3": "person who looks after others"
+      },
+      "q34": {
+        "prompt": "What does 'to be related to someone' mean?",
+        "a": "to know them",
+        "b": "to work with them",
+        "c": "to be part of the same family"
+      },
+      "q35": {
+        "prompt": "A mother-in-law is the mother of your spouse."
+      },
+      "q36": {
+        "prompt": "What do you call a family with a mother, father, and children?",
+        "a": "extended",
+        "b": "nuclear",
+        "c": "blended"
+      },
+      "q37": {
+        "prompt": "Your nephew is the son of your sibling."
+      },
+      "q38": {
+        "prompt": "Match each family word to its definition.",
+        "l1": "orphan",
+        "l2": "widow",
+        "l3": "twins",
+        "r1": "two siblings born together",
+        "r2": "a person whose spouse has died",
+        "r3": "a child with no living parents"
+      },
+      "q39": {
+        "prompt": "What is a great-grandmother?",
+        "a": "a very kind grandmother",
+        "b": "your grandmother's mother",
+        "c": "your mother's sister"
+      },
+      "q40": {
+        "prompt": "'Siblings' means brothers and sisters."
+      },
+      "q41": {
+        "prompt": "What is the correct word for the husband of your sister?",
+        "a": "father-in-law",
+        "b": "brother",
+        "c": "brother-in-law"
+      },
+      "q42": {
+        "prompt": "An ancestor is someone who lived before you in your family line."
+      },
+      "q43": {
+        "prompt": "Match each phrase to who it describes.",
+        "l1": "my mother's mother",
+        "l2": "my father's brother",
+        "l3": "my sister's son",
+        "r1": "my nephew",
+        "r2": "my maternal grandmother",
+        "r3": "my uncle"
+      },
+      "q44": {
+        "prompt": "What do you call your parents' siblings?",
+        "a": "cousins",
+        "b": "aunts and uncles",
+        "c": "grandparents"
+      },
+      "q45": {
+        "prompt": "'Immediate family' refers to very close relatives."
+      },
+      "q46": {
+        "prompt": "What does 'to adopt' mean?",
+        "a": "to give away a child",
+        "b": "to legally raise a child who is not yours biologically",
+        "c": "to have twins"
+      },
+      "q47": {
+        "prompt": "Your first cousin's child is your second cousin."
+      },
+      "q48": {
+        "prompt": "Match each word to its opposite in a family context.",
+        "l1": "grandfather",
+        "l2": "aunt",
+        "l3": "son",
+        "r1": "daughter",
+        "r2": "uncle",
+        "r3": "grandmother"
+      },
+      "q49": {
+        "prompt": "What is a foster child?",
+        "a": "a child raised by biological parents",
+        "b": "a child temporarily cared for by a non-biological family",
+        "c": "an only child"
+      },
+      "q50": {
+        "prompt": "Your parents' parents are your grandparents."
+      },
+      "q51": {
+        "prompt": "What do you call the children of your children?",
+        "a": "cousins",
+        "b": "nephews",
+        "c": "grandchildren"
       }
     }
   },

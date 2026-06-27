@@ -50,6 +50,12 @@
   letter-spacing: 0.02em;
 }
 
+.howItWorks {
+  width: 100%;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
 .privacy {
   width: 100%;
   text-align: center;
