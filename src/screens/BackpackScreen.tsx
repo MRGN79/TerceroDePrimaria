@@ -121,7 +121,7 @@ export function BackpackScreen({
                 {subject.topics.map((topic) => {
                   const pct =
                     topic.total > 0
-                      ? Math.round((topic.mastered / topic.total) * 100)
+                      ? Math.min(100, Math.round((topic.mastered / topic.total) * 100))
                       : 0;
                   return (
                     <li key={topic.id} className={styles.topicRow}>

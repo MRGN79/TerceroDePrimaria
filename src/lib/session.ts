@@ -149,7 +149,7 @@ export function buildReviewSession(
   length: number = DEFAULT_SESSION_LENGTH,
   rng: Rng = Math.random,
 ): PreparedExercise[] {
-  const exercises = failedIds
+  const exercises = [...new Set(failedIds)]
     .map((id) => exerciseById(id))
     .filter((e): e is EjercicioAny => e !== undefined);
   if (exercises.length === 0) return [];

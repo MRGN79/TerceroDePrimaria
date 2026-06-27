@@ -52,6 +52,15 @@ export function App() {
   const [includeSolutions, setIncludeSolutions] = useState(true);
   const [printItems, setPrintItems] = useState<PrintItem[]>([]);
 
+  // Elimina al montar IDs de ejercicios fallidos que ya no existen en el
+  // catálogo (ejercicios retirados entre versiones).
+  useEffect(() => {
+    const staleIds = state.progress.failedExerciseIds.filter(
+      (id) => exerciseById(id) === undefined,
+    );
+    if (staleIds.length > 0) removeFailedExerciseIds(staleIds);
+  }, [state.progress.failedExerciseIds, removeFailedExerciseIds]);
+
   // Sincroniza idioma elegido con i18n (si el usuario lo fijó explícitamente)
   // y refleja el idioma activo en <html lang> para los lectores de pantalla
   // (WCAG 3.1.1).
@@ -204,12 +213,15 @@ export function App() {
         colorToken: s.colorToken,
         topics: buildTopicVMs(s.id, t)
           .filter((tp) => !tp.soon)
-          .map((tp) => ({
-            id: tp.id,
-            title: tp.title,
-            mastered: state.progress.correctByTopic[tp.id] ?? 0,
-            total: exercisesByTopic(s.id, tp.id).length,
-          })),
+          .map((tp) => {
+            const total = exercisesByTopic(s.id, tp.id).length;
+            return {
+              id: tp.id,
+              title: tp.title,
+              mastered: Math.min(state.progress.correctByTopic[tp.id] ?? 0, total),
+              total,
+            };
+          }),
       }));
     return (
       <BackpackScreen
