@@ -50,6 +50,8 @@ export interface PersistedState {
     subjectsTried: string[];
     /** ids de ejercicios estáticos respondidos correctamente (excluidos del pool hasta agotar la asignatura) */
     correctExerciseIds: string[];
+    /** ids de ejercicios estáticos que el niño ha fallado alguna vez (pool del modo repaso) */
+    failedExerciseIds: string[];
   };
 }
 
@@ -62,7 +64,7 @@ export function defaultState(): PersistedState {
     stars: { total: 0 },
     badges: { unlocked: {} },
     dailyGoal: { lastDoneDate: null, totalCompleted: 0 },
-    progress: { correctByTopic: {}, correctBySubject: {}, subjectsTried: [], correctExerciseIds: [] },
+    progress: { correctByTopic: {}, correctBySubject: {}, subjectsTried: [], correctExerciseIds: [], failedExerciseIds: [] },
   };
 }
 
@@ -115,6 +117,11 @@ export function parseState(raw: unknown): PersistedState | null {
     progress.correctExerciseIds.every((v) => typeof v === "string")
       ? (progress.correctExerciseIds as string[])
       : [];
+  const failedExerciseIds =
+    Array.isArray(progress.failedExerciseIds) &&
+    progress.failedExerciseIds.every((v) => typeof v === "string")
+      ? (progress.failedExerciseIds as string[])
+      : [];
 
   return {
     schemaVersion: SCHEMA_VERSION,
@@ -147,7 +154,7 @@ export function parseState(raw: unknown): PersistedState | null {
       totalCompleted:
         typeof dailyGoal.totalCompleted === "number" ? dailyGoal.totalCompleted : 0,
     },
-    progress: { correctByTopic, correctBySubject, subjectsTried, correctExerciseIds },
+    progress: { correctByTopic, correctBySubject, subjectsTried, correctExerciseIds, failedExerciseIds },
   };
 }
 

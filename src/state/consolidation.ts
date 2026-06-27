@@ -14,6 +14,8 @@ export interface SessionConsolidation {
   subjectsTried: string[];
   /** ids de ejercicios estáticos respondidos correctamente en esta sesión */
   newlyCorrectIds: string[];
+  /** ids de ejercicios estáticos en los que se cometió al menos un error */
+  newlyFailedIds: string[];
   /** la sesión cuenta como la "misión del día" completada */
   isDailyGoal: boolean;
 }
@@ -50,6 +52,12 @@ export function applyConsolidation(
     ...c.newlyCorrectIds,
   ])];
 
+  // Acumula fallos; elimina los que ya han sido respondidos correctamente
+  const correctSet = new Set(correctExerciseIds);
+  const failedExerciseIds = [
+    ...new Set([...(prev.progress.failedExerciseIds ?? []), ...c.newlyFailedIds]),
+  ].filter((id) => !correctSet.has(id));
+
   const withProgress: PersistedState = {
     ...prev,
     streak: streakResult.state,
@@ -60,7 +68,7 @@ export function applyConsolidation(
         ? prev.dailyGoal.totalCompleted + 1
         : prev.dailyGoal.totalCompleted,
     },
-    progress: { correctByTopic, correctBySubject, subjectsTried, correctExerciseIds },
+    progress: { correctByTopic, correctBySubject, subjectsTried, correctExerciseIds, failedExerciseIds },
   };
 
   const earned = newlyEarnedBadges(withProgress);

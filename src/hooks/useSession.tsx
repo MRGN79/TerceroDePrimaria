@@ -75,6 +75,8 @@ export interface SessionSummary {
   subjectsTried: Materia[];
   /** ids de ejercicios estáticos respondidos correctamente en esta sesión */
   newlyCorrectIds: string[];
+  /** ids de ejercicios estáticos en los que el niño ha cometido al menos un error */
+  failedIds: string[];
 }
 
 export interface UseSessionResult {
@@ -112,6 +114,7 @@ export function useSession(
   const [correctByTopic, setCorrectByTopic] = useState<Record<string, number>>({});
   const [correctBySubject, setCorrectBySubject] = useState<Record<string, number>>({});
   const [newlyCorrectIds, setNewlyCorrectIds] = useState<string[]>([]);
+  const [failedIds, setFailedIds] = useState<string[]>([]);
 
   // Respuestas por tipo
   const [selectedOption, setSelectedOption] = useState<string | null>(null);
@@ -234,6 +237,10 @@ export function useSession(
       });
       setLiveMessage(t("quiz:feedback.correctAnnounce"));
       return;
+    }
+
+    if (!esGenerado(exercise)) {
+      setFailedIds((ids) => (ids.includes(exercise.id) ? ids : [...ids, exercise.id]));
     }
 
     const nextAttempts = attempts + 1;
@@ -364,8 +371,9 @@ export function useSession(
       materia,
       subjectsTried,
       newlyCorrectIds,
+      failedIds,
     }),
-    [sessionStars, correctByTopic, correctBySubject, materia, subjectsTried, newlyCorrectIds],
+    [sessionStars, correctByTopic, correctBySubject, materia, subjectsTried, newlyCorrectIds, failedIds],
   );
 
   return {

@@ -23,5 +23,8 @@
   },
   "print": {
     "enter": "Para imprimir"
+  },
+  "review": {
+    "button": "Repaso de fallos ({{count}})"
   }
 }

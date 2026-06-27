@@ -11,6 +11,7 @@ import { esGenerado } from "@content/types";
 import {
   exercisesByTopic,
   exercisesBySubject,
+  exerciseById,
 } from "@content/registry";
 import { generarOperandos, type GeneratedMath, type Rng } from "./randomMath";
 
@@ -137,6 +138,23 @@ export function checkMatchAnswer(
 export function matchLeftIds(exercise: EjercicioAny): string[] {
   if (esGenerado(exercise) || !Array.isArray(exercise.respuestaCorrecta)) return [];
   return exercise.respuestaCorrecta.map((p) => p.split(":")[0]);
+}
+
+/**
+ * Sesión de repaso de fallos: toma los IDs fallados, los resuelve a ejercicios
+ * reales, baraja y devuelve hasta `length`.
+ */
+export function buildReviewSession(
+  failedIds: string[],
+  length: number = DEFAULT_SESSION_LENGTH,
+  rng: Rng = Math.random,
+): PreparedExercise[] {
+  const exercises = failedIds
+    .map((id) => exerciseById(id))
+    .filter((e): e is EjercicioAny => e !== undefined);
+  if (exercises.length === 0) return [];
+  const shuffled = shuffle(exercises, rng);
+  return shuffled.slice(0, length).map((e) => prepareExercise(e, rng));
 }
 
 /**
