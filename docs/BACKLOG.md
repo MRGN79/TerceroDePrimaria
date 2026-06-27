@@ -6,8 +6,6 @@ Items anotados para implementar en el futuro, ordenados por aparición. No impli
 
 ## Contenido
 
-- **Ampliar Intro a 4.º a 256 preguntas** — actualmente 160, con contenido de preview muy genérico.
-
 - **Añadir temas a Inglés** — "body parts", "food & drink", "classroom", "days & months".
 
 ---
