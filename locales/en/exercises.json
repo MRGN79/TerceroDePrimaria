@@ -4,22 +4,30 @@
       "operation": "{{a}} {{op}} {{b}} = ?"
     },
     "evenodd": {
-      "q1": { "prompt": "The number 8 is even." },
-      "q2": { "prompt": "The number 15 is even." },
+      "q1": {
+        "prompt": "The number 8 is even."
+      },
+      "q2": {
+        "prompt": "The number 15 is even."
+      },
       "q3": {
         "prompt": "Which of these numbers is odd?",
         "a": "10",
         "b": "7",
         "c": "4"
       },
-      "q4": { "prompt": "The number 23 is even." },
+      "q4": {
+        "prompt": "The number 23 is even."
+      },
       "q5": {
         "prompt": "Which of these numbers is even?",
         "a": "13",
         "b": "18",
         "c": "25"
       },
-      "q6": { "prompt": "Numbers ending in 0, 2, 4, 6 or 8 are always even." },
+      "q6": {
+        "prompt": "Numbers ending in 0, 2, 4, 6 or 8 are always even."
+      },
       "q7": {
         "prompt": "How many even numbers are there from 1 to 10?",
         "a": "3",
@@ -31,6 +39,1112 @@
         "a": "100",
         "b": "44",
         "c": "37"
+      },
+      "q9": {
+        "prompt": "The number 42 is even."
+      },
+      "q10": {
+        "prompt": "The number 9 is odd."
+      },
+      "q11": {
+        "prompt": "Which of these numbers is even?",
+        "a": "3",
+        "b": "7",
+        "c": "6"
+      },
+      "q12": {
+        "prompt": "The number 100 is odd."
+      },
+      "q13": {
+        "prompt": "Which of these numbers is odd?",
+        "a": "20",
+        "b": "35",
+        "c": "14"
+      },
+      "q14": {
+        "prompt": "The number 51 is even."
+      },
+      "q15": {
+        "prompt": "How many odd numbers are there from 1 to 10?",
+        "a": "4",
+        "b": "5",
+        "c": "6"
+      },
+      "q16": {
+        "prompt": "The number 0 is even."
+      },
+      "q17": {
+        "prompt": "Which of these numbers is even?",
+        "a": "33",
+        "b": "55",
+        "c": "44"
+      },
+      "q18": {
+        "prompt": "The number 17 is odd."
+      },
+      "q19": {
+        "prompt": "Which of these numbers is odd?",
+        "a": "60",
+        "b": "72",
+        "c": "83"
+      },
+      "q20": {
+        "prompt": "The number 200 is even."
+      },
+      "q21": {
+        "prompt": "Which of these numbers is NOT even?",
+        "a": "24",
+        "b": "36",
+        "c": "45"
+      },
+      "q22": {
+        "prompt": "The number 99 is even."
+      },
+      "q23": {
+        "prompt": "What is the result when you add two even numbers?",
+        "a": "Always even",
+        "b": "Always odd",
+        "c": "Can be either"
+      },
+      "q24": {
+        "prompt": "The number 76 is even."
+      },
+      "q25": {
+        "prompt": "Which of these is even?",
+        "a": "111",
+        "b": "222",
+        "c": "333"
+      },
+      "q26": {
+        "prompt": "The number 1 is even."
+      },
+      "q27": {
+        "prompt": "Which of these ends in an even digit?",
+        "a": "47",
+        "b": "63",
+        "c": "58"
+      },
+      "q28": {
+        "prompt": "The number 38 is even."
+      },
+      "q29": {
+        "prompt": "Which number has an odd units digit?",
+        "a": "42",
+        "b": "87",
+        "c": "60"
+      },
+      "q30": {
+        "prompt": "Odd numbers always end in 1, 3, 5, 7 or 9."
+      },
+      "q31": {
+        "prompt": "Which of these is odd?",
+        "a": "200",
+        "b": "354",
+        "c": "119"
+      },
+      "q32": {
+        "prompt": "The number 1000 is even."
+      }
+    },
+    "placevalue": {
+      "q1": {
+        "prompt": "In the number 345, the digit 3 is in the hundreds place."
+      },
+      "q2": {
+        "prompt": "In the number 52, the digit 2 is in the tens place."
+      },
+      "q3": {
+        "prompt": "What is the value of the digit 6 in the number 263?",
+        "a": "6",
+        "b": "60",
+        "c": "600"
+      },
+      "q4": {
+        "prompt": "In the number 782, the digit 7 represents 700."
+      },
+      "q5": {
+        "prompt": "Which number has 5 hundreds, 3 tens and 7 units?",
+        "a": "537",
+        "b": "573",
+        "c": "735"
+      },
+      "q6": {
+        "prompt": "The number 403 has 0 tens."
+      },
+      "q7": {
+        "prompt": "What is 200 + 40 + 8?",
+        "a": "248",
+        "b": "284",
+        "c": "824"
+      },
+      "q8": {
+        "prompt": "The digit 9 in the number 902 is worth 90."
+      },
+      "q9": {
+        "prompt": "How many tens are in the number 370?",
+        "a": "3",
+        "b": "7",
+        "c": "37"
+      },
+      "q10": {
+        "prompt": "In the number 615, the digit in the tens place is 1."
+      },
+      "q11": {
+        "prompt": "What is the value of the digit 4 in the number 400?",
+        "a": "4",
+        "b": "40",
+        "c": "400"
+      },
+      "q12": {
+        "prompt": "The number five hundred and two is written as 502."
+      },
+      "q13": {
+        "prompt": "Which of these represents 600 + 20 + 5?",
+        "a": "265",
+        "b": "625",
+        "c": "652"
+      },
+      "q14": {
+        "prompt": "In the number 189, the hundreds digit is 8."
+      },
+      "q15": {
+        "prompt": "In the number 750, which digit is in the units position?",
+        "a": "7",
+        "b": "5",
+        "c": "0"
+      },
+      "q16": {
+        "prompt": "Three hundred and sixty-seven is written as 367."
+      },
+      "q17": {
+        "prompt": "What is the value of the digit 8 in 850?",
+        "a": "8",
+        "b": "80",
+        "c": "800"
+      },
+      "q18": {
+        "prompt": "In the number 234, the digit 3 is worth 300."
+      },
+      "q19": {
+        "prompt": "Which number equals 100 + 0 + 6?",
+        "a": "106",
+        "b": "160",
+        "c": "600"
+      },
+      "q20": {
+        "prompt": "The number 999 has 9 hundreds."
+      },
+      "q21": {
+        "prompt": "What number has 4 hundreds, 0 tens and 2 units?",
+        "a": "420",
+        "b": "402",
+        "c": "240"
+      },
+      "q22": {
+        "prompt": "In the number 507, there are 5 tens."
+      },
+      "q23": {
+        "prompt": "How many hundreds are in the number 900?",
+        "a": "0",
+        "b": "9",
+        "c": "90"
+      },
+      "q24": {
+        "prompt": "The value of 2 in 203 is 200."
+      },
+      "q25": {
+        "prompt": "Which number is equal to 500 + 70 + 1?",
+        "a": "517",
+        "b": "571",
+        "c": "715"
+      },
+      "q26": {
+        "prompt": "In the number 830, the units digit is 3."
+      },
+      "q27": {
+        "prompt": "What is the digit in the hundreds place of 967?",
+        "a": "6",
+        "b": "7",
+        "c": "9"
+      },
+      "q28": {
+        "prompt": "The number 400 has 4 tens."
+      },
+      "q29": {
+        "prompt": "Which number has the digit 6 in the tens place?",
+        "a": "316",
+        "b": "163",
+        "c": "631"
+      },
+      "q30": {
+        "prompt": "The number 729 has 2 in the hundreds place."
+      },
+      "q31": {
+        "prompt": "What is 300 + 50 + 9?",
+        "a": "305",
+        "b": "359",
+        "c": "593"
+      },
+      "q32": {
+        "prompt": "The number 481 can be written as 400 + 80 + 1."
+      }
+    },
+    "ordering": {
+      "q1": {
+        "prompt": "256 > 265"
+      },
+      "q2": {
+        "prompt": "347 < 437"
+      },
+      "q3": {
+        "prompt": "Which number is greatest?",
+        "a": "248",
+        "b": "482",
+        "c": "284"
+      },
+      "q4": {
+        "prompt": "The numbers 12, 25, 38 are in ascending order."
+      },
+      "q5": {
+        "prompt": "Which sign goes between 500 and 499? (500 __ 499)",
+        "a": "<",
+        "b": "=",
+        "c": ">"
+      },
+      "q6": {
+        "prompt": "459 = 495"
+      },
+      "q7": {
+        "prompt": "What number comes next? 10, 20, 30, __",
+        "a": "35",
+        "b": "40",
+        "c": "45"
+      },
+      "q8": {
+        "prompt": "The numbers 91, 73, 55, 37 are in descending order."
+      },
+      "q9": {
+        "prompt": "Which is the smallest?",
+        "a": "307",
+        "b": "703",
+        "c": "370"
+      },
+      "q10": {
+        "prompt": "623 < 632"
+      },
+      "q11": {
+        "prompt": "What number is 10 more than 490?",
+        "a": "400",
+        "b": "500",
+        "c": "491"
+      },
+      "q12": {
+        "prompt": "The numbers 5, 15, 25 form a pattern adding 10 each time."
+      },
+      "q13": {
+        "prompt": "What comes next? 100, 200, 300, __",
+        "a": "310",
+        "b": "400",
+        "c": "350"
+      },
+      "q14": {
+        "prompt": "865 > 856"
+      },
+      "q15": {
+        "prompt": "Which symbol makes 341 __ 314 correct?",
+        "a": "<",
+        "b": "=",
+        "c": ">"
+      },
+      "q16": {
+        "prompt": "The greatest three-digit number is 999."
+      },
+      "q17": {
+        "prompt": "Which number is between 450 and 460?",
+        "a": "445",
+        "b": "455",
+        "c": "465"
+      },
+      "q18": {
+        "prompt": "201 > 210"
+      },
+      "q19": {
+        "prompt": "What is 10 less than 350?",
+        "a": "340",
+        "b": "360",
+        "c": "259"
+      },
+      "q20": {
+        "prompt": "The smallest three-digit number is 100."
+      },
+      "q21": {
+        "prompt": "What number comes just before 1000?",
+        "a": "990",
+        "b": "999",
+        "c": "998"
+      },
+      "q22": {
+        "prompt": "786, 768, 678 are in descending order."
+      },
+      "q23": {
+        "prompt": "Which group is in ascending order?",
+        "a": "15, 25, 20",
+        "b": "31, 42, 53",
+        "c": "60, 50, 40"
+      },
+      "q24": {
+        "prompt": "500 + 1 = 501"
+      },
+      "q25": {
+        "prompt": "What number is 100 more than 750?",
+        "a": "751",
+        "b": "760",
+        "c": "850"
+      },
+      "q26": {
+        "prompt": "The numbers 2, 4, 6, 8 are all even and in ascending order."
+      },
+      "q27": {
+        "prompt": "How many whole numbers are between 10 and 15 (not including 10 and 15)?",
+        "a": "3",
+        "b": "4",
+        "c": "5"
+      },
+      "q28": {
+        "prompt": "390 > 309"
+      },
+      "q29": {
+        "prompt": "What sign goes between 278 and 287?",
+        "a": "<",
+        "b": "=",
+        "c": ">"
+      },
+      "q30": {
+        "prompt": "In the sequence 50, 45, 40, 35, the pattern is subtracting 5."
+      },
+      "q31": {
+        "prompt": "Which group of numbers is in descending order?",
+        "a": "21, 45, 67",
+        "b": "95, 75, 55",
+        "c": "12, 30, 18"
+      },
+      "q32": {
+        "prompt": "999 is less than 1000."
+      }
+    },
+    "rounding": {
+      "q1": {
+        "prompt": "28 rounded to the nearest 10 is 30."
+      },
+      "q2": {
+        "prompt": "35 rounded to the nearest 10 is 30."
+      },
+      "q3": {
+        "prompt": "What is 47 rounded to the nearest 10?",
+        "a": "40",
+        "b": "45",
+        "c": "50"
+      },
+      "q4": {
+        "prompt": "62 rounded to the nearest 10 is 60."
+      },
+      "q5": {
+        "prompt": "What is 85 rounded to the nearest 10?",
+        "a": "80",
+        "b": "85",
+        "c": "90"
+      },
+      "q6": {
+        "prompt": "33 rounded to the nearest 10 is 40."
+      },
+      "q7": {
+        "prompt": "What is 250 rounded to the nearest 100?",
+        "a": "200",
+        "b": "250",
+        "c": "300"
+      },
+      "q8": {
+        "prompt": "180 rounded to the nearest 100 is 200."
+      },
+      "q9": {
+        "prompt": "What is 720 rounded to the nearest 100?",
+        "a": "700",
+        "b": "720",
+        "c": "800"
+      },
+      "q10": {
+        "prompt": "540 rounded to the nearest 100 is 500."
+      },
+      "q11": {
+        "prompt": "What is 75 rounded to the nearest 10?",
+        "a": "70",
+        "b": "75",
+        "c": "80"
+      },
+      "q12": {
+        "prompt": "52 rounded to the nearest 10 is 50."
+      },
+      "q13": {
+        "prompt": "What is 350 rounded to the nearest 100?",
+        "a": "300",
+        "b": "350",
+        "c": "400"
+      },
+      "q14": {
+        "prompt": "96 rounded to the nearest 10 is 100."
+      },
+      "q15": {
+        "prompt": "What is 420 rounded to the nearest 100?",
+        "a": "400",
+        "b": "420",
+        "c": "500"
+      },
+      "q16": {
+        "prompt": "14 rounded to the nearest 10 is 10."
+      },
+      "q17": {
+        "prompt": "About how much is 23 + 27 if you round to the nearest 10 first?",
+        "a": "40",
+        "b": "50",
+        "c": "60"
+      },
+      "q18": {
+        "prompt": "900 rounded to the nearest 100 is 900."
+      },
+      "q19": {
+        "prompt": "What is 68 rounded to the nearest 10?",
+        "a": "60",
+        "b": "65",
+        "c": "70"
+      },
+      "q20": {
+        "prompt": "45 rounded to the nearest 10 is 40."
+      },
+      "q21": {
+        "prompt": "What is 850 rounded to the nearest 100?",
+        "a": "800",
+        "b": "850",
+        "c": "900"
+      },
+      "q22": {
+        "prompt": "71 rounded to the nearest 10 is 80."
+      },
+      "q23": {
+        "prompt": "What is 33 rounded to the nearest 10?",
+        "a": "30",
+        "b": "33",
+        "c": "40"
+      },
+      "q24": {
+        "prompt": "550 rounded to the nearest 100 is 600."
+      },
+      "q25": {
+        "prompt": "About how much is 48 + 51 if you round to the nearest 10 first?",
+        "a": "90",
+        "b": "100",
+        "c": "110"
+      },
+      "q26": {
+        "prompt": "200 rounded to the nearest 100 is 200."
+      },
+      "q27": {
+        "prompt": "What is 93 rounded to the nearest 10?",
+        "a": "90",
+        "b": "93",
+        "c": "100"
+      },
+      "q28": {
+        "prompt": "49 rounded to the nearest 10 is 50."
+      },
+      "q29": {
+        "prompt": "What is 750 rounded to the nearest 100?",
+        "a": "700",
+        "b": "750",
+        "c": "800"
+      },
+      "q30": {
+        "prompt": "61 rounded to the nearest 10 is 60."
+      },
+      "q31": {
+        "prompt": "Which of these rounds to 500 when rounded to the nearest 100?",
+        "a": "432",
+        "b": "459",
+        "c": "551"
+      },
+      "q32": {
+        "prompt": "The nearest 10 to 55 is 60."
+      }
+    },
+    "shapes": {
+      "q1": {
+        "prompt": "A triangle has 3 sides."
+      },
+      "q2": {
+        "prompt": "A square has 4 equal sides."
+      },
+      "q3": {
+        "prompt": "How many sides does a hexagon have?",
+        "a": "5",
+        "b": "6",
+        "c": "7"
+      },
+      "q4": {
+        "prompt": "A rectangle has 4 sides of equal length."
+      },
+      "q5": {
+        "prompt": "Which shape has no sides?",
+        "a": "triangle",
+        "b": "circle",
+        "c": "square"
+      },
+      "q6": {
+        "prompt": "A pentagon has 5 sides."
+      },
+      "q7": {
+        "prompt": "How many vertices does a triangle have?",
+        "a": "2",
+        "b": "3",
+        "c": "4"
+      },
+      "q8": {
+        "prompt": "A cube has 6 faces."
+      },
+      "q9": {
+        "prompt": "Which 3D shape is like a ball?",
+        "a": "cube",
+        "b": "cylinder",
+        "c": "sphere"
+      },
+      "q10": {
+        "prompt": "A cylinder has 2 circular faces."
+      },
+      "q11": {
+        "prompt": "How many edges does a cube have?",
+        "a": "8",
+        "b": "10",
+        "c": "12"
+      },
+      "q12": {
+        "prompt": "A cone has one circular base."
+      },
+      "q13": {
+        "prompt": "How many faces does a cuboid (rectangular prism) have?",
+        "a": "4",
+        "b": "5",
+        "c": "6"
+      },
+      "q14": {
+        "prompt": "All four sides of a rhombus are equal."
+      },
+      "q15": {
+        "prompt": "Which shape has 4 right angles?",
+        "a": "triangle",
+        "b": "rectangle",
+        "c": "pentagon"
+      },
+      "q16": {
+        "prompt": "A sphere has no edges."
+      },
+      "q17": {
+        "prompt": "How many sides does a quadrilateral have?",
+        "a": "3",
+        "b": "4",
+        "c": "5"
+      },
+      "q18": {
+        "prompt": "A square is a special type of rectangle."
+      },
+      "q19": {
+        "prompt": "Which 3D shape looks like a tin can?",
+        "a": "cone",
+        "b": "cube",
+        "c": "cylinder"
+      },
+      "q20": {
+        "prompt": "A triangle can have a right angle."
+      },
+      "q21": {
+        "prompt": "How many corners (vertices) does a rectangle have?",
+        "a": "3",
+        "b": "4",
+        "c": "5"
+      },
+      "q22": {
+        "prompt": "A circle has no vertices."
+      },
+      "q23": {
+        "prompt": "How many vertices does a square pyramid have?",
+        "a": "4",
+        "b": "5",
+        "c": "6"
+      },
+      "q24": {
+        "prompt": "An octagon has 8 sides."
+      },
+      "q25": {
+        "prompt": "How many sides does a triangle have?",
+        "a": "2",
+        "b": "3",
+        "c": "4"
+      },
+      "q26": {
+        "prompt": "A cone has a curved surface."
+      },
+      "q27": {
+        "prompt": "Which shape is like a box of cereal?",
+        "a": "sphere",
+        "b": "cylinder",
+        "c": "cuboid"
+      },
+      "q28": {
+        "prompt": "A hexagon has 6 vertices."
+      },
+      "q29": {
+        "prompt": "How many flat faces does a sphere have?",
+        "a": "0",
+        "b": "1",
+        "c": "2"
+      },
+      "q30": {
+        "prompt": "A rectangle has two pairs of parallel sides."
+      },
+      "q31": {
+        "prompt": "Which shape could be the cross-section of a cylinder?",
+        "a": "triangle",
+        "b": "circle",
+        "c": "square"
+      },
+      "q32": {
+        "prompt": "A quadrilateral always has exactly 4 angles."
+      }
+    },
+    "time": {
+      "q1": {
+        "prompt": "There are 60 minutes in one hour."
+      },
+      "q2": {
+        "prompt": "There are 24 hours in one day."
+      },
+      "q3": {
+        "prompt": "How many seconds are in one minute?",
+        "a": "10",
+        "b": "60",
+        "c": "100"
+      },
+      "q4": {
+        "prompt": "There are 7 days in one week."
+      },
+      "q5": {
+        "prompt": "How many months are in one year?",
+        "a": "10",
+        "b": "12",
+        "c": "15"
+      },
+      "q6": {
+        "prompt": "February always has 30 days."
+      },
+      "q7": {
+        "prompt": "How many days does a leap year have?",
+        "a": "365",
+        "b": "366",
+        "c": "367"
+      },
+      "q8": {
+        "prompt": "There are 30 days in September."
+      },
+      "q9": {
+        "prompt": "If it is 3:00 pm, what time will it be in 2 hours?",
+        "a": "4:00",
+        "b": "5:00",
+        "c": "1:00"
+      },
+      "q10": {
+        "prompt": "Quarter past 3 means 3:15."
+      },
+      "q11": {
+        "prompt": "How many minutes is half an hour?",
+        "a": "15",
+        "b": "30",
+        "c": "45"
+      },
+      "q12": {
+        "prompt": "There are 52 weeks in one year."
+      },
+      "q13": {
+        "prompt": "What time is 'half past 7'?",
+        "a": "6:30",
+        "b": "7:15",
+        "c": "7:30"
+      },
+      "q14": {
+        "prompt": "A century is 100 years."
+      },
+      "q15": {
+        "prompt": "How many hours are in 2 days?",
+        "a": "24",
+        "b": "36",
+        "c": "48"
+      },
+      "q16": {
+        "prompt": "December has 31 days."
+      },
+      "q17": {
+        "prompt": "What is 45 minutes before 2:00?",
+        "a": "1:15",
+        "b": "2:45",
+        "c": "1:45"
+      },
+      "q18": {
+        "prompt": "April, June, September and November all have 30 days."
+      },
+      "q19": {
+        "prompt": "How many minutes are in 2 hours?",
+        "a": "60",
+        "b": "90",
+        "c": "120"
+      },
+      "q20": {
+        "prompt": "Quarter to 4 means 3:45."
+      },
+      "q21": {
+        "prompt": "How many days are in the month of March?",
+        "a": "28",
+        "b": "30",
+        "c": "31"
+      },
+      "q22": {
+        "prompt": "A decade is 10 years."
+      },
+      "q23": {
+        "prompt": "If a film starts at 4:30 and lasts 1 hour 30 minutes, when does it end?",
+        "a": "5:30",
+        "b": "6:00",
+        "c": "6:30"
+      },
+      "q24": {
+        "prompt": "Midnight is 12:00 am."
+      },
+      "q25": {
+        "prompt": "How many seconds are in 2 minutes?",
+        "a": "60",
+        "b": "100",
+        "c": "120"
+      },
+      "q26": {
+        "prompt": "The 6th month of the year is June."
+      },
+      "q27": {
+        "prompt": "How many years are in a decade?",
+        "a": "5",
+        "b": "10",
+        "c": "100"
+      },
+      "q28": {
+        "prompt": "There are 365 days in a normal (non-leap) year."
+      },
+      "q29": {
+        "prompt": "What does 'quarter past' mean?",
+        "a": "10 minutes past",
+        "b": "15 minutes past",
+        "c": "20 minutes past"
+      },
+      "q30": {
+        "prompt": "January is the first month of the year."
+      },
+      "q31": {
+        "prompt": "If today is Monday, what day will it be in 3 days?",
+        "a": "Wednesday",
+        "b": "Thursday",
+        "c": "Friday"
+      },
+      "q32": {
+        "prompt": "There are approximately 4 weeks in a month."
+      }
+    },
+    "length": {
+      "q1": {
+        "prompt": "There are 100 centimetres in one metre."
+      },
+      "q2": {
+        "prompt": "1 km = 100 m"
+      },
+      "q3": {
+        "prompt": "How many mm are in 1 cm?",
+        "a": "5",
+        "b": "10",
+        "c": "100"
+      },
+      "q4": {
+        "prompt": "10 mm = 1 cm"
+      },
+      "q5": {
+        "prompt": "How many metres are in 1 kilometre?",
+        "a": "100",
+        "b": "500",
+        "c": "1000"
+      },
+      "q6": {
+        "prompt": "A door is about 2 metres tall."
+      },
+      "q7": {
+        "prompt": "Which unit is longest?",
+        "a": "1 cm",
+        "b": "1 mm",
+        "c": "1 m"
+      },
+      "q8": {
+        "prompt": "50 cm is equal to half a metre."
+      },
+      "q9": {
+        "prompt": "About how long is a standard pencil?",
+        "a": "2 cm",
+        "b": "20 cm",
+        "c": "200 cm"
+      },
+      "q10": {
+        "prompt": "200 cm = 2 m"
+      },
+      "q11": {
+        "prompt": "Which is the best unit to measure the length of a football pitch?",
+        "a": "mm",
+        "b": "cm",
+        "c": "m"
+      },
+      "q12": {
+        "prompt": "1 m = 1000 mm"
+      },
+      "q13": {
+        "prompt": "A person's height is usually measured in which units?",
+        "a": "km",
+        "b": "m or cm",
+        "c": "mm"
+      },
+      "q14": {
+        "prompt": "3 m = 300 cm"
+      },
+      "q15": {
+        "prompt": "Which is the shortest?",
+        "a": "5 m",
+        "b": "500 cm",
+        "c": "4 m"
+      },
+      "q16": {
+        "prompt": "1 km = 1000 m"
+      },
+      "q17": {
+        "prompt": "If a worm is 5 cm long, how many mm is that?",
+        "a": "5",
+        "b": "50",
+        "c": "500"
+      },
+      "q18": {
+        "prompt": "Half a metre is 50 cm."
+      },
+      "q19": {
+        "prompt": "Which is the best unit to measure the distance between two cities?",
+        "a": "cm",
+        "b": "m",
+        "c": "km"
+      },
+      "q20": {
+        "prompt": "2 km = 2000 m"
+      },
+      "q21": {
+        "prompt": "How many cm are in 3 m?",
+        "a": "30",
+        "b": "300",
+        "c": "3000"
+      },
+      "q22": {
+        "prompt": "A finger is approximately 1 cm wide."
+      },
+      "q23": {
+        "prompt": "Which is longer — 150 cm or 1 m 40 cm?",
+        "a": "150 cm",
+        "b": "1 m 40 cm",
+        "c": "They are equal"
+      },
+      "q24": {
+        "prompt": "10 cm = 100 mm"
+      },
+      "q25": {
+        "prompt": "How many metres is 500 cm?",
+        "a": "5",
+        "b": "50",
+        "c": "500"
+      },
+      "q26": {
+        "prompt": "A kilometre is shorter than a metre."
+      },
+      "q27": {
+        "prompt": "Which unit is used to measure the thickness of a coin?",
+        "a": "mm",
+        "b": "cm",
+        "c": "m"
+      },
+      "q28": {
+        "prompt": "4 m = 40 cm"
+      },
+      "q29": {
+        "prompt": "How many cm are in 1 m 50 cm?",
+        "a": "15",
+        "b": "150",
+        "c": "1050"
+      },
+      "q30": {
+        "prompt": "1000 m = 1 km"
+      },
+      "q31": {
+        "prompt": "A standard swimming pool lane is usually how long?",
+        "a": "5 m",
+        "b": "25 m",
+        "c": "250 m"
+      },
+      "q32": {
+        "prompt": "30 mm = 3 cm"
+      }
+    },
+    "fractions": {
+      "q1": {
+        "prompt": "One half can be written as 1/2."
+      },
+      "q2": {
+        "prompt": "1/3 means the whole is divided into 3 equal parts, and we take 1."
+      },
+      "q3": {
+        "prompt": "Which fraction is larger?",
+        "a": "1/4",
+        "b": "1/2",
+        "c": "1/3"
+      },
+      "q4": {
+        "prompt": "2/4 = 1/2"
+      },
+      "q5": {
+        "prompt": "If a pizza is cut into 4 equal slices and you eat 1, what fraction did you eat?",
+        "a": "1/2",
+        "b": "1/3",
+        "c": "1/4"
+      },
+      "q6": {
+        "prompt": "3/3 equals 1 (a whole)."
+      },
+      "q7": {
+        "prompt": "What is 1/2 of 10?",
+        "a": "2",
+        "b": "5",
+        "c": "10"
+      },
+      "q8": {
+        "prompt": "1/4 is greater than 1/2."
+      },
+      "q9": {
+        "prompt": "What is 1/3 of 9?",
+        "a": "3",
+        "b": "4",
+        "c": "6"
+      },
+      "q10": {
+        "prompt": "2/3 means two out of three equal parts."
+      },
+      "q11": {
+        "prompt": "Which fraction equals one whole?",
+        "a": "1/2",
+        "b": "2/3",
+        "c": "4/4"
+      },
+      "q12": {
+        "prompt": "1/2 of 6 is 3."
+      },
+      "q13": {
+        "prompt": "Which fraction is smallest?",
+        "a": "1/2",
+        "b": "1/3",
+        "c": "1/4"
+      },
+      "q14": {
+        "prompt": "3/4 means three parts out of four equal parts."
+      },
+      "q15": {
+        "prompt": "What is 1/4 of 12?",
+        "a": "2",
+        "b": "3",
+        "c": "4"
+      },
+      "q16": {
+        "prompt": "1/2 and 2/4 represent the same quantity."
+      },
+      "q17": {
+        "prompt": "If a chocolate bar has 6 pieces and you eat half, how many pieces did you eat?",
+        "a": "2",
+        "b": "3",
+        "c": "4"
+      },
+      "q18": {
+        "prompt": "The denominator tells us how many equal parts the whole is divided into."
+      },
+      "q19": {
+        "prompt": "If 2 out of 5 shapes are shaded, what fraction is shaded?",
+        "a": "2/3",
+        "b": "2/5",
+        "c": "3/5"
+      },
+      "q20": {
+        "prompt": "3/6 = 1/2"
+      },
+      "q21": {
+        "prompt": "What is 1/2 of 20?",
+        "a": "5",
+        "b": "8",
+        "c": "10"
+      },
+      "q22": {
+        "prompt": "The numerator is the number at the bottom of the fraction."
+      },
+      "q23": {
+        "prompt": "How many quarters make a whole?",
+        "a": "2",
+        "b": "3",
+        "c": "4"
+      },
+      "q24": {
+        "prompt": "1/3 of 12 is 4."
+      },
+      "q25": {
+        "prompt": "Which fraction is greater than 1/2?",
+        "a": "1/4",
+        "b": "3/4",
+        "c": "1/3"
+      },
+      "q26": {
+        "prompt": "2/2 equals 1 (a whole)."
+      },
+      "q27": {
+        "prompt": "What is 3/4 of 8?",
+        "a": "4",
+        "b": "6",
+        "c": "8"
+      },
+      "q28": {
+        "prompt": "1/4 + 1/4 = 2/4 = 1/2"
+      },
+      "q29": {
+        "prompt": "Which fraction is equivalent to 2/4?",
+        "a": "1/3",
+        "b": "1/2",
+        "c": "3/4"
+      },
+      "q30": {
+        "prompt": "1/2 of 14 is 8."
+      },
+      "q31": {
+        "prompt": "If there are 10 apples and you take 1/5 of them, how many do you take?",
+        "a": "1",
+        "b": "2",
+        "c": "5"
+      },
+      "q32": {
+        "prompt": "1/3 > 1/4 because the pieces are bigger when you divide into 3 than into 4."
       }
     }
   },
@@ -57,14 +1171,18 @@
         "b": "lento",
         "c": "ágil"
       },
-      "q4": { "prompt": "«Oscuro» y «claro» son sinónimos." },
+      "q4": {
+        "prompt": "«Oscuro» y «claro» son sinónimos."
+      },
       "q5": {
         "prompt": "¿Cuál es un sinónimo de «mirar»?",
         "a": "correr",
         "b": "saltar",
         "c": "observar"
       },
-      "q6": { "prompt": "«Enorme» y «gigante» son sinónimos." },
+      "q6": {
+        "prompt": "«Enorme» y «gigante» son sinónimos."
+      },
       "q7": {
         "prompt": "Une cada palabra con su antónimo",
         "l1": "frío",
@@ -103,14 +1221,18 @@
         "b": "Madrid",
         "c": "perro"
       },
-      "q2": { "prompt": "«Las niñas» está en plural y en femenino." },
+      "q2": {
+        "prompt": "«Las niñas» está en plural y en femenino."
+      },
       "q3": {
         "prompt": "¿Cuál de estas palabras es un sustantivo común?",
         "a": "Madrid",
         "b": "Ana",
         "c": "perro"
       },
-      "q4": { "prompt": "El sustantivo «mesa» está en femenino y plural." },
+      "q4": {
+        "prompt": "El sustantivo «mesa» está en femenino y plural."
+      },
       "q5": {
         "prompt": "¿Cuál es el plural de «flor»?",
         "a": "flores",
@@ -132,7 +1254,9 @@
         "b": "actriz",
         "c": "actores"
       },
-      "q8": { "prompt": "«Las sillas» está en singular y femenino." },
+      "q8": {
+        "prompt": "«Las sillas» está en singular y femenino."
+      },
       "q9": {
         "prompt": "¿Cuál de estas palabras es un sustantivo colectivo?",
         "a": "árbol",
@@ -157,8 +1281,12 @@
         "a": "tanbor",
         "b": "tambor"
       },
-      "q3": { "prompt": "La palabra «campo» se escribe con «mp»." },
-      "q4": { "prompt": "La palabra «sombra» se escribe con «np»." },
+      "q3": {
+        "prompt": "La palabra «campo» se escribe con «mp»."
+      },
+      "q4": {
+        "prompt": "La palabra «sombra» se escribe con «np»."
+      },
       "q5": {
         "prompt": "Elige la palabra escrita correctamente:",
         "a": "enpeñar",
@@ -192,14 +1320,18 @@
         "b": "Una palabra que describe al sustantivo",
         "c": "Un nombre de persona"
       },
-      "q2": { "prompt": "En «el perro negro», «negro» es un adjetivo." },
+      "q2": {
+        "prompt": "En «el perro negro», «negro» es un adjetivo."
+      },
       "q3": {
         "prompt": "¿Cuál de estas palabras es un adjetivo?",
         "a": "bonito",
         "b": "correr",
         "c": "mesa"
       },
-      "q4": { "prompt": "Los adjetivos no cambian de género ni de número." },
+      "q4": {
+        "prompt": "Los adjetivos no cambian de género ni de número."
+      },
       "q5": {
         "prompt": "¿Cuál es el femenino de «simpático»?",
         "a": "simpáticoa",
@@ -221,7 +1353,9 @@
         "b": "pequeños",
         "c": "pequeñoe"
       },
-      "q8": { "prompt": "«Altas», «bonitas» y «simpáticas» son adjetivos en femenino plural." }
+      "q8": {
+        "prompt": "«Altas», «bonitas» y «simpáticas» son adjetivos en femenino plural."
+      }
     },
     "verb": {
       "q1": {
@@ -230,7 +1364,9 @@
         "b": "rojo",
         "c": "saltar"
       },
-      "q2": { "prompt": "Los verbos expresan acciones, estados o procesos." },
+      "q2": {
+        "prompt": "Los verbos expresan acciones, estados o procesos."
+      },
       "q3": {
         "prompt": "¿En qué tiempo está el verbo «jugué»?",
         "a": "pasado",
@@ -252,7 +1388,9 @@
         "r2": "pasado",
         "r3": "futuro"
       },
-      "q6": { "prompt": "«Mañana» y «árbol» son verbos." },
+      "q6": {
+        "prompt": "«Mañana» y «árbol» son verbos."
+      },
       "q7": {
         "prompt": "¿Cuál es la forma correcta de «ir» en presente para «yo»?",
         "a": "yo iba",
@@ -277,7 +1415,9 @@
         "a": "baca",
         "b": "vaca"
       },
-      "q3": { "prompt": "La palabra «barco» se escribe con b." },
+      "q3": {
+        "prompt": "La palabra «barco» se escribe con b."
+      },
       "q4": {
         "prompt": "Elige la palabra escrita correctamente:",
         "a": "burro",
@@ -288,7 +1428,9 @@
         "a": "bela",
         "b": "vela"
       },
-      "q6": { "prompt": "La palabra «ventana» se escribe con b." },
+      "q6": {
+        "prompt": "La palabra «ventana» se escribe con b."
+      },
       "q7": {
         "prompt": "Elige la palabra escrita correctamente:",
         "a": "biblioteca",
@@ -311,7 +1453,9 @@
         "b": "esdrújulas",
         "c": "agudas"
       },
-      "q2": { "prompt": "Las palabras esdrújulas siempre llevan tilde." },
+      "q2": {
+        "prompt": "Las palabras esdrújulas siempre llevan tilde."
+      },
       "q3": {
         "prompt": "La palabra «árbol» es...",
         "a": "aguda",
@@ -327,7 +1471,9 @@
         "r2": "esdrújula",
         "r3": "llana"
       },
-      "q5": { "prompt": "Las palabras agudas siempre llevan tilde." },
+      "q5": {
+        "prompt": "Las palabras agudas siempre llevan tilde."
+      },
       "q6": {
         "prompt": "¿Cuál de estas palabras es esdrújula?",
         "a": "pájaro",
@@ -340,7 +1486,9 @@
         "b": "reloj",
         "c": "camión"
       },
-      "q8": { "prompt": "«Árbol» es llana y lleva tilde porque termina en consonante que no es n ni s." }
+      "q8": {
+        "prompt": "«Árbol» es llana y lleva tilde porque termina en consonante que no es n ni s."
+      }
     },
     "pun": {
       "q1": {
@@ -349,14 +1497,18 @@
         "b": ".",
         "c": "?"
       },
-      "q2": { "prompt": "Los signos de interrogación van al principio y al final de la pregunta." },
+      "q2": {
+        "prompt": "Los signos de interrogación van al principio y al final de la pregunta."
+      },
       "q3": {
         "prompt": "¿Para qué sirve la coma?",
         "a": "Para separar elementos de una enumeración",
         "b": "Para terminar una oración",
         "c": "Para hacer una pregunta"
       },
-      "q4": { "prompt": "El punto y seguido se usa para empezar un párrafo nuevo." },
+      "q4": {
+        "prompt": "El punto y seguido se usa para empezar un párrafo nuevo."
+      },
       "q5": {
         "prompt": "Une cada signo con su uso",
         "l1": ".",
@@ -378,11 +1530,16 @@
         "b": "la coma",
         "c": "los dos puntos"
       },
-      "q8": { "prompt": "La oración «¡Qué bonito día!» usa correctamente los signos de exclamación." }
+      "q8": {
+        "prompt": "La oración «¡Qué bonito día!» usa correctamente los signos de exclamación."
+      }
     }
   },
   "science": {
-    "common": { "true": "True", "false": "False" },
+    "common": {
+      "true": "True",
+      "false": "False"
+    },
     "animals": {
       "q1": {
         "prompt": "Which of these animals is a mammal?",
@@ -390,7 +1547,9 @@
         "b": "Dolphin",
         "c": "Eagle"
       },
-      "q2": { "prompt": "Insects are vertebrate animals." },
+      "q2": {
+        "prompt": "Insects are vertebrate animals."
+      },
       "q3": {
         "prompt": "Match each animal with its group",
         "l1": "Frog",
@@ -406,21 +1565,27 @@
         "b": "Oviparous",
         "c": "Mammals"
       },
-      "q5": { "prompt": "Fish breathe through gills." },
+      "q5": {
+        "prompt": "Fish breathe through gills."
+      },
       "q6": {
         "prompt": "Which of these animals is a reptile?",
         "a": "Frog",
         "b": "Parrot",
         "c": "Lizard"
       },
-      "q7": { "prompt": "All mammals are covered in feathers." },
+      "q7": {
+        "prompt": "All mammals are covered in feathers."
+      },
       "q8": {
         "prompt": "Which group do birds belong to?",
         "a": "Invertebrates",
         "b": "Vertebrates",
         "c": "Reptiles"
       },
-      "q9": { "prompt": "Bats are mammals even though they can fly." },
+      "q9": {
+        "prompt": "Bats are mammals even though they can fly."
+      },
       "q10": {
         "prompt": "Which of these animals is an amphibian?",
         "a": "Crocodile",
@@ -436,14 +1601,18 @@
         "r2": "feathers",
         "r3": "scales"
       },
-      "q12": { "prompt": "Spiders have six legs." },
+      "q12": {
+        "prompt": "Spiders have six legs."
+      },
       "q13": {
         "prompt": "What do we call animals that give birth to live young?",
         "a": "Oviparous",
         "b": "Viviparous",
         "c": "Invertebrates"
       },
-      "q14": { "prompt": "A whale is the largest mammal on Earth." },
+      "q14": {
+        "prompt": "A whale is the largest mammal on Earth."
+      },
       "q15": {
         "prompt": "Which of these is an invertebrate?",
         "a": "Cat",
@@ -459,14 +1628,18 @@
         "r2": "polar region",
         "r3": "desert"
       },
-      "q17": { "prompt": "Reptiles are cold-blooded animals." },
+      "q17": {
+        "prompt": "Reptiles are cold-blooded animals."
+      },
       "q18": {
         "prompt": "How many legs does an insect have?",
         "a": "4",
         "b": "6",
         "c": "8"
       },
-      "q19": { "prompt": "Dolphins breathe through gills like fish." },
+      "q19": {
+        "prompt": "Dolphins breathe through gills like fish."
+      },
       "q20": {
         "prompt": "Which of these animals is a bird?",
         "a": "Bat",
@@ -482,14 +1655,18 @@
         "r2": "meat",
         "r3": "plants"
       },
-      "q22": { "prompt": "A caterpillar turns into a butterfly through metamorphosis." },
+      "q22": {
+        "prompt": "A caterpillar turns into a butterfly through metamorphosis."
+      },
       "q23": {
         "prompt": "Which of these animals hibernates in winter?",
         "a": "Elephant",
         "b": "Bear",
         "c": "Parrot"
       },
-      "q24": { "prompt": "All birds can fly." },
+      "q24": {
+        "prompt": "All birds can fly."
+      },
       "q25": {
         "prompt": "What is the correct term for animals that eat only plants?",
         "a": "Carnivores",
@@ -505,14 +1682,18 @@
         "r2": "cat",
         "r3": "horse"
       },
-      "q27": { "prompt": "Fish are vertebrate animals." },
+      "q27": {
+        "prompt": "Fish are vertebrate animals."
+      },
       "q28": {
         "prompt": "Which of these animals lives both on land and in water?",
         "a": "Lizard",
         "b": "Frog",
         "c": "Shark"
       },
-      "q29": { "prompt": "Insects have three body parts: head, thorax and abdomen." },
+      "q29": {
+        "prompt": "Insects have three body parts: head, thorax and abdomen."
+      },
       "q30": {
         "prompt": "Which sense do most nocturnal animals rely on the most?",
         "a": "Sight in daylight",
@@ -528,7 +1709,9 @@
         "r2": "oviparous (bird)",
         "r3": "viviparous"
       },
-      "q32": { "prompt": "Crabs are invertebrate animals with an external skeleton." }
+      "q32": {
+        "prompt": "Crabs are invertebrate animals with an external skeleton."
+      }
     },
     "plants": {
       "q1": {
@@ -537,14 +1720,18 @@
         "b": "Sunlight, water and air",
         "c": "Soil and stones"
       },
-      "q2": { "prompt": "Plants are living things." },
+      "q2": {
+        "prompt": "Plants are living things."
+      },
       "q3": {
         "prompt": "What is the process by which plants make their own food?",
         "a": "Respiration",
         "b": "Digestion",
         "c": "Photosynthesis"
       },
-      "q4": { "prompt": "The roots of a plant absorb water from the soil." },
+      "q4": {
+        "prompt": "The roots of a plant absorb water from the soil."
+      },
       "q5": {
         "prompt": "Which part of the plant makes food using sunlight?",
         "a": "The root",
@@ -560,14 +1747,18 @@
         "r2": "absorbs water from soil",
         "r3": "makes food using sunlight"
       },
-      "q7": { "prompt": "Some plants lose their leaves in autumn." },
+      "q7": {
+        "prompt": "Some plants lose their leaves in autumn."
+      },
       "q8": {
         "prompt": "Which of these is NOT a part of a plant?",
         "a": "Leaf",
         "b": "Gill",
         "c": "Root"
       },
-      "q9": { "prompt": "Flowers help plants to reproduce." },
+      "q9": {
+        "prompt": "Flowers help plants to reproduce."
+      },
       "q10": {
         "prompt": "What gas do plants release during photosynthesis?",
         "a": "Carbon dioxide",
@@ -583,14 +1774,18 @@
         "r2": "oak",
         "r3": "rosebush"
       },
-      "q12": { "prompt": "All plants need sunlight to grow." },
+      "q12": {
+        "prompt": "All plants need sunlight to grow."
+      },
       "q13": {
         "prompt": "What is the role of seeds in plants?",
         "a": "To absorb water",
         "b": "To reproduce and grow into new plants",
         "c": "To make food from sunlight"
       },
-      "q14": { "prompt": "Cactus plants can store water in their stems." },
+      "q14": {
+        "prompt": "Cactus plants can store water in their stems."
+      },
       "q15": {
         "prompt": "Which of these is a fruit?",
         "a": "Carrot",
@@ -606,14 +1801,18 @@
         "r2": "tree trunk",
         "r3": "cotton plant"
       },
-      "q17": { "prompt": "Plants breathe in oxygen and breathe out carbon dioxide during photosynthesis." },
+      "q17": {
+        "prompt": "Plants breathe in oxygen and breathe out carbon dioxide during photosynthesis."
+      },
       "q18": {
         "prompt": "Which part of a plant anchors it to the ground?",
         "a": "The flower",
         "b": "The leaf",
         "c": "The root"
       },
-      "q19": { "prompt": "Bees help plants to pollinate." },
+      "q19": {
+        "prompt": "Bees help plants to pollinate."
+      },
       "q20": {
         "prompt": "What do we call plants that keep their leaves all year round?",
         "a": "Deciduous",
@@ -629,14 +1828,18 @@
         "r2": "attracts insects",
         "r3": "produces pollen"
       },
-      "q22": { "prompt": "Mushrooms are plants because they grow in soil." },
+      "q22": {
+        "prompt": "Mushrooms are plants because they grow in soil."
+      },
       "q23": {
         "prompt": "How do some seeds travel to new places?",
         "a": "They walk",
         "b": "By wind, water or animals",
         "c": "By digging underground"
       },
-      "q24": { "prompt": "The stem of a plant supports the leaves and carries water upwards." },
+      "q24": {
+        "prompt": "The stem of a plant supports the leaves and carries water upwards."
+      },
       "q25": {
         "prompt": "Which of these is a vegetable?",
         "a": "Strawberry",
@@ -652,14 +1855,18 @@
         "r2": "pond",
         "r3": "desert"
       },
-      "q27": { "prompt": "Plants produce oxygen that animals and humans need to breathe." },
+      "q27": {
+        "prompt": "Plants produce oxygen that animals and humans need to breathe."
+      },
       "q28": {
         "prompt": "What is the green pigment in leaves called?",
         "a": "Melanin",
         "b": "Chlorophyll",
         "c": "Keratin"
       },
-      "q29": { "prompt": "A sunflower always turns to face the Sun." },
+      "q29": {
+        "prompt": "A sunflower always turns to face the Sun."
+      },
       "q30": {
         "prompt": "Which of these plants has thorns?",
         "a": "Daisy",
@@ -675,7 +1882,9 @@
         "r2": "new leaves grow",
         "r3": "leaves fall"
       },
-      "q32": { "prompt": "Seaweed is a plant that lives in the sea." }
+      "q32": {
+        "prompt": "Seaweed is a plant that lives in the sea."
+      }
     },
     "senses": {
       "q1": {
@@ -684,14 +1893,18 @@
         "b": "Smell",
         "c": "Hearing"
       },
-      "q2": { "prompt": "We use our skin for the sense of touch." },
+      "q2": {
+        "prompt": "We use our skin for the sense of touch."
+      },
       "q3": {
         "prompt": "How many senses do humans have?",
         "a": "3",
         "b": "4",
         "c": "5"
       },
-      "q4": { "prompt": "We use our eyes for the sense of sight." },
+      "q4": {
+        "prompt": "We use our eyes for the sense of sight."
+      },
       "q5": {
         "prompt": "Which sense organ do we use to taste food?",
         "a": "The nose",
@@ -707,14 +1920,18 @@
         "r2": "nose",
         "r3": "eye"
       },
-      "q7": { "prompt": "The sense of smell is linked to our nose." },
+      "q7": {
+        "prompt": "The sense of smell is linked to our nose."
+      },
       "q8": {
         "prompt": "Which sense helps us avoid danger, for example touching something hot?",
         "a": "Sight",
         "b": "Hearing",
         "c": "Touch"
       },
-      "q9": { "prompt": "The tongue can detect four basic tastes: sweet, salty, sour and bitter." },
+      "q9": {
+        "prompt": "The tongue can detect four basic tastes: sweet, salty, sour and bitter."
+      },
       "q10": {
         "prompt": "Which part of the eye lets in light?",
         "a": "The eyelid",
@@ -730,14 +1947,18 @@
         "r2": "smell",
         "r3": "hearing"
       },
-      "q12": { "prompt": "We can smell things because tiny particles float through the air to our nose." },
+      "q12": {
+        "prompt": "We can smell things because tiny particles float through the air to our nose."
+      },
       "q13": {
         "prompt": "What protects our eyes from dust and bright light?",
         "a": "Eyelashes and eyelids",
         "b": "The nose",
         "c": "The ears"
       },
-      "q14": { "prompt": "The ears are the organs of hearing." },
+      "q14": {
+        "prompt": "The ears are the organs of hearing."
+      },
       "q15": {
         "prompt": "Which sense do we use to read a book?",
         "a": "Taste",
@@ -753,14 +1974,18 @@
         "r2": "eating a lemon",
         "r3": "watching a rainbow"
       },
-      "q17": { "prompt": "We can lose the sense of smell when we have a cold." },
+      "q17": {
+        "prompt": "We can lose the sense of smell when we have a cold."
+      },
       "q18": {
         "prompt": "Which of these is NOT one of the five senses?",
         "a": "Taste",
         "b": "Thought",
         "c": "Touch"
       },
-      "q19": { "prompt": "Sound reaches our brain through the auditory nerve." },
+      "q19": {
+        "prompt": "Sound reaches our brain through the auditory nerve."
+      },
       "q20": {
         "prompt": "What do taste buds do?",
         "a": "They help us see colours",
@@ -776,14 +2001,18 @@
         "r2": "vibrates with sound",
         "r3": "carries sound inward"
       },
-      "q22": { "prompt": "Our skin has nerve endings that detect heat, cold, pain and pressure." },
+      "q22": {
+        "prompt": "Our skin has nerve endings that detect heat, cold, pain and pressure."
+      },
       "q23": {
         "prompt": "Which sense do we mainly use to enjoy a beautiful painting?",
         "a": "Hearing",
         "b": "Sight",
         "c": "Smell"
       },
-      "q24": { "prompt": "Smell and taste work closely together when we eat food." },
+      "q24": {
+        "prompt": "Smell and taste work closely together when we eat food."
+      },
       "q25": {
         "prompt": "Which of these animals has a much stronger sense of smell than humans?",
         "a": "Goldfish",
@@ -799,14 +2028,18 @@
         "r2": "wear sunglasses in bright light",
         "r3": "avoid very loud noises"
       },
-      "q27": { "prompt": "Both eyes working together help us judge distance." },
+      "q27": {
+        "prompt": "Both eyes working together help us judge distance."
+      },
       "q28": {
         "prompt": "What happens to our pupils in a dark room?",
         "a": "They become smaller",
         "b": "They become larger",
         "c": "They change colour"
       },
-      "q29": { "prompt": "Blind people often develop a sharper sense of hearing and touch." },
+      "q29": {
+        "prompt": "Blind people often develop a sharper sense of hearing and touch."
+      },
       "q30": {
         "prompt": "Which part of the tongue detects sweet tastes?",
         "a": "The back",
@@ -822,7 +2055,9 @@
         "r2": "retina",
         "r3": "eardrum"
       },
-      "q32": { "prompt": "We take care of our senses by visiting the doctor for regular check-ups." }
+      "q32": {
+        "prompt": "We take care of our senses by visiting the doctor for regular check-ups."
+      }
     },
     "nutrition": {
       "q1": {
@@ -831,14 +2066,18 @@
         "b": "Carbohydrates",
         "c": "Water"
       },
-      "q2": { "prompt": "We should drink water every day to stay healthy." },
+      "q2": {
+        "prompt": "We should drink water every day to stay healthy."
+      },
       "q3": {
         "prompt": "How many meals a day is it healthy to eat?",
         "a": "1",
         "b": "2",
         "c": "5"
       },
-      "q4": { "prompt": "Fruit and vegetables are good for our health." },
+      "q4": {
+        "prompt": "Fruit and vegetables are good for our health."
+      },
       "q5": {
         "prompt": "Which of these is a protein-rich food?",
         "a": "Rice",
@@ -854,14 +2093,18 @@
         "r2": "carbohydrates",
         "r3": "proteins"
       },
-      "q7": { "prompt": "We should eat more sweets than fruit." },
+      "q7": {
+        "prompt": "We should eat more sweets than fruit."
+      },
       "q8": {
         "prompt": "What may happen if we do not get enough vitamins?",
         "a": "We grow taller",
         "b": "We may get ill",
         "c": "We run faster"
       },
-      "q9": { "prompt": "Dairy products such as milk and cheese are rich in calcium." },
+      "q9": {
+        "prompt": "Dairy products such as milk and cheese are rich in calcium."
+      },
       "q10": {
         "prompt": "Which nutrient helps build and repair our muscles?",
         "a": "Fat",
@@ -877,14 +2120,18 @@
         "r2": "good eyesight",
         "r3": "strong immune system"
       },
-      "q12": { "prompt": "Exercise is good for our health." },
+      "q12": {
+        "prompt": "Exercise is good for our health."
+      },
       "q13": {
         "prompt": "Which of these foods contains the most fat?",
         "a": "Lettuce",
         "b": "Butter",
         "c": "Apple"
       },
-      "q14": { "prompt": "Breakfast is the most important meal of the day." },
+      "q14": {
+        "prompt": "Breakfast is the most important meal of the day."
+      },
       "q15": {
         "prompt": "How many glasses of water should a child drink each day?",
         "a": "1–2",
@@ -900,14 +2147,18 @@
         "r2": "protein",
         "r3": "carbohydrate"
       },
-      "q17": { "prompt": "Sugary drinks are a healthy choice for every day." },
+      "q17": {
+        "prompt": "Sugary drinks are a healthy choice for every day."
+      },
       "q18": {
         "prompt": "What does fibre in food help our body do?",
         "a": "See better",
         "b": "Digest food properly",
         "c": "Hear sounds"
       },
-      "q19": { "prompt": "Iron helps our blood carry oxygen around the body." },
+      "q19": {
+        "prompt": "Iron helps our blood carry oxygen around the body."
+      },
       "q20": {
         "prompt": "Which of these is a legume?",
         "a": "Carrot",
@@ -923,14 +2174,18 @@
         "r2": "cereal and milk",
         "r3": "the main meal"
       },
-      "q22": { "prompt": "Eating a variety of foods helps us get all the nutrients we need." },
+      "q22": {
+        "prompt": "Eating a variety of foods helps us get all the nutrients we need."
+      },
       "q23": {
         "prompt": "Which of these foods is rich in calcium?",
         "a": "Bread",
         "b": "Cheese",
         "c": "Rice"
       },
-      "q24": { "prompt": "Fast food should be eaten every day as part of a healthy diet." },
+      "q24": {
+        "prompt": "Fast food should be eaten every day as part of a healthy diet."
+      },
       "q25": {
         "prompt": "What is the role of carbohydrates in our diet?",
         "a": "They give us energy",
@@ -946,14 +2201,18 @@
         "r2": "dairy",
         "r3": "plant (olive)"
       },
-      "q27": { "prompt": "Washing your hands before eating helps prevent illness." },
+      "q27": {
+        "prompt": "Washing your hands before eating helps prevent illness."
+      },
       "q28": {
         "prompt": "Which food is a source of healthy fats?",
         "a": "Sweets",
         "b": "Avocado",
         "c": "Cola drink"
       },
-      "q29": { "prompt": "Sleep and rest are also important for good health." },
+      "q29": {
+        "prompt": "Sleep and rest are also important for good health."
+      },
       "q30": {
         "prompt": "Which of these is NOT a nutrient?",
         "a": "Protein",
@@ -969,7 +2228,9 @@
         "r2": "chews and mixes food with saliva",
         "r3": "breaks food down with acid"
       },
-      "q32": { "prompt": "Proteins are found in foods like meat, fish, eggs and pulses." }
+      "q32": {
+        "prompt": "Proteins are found in foods like meat, fish, eggs and pulses."
+      }
     },
     "states": {
       "q1": {
@@ -993,14 +2254,18 @@
         "b": "Solid, liquid and gas",
         "c": "Hard, soft and smooth"
       },
-      "q4": { "prompt": "Water can exist in all three states of matter." },
+      "q4": {
+        "prompt": "Water can exist in all three states of matter."
+      },
       "q5": {
         "prompt": "What happens to water when it freezes?",
         "a": "It becomes a gas",
         "b": "It becomes a solid",
         "c": "It disappears"
       },
-      "q6": { "prompt": "Gas has a fixed shape." },
+      "q6": {
+        "prompt": "Gas has a fixed shape."
+      },
       "q7": {
         "prompt": "What is it called when liquid water turns into water vapour?",
         "a": "Freezing",
@@ -1016,7 +2281,9 @@
         "r2": "gas",
         "r3": "solid"
       },
-      "q9": { "prompt": "Solids have a fixed shape and volume." },
+      "q9": {
+        "prompt": "Solids have a fixed shape and volume."
+      },
       "q10": {
         "prompt": "What is it called when a solid turns into a liquid?",
         "a": "Evaporation",
@@ -1032,14 +2299,18 @@
         "r2": "evaporation",
         "r3": "melting"
       },
-      "q12": { "prompt": "Liquids take the shape of the container they are poured into." },
+      "q12": {
+        "prompt": "Liquids take the shape of the container they are poured into."
+      },
       "q13": {
         "prompt": "At what temperature does water freeze?",
         "a": "100 °C",
         "b": "50 °C",
         "c": "0 °C"
       },
-      "q14": { "prompt": "Wood is a solid material." },
+      "q14": {
+        "prompt": "Wood is a solid material."
+      },
       "q15": {
         "prompt": "Which of these is a gas at room temperature?",
         "a": "Gold",
@@ -1055,14 +2326,18 @@
         "r2": "gas",
         "r3": "liquid"
       },
-      "q17": { "prompt": "At 100 °C, water boils and turns into steam." },
+      "q17": {
+        "prompt": "At 100 °C, water boils and turns into steam."
+      },
       "q18": {
         "prompt": "What is condensation?",
         "a": "Water vapour turning into liquid water",
         "b": "Water freezing into ice",
         "c": "Ice melting into water"
       },
-      "q19": { "prompt": "Gases can be compressed into a smaller space." },
+      "q19": {
+        "prompt": "Gases can be compressed into a smaller space."
+      },
       "q20": {
         "prompt": "Which of these best describes a liquid?",
         "a": "Fixed shape and volume",
@@ -1078,14 +2353,18 @@
         "r2": "liquid",
         "r3": "gas"
       },
-      "q22": { "prompt": "When you breathe on a cold window, the moisture condenses into small water drops." },
+      "q22": {
+        "prompt": "When you breathe on a cold window, the moisture condenses into small water drops."
+      },
       "q23": {
         "prompt": "Which change happens when you heat an ice cube?",
         "a": "It evaporates instantly",
         "b": "It melts into water",
         "c": "It becomes a gas"
       },
-      "q24": { "prompt": "All metals are solids at room temperature." },
+      "q24": {
+        "prompt": "All metals are solids at room temperature."
+      },
       "q25": {
         "prompt": "What state of matter is honey?",
         "a": "Solid",
@@ -1101,14 +2380,18 @@
         "r2": "temperature drops",
         "r3": "temperature rises a lot"
       },
-      "q27": { "prompt": "Sand is a solid material." },
+      "q27": {
+        "prompt": "Sand is a solid material."
+      },
       "q28": {
         "prompt": "Which of the following is an example of evaporation in everyday life?",
         "a": "Ice forming on a lake",
         "b": "Wet clothes drying in the sun",
         "c": "Chocolate hardening in the fridge"
       },
-      "q29": { "prompt": "Matter is made up of very tiny particles called atoms and molecules." },
+      "q29": {
+        "prompt": "Matter is made up of very tiny particles called atoms and molecules."
+      },
       "q30": {
         "prompt": "Which state of matter fills all the available space in a container?",
         "a": "Solid",
@@ -1124,7 +2407,9 @@
         "r2": "gas",
         "r3": "solid"
       },
-      "q32": { "prompt": "The same substance can change from one state to another when heated or cooled." }
+      "q32": {
+        "prompt": "The same substance can change from one state to another when heated or cooled."
+      }
     },
     "skeleton": {
       "q1": {
@@ -1133,14 +2418,18 @@
         "b": "To support and protect the body",
         "c": "To pump blood"
       },
-      "q2": { "prompt": "Adults have 206 bones in their body." },
+      "q2": {
+        "prompt": "Adults have 206 bones in their body."
+      },
       "q3": {
         "prompt": "Which bone protects the brain?",
         "a": "The ribcage",
         "b": "The skull",
         "c": "The spine"
       },
-      "q4": { "prompt": "Muscles are attached to bones by tendons." },
+      "q4": {
+        "prompt": "Muscles are attached to bones by tendons."
+      },
       "q5": {
         "prompt": "What do we call the place where two bones meet?",
         "a": "A tendon",
@@ -1156,14 +2445,18 @@
         "r2": "upper arm",
         "r3": "upper leg"
       },
-      "q7": { "prompt": "Bones are alive and can grow and repair themselves." },
+      "q7": {
+        "prompt": "Bones are alive and can grow and repair themselves."
+      },
       "q8": {
         "prompt": "Which of these protects the heart and lungs?",
         "a": "The spine",
         "b": "The skull",
         "c": "The ribcage"
       },
-      "q9": { "prompt": "The spine is made up of small bones called vertebrae." },
+      "q9": {
+        "prompt": "The spine is made up of small bones called vertebrae."
+      },
       "q10": {
         "prompt": "What substance makes bones hard and strong?",
         "a": "Iron",
@@ -1179,14 +2472,18 @@
         "r2": "knee",
         "r3": "hip"
       },
-      "q12": { "prompt": "Babies are born with more bones than adults." },
+      "q12": {
+        "prompt": "Babies are born with more bones than adults."
+      },
       "q13": {
         "prompt": "Which type of muscle moves the bones?",
         "a": "Cardiac muscle",
         "b": "Smooth muscle",
         "c": "Skeletal muscle"
       },
-      "q14": { "prompt": "Ligaments connect bones to other bones at joints." },
+      "q14": {
+        "prompt": "Ligaments connect bones to other bones at joints."
+      },
       "q15": {
         "prompt": "How do muscles make bones move?",
         "a": "They push the bones away",
@@ -1202,14 +2499,18 @@
         "r2": "strongest bone for walking",
         "r3": "protects the brain"
       },
-      "q17": { "prompt": "Exercise helps to keep bones and muscles strong." },
+      "q17": {
+        "prompt": "Exercise helps to keep bones and muscles strong."
+      },
       "q18": {
         "prompt": "What is the longest bone in the human body?",
         "a": "The humerus",
         "b": "The femur",
         "c": "The tibia"
       },
-      "q19": { "prompt": "Muscles can only pull, not push." },
+      "q19": {
+        "prompt": "Muscles can only pull, not push."
+      },
       "q20": {
         "prompt": "Which nutrient is most important for strong bones?",
         "a": "Protein",
@@ -1225,14 +2526,18 @@
         "r2": "hinge joint (elbow)",
         "r3": "ball-and-socket (shoulder)"
       },
-      "q22": { "prompt": "The kneecap is called the patella." },
+      "q22": {
+        "prompt": "The kneecap is called the patella."
+      },
       "q23": {
         "prompt": "Which of these is a symptom of a broken bone?",
         "a": "Sneezing",
         "b": "Pain and swelling at the injury site",
         "c": "A headache"
       },
-      "q24": { "prompt": "The human hand contains 27 small bones." },
+      "q24": {
+        "prompt": "The human hand contains 27 small bones."
+      },
       "q25": {
         "prompt": "What is the function of red bone marrow?",
         "a": "To produce blood cells",
@@ -1248,14 +2553,18 @@
         "r2": "upper arm (front)",
         "r3": "front of thigh"
       },
-      "q27": { "prompt": "Posture is important: sitting and standing straight protects the spine." },
+      "q27": {
+        "prompt": "Posture is important: sitting and standing straight protects the spine."
+      },
       "q28": {
         "prompt": "What happens to muscles if we do not use them for a long time?",
         "a": "They get bigger",
         "b": "They get weaker and smaller",
         "c": "They turn into fat only"
       },
-      "q29": { "prompt": "The ribcage also protects the stomach and liver." },
+      "q29": {
+        "prompt": "The ribcage also protects the stomach and liver."
+      },
       "q30": {
         "prompt": "Which of these activities is best for building strong bones?",
         "a": "Reading a book",
@@ -1271,7 +2580,9 @@
         "r2": "connects muscle to bone",
         "r3": "connects bone to bone"
       },
-      "q32": { "prompt": "The skeleton of a baby is mostly made of soft cartilage that slowly hardens into bone." }
+      "q32": {
+        "prompt": "The skeleton of a baby is mostly made of soft cartilage that slowly hardens into bone."
+      }
     },
     "forces": {
       "q1": {
@@ -1280,14 +2591,18 @@
         "b": "A push or a pull that can change the motion of an object",
         "c": "A measurement of temperature"
       },
-      "q2": { "prompt": "Gravity is a force that pulls objects towards the Earth." },
+      "q2": {
+        "prompt": "Gravity is a force that pulls objects towards the Earth."
+      },
       "q3": {
         "prompt": "What happens to a ball when you kick it?",
         "a": "It stays still",
         "b": "It moves because of the force applied",
         "c": "It changes colour"
       },
-      "q4": { "prompt": "Friction always speeds objects up." },
+      "q4": {
+        "prompt": "Friction always speeds objects up."
+      },
       "q5": {
         "prompt": "Which of these is an example of a pulling force?",
         "a": "Kicking a ball",
@@ -1303,14 +2618,18 @@
         "r2": "apple falling from a tree",
         "r3": "bike slowing down on the road"
       },
-      "q7": { "prompt": "An object at rest will stay at rest unless a force acts on it." },
+      "q7": {
+        "prompt": "An object at rest will stay at rest unless a force acts on it."
+      },
       "q8": {
         "prompt": "What does friction do to a moving object?",
         "a": "It speeds it up",
         "b": "It slows it down",
         "c": "It makes it float"
       },
-      "q9": { "prompt": "The unit of force is called the Newton." },
+      "q9": {
+        "prompt": "The unit of force is called the Newton."
+      },
       "q10": {
         "prompt": "Which surface produces more friction?",
         "a": "Ice",
@@ -1326,14 +2645,18 @@
         "r2": "tension",
         "r3": "gravity and normal force"
       },
-      "q12": { "prompt": "Forces can change the shape of objects." },
+      "q12": {
+        "prompt": "Forces can change the shape of objects."
+      },
       "q13": {
         "prompt": "What force keeps the planets in orbit around the Sun?",
         "a": "Friction",
         "b": "Magnetism",
         "c": "Gravity"
       },
-      "q14": { "prompt": "When two equal forces act in opposite directions the object does not move." },
+      "q14": {
+        "prompt": "When two equal forces act in opposite directions the object does not move."
+      },
       "q15": {
         "prompt": "Which of these reduces friction?",
         "a": "A rough surface",
@@ -1349,14 +2672,18 @@
         "r2": "compression",
         "r3": "pull"
       },
-      "q17": { "prompt": "Heavier objects always fall faster than lighter ones." },
+      "q17": {
+        "prompt": "Heavier objects always fall faster than lighter ones."
+      },
       "q18": {
         "prompt": "What do we use to measure force?",
         "a": "A thermometer",
         "b": "A Newton meter (force meter)",
         "c": "A ruler"
       },
-      "q19": { "prompt": "Air resistance is a type of friction that acts on objects moving through the air." },
+      "q19": {
+        "prompt": "Air resistance is a type of friction that acts on objects moving through the air."
+      },
       "q20": {
         "prompt": "Why does a parachute slow a person's fall?",
         "a": "It creates more gravity",
@@ -1372,14 +2699,18 @@
         "r2": "easier to move heavy loads upward",
         "r3": "reduces friction when moving"
       },
-      "q22": { "prompt": "A spring scale measures force in Newtons." },
+      "q22": {
+        "prompt": "A spring scale measures force in Newtons."
+      },
       "q23": {
         "prompt": "If you push an object harder, what happens to its speed?",
         "a": "It slows down",
         "b": "It goes faster",
         "c": "Nothing changes"
       },
-      "q24": { "prompt": "Magnets can attract objects made of iron or steel." },
+      "q24": {
+        "prompt": "Magnets can attract objects made of iron or steel."
+      },
       "q25": {
         "prompt": "Which of these is an example of gravity at work?",
         "a": "A magnet sticking to a fridge",
@@ -1395,14 +2726,18 @@
         "r2": "attracted",
         "r3": "not attracted"
       },
-      "q27": { "prompt": "The Moon has less gravity than the Earth." },
+      "q27": {
+        "prompt": "The Moon has less gravity than the Earth."
+      },
       "q28": {
         "prompt": "What is weight?",
         "a": "The amount of matter in an object",
         "b": "The force of gravity acting on an object's mass",
         "c": "The size of an object"
       },
-      "q29": { "prompt": "A bicycle brake works by using friction to slow the wheel." },
+      "q29": {
+        "prompt": "A bicycle brake works by using friction to slow the wheel."
+      },
       "q30": {
         "prompt": "Which of these objects would fall to the ground if dropped?",
         "a": "A balloon filled with helium",
@@ -1418,7 +2753,9 @@
         "r2": "kicking a ball from rest",
         "r3": "squashing clay"
       },
-      "q32": { "prompt": "Without gravity, objects on Earth would float away into space." }
+      "q32": {
+        "prompt": "Without gravity, objects on Earth would float away into space."
+      }
     },
     "solar_system": {
       "q1": {
@@ -1427,14 +2764,18 @@
         "b": "The Earth",
         "c": "The Sun"
       },
-      "q2": { "prompt": "The Sun is a star." },
+      "q2": {
+        "prompt": "The Sun is a star."
+      },
       "q3": {
         "prompt": "How many planets are there in our Solar System?",
         "a": "7",
         "b": "8",
         "c": "9"
       },
-      "q4": { "prompt": "The Moon is a natural satellite of the Earth." },
+      "q4": {
+        "prompt": "The Moon is a natural satellite of the Earth."
+      },
       "q5": {
         "prompt": "Which planet is closest to the Sun?",
         "a": "Venus",
@@ -1450,14 +2791,18 @@
         "r2": "the red planet",
         "r3": "famous rings"
       },
-      "q7": { "prompt": "The Earth takes 365 days to orbit the Sun." },
+      "q7": {
+        "prompt": "The Earth takes 365 days to orbit the Sun."
+      },
       "q8": {
         "prompt": "What causes day and night on Earth?",
         "a": "The Earth orbiting the Sun",
         "b": "The Earth rotating on its axis",
         "c": "The Moon blocking the Sun"
       },
-      "q9": { "prompt": "Venus is hotter than Mercury even though Mercury is closer to the Sun." },
+      "q9": {
+        "prompt": "Venus is hotter than Mercury even though Mercury is closer to the Sun."
+      },
       "q10": {
         "prompt": "What do we call objects made of rock and metal that orbit the Sun between Mars and Jupiter?",
         "a": "Comets",
@@ -1473,14 +2818,18 @@
         "r2": "ice and rock with a bright tail",
         "r3": "rocky object in the asteroid belt"
       },
-      "q12": { "prompt": "The Sun provides light and heat to all the planets in the Solar System." },
+      "q12": {
+        "prompt": "The Sun provides light and heat to all the planets in the Solar System."
+      },
       "q13": {
         "prompt": "Which planet is known as the Red Planet?",
         "a": "Jupiter",
         "b": "Mars",
         "c": "Venus"
       },
-      "q14": { "prompt": "Earth is the only planet known to support life." },
+      "q14": {
+        "prompt": "Earth is the only planet known to support life."
+      },
       "q15": {
         "prompt": "Which is the largest planet in the Solar System?",
         "a": "Saturn",
@@ -1496,14 +2845,18 @@
         "r2": "1st",
         "r3": "3rd"
       },
-      "q17": { "prompt": "The Moon has mountains and craters on its surface." },
+      "q17": {
+        "prompt": "The Moon has mountains and craters on its surface."
+      },
       "q18": {
         "prompt": "How long does it take the Moon to orbit the Earth?",
         "a": "1 day",
         "b": "1 week",
         "c": "About 28 days"
       },
-      "q19": { "prompt": "Astronauts can travel to space in a rocket." },
+      "q19": {
+        "prompt": "Astronauts can travel to space in a rocket."
+      },
       "q20": {
         "prompt": "Which planet has the most visible rings around it?",
         "a": "Jupiter",
@@ -1519,14 +2872,18 @@
         "r2": "small rocky inner planet",
         "r3": "gas giant"
       },
-      "q22": { "prompt": "A light year is the distance light travels in one year." },
+      "q22": {
+        "prompt": "A light year is the distance light travels in one year."
+      },
       "q23": {
         "prompt": "What are the phases of the Moon caused by?",
         "a": "The Earth's shadow on the Moon",
         "b": "The Moon moving closer to the Sun",
         "c": "The changing angle of sunlight on the Moon as it orbits Earth"
       },
-      "q24": { "prompt": "The Sun is much bigger than any of the planets." },
+      "q24": {
+        "prompt": "The Sun is much bigger than any of the planets."
+      },
       "q25": {
         "prompt": "Which of these is a dwarf planet?",
         "a": "Mars",
@@ -1542,14 +2899,18 @@
         "r2": "not visible from Earth",
         "r3": "the whole Moon is lit"
       },
-      "q27": { "prompt": "The International Space Station orbits the Earth." },
+      "q27": {
+        "prompt": "The International Space Station orbits the Earth."
+      },
       "q28": {
         "prompt": "What is a solar eclipse?",
         "a": "When the Earth passes between the Sun and the Moon",
         "b": "When the Moon passes between the Sun and the Earth, blocking sunlight",
         "c": "When the Sun disappears permanently"
       },
-      "q29": { "prompt": "Uranus and Neptune are sometimes called the ice giants." },
+      "q29": {
+        "prompt": "Uranus and Neptune are sometimes called the ice giants."
+      },
       "q30": {
         "prompt": "Which planet is farthest from the Sun?",
         "a": "Saturn",
@@ -1565,7 +2926,9 @@
         "r2": "path around another object",
         "r3": "force that attracts objects"
       },
-      "q32": { "prompt": "The word 'galaxy' refers to a vast collection of stars, gas and dust held together by gravity." }
+      "q32": {
+        "prompt": "The word 'galaxy' refers to a vast collection of stars, gas and dust held together by gravity."
+      }
     }
   },
   "social": {
@@ -1576,7 +2939,9 @@
         "b": "The Moon",
         "c": "Mars"
       },
-      "q2": { "prompt": "The Earth orbits around the Sun." },
+      "q2": {
+        "prompt": "The Earth orbits around the Sun."
+      },
       "q3": {
         "prompt": "Which movement of the Earth causes day and night?",
         "a": "Its orbit",
@@ -1589,7 +2954,9 @@
         "b": "8",
         "c": "9"
       },
-      "q5": { "prompt": "The Moon is a planet." },
+      "q5": {
+        "prompt": "The Moon is a planet."
+      },
       "q6": {
         "prompt": "Which is the largest planet in the Solar System?",
         "a": "Saturn",
@@ -1605,7 +2972,207 @@
         "r2": "star",
         "r3": "satellite"
       },
-      "q8": { "prompt": "The Earth's orbit around the Sun takes one year." }
+      "q8": {
+        "prompt": "The Earth's orbit around the Sun takes one year."
+      },
+      "q9": {
+        "prompt": "The Sun is the centre of the Solar System."
+      },
+      "q10": {
+        "prompt": "Which planet is closest to the Sun?",
+        "a": "Mercury",
+        "b": "Mars",
+        "c": "Earth"
+      },
+      "q11": {
+        "prompt": "Saturn has rings around it."
+      },
+      "q12": {
+        "prompt": "How long does Earth take to rotate once on its axis?",
+        "a": "one week",
+        "b": "one day",
+        "c": "one year"
+      },
+      "q13": {
+        "prompt": "Mars is called the Red Planet."
+      },
+      "q14": {
+        "prompt": "What is a natural satellite?",
+        "a": "a small star",
+        "b": "a type of comet",
+        "c": "a body that orbits a planet"
+      },
+      "q15": {
+        "prompt": "The Moon produces its own light."
+      },
+      "q16": {
+        "prompt": "Which planet has the Great Red Spot?",
+        "a": "Saturn",
+        "b": "Jupiter",
+        "c": "Neptune"
+      },
+      "q17": {
+        "prompt": "Earth is the third planet from the Sun."
+      },
+      "q18": {
+        "prompt": "What is the Milky Way?",
+        "a": "our galaxy",
+        "b": "a planet",
+        "c": "a star"
+      },
+      "q19": {
+        "prompt": "Astronauts have walked on the Moon."
+      },
+      "q20": {
+        "prompt": "What do we call a group of stars forming a pattern in the sky?",
+        "a": "a galaxy",
+        "b": "a nebula",
+        "c": "a constellation"
+      },
+      "q21": {
+        "prompt": "All planets in the Solar System orbit in the same direction."
+      },
+      "q22": {
+        "prompt": "What do we call the path a planet follows around the Sun?",
+        "a": "rotation",
+        "b": "orbit",
+        "c": "axis"
+      },
+      "q23": {
+        "prompt": "Mercury is the smallest planet in the Solar System."
+      },
+      "q24": {
+        "prompt": "Which planet is called the Blue Planet?",
+        "a": "Earth",
+        "b": "Neptune",
+        "c": "Uranus"
+      },
+      "q25": {
+        "prompt": "The Sun is a solid rocky body."
+      },
+      "q26": {
+        "prompt": "What causes the seasons on Earth?",
+        "a": "the Moon's orbit",
+        "b": "Earth's tilted axis as it orbits the Sun",
+        "c": "the distance from the Sun"
+      },
+      "q27": {
+        "prompt": "Pluto is currently classified as a planet."
+      },
+      "q28": {
+        "prompt": "How many moons does Earth have?",
+        "a": "0",
+        "b": "2",
+        "c": "1"
+      },
+      "q29": {
+        "prompt": "A comet is made of ice and rock."
+      },
+      "q30": {
+        "prompt": "What is an asteroid?",
+        "a": "a rocky body that orbits the Sun",
+        "b": "a type of star",
+        "c": "a moon"
+      },
+      "q31": {
+        "prompt": "The Sun is approximately 150 million kilometres from Earth."
+      },
+      "q32": {
+        "prompt": "Which planet is farthest from the Sun?",
+        "a": "Mars",
+        "b": "Saturn",
+        "c": "Neptune"
+      },
+      "q33": {
+        "prompt": "The Moon always shows the same face to Earth."
+      },
+      "q34": {
+        "prompt": "What is solar energy?",
+        "a": "energy from wind",
+        "b": "energy from the Sun",
+        "c": "energy from water"
+      },
+      "q35": {
+        "prompt": "Stars are very far away from Earth."
+      },
+      "q36": {
+        "prompt": "Which planet is the hottest in the Solar System?",
+        "a": "Venus",
+        "b": "Mercury",
+        "c": "Mars"
+      },
+      "q37": {
+        "prompt": "Neptune is the farthest planet from the Sun."
+      },
+      "q38": {
+        "prompt": "What happens during a solar eclipse?",
+        "a": "Earth's shadow falls on the Moon",
+        "b": "the Sun disappears forever",
+        "c": "the Moon passes between Earth and the Sun"
+      },
+      "q39": {
+        "prompt": "The Moon is a natural satellite of Earth."
+      },
+      "q40": {
+        "prompt": "How many planets in our Solar System are bigger than Earth?",
+        "a": "2",
+        "b": "4",
+        "c": "6"
+      },
+      "q41": {
+        "prompt": "Mercury has no natural moons."
+      },
+      "q42": {
+        "prompt": "What do we call a natural body that orbits a planet?",
+        "a": "a satellite",
+        "b": "a comet",
+        "c": "a star"
+      },
+      "q43": {
+        "prompt": "The International Space Station orbits the Earth."
+      },
+      "q44": {
+        "prompt": "What is the correct order of the first three planets from the Sun?",
+        "a": "Earth, Venus, Mercury",
+        "b": "Mercury, Venus, Earth",
+        "c": "Venus, Mercury, Earth"
+      },
+      "q45": {
+        "prompt": "The axis of the Earth is tilted."
+      },
+      "q46": {
+        "prompt": "Which planet has the most visible rings?",
+        "a": "Jupiter",
+        "b": "Uranus",
+        "c": "Saturn"
+      },
+      "q47": {
+        "prompt": "Saturn has the most moons of any planet in the Solar System."
+      },
+      "q48": {
+        "prompt": "What season starts in Spain when the Northern Hemisphere tilts towards the Sun?",
+        "a": "summer",
+        "b": "winter",
+        "c": "spring"
+      },
+      "q49": {
+        "prompt": "The Sun rises in the east and sets in the west."
+      },
+      "q50": {
+        "prompt": "Which planet is red because of iron oxide in its soil?",
+        "a": "Jupiter",
+        "b": "Mars",
+        "c": "Venus"
+      },
+      "q51": {
+        "prompt": "Stars produce their own light and heat."
+      },
+      "q52": {
+        "prompt": "Where would you see more stars on a clear night?",
+        "a": "in a city",
+        "b": "near street lights",
+        "c": "away from city lights"
+      }
     },
     "maps": {
       "q1": {
@@ -1628,14 +3195,18 @@
         "b": "3",
         "c": "4"
       },
-      "q4": { "prompt": "South is at the top of maps." },
+      "q4": {
+        "prompt": "South is at the top of maps."
+      },
       "q5": {
         "prompt": "Which instrument is used to find direction in the countryside?",
         "a": "the telescope",
         "b": "the compass",
         "c": "the microscope"
       },
-      "q6": { "prompt": "A map is a representation of reality seen from above." },
+      "q6": {
+        "prompt": "A map is a representation of reality seen from above."
+      },
       "q7": {
         "prompt": "If North is in front of you, where is East?",
         "a": "on your left",
@@ -1650,6 +3221,198 @@
         "r1": "mountain",
         "r2": "river",
         "r3": "forest"
+      },
+      "q9": {
+        "prompt": "The Equator divides the Earth into northern and southern hemispheres."
+      },
+      "q10": {
+        "prompt": "How many continents are there?",
+        "a": "5",
+        "b": "7",
+        "c": "6"
+      },
+      "q11": {
+        "prompt": "A compass always points south."
+      },
+      "q12": {
+        "prompt": "Which continent is Spain in?",
+        "a": "Africa",
+        "b": "Europe",
+        "c": "Asia"
+      },
+      "q13": {
+        "prompt": "A map legend explains what the symbols on a map mean."
+      },
+      "q14": {
+        "prompt": "What is the largest ocean?",
+        "a": "Atlantic Ocean",
+        "b": "Indian Ocean",
+        "c": "Pacific Ocean"
+      },
+      "q15": {
+        "prompt": "The North Pole is at the bottom of the globe."
+      },
+      "q16": {
+        "prompt": "Which ocean is to the west of Spain?",
+        "a": "Atlantic Ocean",
+        "b": "Pacific Ocean",
+        "c": "Indian Ocean"
+      },
+      "q17": {
+        "prompt": "Portugal is to the west of Spain."
+      },
+      "q18": {
+        "prompt": "What colour usually represents water on a map?",
+        "a": "green",
+        "b": "blue",
+        "c": "brown"
+      },
+      "q19": {
+        "prompt": "France is to the north of Spain."
+      },
+      "q20": {
+        "prompt": "What do we call the imaginary line around the middle of the Earth?",
+        "a": "Meridian",
+        "b": "Tropic",
+        "c": "Equator"
+      },
+      "q21": {
+        "prompt": "The Atlantic Ocean is to the west of Spain."
+      },
+      "q22": {
+        "prompt": "What do we call someone who makes maps?",
+        "a": "cartographer",
+        "b": "geographer",
+        "c": "astronomer"
+      },
+      "q23": {
+        "prompt": "Africa is south of Europe."
+      },
+      "q24": {
+        "prompt": "What type of map shows the natural features of the land?",
+        "a": "political map",
+        "b": "physical map",
+        "c": "climate map"
+      },
+      "q25": {
+        "prompt": "A political map shows countries and their borders."
+      },
+      "q26": {
+        "prompt": "What do contour lines on a map show?",
+        "a": "rivers",
+        "b": "roads",
+        "c": "height above sea level"
+      },
+      "q27": {
+        "prompt": "South America is to the east of Africa."
+      },
+      "q28": {
+        "prompt": "What is the Strait of Gibraltar?",
+        "a": "a narrow sea passage between Spain and Africa",
+        "b": "a mountain range",
+        "c": "a river"
+      },
+      "q29": {
+        "prompt": "The Canary Islands are in the Atlantic Ocean."
+      },
+      "q30": {
+        "prompt": "If you are facing East, what is directly behind you?",
+        "a": "North",
+        "b": "West",
+        "c": "South"
+      },
+      "q31": {
+        "prompt": "The Balearic Islands are in the Mediterranean Sea."
+      },
+      "q32": {
+        "prompt": "What is the scale of a map?",
+        "a": "the list of symbols used",
+        "b": "the border of the map",
+        "c": "the ratio of map distance to real distance"
+      },
+      "q33": {
+        "prompt": "On a map, a star symbol usually marks a capital city."
+      },
+      "q34": {
+        "prompt": "How many intermediate cardinal points are there (NE, SE, SW, NW)?",
+        "a": "4",
+        "b": "2",
+        "c": "8"
+      },
+      "q35": {
+        "prompt": "You can use the Sun's position to find directions."
+      },
+      "q36": {
+        "prompt": "What do brown or orange colours on a physical map usually represent?",
+        "a": "the sea",
+        "b": "mountains or high land",
+        "c": "forests"
+      },
+      "q37": {
+        "prompt": "A globe is a flat representation of the Earth."
+      },
+      "q38": {
+        "prompt": "What is a globe?",
+        "a": "a flat map",
+        "b": "a satellite image",
+        "c": "a 3D spherical model of Earth"
+      },
+      "q39": {
+        "prompt": "At noon in Spain, shadows point roughly northward."
+      },
+      "q40": {
+        "prompt": "Which is the longest river flowing entirely within Spain?",
+        "a": "Ebro",
+        "b": "Tagus",
+        "c": "Guadalquivir"
+      },
+      "q41": {
+        "prompt": "Green areas on a physical map usually represent low flat land."
+      },
+      "q42": {
+        "prompt": "The Pyrenees mountain range forms the border between Spain and:",
+        "a": "Portugal",
+        "b": "France",
+        "c": "Morocco"
+      },
+      "q43": {
+        "prompt": "A compass rose on a map shows the cardinal directions."
+      },
+      "q44": {
+        "prompt": "What direction is opposite to West?",
+        "a": "South",
+        "b": "North",
+        "c": "East"
+      },
+      "q45": {
+        "prompt": "Antarctica is at the South Pole."
+      },
+      "q46": {
+        "prompt": "Which sea lies between Spain and Africa?",
+        "a": "Mediterranean Sea",
+        "b": "Atlantic Ocean",
+        "c": "Bay of Biscay"
+      },
+      "q47": {
+        "prompt": "Most maps are drawn with North at the top."
+      },
+      "q48": {
+        "prompt": "Which peninsula is shared by Spain and Portugal?",
+        "a": "Italian Peninsula",
+        "b": "Iberian Peninsula",
+        "c": "Balkan Peninsula"
+      },
+      "q49": {
+        "prompt": "The Bay of Biscay is to the north of Spain."
+      },
+      "q50": {
+        "prompt": "What type of map would you use to find capital cities?",
+        "a": "physical map",
+        "b": "climate map",
+        "c": "political map"
+      },
+      "q51": {
+        "prompt": "Europe and Asia are on the same continuous landmass."
       }
     },
     "spain": {
@@ -1659,14 +3422,18 @@
         "b": "17",
         "c": "20"
       },
-      "q2": { "prompt": "Madrid is the capital of Spain." },
+      "q2": {
+        "prompt": "Madrid is the capital of Spain."
+      },
       "q3": {
         "prompt": "Which is the longest river in Spain?",
         "a": "the Tagus",
         "b": "the Ebro",
         "c": "the Guadalquivir"
       },
-      "q4": { "prompt": "Spain is an island." },
+      "q4": {
+        "prompt": "Spain is an island."
+      },
       "q5": {
         "prompt": "What is the name of the peninsula where Spain is located?",
         "a": "Italian",
@@ -1688,7 +3455,201 @@
         "b": "Mulhacén",
         "c": "The Pyrenees"
       },
-      "q8": { "prompt": "The Mediterranean Sea washes the east coast of Spain." }
+      "q8": {
+        "prompt": "The Mediterranean Sea washes the east coast of Spain."
+      },
+      "q9": {
+        "prompt": "Galicia is in the northwest of Spain."
+      },
+      "q10": {
+        "prompt": "Which mountain range separates Spain from France?",
+        "a": "Sierra Nevada",
+        "b": "Cantabrian Mountains",
+        "c": "The Pyrenees"
+      },
+      "q11": {
+        "prompt": "The River Guadalquivir flows through Andalusia."
+      },
+      "q12": {
+        "prompt": "Where are the Canary Islands located?",
+        "a": "in the Atlantic Ocean near Africa",
+        "b": "in the Mediterranean Sea",
+        "c": "in the Bay of Biscay"
+      },
+      "q13": {
+        "prompt": "The Meseta is a large flat plateau in the centre of Spain."
+      },
+      "q14": {
+        "prompt": "Which autonomous community is in the northeast of Spain and borders France?",
+        "a": "Aragon",
+        "b": "Catalonia",
+        "c": "Navarre"
+      },
+      "q15": {
+        "prompt": "The Pyrenees run roughly west to east across northern Spain."
+      },
+      "q16": {
+        "prompt": "What is the capital of Catalonia?",
+        "a": "Valencia",
+        "b": "Seville",
+        "c": "Barcelona"
+      },
+      "q17": {
+        "prompt": "Andorra is a small independent country between Spain and France."
+      },
+      "q18": {
+        "prompt": "Which river crosses the city of Madrid?",
+        "a": "Manzanares",
+        "b": "Ebro",
+        "c": "Tagus"
+      },
+      "q19": {
+        "prompt": "The autonomous city of Ceuta is located on the African continent."
+      },
+      "q20": {
+        "prompt": "How many islands make up the main Balearic Islands?",
+        "a": "3",
+        "b": "4",
+        "c": "5"
+      },
+      "q21": {
+        "prompt": "Mallorca is the largest of the Balearic Islands."
+      },
+      "q22": {
+        "prompt": "Which mountain range is in the south of Spain?",
+        "a": "Pyrenees",
+        "b": "Cantabrian Mountains",
+        "c": "Sierra Nevada"
+      },
+      "q23": {
+        "prompt": "The River Ebro flows into the Mediterranean Sea."
+      },
+      "q24": {
+        "prompt": "Which autonomous community is famous for paella?",
+        "a": "Galicia",
+        "b": "Valencia",
+        "c": "Asturias"
+      },
+      "q25": {
+        "prompt": "The River Tagus (Tajo) flows into the Atlantic Ocean."
+      },
+      "q26": {
+        "prompt": "Which autonomous community of Spain has the most coastline?",
+        "a": "Catalonia",
+        "b": "Valencia",
+        "c": "Andalusia"
+      },
+      "q27": {
+        "prompt": "Spain and Portugal share the Iberian Peninsula."
+      },
+      "q28": {
+        "prompt": "Where is the Sierra Nevada mountain range?",
+        "a": "in Andalusia",
+        "b": "in Catalonia",
+        "c": "in Galicia"
+      },
+      "q29": {
+        "prompt": "The Bay of Biscay (Mar Cantábrico) is to the north of Spain."
+      },
+      "q30": {
+        "prompt": "What is the largest autonomous community in Spain by area?",
+        "a": "Andalusia",
+        "b": "Castilla y León",
+        "c": "Extremadura"
+      },
+      "q31": {
+        "prompt": "The River Duero (Douro) flows into the Atlantic Ocean in Portugal."
+      },
+      "q32": {
+        "prompt": "What sea is to the north of Spain?",
+        "a": "Mediterranean Sea",
+        "b": "Atlantic Ocean",
+        "c": "Bay of Biscay"
+      },
+      "q33": {
+        "prompt": "Seville is the capital of Andalusia."
+      },
+      "q34": {
+        "prompt": "What do we call the narrow sea passage between Spain and Morocco?",
+        "a": "Strait of Gibraltar",
+        "b": "Strait of Bosphorus",
+        "c": "Strait of Magellan"
+      },
+      "q35": {
+        "prompt": "The Cantabrian Mountains run along the north coast of Spain."
+      },
+      "q36": {
+        "prompt": "Which river forms part of the border between Spain and Portugal?",
+        "a": "Ebro",
+        "b": "Guadiana",
+        "c": "Tagus"
+      },
+      "q37": {
+        "prompt": "Spain has coastlines on both the Atlantic Ocean and the Mediterranean Sea."
+      },
+      "q38": {
+        "prompt": "What climate dominates the interior of Spain?",
+        "a": "oceanic",
+        "b": "Mediterranean",
+        "c": "continental"
+      },
+      "q39": {
+        "prompt": "The Canary Islands have a mild climate throughout the year."
+      },
+      "q40": {
+        "prompt": "Which autonomous community includes the city of Santiago de Compostela?",
+        "a": "Galicia",
+        "b": "Asturias",
+        "c": "Cantabria"
+      },
+      "q41": {
+        "prompt": "Sierra Morena separates Andalusia from Castilla-La Mancha."
+      },
+      "q42": {
+        "prompt": "How many provinces does Spain have?",
+        "a": "40",
+        "b": "50",
+        "c": "52"
+      },
+      "q43": {
+        "prompt": "Bilbao is the largest city in the Basque Country."
+      },
+      "q44": {
+        "prompt": "Which river empties into the Atlantic in southwestern Spain?",
+        "a": "Ebro",
+        "b": "Guadalquivir",
+        "c": "Manzanares"
+      },
+      "q45": {
+        "prompt": "The Basque Country has its own language called Euskera."
+      },
+      "q46": {
+        "prompt": "Which region of Spain is famous for flamenco?",
+        "a": "Andalusia",
+        "b": "Galicia",
+        "c": "Catalonia"
+      },
+      "q47": {
+        "prompt": "Spain became a member of the European Union in 1986."
+      },
+      "q48": {
+        "prompt": "Which autonomous community has the most inhabitants?",
+        "a": "Catalonia",
+        "b": "Andalusia",
+        "c": "Madrid"
+      },
+      "q49": {
+        "prompt": "The city of Zaragoza is on the River Ebro."
+      },
+      "q50": {
+        "prompt": "What are the two autonomous cities of Spain located in Africa?",
+        "a": "Ibiza and Formentera",
+        "b": "La Palma and Tenerife",
+        "c": "Ceuta and Melilla"
+      },
+      "q51": {
+        "prompt": "The Picos de Europa is a mountain range in northern Spain."
+      }
     },
     "pop": {
       "q1": {
@@ -1697,14 +3658,18 @@
         "b": "the population",
         "c": "the municipality"
       },
-      "q2": { "prompt": "The municipality is the basic unit of territorial organisation in Spain." },
+      "q2": {
+        "prompt": "The municipality is the basic unit of territorial organisation in Spain."
+      },
       "q3": {
         "prompt": "Which of these jobs belongs to the primary sector?",
         "a": "farmer",
         "b": "doctor",
         "c": "teacher"
       },
-      "q4": { "prompt": "Firefighters and police officers work for the community." },
+      "q4": {
+        "prompt": "Firefighters and police officers work for the community."
+      },
       "q5": {
         "prompt": "What is a town hall?",
         "a": "a hospital",
@@ -1726,7 +3691,201 @@
         "b": "the regional president",
         "c": "the king"
       },
-      "q8": { "prompt": "The mayor is the head of a municipality's government." }
+      "q8": {
+        "prompt": "The mayor is the head of a municipality's government."
+      },
+      "q9": {
+        "prompt": "A city is a type of settlement with many inhabitants."
+      },
+      "q10": {
+        "prompt": "Which sector includes factories and manufacturing?",
+        "a": "primary sector",
+        "b": "secondary sector",
+        "c": "tertiary sector"
+      },
+      "q11": {
+        "prompt": "A teacher belongs to the tertiary (services) sector."
+      },
+      "q12": {
+        "prompt": "What do we call people who leave their country to live elsewhere?",
+        "a": "tourists",
+        "b": "refugees",
+        "c": "emigrants"
+      },
+      "q13": {
+        "prompt": "A baker transforms raw materials and belongs to the secondary sector."
+      },
+      "q14": {
+        "prompt": "What is the key difference between a village and a city?",
+        "a": "a city has more inhabitants and services",
+        "b": "a village has more factories",
+        "c": "a city is always near the sea"
+      },
+      "q15": {
+        "prompt": "A fisherman works in the primary sector."
+      },
+      "q16": {
+        "prompt": "Which of these is a tertiary sector job?",
+        "a": "miner",
+        "b": "nurse",
+        "c": "factory worker"
+      },
+      "q17": {
+        "prompt": "The secondary sector transforms raw materials into products."
+      },
+      "q18": {
+        "prompt": "What is population density?",
+        "a": "the total number of people in a country",
+        "b": "the birth rate per year",
+        "c": "the number of people per square kilometre"
+      },
+      "q19": {
+        "prompt": "Agriculture belongs to the primary sector."
+      },
+      "q20": {
+        "prompt": "What is a municipal census (padrón)?",
+        "a": "an official register of all people living in a place",
+        "b": "a type of passport",
+        "c": "a list of streets"
+      },
+      "q21": {
+        "prompt": "A miner works in the primary sector."
+      },
+      "q22": {
+        "prompt": "What type of settlement is typically the smallest?",
+        "a": "town",
+        "b": "hamlet",
+        "c": "city"
+      },
+      "q23": {
+        "prompt": "More people live in urban areas than in rural areas in Spain."
+      },
+      "q24": {
+        "prompt": "What sector does a hairdresser belong to?",
+        "a": "primary",
+        "b": "secondary",
+        "c": "tertiary"
+      },
+      "q25": {
+        "prompt": "A carpenter who builds furniture works in the secondary sector."
+      },
+      "q26": {
+        "prompt": "What do we call people who come from another country to live in Spain?",
+        "a": "immigrants",
+        "b": "emigrants",
+        "c": "tourists"
+      },
+      "q27": {
+        "prompt": "Tourism is part of the tertiary sector."
+      },
+      "q28": {
+        "prompt": "What do doctors, teachers, and bus drivers have in common?",
+        "a": "they all work outdoors",
+        "b": "they all work in the tertiary sector",
+        "c": "they all work in factories"
+      },
+      "q29": {
+        "prompt": "A shepherd works in the primary sector."
+      },
+      "q30": {
+        "prompt": "What are the three economic sectors?",
+        "a": "farming, industry, trade",
+        "b": "mining, fishing, manufacturing",
+        "c": "primary, secondary, tertiary"
+      },
+      "q31": {
+        "prompt": "A country's economy needs workers from all three sectors."
+      },
+      "q32": {
+        "prompt": "What do we call the movement of people from rural areas to cities?",
+        "a": "rural exodus",
+        "b": "immigration",
+        "c": "population growth"
+      },
+      "q33": {
+        "prompt": "The birth rate measures how many babies are born per thousand people per year."
+      },
+      "q34": {
+        "prompt": "What type of work is car manufacturing?",
+        "a": "primary sector",
+        "b": "secondary sector",
+        "c": "tertiary sector"
+      },
+      "q35": {
+        "prompt": "Public services like hospitals and schools serve everyone in the community."
+      },
+      "q36": {
+        "prompt": "What do we call someone who grows vegetables and crops?",
+        "a": "factory worker",
+        "b": "plumber",
+        "c": "farmer"
+      },
+      "q37": {
+        "prompt": "A plumber who fixes pipes in homes works in the tertiary sector."
+      },
+      "q38": {
+        "prompt": "What is a cooperative?",
+        "a": "a company owned by its workers",
+        "b": "a public service",
+        "c": "a local government"
+      },
+      "q39": {
+        "prompt": "Logging (cutting trees for timber) is a primary sector activity."
+      },
+      "q40": {
+        "prompt": "Which of these is NOT a primary sector activity?",
+        "a": "fishing",
+        "b": "working in a call centre",
+        "c": "farming"
+      },
+      "q41": {
+        "prompt": "The death rate measures how many people die per thousand people per year."
+      },
+      "q42": {
+        "prompt": "Where do most Spanish people live?",
+        "a": "in small villages",
+        "b": "in rural areas",
+        "c": "in cities and large towns"
+      },
+      "q43": {
+        "prompt": "Spain has approximately 47 million inhabitants."
+      },
+      "q44": {
+        "prompt": "What do we call services provided by the government to citizens?",
+        "a": "public services",
+        "b": "private companies",
+        "c": "industries"
+      },
+      "q45": {
+        "prompt": "A truck driver belongs to the tertiary sector."
+      },
+      "q46": {
+        "prompt": "What is emigration?",
+        "a": "people arriving in a new country",
+        "b": "people leaving their country to live elsewhere",
+        "c": "people moving within the same country"
+      },
+      "q47": {
+        "prompt": "A potter who makes clay pots works in the secondary sector."
+      },
+      "q48": {
+        "prompt": "What is the primary sector mainly concerned with?",
+        "a": "making products in factories",
+        "b": "providing services",
+        "c": "extracting natural resources"
+      },
+      "q49": {
+        "prompt": "A waiter who serves food in a restaurant works in the tertiary sector."
+      },
+      "q50": {
+        "prompt": "What do we call a zone with many factories and industries?",
+        "a": "an industrial area",
+        "b": "a farming area",
+        "c": "a nature reserve"
+      },
+      "q51": {
+        "prompt": "Growing wheat is a primary sector activity."
+      }
     },
     "time": {
       "q1": {
@@ -1735,14 +3894,18 @@
         "b": "past, present and future",
         "c": "yesterday, today and tomorrow"
       },
-      "q2": { "prompt": "A timeline is used to put events in order of when they happened." },
+      "q2": {
+        "prompt": "A timeline is used to put events in order of when they happened."
+      },
       "q3": {
         "prompt": "What came first?",
         "a": "your parents' birth",
         "b": "your grandparents' birth",
         "c": "your birth"
       },
-      "q4": { "prompt": "History is divided into Prehistory and History." },
+      "q4": {
+        "prompt": "History is divided into Prehistory and History."
+      },
       "q5": {
         "prompt": "How many years are in a century?",
         "a": "10",
@@ -1764,11 +3927,208 @@
         "b": "something that gives us information about the past",
         "c": "a storybook"
       },
-      "q8": { "prompt": "Photographs can be historical sources." }
+      "q8": {
+        "prompt": "Photographs can be historical sources."
+      },
+      "q9": {
+        "prompt": "A century has 100 years."
+      },
+      "q10": {
+        "prompt": "How many decades are in a century?",
+        "a": "5",
+        "b": "10",
+        "c": "20"
+      },
+      "q11": {
+        "prompt": "A millennium is 1000 years."
+      },
+      "q12": {
+        "prompt": "Which historical period comes AFTER Ancient History?",
+        "a": "Prehistory",
+        "b": "Modern Age",
+        "c": "Middle Ages"
+      },
+      "q13": {
+        "prompt": "Prehistory is the period before writing was invented."
+      },
+      "q14": {
+        "prompt": "In which century did Christopher Columbus arrive in America?",
+        "a": "14th century",
+        "b": "15th century",
+        "c": "16th century"
+      },
+      "q15": {
+        "prompt": "We are currently living in the 21st century."
+      },
+      "q16": {
+        "prompt": "What do we call written records that help us learn about the past?",
+        "a": "historical documents",
+        "b": "myths",
+        "c": "inventions"
+      },
+      "q17": {
+        "prompt": "A museum preserves objects from the past."
+      },
+      "q18": {
+        "prompt": "What period follows the Middle Ages?",
+        "a": "Prehistory",
+        "b": "Modern Age",
+        "c": "Contemporary Age"
+      },
+      "q19": {
+        "prompt": "Prehistoric humans left drawings on cave walls."
+      },
+      "q20": {
+        "prompt": "What century is the year 1850 in?",
+        "a": "17th century",
+        "b": "18th century",
+        "c": "19th century"
+      },
+      "q21": {
+        "prompt": "Historians study and research the past."
+      },
+      "q22": {
+        "prompt": "What do we call objects from the past that are dug up from the ground?",
+        "a": "archaeological remains",
+        "b": "myths",
+        "c": "legends"
+      },
+      "q23": {
+        "prompt": "The printing press was invented in the 15th century."
+      },
+      "q24": {
+        "prompt": "What do we call scientists who study ancient ruins and artefacts?",
+        "a": "geographers",
+        "b": "archaeologists",
+        "c": "biologists"
+      },
+      "q25": {
+        "prompt": "Oral sources include grandparents telling stories about their past."
+      },
+      "q26": {
+        "prompt": "Which century did the year 1000 belong to?",
+        "a": "9th century",
+        "b": "11th century",
+        "c": "10th century"
+      },
+      "q27": {
+        "prompt": "Photos are a historical source from the 19th century onwards."
+      },
+      "q28": {
+        "prompt": "What comes first in the history of human tools?",
+        "a": "Stone Age",
+        "b": "Bronze Age",
+        "c": "Iron Age"
+      },
+      "q29": {
+        "prompt": "Ancient Rome is part of Ancient History."
+      },
+      "q30": {
+        "prompt": "How many years are in half a century?",
+        "a": "25",
+        "b": "50",
+        "c": "100"
+      },
+      "q31": {
+        "prompt": "The Middle Ages lasted from roughly 500 AD to 1500 AD."
+      },
+      "q32": {
+        "prompt": "What century is the year 2025 in?",
+        "a": "19th century",
+        "b": "20th century",
+        "c": "21st century"
+      },
+      "q33": {
+        "prompt": "A generation usually spans about 25 to 30 years."
+      },
+      "q34": {
+        "prompt": "In which historical period did people learn to farm?",
+        "a": "Neolithic (late Prehistory)",
+        "b": "Ancient History",
+        "c": "Middle Ages"
+      },
+      "q35": {
+        "prompt": "Coins and pottery found underground are material historical sources."
+      },
+      "q36": {
+        "prompt": "What do we call 1000 years?",
+        "a": "a century",
+        "b": "a millennium",
+        "c": "a decade"
+      },
+      "q37": {
+        "prompt": "The year 1350 belongs to the 14th century."
+      },
+      "q38": {
+        "prompt": "Which came LAST in history?",
+        "a": "Prehistory",
+        "b": "Ancient History",
+        "c": "Contemporary Age"
+      },
+      "q39": {
+        "prompt": "The Contemporary Age began with the French Revolution in 1789."
+      },
+      "q40": {
+        "prompt": "What do we call the study of the human past through physical remains?",
+        "a": "archaeology",
+        "b": "geography",
+        "c": "astronomy"
+      },
+      "q41": {
+        "prompt": "Primary historical sources were created at the time of the event."
+      },
+      "q42": {
+        "prompt": "A scroll written by a Roman emperor is what type of source?",
+        "a": "oral source",
+        "b": "written source",
+        "c": "material source"
+      },
+      "q43": {
+        "prompt": "Chronology is the arrangement of events in the order they happened."
+      },
+      "q44": {
+        "prompt": "What do we call the era before recorded history?",
+        "a": "Ancient History",
+        "b": "Middle Ages",
+        "c": "Prehistory"
+      },
+      "q45": {
+        "prompt": "Archaeologists can learn about prehistoric people from cave paintings."
+      },
+      "q46": {
+        "prompt": "In what century did World War II end?",
+        "a": "19th century",
+        "b": "20th century",
+        "c": "21st century"
+      },
+      "q47": {
+        "prompt": "On a timeline, the oldest events appear on the left."
+      },
+      "q48": {
+        "prompt": "What do we call events that happened a very long time ago?",
+        "a": "past events",
+        "b": "future events",
+        "c": "present events"
+      },
+      "q49": {
+        "prompt": "The year 2001 is the first year of the 21st century."
+      },
+      "q50": {
+        "prompt": "What type of historical source gives direct testimony from someone who lived an event?",
+        "a": "a map",
+        "b": "an eyewitness account",
+        "c": "a coin"
+      },
+      "q51": {
+        "prompt": "History only studies events that happened more than 100 years ago."
+      }
     }
   },
   "english": {
-    "common": { "true": "True", "false": "False" },
+    "common": {
+      "true": "True",
+      "false": "False"
+    },
     "colors": {
       "q1": {
         "prompt": "What colour is the sky on a sunny day?",
@@ -1791,14 +4151,18 @@
         "b": "Purple",
         "c": "Orange"
       },
-      "q4": { "prompt": "A square has four equal sides." },
+      "q4": {
+        "prompt": "A square has four equal sides."
+      },
       "q5": {
         "prompt": "Which shape has three sides?",
         "a": "Circle",
         "b": "Triangle",
         "c": "Square"
       },
-      "q6": { "prompt": "The colour of grass is red." },
+      "q6": {
+        "prompt": "The colour of grass is red."
+      },
       "q7": {
         "prompt": "What colour is a banana?",
         "a": "Blue",
@@ -1813,6 +4177,228 @@
         "r1": "night sky",
         "r2": "snow",
         "r3": "pumpkin"
+      },
+      "q9": {
+        "prompt": "What colour is the sun?",
+        "a": "green",
+        "b": "blue",
+        "c": "yellow"
+      },
+      "q10": {
+        "prompt": "A strawberry is red."
+      },
+      "q11": {
+        "prompt": "How many sides does a square have?",
+        "a": "three",
+        "b": "four",
+        "c": "five"
+      },
+      "q12": {
+        "prompt": "A triangle has four corners."
+      },
+      "q13": {
+        "prompt": "What colour is an elephant?",
+        "a": "pink",
+        "b": "grey",
+        "c": "orange"
+      },
+      "q14": {
+        "prompt": "Oranges are orange."
+      },
+      "q15": {
+        "prompt": "Match each colour to its Spanish word.",
+        "l1": "red",
+        "l2": "blue",
+        "l3": "green",
+        "r1": "verde",
+        "r2": "rojo",
+        "r3": "azul"
+      },
+      "q16": {
+        "prompt": "Which shape is round like a pizza?",
+        "a": "triangle",
+        "b": "square",
+        "c": "circle"
+      },
+      "q17": {
+        "prompt": "Snow is white."
+      },
+      "q18": {
+        "prompt": "What colour is a pumpkin?",
+        "a": "yellow",
+        "b": "purple",
+        "c": "orange"
+      },
+      "q19": {
+        "prompt": "A rectangle has two pairs of equal sides."
+      },
+      "q20": {
+        "prompt": "What colour is a rose?",
+        "a": "blue",
+        "b": "red",
+        "c": "green"
+      },
+      "q21": {
+        "prompt": "The sea is usually green."
+      },
+      "q22": {
+        "prompt": "Match each shape to the number of sides.",
+        "l1": "triangle",
+        "l2": "square",
+        "l3": "pentagon",
+        "r1": "5",
+        "r2": "3",
+        "r3": "4"
+      },
+      "q23": {
+        "prompt": "What colour is coal?",
+        "a": "black",
+        "b": "white",
+        "c": "brown"
+      },
+      "q24": {
+        "prompt": "Purple and violet are similar colours."
+      },
+      "q25": {
+        "prompt": "Which shape has no sides?",
+        "a": "triangle",
+        "b": "rectangle",
+        "c": "circle"
+      },
+      "q26": {
+        "prompt": "A banana is purple."
+      },
+      "q27": {
+        "prompt": "What colour is chocolate?",
+        "a": "black",
+        "b": "brown",
+        "c": "red"
+      },
+      "q28": {
+        "prompt": "A star has five points."
+      },
+      "q29": {
+        "prompt": "Match each colour to an animal of that colour.",
+        "l1": "white",
+        "l2": "orange",
+        "l3": "black",
+        "r1": "tiger",
+        "r2": "polar bear",
+        "r3": "crow"
+      },
+      "q30": {
+        "prompt": "What colour is a lemon?",
+        "a": "green",
+        "b": "orange",
+        "c": "yellow"
+      },
+      "q31": {
+        "prompt": "A heart shape has straight sides."
+      },
+      "q32": {
+        "prompt": "What colour is a flamingo?",
+        "a": "pink",
+        "b": "white",
+        "c": "yellow"
+      },
+      "q33": {
+        "prompt": "Blue and red make purple."
+      },
+      "q34": {
+        "prompt": "How many corners does a rectangle have?",
+        "a": "two",
+        "b": "three",
+        "c": "four"
+      },
+      "q35": {
+        "prompt": "Grass is always brown."
+      },
+      "q36": {
+        "prompt": "Match each colour to what you see in the sky.",
+        "l1": "blue",
+        "l2": "white",
+        "l3": "yellow",
+        "r1": "clouds",
+        "r2": "the sky",
+        "r3": "the sun"
+      },
+      "q37": {
+        "prompt": "What colour is a frog?",
+        "a": "red",
+        "b": "green",
+        "c": "orange"
+      },
+      "q38": {
+        "prompt": "An oval is a stretched circle."
+      },
+      "q39": {
+        "prompt": "What colour is a carrot?",
+        "a": "yellow",
+        "b": "red",
+        "c": "orange"
+      },
+      "q40": {
+        "prompt": "White and black make grey."
+      },
+      "q41": {
+        "prompt": "Which of these shapes has all sides equal?",
+        "a": "rectangle",
+        "b": "square",
+        "c": "oval"
+      },
+      "q42": {
+        "prompt": "Blueberries are blue."
+      },
+      "q43": {
+        "prompt": "What colour is a tiger?",
+        "a": "grey",
+        "b": "white",
+        "c": "orange"
+      },
+      "q44": {
+        "prompt": "A diamond shape has four sides."
+      },
+      "q45": {
+        "prompt": "Match each colour to a food of that colour.",
+        "l1": "red",
+        "l2": "yellow",
+        "l3": "green",
+        "r1": "banana",
+        "r2": "tomato",
+        "r3": "lime"
+      },
+      "q46": {
+        "prompt": "What colour is the night sky?",
+        "a": "yellow",
+        "b": "dark blue",
+        "c": "bright green"
+      },
+      "q47": {
+        "prompt": "Pink is a light shade of red."
+      },
+      "q48": {
+        "prompt": "How many sides does a pentagon have?",
+        "a": "four",
+        "b": "five",
+        "c": "six"
+      },
+      "q49": {
+        "prompt": "Yellow and blue make green."
+      },
+      "q50": {
+        "prompt": "What colour is a ripe cherry?",
+        "a": "orange",
+        "b": "yellow",
+        "c": "red"
+      },
+      "q51": {
+        "prompt": "A square is a type of rectangle."
+      },
+      "q52": {
+        "prompt": "What is the colour of the sky on a sunny day?",
+        "a": "grey",
+        "b": "blue",
+        "c": "purple"
       }
     },
     "animals": {
@@ -1822,21 +4408,27 @@
         "b": "Dog",
         "c": "Cow"
       },
-      "q2": { "prompt": "A \"fish\" lives in the water." },
+      "q2": {
+        "prompt": "A \"fish\" lives in the water."
+      },
       "q3": {
         "prompt": "Which animal can fly?",
         "a": "Fish",
         "b": "Dog",
         "c": "Eagle"
       },
-      "q4": { "prompt": "A spider has eight legs." },
+      "q4": {
+        "prompt": "A spider has eight legs."
+      },
       "q5": {
         "prompt": "Where does a frog live?",
         "a": "In the desert",
         "b": "Near water",
         "c": "On top of a mountain"
       },
-      "q6": { "prompt": "A whale is a fish." },
+      "q6": {
+        "prompt": "A whale is a fish."
+      },
       "q7": {
         "prompt": "Match each animal with the sound it makes",
         "l1": "Cat",
@@ -1851,6 +4443,237 @@
         "a": "Kitten",
         "b": "Puppy",
         "c": "Cub"
+      },
+      "q9": {
+        "prompt": "What sound does a duck make?",
+        "a": "moo",
+        "b": "quack",
+        "c": "oink"
+      },
+      "q10": {
+        "prompt": "A fish can live on land."
+      },
+      "q11": {
+        "prompt": "Which animal has a long neck?",
+        "a": "elephant",
+        "b": "giraffe",
+        "c": "hippo"
+      },
+      "q12": {
+        "prompt": "Cats have four legs."
+      },
+      "q13": {
+        "prompt": "Match each animal to where it lives.",
+        "l1": "fish",
+        "l2": "bird",
+        "l3": "rabbit",
+        "r1": "burrow",
+        "r2": "pond",
+        "r3": "tree"
+      },
+      "q14": {
+        "prompt": "What do cows give us?",
+        "a": "eggs",
+        "b": "milk",
+        "c": "wool"
+      },
+      "q15": {
+        "prompt": "Spiders are insects."
+      },
+      "q16": {
+        "prompt": "Which animal lays eggs?",
+        "a": "dog",
+        "b": "rabbit",
+        "c": "hen"
+      },
+      "q17": {
+        "prompt": "Butterflies have wings."
+      },
+      "q18": {
+        "prompt": "Match each animal to its young.",
+        "l1": "dog",
+        "l2": "cat",
+        "l3": "cow",
+        "r1": "calf",
+        "r2": "kitten",
+        "r3": "puppy"
+      },
+      "q19": {
+        "prompt": "What do bees make?",
+        "a": "honey",
+        "b": "milk",
+        "c": "wool"
+      },
+      "q20": {
+        "prompt": "Elephants are the biggest land animals."
+      },
+      "q21": {
+        "prompt": "Which animal has a shell?",
+        "a": "frog",
+        "b": "tortoise",
+        "c": "rabbit"
+      },
+      "q22": {
+        "prompt": "Penguins can fly."
+      },
+      "q23": {
+        "prompt": "Match each animal to what it eats.",
+        "l1": "rabbit",
+        "l2": "lion",
+        "l3": "panda",
+        "r1": "meat",
+        "r2": "bamboo",
+        "r3": "carrots"
+      },
+      "q24": {
+        "prompt": "How many legs does a spider have?",
+        "a": "six",
+        "b": "eight",
+        "c": "ten"
+      },
+      "q25": {
+        "prompt": "Dolphins are fish."
+      },
+      "q26": {
+        "prompt": "Which animal is known as the king of the jungle?",
+        "a": "tiger",
+        "b": "elephant",
+        "c": "lion"
+      },
+      "q27": {
+        "prompt": "Frogs start their lives in water."
+      },
+      "q28": {
+        "prompt": "Match each animal to its sound.",
+        "l1": "cow",
+        "l2": "pig",
+        "l3": "sheep",
+        "r1": "oink",
+        "r2": "moo",
+        "r3": "baa"
+      },
+      "q29": {
+        "prompt": "Which of these is a reptile?",
+        "a": "frog",
+        "b": "snake",
+        "c": "toad"
+      },
+      "q30": {
+        "prompt": "Bats can fly."
+      },
+      "q31": {
+        "prompt": "What is a baby sheep called?",
+        "a": "puppy",
+        "b": "calf",
+        "c": "lamb"
+      },
+      "q32": {
+        "prompt": "Birds have feathers."
+      },
+      "q33": {
+        "prompt": "Match each animal to how it moves.",
+        "l1": "fish",
+        "l2": "bird",
+        "l3": "snake",
+        "r1": "slithers",
+        "r2": "swims",
+        "r3": "flies"
+      },
+      "q34": {
+        "prompt": "Which animal makes a web?",
+        "a": "bee",
+        "b": "spider",
+        "c": "ant"
+      },
+      "q35": {
+        "prompt": "Camels store water in their humps."
+      },
+      "q36": {
+        "prompt": "What do you call a group of wolves?",
+        "a": "flock",
+        "b": "pack",
+        "c": "herd"
+      },
+      "q37": {
+        "prompt": "Owls are active during the day."
+      },
+      "q38": {
+        "prompt": "Match each animal to its group name.",
+        "l1": "fish",
+        "l2": "sheep",
+        "l3": "wolves",
+        "r1": "pack",
+        "r2": "flock",
+        "r3": "shoal"
+      },
+      "q39": {
+        "prompt": "Which animal has a trunk?",
+        "a": "giraffe",
+        "b": "elephant",
+        "c": "hippo"
+      },
+      "q40": {
+        "prompt": "Penguins live in hot countries."
+      },
+      "q41": {
+        "prompt": "What is a baby frog called?",
+        "a": "tadpole",
+        "b": "kitten",
+        "c": "cub"
+      },
+      "q42": {
+        "prompt": "Whales are the biggest animals on Earth."
+      },
+      "q43": {
+        "prompt": "Match each animal to its home.",
+        "l1": "bee",
+        "l2": "bird",
+        "l3": "fox",
+        "r1": "nest",
+        "r2": "hive",
+        "r3": "den"
+      },
+      "q44": {
+        "prompt": "Which animal is a nocturnal hunter?",
+        "a": "cow",
+        "b": "sheep",
+        "c": "owl"
+      },
+      "q45": {
+        "prompt": "A caterpillar becomes a butterfly."
+      },
+      "q46": {
+        "prompt": "Which animal lives both in water and on land?",
+        "a": "horse",
+        "b": "frog",
+        "c": "cat"
+      },
+      "q47": {
+        "prompt": "All birds can fly."
+      },
+      "q48": {
+        "prompt": "Match each animal to its habitat.",
+        "l1": "polar bear",
+        "l2": "camel",
+        "l3": "parrot",
+        "r1": "rainforest",
+        "r2": "desert",
+        "r3": "Arctic"
+      },
+      "q49": {
+        "prompt": "What is the fastest land animal?",
+        "a": "lion",
+        "b": "cheetah",
+        "c": "horse"
+      },
+      "q50": {
+        "prompt": "A snail carries its home on its back."
+      },
+      "q51": {
+        "prompt": "Which animal produces silk?",
+        "a": "bee",
+        "b": "spider",
+        "c": "silkworm"
       }
     },
     "greetings": {
@@ -1872,14 +4695,18 @@
         "b": "Nice to meet you!",
         "c": "Goodbye!"
       },
-      "q4": { "prompt": "\"Good afternoon\" is used in the morning." },
+      "q4": {
+        "prompt": "\"Good afternoon\" is used in the morning."
+      },
       "q5": {
         "prompt": "How old are you? — I __ ten.",
         "a": "is",
         "b": "am",
         "c": "are"
       },
-      "q6": { "prompt": "\"What's your name?\" is a question about where you live." },
+      "q6": {
+        "prompt": "\"What's your name?\" is a question about where you live."
+      },
       "q7": {
         "prompt": "What is the correct answer to \"Where are you from?\"",
         "a": "I am from Spain.",
@@ -1894,6 +4721,237 @@
         "r1": "I'm Ana.",
         "r2": "I'm nine.",
         "r3": "I'm fine."
+      },
+      "q9": {
+        "prompt": "How do you greet someone in the morning?",
+        "a": "Good night",
+        "b": "Good morning",
+        "c": "Good afternoon"
+      },
+      "q10": {
+        "prompt": "We say 'Good night' when we arrive somewhere."
+      },
+      "q11": {
+        "prompt": "What do you say when you meet someone for the first time?",
+        "a": "See you later",
+        "b": "Nice to meet you",
+        "c": "Goodbye"
+      },
+      "q12": {
+        "prompt": "'Hello' and 'Hi' have the same meaning."
+      },
+      "q13": {
+        "prompt": "Match each greeting to the time of day.",
+        "l1": "Good morning",
+        "l2": "Good afternoon",
+        "l3": "Good evening",
+        "r1": "3 p.m.",
+        "r2": "8 p.m.",
+        "r3": "8 a.m."
+      },
+      "q14": {
+        "prompt": "What do you say to a friend when you leave school?",
+        "a": "Good morning",
+        "b": "Goodbye",
+        "c": "Thank you"
+      },
+      "q15": {
+        "prompt": "'How are you?' is a question about someone's wellbeing."
+      },
+      "q16": {
+        "prompt": "What is a good answer to 'How are you?'",
+        "a": "I am eight",
+        "b": "I am fine, thank you",
+        "c": "I like cats"
+      },
+      "q17": {
+        "prompt": "'Nice to meet you' is used when you say goodbye."
+      },
+      "q18": {
+        "prompt": "Match each phrase to its Spanish translation.",
+        "l1": "Hello",
+        "l2": "Goodbye",
+        "l3": "Please",
+        "r1": "Por favor",
+        "r2": "Hola",
+        "r3": "Adiós"
+      },
+      "q19": {
+        "prompt": "How do you introduce yourself?",
+        "a": "My name is...",
+        "b": "I like...",
+        "c": "I have..."
+      },
+      "q20": {
+        "prompt": "'Please' is a polite word."
+      },
+      "q21": {
+        "prompt": "What do you say to thank someone?",
+        "a": "Excuse me",
+        "b": "Sorry",
+        "c": "Thank you"
+      },
+      "q22": {
+        "prompt": "'You're welcome' is the reply to 'Goodbye'."
+      },
+      "q23": {
+        "prompt": "Match each phrase to its use.",
+        "l1": "Thank you",
+        "l2": "Sorry",
+        "l3": "Excuse me",
+        "r1": "when you bump into someone",
+        "r2": "to apologise",
+        "r3": "to show gratitude"
+      },
+      "q24": {
+        "prompt": "What does 'Where are you from?' mean?",
+        "a": "¿Dónde estás?",
+        "b": "¿De dónde eres?",
+        "c": "¿Cómo te llamas?"
+      },
+      "q25": {
+        "prompt": "'See you tomorrow' means you will see someone the next day."
+      },
+      "q26": {
+        "prompt": "What does 'How old are you?' mean?",
+        "a": "¿Cuántos años tienes?",
+        "b": "¿Cómo te llamas?",
+        "c": "¿Dónde vives?"
+      },
+      "q27": {
+        "prompt": "In English, 'please' can come at the beginning or end of a sentence."
+      },
+      "q28": {
+        "prompt": "Match each question to its correct answer.",
+        "l1": "What's your name?",
+        "l2": "How old are you?",
+        "l3": "Where are you from?",
+        "r1": "I am from Spain",
+        "r2": "I am nine years old",
+        "r3": "My name is Ana"
+      },
+      "q29": {
+        "prompt": "What does 'I don't understand' mean?",
+        "a": "No lo sé",
+        "b": "No entiendo",
+        "c": "No me gusta"
+      },
+      "q30": {
+        "prompt": "'Can you repeat, please?' is a polite way to ask someone to say something again."
+      },
+      "q31": {
+        "prompt": "How do you ask someone's age?",
+        "a": "How are you?",
+        "b": "What's your name?",
+        "c": "How old are you?"
+      },
+      "q32": {
+        "prompt": "'What is your name?' and 'What's your name?' mean the same thing."
+      },
+      "q33": {
+        "prompt": "Match each phrase to its Spanish equivalent.",
+        "l1": "Good morning",
+        "l2": "Good night",
+        "l3": "Good afternoon",
+        "r1": "Buenas tardes",
+        "r2": "Buenos días",
+        "r3": "Buenas noches"
+      },
+      "q34": {
+        "prompt": "What do you say when you don't know the answer?",
+        "a": "I know",
+        "b": "I don't know",
+        "c": "I don't like it"
+      },
+      "q35": {
+        "prompt": "'Can I help you?' is an offer to assist someone."
+      },
+      "q36": {
+        "prompt": "Which phrase is more informal?",
+        "a": "How do you do?",
+        "b": "Hey, how's it going?",
+        "c": "Good afternoon"
+      },
+      "q37": {
+        "prompt": "We can use 'Sir' or 'Madam' to address someone formally."
+      },
+      "q38": {
+        "prompt": "Match each classroom phrase to its Spanish meaning.",
+        "l1": "May I go to the toilet?",
+        "l2": "Can I open the window?",
+        "l3": "I have a question",
+        "r1": "Tengo una pregunta",
+        "r2": "¿Puedo ir al baño?",
+        "r3": "¿Puedo abrir la ventana?"
+      },
+      "q39": {
+        "prompt": "What does 'Cheers!' mean informally?",
+        "a": "Hello",
+        "b": "Thank you",
+        "c": "Goodbye"
+      },
+      "q40": {
+        "prompt": "'I'm sorry' is used to apologise."
+      },
+      "q41": {
+        "prompt": "How do you ask where the bathroom is?",
+        "a": "Where is the toilet, please?",
+        "b": "What time is it?",
+        "c": "Can you help me?"
+      },
+      "q42": {
+        "prompt": "'See you later' means you will see someone immediately."
+      },
+      "q43": {
+        "prompt": "Match each phrase to when you use it.",
+        "l1": "See you later",
+        "l2": "Nice to meet you",
+        "l3": "Good luck",
+        "r1": "when wishing someone well",
+        "r2": "when leaving",
+        "r3": "when meeting someone new"
+      },
+      "q44": {
+        "prompt": "What does 'Excuse me' mean?",
+        "a": "Perdona",
+        "b": "Gracias",
+        "c": "Por favor"
+      },
+      "q45": {
+        "prompt": "'How are you doing?' is a formal greeting."
+      },
+      "q46": {
+        "prompt": "Which is the correct response to 'Thank you'?",
+        "a": "Please",
+        "b": "You're welcome",
+        "c": "Sorry"
+      },
+      "q47": {
+        "prompt": "In English, everyone always shakes hands when meeting."
+      },
+      "q48": {
+        "prompt": "Match each phrase to its category.",
+        "l1": "Hello",
+        "l2": "Goodbye",
+        "l3": "Please",
+        "r1": "politeness word",
+        "r2": "farewell",
+        "r3": "greeting"
+      },
+      "q49": {
+        "prompt": "What does 'I'm fine' mean?",
+        "a": "Estoy bien",
+        "b": "Estoy cansado",
+        "c": "Estoy enfermo"
+      },
+      "q50": {
+        "prompt": "'How do you do?' is a very formal greeting."
+      },
+      "q51": {
+        "prompt": "Which phrase is used to ask for help?",
+        "a": "Thank you",
+        "b": "Can you help me?",
+        "c": "Goodbye"
       }
     },
     "numbers": {
@@ -1903,14 +4961,18 @@
         "b": "Twenty",
         "c": "Two"
       },
-      "q2": { "prompt": "\"Eleven\" is the English word for 11." },
+      "q2": {
+        "prompt": "\"Eleven\" is the English word for 11."
+      },
       "q3": {
         "prompt": "What is fifteen plus five?",
         "a": "Nineteen",
         "b": "Twenty",
         "c": "Sixteen"
       },
-      "q4": { "prompt": "\"Thirty\" is greater than \"thirteen\"." },
+      "q4": {
+        "prompt": "\"Thirty\" is greater than \"thirteen\"."
+      },
       "q5": {
         "prompt": "Which number comes after nineteen?",
         "a": "Eighteen",
@@ -1932,7 +4994,240 @@
         "b": "Fifty",
         "c": "Five"
       },
-      "q8": { "prompt": "\"One hundred\" is the English word for 1000." }
+      "q8": {
+        "prompt": "\"One hundred\" is the English word for 1000."
+      },
+      "q9": {
+        "prompt": "How do you say 15 in English?",
+        "a": "Fifteen",
+        "b": "Fifty",
+        "c": "Thirteen"
+      },
+      "q10": {
+        "prompt": "'Twenty' is spelled T-W-E-N-T-Y."
+      },
+      "q11": {
+        "prompt": "What is 'doce' in English?",
+        "a": "Two",
+        "b": "Twelve",
+        "c": "Twenty"
+      },
+      "q12": {
+        "prompt": "The number after 'nineteen' is 'twenty'."
+      },
+      "q13": {
+        "prompt": "Match each number to its English word.",
+        "l1": "11",
+        "l2": "12",
+        "l3": "13",
+        "r1": "thirteen",
+        "r2": "eleven",
+        "r3": "twelve"
+      },
+      "q14": {
+        "prompt": "How do you say 100 in English?",
+        "a": "One thousand",
+        "b": "One hundred",
+        "c": "Ten"
+      },
+      "q15": {
+        "prompt": "'Forty' has a 'u' in it."
+      },
+      "q16": {
+        "prompt": "What is 'thirty' in Spanish?",
+        "a": "trece",
+        "b": "treinta",
+        "c": "tres"
+      },
+      "q17": {
+        "prompt": "The number 50 is called 'fifteen' in English."
+      },
+      "q18": {
+        "prompt": "Match each number word to its value.",
+        "l1": "twenty",
+        "l2": "fifty",
+        "l3": "hundred",
+        "r1": "50",
+        "r2": "20",
+        "r3": "100"
+      },
+      "q19": {
+        "prompt": "How many seconds are in a minute?",
+        "a": "sixty",
+        "b": "one hundred",
+        "c": "twelve"
+      },
+      "q20": {
+        "prompt": "'Eleven' and 'twelve' are irregular because they don't follow the '-teen' pattern."
+      },
+      "q21": {
+        "prompt": "What comes after 'ninth' in ordinal numbers?",
+        "a": "tenth",
+        "b": "eighth",
+        "c": "seventh"
+      },
+      "q22": {
+        "prompt": "The word 'first' is an ordinal number."
+      },
+      "q23": {
+        "prompt": "Match each ordinal number to its meaning.",
+        "l1": "first",
+        "l2": "second",
+        "l3": "third",
+        "r1": "3rd",
+        "r2": "1st",
+        "r3": "2nd"
+      },
+      "q24": {
+        "prompt": "How do you say 'veinte' in English?",
+        "a": "Twelve",
+        "b": "Twenty",
+        "c": "Two"
+      },
+      "q25": {
+        "prompt": "'Thousand' means 100 in English."
+      },
+      "q26": {
+        "prompt": "What is 7 + 8?",
+        "a": "fourteen",
+        "b": "fifteen",
+        "c": "sixteen"
+      },
+      "q27": {
+        "prompt": "The word 'zero' is used for the number 0."
+      },
+      "q28": {
+        "prompt": "Match each English number to its Spanish equivalent.",
+        "l1": "four",
+        "l2": "nine",
+        "l3": "seven",
+        "r1": "siete",
+        "r2": "cuatro",
+        "r3": "nueve"
+      },
+      "q29": {
+        "prompt": "How do you say 16 in English?",
+        "a": "Sixty",
+        "b": "Sixteen",
+        "c": "Sixth"
+      },
+      "q30": {
+        "prompt": "'Fourteen' ends with 'teen'."
+      },
+      "q31": {
+        "prompt": "What is 'cuarenta' in English?",
+        "a": "Fourteen",
+        "b": "Forty",
+        "c": "Four"
+      },
+      "q32": {
+        "prompt": "The number 13 is called 'thirteen'."
+      },
+      "q33": {
+        "prompt": "Match each maths operation to its symbol.",
+        "l1": "plus",
+        "l2": "minus",
+        "l3": "times",
+        "r1": "×",
+        "r2": "+",
+        "r3": "−"
+      },
+      "q34": {
+        "prompt": "What does 'half' mean?",
+        "a": "the same",
+        "b": "double",
+        "c": "one of two equal parts"
+      },
+      "q35": {
+        "prompt": "'A quarter' means one of four equal parts."
+      },
+      "q36": {
+        "prompt": "How do you say '2nd' in English?",
+        "a": "Two",
+        "b": "Second",
+        "c": "Twice"
+      },
+      "q37": {
+        "prompt": "'Odd numbers' can be divided by two exactly."
+      },
+      "q38": {
+        "prompt": "Match each number to its double.",
+        "l1": "5",
+        "l2": "6",
+        "l3": "7",
+        "r1": "12",
+        "r2": "10",
+        "r3": "14"
+      },
+      "q39": {
+        "prompt": "What is 10 × 3?",
+        "a": "thirteen",
+        "b": "thirty",
+        "c": "three"
+      },
+      "q40": {
+        "prompt": "'A hundred' and 'one hundred' mean the same thing."
+      },
+      "q41": {
+        "prompt": "What does 'subtract' mean?",
+        "a": "add",
+        "b": "multiply",
+        "c": "take away"
+      },
+      "q42": {
+        "prompt": "'Dozen' means twelve."
+      },
+      "q43": {
+        "prompt": "Match each English word to its Spanish equivalent.",
+        "l1": "add",
+        "l2": "subtract",
+        "l3": "multiply",
+        "r1": "restar",
+        "r2": "multiplicar",
+        "r3": "sumar"
+      },
+      "q44": {
+        "prompt": "How do you say 'quince' in English?",
+        "a": "Five",
+        "b": "Fifty",
+        "c": "Fifteen"
+      },
+      "q45": {
+        "prompt": "'Score' means twenty in old English."
+      },
+      "q46": {
+        "prompt": "What is 20 ÷ 4?",
+        "a": "four",
+        "b": "five",
+        "c": "six"
+      },
+      "q47": {
+        "prompt": "Even numbers always end in 0, 2, 4, 6, or 8."
+      },
+      "q48": {
+        "prompt": "Match each ordinal word to its place.",
+        "l1": "fourth",
+        "l2": "fifth",
+        "l3": "sixth",
+        "r1": "5th",
+        "r2": "6th",
+        "r3": "4th"
+      },
+      "q49": {
+        "prompt": "What is 'cien' in English?",
+        "a": "One hundred",
+        "b": "Ten",
+        "c": "Thousand"
+      },
+      "q50": {
+        "prompt": "Negative numbers are less than zero."
+      },
+      "q51": {
+        "prompt": "Which number is 'treinta y tres' in English?",
+        "a": "Thirty-two",
+        "b": "Thirty-three",
+        "c": "Thirty-four"
+      }
     },
     "family": {
       "q1": {
@@ -1941,14 +5236,18 @@
         "b": "Mother",
         "c": "Daughter"
       },
-      "q2": { "prompt": "\"Brother\" means hermano in Spanish." },
+      "q2": {
+        "prompt": "\"Brother\" means hermano in Spanish."
+      },
       "q3": {
         "prompt": "What do you call your mother's mother?",
         "a": "Aunt",
         "b": "Sister",
         "c": "Grandmother"
       },
-      "q4": { "prompt": "\"Father\" and \"Dad\" can both mean \"padre\"." },
+      "q4": {
+        "prompt": "\"Father\" and \"Dad\" can both mean \"padre\"."
+      },
       "q5": {
         "prompt": "What is the English word for \"hijo\"?",
         "a": "Son",
@@ -1970,7 +5269,1383 @@
         "b": "Baby",
         "c": "Boy"
       },
-      "q8": { "prompt": "\"Parents\" refers to your mother and father." }
+      "q8": {
+        "prompt": "\"Parents\" refers to your mother and father."
+      },
+      "q9": {
+        "prompt": "What do you call your mother's sister?",
+        "a": "cousin",
+        "b": "niece",
+        "c": "aunt"
+      },
+      "q10": {
+        "prompt": "A grandparent is older than a parent."
+      },
+      "q11": {
+        "prompt": "What is a female sibling?",
+        "a": "brother",
+        "b": "sister",
+        "c": "cousin"
+      },
+      "q12": {
+        "prompt": "A nephew is the son of your sibling."
+      },
+      "q13": {
+        "prompt": "Match each family member to their relationship.",
+        "l1": "grandfather",
+        "l2": "uncle",
+        "l3": "cousin",
+        "r1": "father's brother",
+        "r2": "child of your aunt",
+        "r3": "father's father"
+      },
+      "q14": {
+        "prompt": "What is the word for the children of your uncle or aunt?",
+        "a": "siblings",
+        "b": "nephews",
+        "c": "cousins"
+      },
+      "q15": {
+        "prompt": "A stepmother is your father's new wife."
+      },
+      "q16": {
+        "prompt": "What do you call your father's mother?",
+        "a": "grandmother",
+        "b": "aunt",
+        "c": "sister"
+      },
+      "q17": {
+        "prompt": "Twins are two children born at the same time to the same mother."
+      },
+      "q18": {
+        "prompt": "Match each family member to their Spanish name.",
+        "l1": "brother",
+        "l2": "sister",
+        "l3": "cousin",
+        "r1": "prima/primo",
+        "r2": "hermano",
+        "r3": "hermana"
+      },
+      "q19": {
+        "prompt": "What is a 'toddler'?",
+        "a": "a very old person",
+        "b": "a teenage boy",
+        "c": "a young child learning to walk"
+      },
+      "q20": {
+        "prompt": "'Only child' means a child with no brothers or sisters."
+      },
+      "q21": {
+        "prompt": "What do you call your sibling's daughter?",
+        "a": "niece",
+        "b": "cousin",
+        "c": "aunt"
+      },
+      "q22": {
+        "prompt": "Your parents are your father and your mother."
+      },
+      "q23": {
+        "prompt": "Match each phrase to its meaning.",
+        "l1": "eldest child",
+        "l2": "youngest child",
+        "l3": "middle child",
+        "r1": "born between older and younger siblings",
+        "r2": "born last",
+        "r3": "born first"
+      },
+      "q24": {
+        "prompt": "What does 'relative' mean?",
+        "a": "a friend",
+        "b": "a family member",
+        "c": "a neighbour"
+      },
+      "q25": {
+        "prompt": "A half-brother shares only one parent with you."
+      },
+      "q26": {
+        "prompt": "What is your mother's father called?",
+        "a": "stepfather",
+        "b": "grandfather",
+        "c": "uncle"
+      },
+      "q27": {
+        "prompt": "Grandparents are the parents of your parents."
+      },
+      "q28": {
+        "prompt": "Match each English word to its Spanish equivalent.",
+        "l1": "grandmother",
+        "l2": "grandfather",
+        "l3": "grandparents",
+        "r1": "abuelos",
+        "r2": "abuela",
+        "r3": "abuelo"
+      },
+      "q29": {
+        "prompt": "Which word describes a family with many members?",
+        "a": "small",
+        "b": "nuclear",
+        "c": "extended"
+      },
+      "q30": {
+        "prompt": "'Nuclear family' means parents and their children."
+      },
+      "q31": {
+        "prompt": "What is a brother-in-law?",
+        "a": "your brother's friend",
+        "b": "your sister's husband",
+        "c": "your father's brother"
+      },
+      "q32": {
+        "prompt": "A godparent is not usually a blood relative."
+      },
+      "q33": {
+        "prompt": "Match each family role to the correct person.",
+        "l1": "breadwinner",
+        "l2": "carer",
+        "l3": "sibling",
+        "r1": "brother or sister",
+        "r2": "person who earns money",
+        "r3": "person who looks after others"
+      },
+      "q34": {
+        "prompt": "What does 'to be related to someone' mean?",
+        "a": "to know them",
+        "b": "to work with them",
+        "c": "to be part of the same family"
+      },
+      "q35": {
+        "prompt": "A mother-in-law is the mother of your spouse."
+      },
+      "q36": {
+        "prompt": "What do you call a family with a mother, father, and children?",
+        "a": "extended",
+        "b": "nuclear",
+        "c": "blended"
+      },
+      "q37": {
+        "prompt": "Your nephew is the son of your sibling."
+      },
+      "q38": {
+        "prompt": "Match each family word to its definition.",
+        "l1": "orphan",
+        "l2": "widow",
+        "l3": "twins",
+        "r1": "two siblings born together",
+        "r2": "a person whose spouse has died",
+        "r3": "a child with no living parents"
+      },
+      "q39": {
+        "prompt": "What is a great-grandmother?",
+        "a": "a very kind grandmother",
+        "b": "your grandmother's mother",
+        "c": "your mother's sister"
+      },
+      "q40": {
+        "prompt": "'Siblings' means brothers and sisters."
+      },
+      "q41": {
+        "prompt": "What is the correct word for the husband of your sister?",
+        "a": "father-in-law",
+        "b": "brother",
+        "c": "brother-in-law"
+      },
+      "q42": {
+        "prompt": "An ancestor is someone who lived before you in your family line."
+      },
+      "q43": {
+        "prompt": "Match each phrase to who it describes.",
+        "l1": "my mother's mother",
+        "l2": "my father's brother",
+        "l3": "my sister's son",
+        "r1": "my nephew",
+        "r2": "my maternal grandmother",
+        "r3": "my uncle"
+      },
+      "q44": {
+        "prompt": "What do you call your parents' siblings?",
+        "a": "cousins",
+        "b": "aunts and uncles",
+        "c": "grandparents"
+      },
+      "q45": {
+        "prompt": "'Immediate family' refers to very close relatives."
+      },
+      "q46": {
+        "prompt": "What does 'to adopt' mean?",
+        "a": "to give away a child",
+        "b": "to legally raise a child who is not yours biologically",
+        "c": "to have twins"
+      },
+      "q47": {
+        "prompt": "Your first cousin's child is your second cousin."
+      },
+      "q48": {
+        "prompt": "Match each word to its opposite in a family context.",
+        "l1": "grandfather",
+        "l2": "aunt",
+        "l3": "son",
+        "r1": "daughter",
+        "r2": "uncle",
+        "r3": "grandmother"
+      },
+      "q49": {
+        "prompt": "What is a foster child?",
+        "a": "a child raised by biological parents",
+        "b": "a child temporarily cared for by a non-biological family",
+        "c": "an only child"
+      },
+      "q50": {
+        "prompt": "Your parents' parents are your grandparents."
+      },
+      "q51": {
+        "prompt": "What do you call the children of your children?",
+        "a": "cousins",
+        "b": "nephews",
+        "c": "grandchildren"
+      }
+    }
+  },
+  "cuarto4": {
+    "math": {
+      "q1": {
+        "prompt": "The number 1,000 is also called one thousand."
+      },
+      "q2": {
+        "prompt": "The number 10,000 has four zeros."
+      },
+      "q3": {
+        "prompt": "0.5 is the same as...",
+        "a": "5 ones",
+        "b": "5 tenths",
+        "c": "5 hundredths"
+      },
+      "q4": {
+        "prompt": "The perimeter of a shape is the total length around its edges."
+      },
+      "q5": {
+        "prompt": "What is the perimeter of a square with sides of 4 cm?",
+        "a": "8 cm",
+        "b": "12 cm",
+        "c": "16 cm"
+      },
+      "q6": {
+        "prompt": "1,000,000 is called one million."
+      },
+      "q7": {
+        "prompt": "What is 25 × 4?",
+        "a": "80",
+        "b": "100",
+        "c": "120"
+      },
+      "q8": {
+        "prompt": "The area of a shape measures the surface it covers."
+      },
+      "q9": {
+        "prompt": "What is the area of a rectangle 5 cm long and 3 cm wide?",
+        "a": "8 cm²",
+        "b": "16 cm²",
+        "c": "15 cm²"
+      },
+      "q10": {
+        "prompt": "0.1 = 1/10"
+      },
+      "q11": {
+        "prompt": "What is 100,000 + 50,000?",
+        "a": "15,000",
+        "b": "150,000",
+        "c": "1,500,000"
+      },
+      "q12": {
+        "prompt": "An angle smaller than a right angle is called an acute angle."
+      },
+      "q13": {
+        "prompt": "What is 36 ÷ 4?",
+        "a": "7",
+        "b": "8",
+        "c": "9"
+      },
+      "q14": {
+        "prompt": "0.25 is the same as one quarter (1/4)."
+      },
+      "q15": {
+        "prompt": "What is 12 × 5?",
+        "a": "50",
+        "b": "60",
+        "c": "70"
+      },
+      "q16": {
+        "prompt": "1000 grams = 1 kilogram."
+      },
+      "q17": {
+        "prompt": "What is the perimeter of a rectangle 6 m long and 4 m wide?",
+        "a": "10 m",
+        "b": "20 m",
+        "c": "24 m"
+      },
+      "q18": {
+        "prompt": "One hundred thousand is written as 100,000."
+      },
+      "q19": {
+        "prompt": "What is 0.3 + 0.4?",
+        "a": "0.07",
+        "b": "0.7",
+        "c": "7"
+      },
+      "q20": {
+        "prompt": "An angle of 90° is called a right angle."
+      },
+      "q21": {
+        "prompt": "What is 24 × 3?",
+        "a": "62",
+        "b": "72",
+        "c": "82"
+      },
+      "q22": {
+        "prompt": "1 litre = 1000 millilitres."
+      },
+      "q23": {
+        "prompt": "What is the area of a square with sides of 5 cm?",
+        "a": "20 cm²",
+        "b": "25 cm²",
+        "c": "30 cm²"
+      },
+      "q24": {
+        "prompt": "The number 500,000 is five hundred thousand."
+      },
+      "q25": {
+        "prompt": "Which is greater: 0.5 or 0.4?",
+        "a": "0.4",
+        "b": "0.5",
+        "c": "They are equal"
+      },
+      "q26": {
+        "prompt": "An angle greater than a right angle is called an obtuse angle."
+      },
+      "q27": {
+        "prompt": "What is 15 × 6?",
+        "a": "80",
+        "b": "90",
+        "c": "95"
+      },
+      "q28": {
+        "prompt": "The area of a shape is measured in square units (cm², m²...)."
+      },
+      "q29": {
+        "prompt": "What is 450 ÷ 5?",
+        "a": "80",
+        "b": "90",
+        "c": "100"
+      },
+      "q30": {
+        "prompt": "In the number 3.7, the digit 7 represents 7 tenths."
+      },
+      "q31": {
+        "prompt": "Which of these equals one million?",
+        "a": "10,000",
+        "b": "100,000",
+        "c": "1,000,000"
+      },
+      "q32": {
+        "prompt": "A triangle has no area."
+      },
+      "q33": {
+        "prompt": "A cube has 6 faces."
+      },
+      "q34": {
+        "prompt": "What is 1/4 + 1/4?",
+        "a": "1/2",
+        "b": "2/8",
+        "c": "1/8"
+      },
+      "q35": {
+        "prompt": "The Roman numeral for 50 is L."
+      },
+      "q36": {
+        "prompt": "What is 0.1 + 0.1 + 0.1?",
+        "a": "0.3",
+        "b": "3",
+        "c": "0.03"
+      },
+      "q37": {
+        "prompt": "A straight angle measures 180°."
+      },
+      "q38": {
+        "prompt": "How many edges does a cube have?",
+        "a": "8",
+        "b": "10",
+        "c": "12"
+      },
+      "q39": {
+        "prompt": "1/2 = 2/4 = 4/8"
+      },
+      "q40": {
+        "prompt": "What is 250 × 4?",
+        "a": "800",
+        "b": "900",
+        "c": "1,000"
+      },
+      "q41": {
+        "prompt": "A cylinder has two flat circular faces and one curved surface."
+      },
+      "q42": {
+        "prompt": "Which fraction is bigger: 3/4 or 2/3?",
+        "a": "2/3",
+        "b": "3/4",
+        "c": "They are equal"
+      },
+      "q43": {
+        "prompt": "The number -5 is less than 0."
+      },
+      "q44": {
+        "prompt": "What is the area of a triangle with base 8 cm and height 6 cm?",
+        "a": "24 cm²",
+        "b": "48 cm²",
+        "c": "14 cm²"
+      },
+      "q45": {
+        "prompt": "1 km = 1,000 m"
+      },
+      "q46": {
+        "prompt": "What is 0.75 as a fraction?",
+        "a": "3/5",
+        "b": "3/4",
+        "c": "7/5"
+      },
+      "q47": {
+        "prompt": "A reflex angle is greater than 180°."
+      },
+      "q48": {
+        "prompt": "How many faces does a triangular prism have?",
+        "a": "3",
+        "b": "4",
+        "c": "5"
+      },
+      "q49": {
+        "prompt": "The Roman numeral for 100 is C."
+      },
+      "q50": {
+        "prompt": "What is 1,500 ÷ 3?",
+        "a": "400",
+        "b": "500",
+        "c": "600"
+      },
+      "q51": {
+        "prompt": "The number 0.5 is greater than 0.45."
+      },
+      "q52": {
+        "prompt": "What is 3/4 of 40?",
+        "a": "25",
+        "b": "30",
+        "c": "35"
+      }
+    },
+    "spanish": {
+      "q1": {
+        "prompt": "The verb form 'corría' (I was running) is in the imperfect tense."
+      },
+      "q2": {
+        "prompt": "A noun can be replaced by a pronoun."
+      },
+      "q3": {
+        "prompt": "Which tense is used in 'I will sing' (cantaré)?",
+        "a": "past",
+        "b": "present",
+        "c": "future"
+      },
+      "q4": {
+        "prompt": "An instructional text explains how to do something step by step."
+      },
+      "q5": {
+        "prompt": "Which prefix means 'against' or 'opposite'?",
+        "a": "pre-",
+        "b": "anti-",
+        "c": "super-"
+      },
+      "q6": {
+        "prompt": "The subject of a sentence is the person or thing doing the action."
+      },
+      "q7": {
+        "prompt": "Which word has a suffix that indicates a profession?",
+        "a": "caminar",
+        "b": "panadero",
+        "c": "grande"
+      },
+      "q8": {
+        "prompt": "An adjective always goes before the noun it describes."
+      },
+      "q9": {
+        "prompt": "Which literary figure compares two things using 'like' or 'as'?",
+        "a": "metaphor",
+        "b": "simile",
+        "c": "personification"
+      },
+      "q10": {
+        "prompt": "The word 'era' (was) is the imperfect of the verb 'ser' (to be)."
+      },
+      "q11": {
+        "prompt": "Which is the future tense of 'I eat'?",
+        "a": "I ate",
+        "b": "I will eat",
+        "c": "I would eat"
+      },
+      "q12": {
+        "prompt": "A narrative text tells a story or event."
+      },
+      "q13": {
+        "prompt": "What is an antonym?",
+        "a": "a word with the same meaning",
+        "b": "a word with the opposite meaning",
+        "c": "a derived word"
+      },
+      "q14": {
+        "prompt": "The letter 'g' sounds the same in 'gato' (cat) and 'gitano' (gypsy)."
+      },
+      "q15": {
+        "prompt": "Which of these words carries an accent mark?",
+        "a": "libro",
+        "b": "árbol",
+        "c": "mesa"
+      },
+      "q16": {
+        "prompt": "The suffix '-ísimo' indicates the superlative degree (very much)."
+      },
+      "q17": {
+        "prompt": "Which of these is a compound sentence?",
+        "a": "The dog barks.",
+        "b": "The dog barks and the cat meows.",
+        "c": "How lovely!"
+      },
+      "q18": {
+        "prompt": "Personification gives human qualities to objects or animals."
+      },
+      "q19": {
+        "prompt": "What type of text is a recipe?",
+        "a": "narrative",
+        "b": "descriptive",
+        "c": "instructional"
+      },
+      "q20": {
+        "prompt": "The direct object receives the action of the verb."
+      },
+      "q21": {
+        "prompt": "Which word has the prefix 'pre-' meaning 'before'?",
+        "a": "prehistory",
+        "b": "pressure",
+        "c": "prize"
+      },
+      "q22": {
+        "prompt": "Adverbs modify verbs, adjectives or other adverbs."
+      },
+      "q23": {
+        "prompt": "Which is the imperfect tense of 'I play'?",
+        "a": "I played",
+        "b": "I will play",
+        "c": "I was playing"
+      },
+      "q24": {
+        "prompt": "A poem always has to rhyme."
+      },
+      "q25": {
+        "prompt": "What is the word that joins two clauses called?",
+        "a": "adjective",
+        "b": "conjunction",
+        "c": "pronoun"
+      },
+      "q26": {
+        "prompt": "The prefix 'des-' in 'deshacer' (to undo) indicates negation or reversal."
+      },
+      "q27": {
+        "prompt": "Which of these is a passive sentence?",
+        "a": "The child eats bread.",
+        "b": "The bread is eaten by the child.",
+        "c": "Eat the bread, child."
+      },
+      "q28": {
+        "prompt": "A descriptive text presents the characteristics of something or someone."
+      },
+      "q29": {
+        "prompt": "Which of these words is an adverb of place?",
+        "a": "quickly",
+        "b": "there",
+        "c": "always"
+      },
+      "q30": {
+        "prompt": "The gerund of the verb 'to run' is 'running'."
+      },
+      "q31": {
+        "prompt": "What is a metaphor?",
+        "a": "A comparison using 'like'",
+        "b": "Giving life to objects",
+        "c": "Identifying two things without using 'like'"
+      },
+      "q32": {
+        "prompt": "The simple past of the verb 'to go' is 'went'."
+      },
+      "q33": {
+        "prompt": "The conditional tense expresses what would happen (e.g., 'cantaría': 'I would sing')."
+      },
+      "q34": {
+        "prompt": "Which is the conditional of 'hablar' (to speak)?",
+        "a": "hablé",
+        "b": "hablaría",
+        "c": "hablaré"
+      },
+      "q35": {
+        "prompt": "The indirect object answers the question 'to whom?' or 'for whom?'."
+      },
+      "q36": {
+        "prompt": "What is a subordinate clause?",
+        "a": "A main sentence on its own",
+        "b": "A clause that depends on the main clause",
+        "c": "A sentence without a verb"
+      },
+      "q37": {
+        "prompt": "The suffix '-ción' forms nouns from verbs (e.g., 'cantar' → 'canción')."
+      },
+      "q38": {
+        "prompt": "What does an argumentative text do?",
+        "a": "Tells a story",
+        "b": "Gives opinions supported by reasons",
+        "c": "Describes a place"
+      },
+      "q39": {
+        "prompt": "In Spanish, a question mark appears at both the beginning (¿) and the end (?) of the sentence."
+      },
+      "q40": {
+        "prompt": "Which of these is an example of hyperbole?",
+        "a": "'The sun smiled on us'",
+        "b": "'I have told you a thousand times'",
+        "c": "'As fast as a bullet'"
+      },
+      "q41": {
+        "prompt": "An adverbial clause of time answers the question 'when?'."
+      },
+      "q42": {
+        "prompt": "What type of connective introduces a contrast?",
+        "a": "and / y",
+        "b": "because / porque",
+        "c": "however / sin embargo"
+      },
+      "q43": {
+        "prompt": "The word 'quickly' (rápidamente) is an adverb of manner."
+      },
+      "q44": {
+        "prompt": "Which of these words contains a prefix meaning 'before'?",
+        "a": "antibiótico",
+        "b": "prehistoria",
+        "c": "supermercado"
+      },
+      "q45": {
+        "prompt": "Connectors help link ideas within a text."
+      },
+      "q46": {
+        "prompt": "What is an allegory?",
+        "a": "A story where characters or objects represent abstract ideas",
+        "b": "A short funny poem",
+        "c": "A type of haiku"
+      },
+      "q47": {
+        "prompt": "The present perfect ('he comido': 'I have eaten') refers to a past action with present relevance."
+      },
+      "q48": {
+        "prompt": "Which sentence contains a simile?",
+        "a": "'La luna es una moneda en el cielo'",
+        "b": "'Es tan callada como un ratón'",
+        "c": "'El viento me habló'"
+      },
+      "q49": {
+        "prompt": "The conjunction 'although' (aunque) introduces a concessive clause."
+      },
+      "q50": {
+        "prompt": "Which type of text uses numbered steps and diagrams?",
+        "a": "Narrative / Narrativo",
+        "b": "Instructional / Instructivo",
+        "c": "Argumentative / Argumentativo"
+      },
+      "q51": {
+        "prompt": "A neologism is a newly coined word or expression."
+      }
+    },
+    "science": {
+      "q1": {
+        "prompt": "A food chain shows how energy passes from one living thing to another."
+      },
+      "q2": {
+        "prompt": "Plants are producers because they make their own food."
+      },
+      "q3": {
+        "prompt": "Which layer of the Earth do we live on?",
+        "a": "the core",
+        "b": "the mantle",
+        "c": "the crust"
+      },
+      "q4": {
+        "prompt": "A mixture can be separated back into its components."
+      },
+      "q5": {
+        "prompt": "Which of these is a herbivore?",
+        "a": "lion",
+        "b": "rabbit",
+        "c": "eagle"
+      },
+      "q6": {
+        "prompt": "The atmosphere is the layer of air that surrounds the Earth."
+      },
+      "q7": {
+        "prompt": "What is a cell?",
+        "a": "the basic unit of life",
+        "b": "a type of energy",
+        "c": "a part of soil"
+      },
+      "q8": {
+        "prompt": "A lever is a simple machine that helps lift or move things."
+      },
+      "q9": {
+        "prompt": "What do plants need to make their own food?",
+        "a": "meat and water",
+        "b": "sunlight, water and CO₂",
+        "c": "soil and animals"
+      },
+      "q10": {
+        "prompt": "The Earth's crust is made of rocks and minerals."
+      },
+      "q11": {
+        "prompt": "Which animal is a carnivore?",
+        "a": "elephant",
+        "b": "cow",
+        "c": "wolf"
+      },
+      "q12": {
+        "prompt": "Sound is a form of energy that travels in waves."
+      },
+      "q13": {
+        "prompt": "What is a food chain?",
+        "a": "a type of supermarket",
+        "b": "the sequence of who eats whom in nature",
+        "c": "a list of foods"
+      },
+      "q14": {
+        "prompt": "Ice is water in its solid state."
+      },
+      "q15": {
+        "prompt": "What is the main function of a plant's roots?",
+        "a": "to make food",
+        "b": "to absorb water and minerals",
+        "c": "to breathe"
+      },
+      "q16": {
+        "prompt": "A consumer is an organism that cannot make its own food."
+      },
+      "q17": {
+        "prompt": "Which simple machine uses a wheel and a rope?",
+        "a": "lever",
+        "b": "pulley",
+        "c": "inclined plane"
+      },
+      "q18": {
+        "prompt": "The hydrosphere includes all the water on Earth."
+      },
+      "q19": {
+        "prompt": "What is a decomposer?",
+        "a": "an animal that hunts others",
+        "b": "a plant that catches flies",
+        "c": "an organism that breaks down dead matter"
+      },
+      "q20": {
+        "prompt": "Electricity is a form of energy."
+      },
+      "q21": {
+        "prompt": "Which of these is a natural ecosystem?",
+        "a": "a city",
+        "b": "a forest",
+        "c": "a farm"
+      },
+      "q22": {
+        "prompt": "All living things are made of cells."
+      },
+      "q23": {
+        "prompt": "A ramp is an example of which simple machine?",
+        "a": "lever",
+        "b": "pulley",
+        "c": "inclined plane"
+      },
+      "q24": {
+        "prompt": "The sun is the source of energy for most food chains."
+      },
+      "q25": {
+        "prompt": "Which layer of the Earth is in the very centre?",
+        "a": "the crust",
+        "b": "the mantle",
+        "c": "the core"
+      },
+      "q26": {
+        "prompt": "Rocks can be transformed into other types of rocks over time."
+      },
+      "q27": {
+        "prompt": "What is photosynthesis?",
+        "a": "the process by which plants make food using sunlight",
+        "b": "how animals breathe",
+        "c": "the movement of water in plants"
+      },
+      "q28": {
+        "prompt": "Heat can be transferred from one object to another."
+      },
+      "q29": {
+        "prompt": "Which of these is a predator?",
+        "a": "grass",
+        "b": "rabbit",
+        "c": "hawk"
+      },
+      "q30": {
+        "prompt": "A plant cell has a cell wall, but an animal cell does not."
+      },
+      "q31": {
+        "prompt": "Which type of rock is formed from cooled lava?",
+        "a": "sedimentary",
+        "b": "igneous",
+        "c": "metamorphic"
+      },
+      "q32": {
+        "prompt": "An ecosystem includes both living things and their environment."
+      },
+      "q33": {
+        "prompt": "The skeletal system gives the body structure and protects internal organs."
+      },
+      "q34": {
+        "prompt": "What is the main function of the heart?",
+        "a": "To break down food",
+        "b": "To pump blood around the body",
+        "c": "To breathe"
+      },
+      "q35": {
+        "prompt": "The lungs are part of the respiratory system."
+      },
+      "q36": {
+        "prompt": "How many chambers does the human heart have?",
+        "a": "2",
+        "b": "3",
+        "c": "4"
+      },
+      "q37": {
+        "prompt": "Muscles can only pull; they cannot push."
+      },
+      "q38": {
+        "prompt": "What is the main function of the nervous system?",
+        "a": "To digest food",
+        "b": "To send and receive signals to and from the brain",
+        "c": "To carry oxygen"
+      },
+      "q39": {
+        "prompt": "Red blood cells carry oxygen around the body."
+      },
+      "q40": {
+        "prompt": "Which organ controls all the body's functions?",
+        "a": "The heart",
+        "b": "The stomach",
+        "c": "The brain"
+      },
+      "q41": {
+        "prompt": "An electric circuit needs a complete, unbroken loop for electricity to flow."
+      },
+      "q42": {
+        "prompt": "What type of rock is formed when layers of sediment are compressed?",
+        "a": "Igneous / Ígnea",
+        "b": "Sedimentary / Sedimentaria",
+        "c": "Metamorphic / Metamórfica"
+      },
+      "q43": {
+        "prompt": "A magnet attracts objects made of iron, steel, nickel and cobalt."
+      },
+      "q44": {
+        "prompt": "What is the main organ of the digestive system?",
+        "a": "The brain",
+        "b": "The lungs",
+        "c": "The stomach"
+      },
+      "q45": {
+        "prompt": "Erosion is the wearing away of rocks and soil by wind, water or ice."
+      },
+      "q46": {
+        "prompt": "Which planet is closest to the Sun?",
+        "a": "Earth / La Tierra",
+        "b": "Venus",
+        "c": "Mercury / Mercurio"
+      },
+      "q47": {
+        "prompt": "Conductors allow electricity to flow through them."
+      },
+      "q48": {
+        "prompt": "What is biodiversity?",
+        "a": "The variety of living things in an area",
+        "b": "The study of rocks",
+        "c": "The movement of water"
+      },
+      "q49": {
+        "prompt": "The digestive system breaks food down into nutrients the body can use."
+      },
+      "q50": {
+        "prompt": "Which type of energy comes directly from the Sun?",
+        "a": "Wind energy / Energía eólica",
+        "b": "Nuclear energy / Energía nuclear",
+        "c": "Solar energy / Energía solar"
+      },
+      "q51": {
+        "prompt": "Metamorphic rocks are formed when rocks are changed by heat and pressure."
+      }
+    },
+    "social": {
+      "q1": {
+        "prompt": "There are 5 continents in the world."
+      },
+      "q2": {
+        "prompt": "The largest continent is Asia."
+      },
+      "q3": {
+        "prompt": "How many oceans are there on Earth?",
+        "a": "3",
+        "b": "4",
+        "c": "5"
+      },
+      "q4": {
+        "prompt": "The Amazon is the world's largest river by volume of water."
+      },
+      "q5": {
+        "prompt": "Which is the largest ocean?",
+        "a": "Atlantic",
+        "b": "Pacific",
+        "c": "Indian"
+      },
+      "q6": {
+        "prompt": "Africa is the second largest continent."
+      },
+      "q7": {
+        "prompt": "On which continent is Spain located?",
+        "a": "Asia",
+        "b": "Africa",
+        "c": "Europe"
+      },
+      "q8": {
+        "prompt": "The Romans conquered most of the Iberian Peninsula."
+      },
+      "q9": {
+        "prompt": "What peoples lived in Spain before the Romans?",
+        "a": "Vikings",
+        "b": "Iberians and Celts",
+        "c": "Phoenicians only"
+      },
+      "q10": {
+        "prompt": "The Mediterranean Sea borders Spain to the east and south."
+      },
+      "q11": {
+        "prompt": "What was Al-Andalus?",
+        "a": "A Roman city in Spain",
+        "b": "The Muslim-ruled territory in the Iberian Peninsula",
+        "c": "A type of Spanish dance"
+      },
+      "q12": {
+        "prompt": "The primary sector includes farming, fishing and mining."
+      },
+      "q13": {
+        "prompt": "When did the Romans arrive in the Iberian Peninsula?",
+        "a": "3rd century BC",
+        "b": "1st century AD",
+        "c": "5th century AD"
+      },
+      "q14": {
+        "prompt": "A topographic map shows the height of the terrain."
+      },
+      "q15": {
+        "prompt": "Which of these is a tertiary sector activity?",
+        "a": "farming",
+        "b": "making cars",
+        "c": "working in a hospital"
+      },
+      "q16": {
+        "prompt": "The North Pole is in the Arctic region."
+      },
+      "q17": {
+        "prompt": "What is the capital city of France?",
+        "a": "London",
+        "b": "Rome",
+        "c": "Paris"
+      },
+      "q18": {
+        "prompt": "The Sahara is the world's largest hot desert."
+      },
+      "q19": {
+        "prompt": "Which river is the longest in the world?",
+        "a": "Amazon",
+        "b": "Nile",
+        "c": "Mississippi"
+      },
+      "q20": {
+        "prompt": "The Equator divides the Earth into Northern and Southern hemispheres."
+      },
+      "q21": {
+        "prompt": "What is the secondary sector?",
+        "a": "farming and fishing",
+        "b": "making and manufacturing products",
+        "c": "providing services"
+      },
+      "q22": {
+        "prompt": "Australia is both a country and a continent."
+      },
+      "q23": {
+        "prompt": "Which mountain range separates Spain from France?",
+        "a": "the Alps",
+        "b": "the Pyrenees",
+        "c": "the Sierra Nevada"
+      },
+      "q24": {
+        "prompt": "The Visigoths ruled Spain after the fall of the Roman Empire."
+      },
+      "q25": {
+        "prompt": "Which ocean separates Europe from North America?",
+        "a": "Pacific",
+        "b": "Indian",
+        "c": "Atlantic"
+      },
+      "q26": {
+        "prompt": "A thematic map shows specific information like population or rainfall."
+      },
+      "q27": {
+        "prompt": "What are the main climate zones on Earth?",
+        "a": "hot, cold and rainy",
+        "b": "tropical, temperate and polar",
+        "c": "sunny, cloudy and snowy"
+      },
+      "q28": {
+        "prompt": "The Middle Ages began after the fall of the Western Roman Empire."
+      },
+      "q29": {
+        "prompt": "Where is Mount Everest located?",
+        "a": "in the Alps",
+        "b": "in the Himalayas",
+        "c": "in the Andes"
+      },
+      "q30": {
+        "prompt": "Brazil is the largest country in South America."
+      },
+      "q31": {
+        "prompt": "What were the Reconquista campaigns in Spain?",
+        "a": "Roman invasions",
+        "b": "Christian kingdoms reclaiming land from the Muslims",
+        "c": "Viking raids"
+      },
+      "q32": {
+        "prompt": "Antarctica is the coldest continent on Earth."
+      },
+      "q33": {
+        "prompt": "Spain is a constitutional monarchy."
+      },
+      "q34": {
+        "prompt": "How many autonomous communities does Spain have?",
+        "a": "15",
+        "b": "17",
+        "c": "19"
+      },
+      "q35": {
+        "prompt": "The River Ebro is the longest river entirely within Spain."
+      },
+      "q36": {
+        "prompt": "Who were the Catholic Monarchs of Spain?",
+        "a": "Charles I and Philip II",
+        "b": "Ferdinand and Isabella",
+        "c": "Alfonso XIII and Victoria Eugenia"
+      },
+      "q37": {
+        "prompt": "Christopher Columbus reached America in 1492."
+      },
+      "q38": {
+        "prompt": "What is the capital city of Germany?",
+        "a": "Munich / Múnich",
+        "b": "Vienna / Viena",
+        "c": "Berlin / Berlín"
+      },
+      "q39": {
+        "prompt": "The European Union has more than 20 member states."
+      },
+      "q40": {
+        "prompt": "Which of these is an autonomous community of Spain?",
+        "a": "Porto",
+        "b": "Catalonia / Cataluña",
+        "c": "Algarve"
+      },
+      "q41": {
+        "prompt": "The Atlantic Ocean lies to the west of Europe."
+      },
+      "q42": {
+        "prompt": "What do we call people who move to another country to live permanently?",
+        "a": "Tourists / Turistas",
+        "b": "Immigrants / Inmigrantes",
+        "c": "Traders / Comerciantes"
+      },
+      "q43": {
+        "prompt": "The primary sector produces raw materials directly from nature."
+      },
+      "q44": {
+        "prompt": "Which is the highest peak in mainland Spain?",
+        "a": "Teide",
+        "b": "Mulhacén",
+        "c": "Aneto"
+      },
+      "q45": {
+        "prompt": "Spain joined the European Union in 1986."
+      },
+      "q46": {
+        "prompt": "What language is spoken in Brazil?",
+        "a": "Spanish / Español",
+        "b": "Portuguese / Portugués",
+        "c": "English / Inglés"
+      },
+      "q47": {
+        "prompt": "The Mediterranean climate has hot, dry summers and mild, wet winters."
+      },
+      "q48": {
+        "prompt": "Which civilization built the Colosseum in Rome?",
+        "a": "The Greeks / Los griegos",
+        "b": "The Romans / Los romanos",
+        "c": "The Egyptians / Los egipcios"
+      },
+      "q49": {
+        "prompt": "The Industrial Revolution began in Britain in the 18th century."
+      },
+      "q50": {
+        "prompt": "What is the capital of Italy?",
+        "a": "Milan / Milán",
+        "b": "Naples / Nápoles",
+        "c": "Rome / Roma"
+      },
+      "q51": {
+        "prompt": "The Alps mountain range is located in Central Europe."
+      }
+    },
+    "english": {
+      "q1": {
+        "prompt": "The past tense of 'go' is 'went'."
+      },
+      "q2": {
+        "prompt": "The past tense of 'eat' is 'eated'."
+      },
+      "q3": {
+        "prompt": "What is the past tense of 'see'?",
+        "a": "sawed",
+        "b": "saw",
+        "c": "seed"
+      },
+      "q4": {
+        "prompt": "'She can swim' means she knows how to swim."
+      },
+      "q5": {
+        "prompt": "Which word means 'more big'?",
+        "a": "bigger",
+        "b": "biggest",
+        "c": "very big"
+      },
+      "q6": {
+        "prompt": "'Yesterday I play football' is a correct sentence."
+      },
+      "q7": {
+        "prompt": "What is the past tense of 'run'?",
+        "a": "runned",
+        "b": "ranned",
+        "c": "ran"
+      },
+      "q8": {
+        "prompt": "The preposition 'on' is used for days of the week (e.g., on Monday)."
+      },
+      "q9": {
+        "prompt": "How do you say 'más rápido' in English?",
+        "a": "fast",
+        "b": "faster",
+        "c": "fastest"
+      },
+      "q10": {
+        "prompt": "'Can' is used to talk about ability."
+      },
+      "q11": {
+        "prompt": "Which word completes the question: '__ she go to school yesterday?'",
+        "a": "Did",
+        "b": "Does",
+        "c": "Was"
+      },
+      "q12": {
+        "prompt": "The past tense of 'have' is 'had'."
+      },
+      "q13": {
+        "prompt": "Which sentence uses the past tense correctly?",
+        "a": "He go to the park",
+        "b": "He went to the park",
+        "c": "He goes to the park"
+      },
+      "q14": {
+        "prompt": "'She can't fly' means she is not able to fly."
+      },
+      "q15": {
+        "prompt": "What does 'faster' mean?",
+        "a": "more slow",
+        "b": "more fast",
+        "c": "very fast"
+      },
+      "q16": {
+        "prompt": "'I didn't go to school' uses the negative past tense correctly."
+      },
+      "q17": {
+        "prompt": "Which is the correct comparative of 'big'?",
+        "a": "biger",
+        "b": "more big",
+        "c": "bigger"
+      },
+      "q18": {
+        "prompt": "The preposition 'in' is used for months (e.g., in July)."
+      },
+      "q19": {
+        "prompt": "What is the past tense of 'buy'?",
+        "a": "buyed",
+        "b": "bought",
+        "c": "boughted"
+      },
+      "q20": {
+        "prompt": "'They didn't saw the film' is grammatically correct."
+      },
+      "q21": {
+        "prompt": "Which sentence is in the past tense?",
+        "a": "She plays tennis",
+        "b": "She played tennis",
+        "c": "She will play tennis"
+      },
+      "q22": {
+        "prompt": "'He can speak English' is a correct English sentence."
+      },
+      "q23": {
+        "prompt": "What question word asks about a place?",
+        "a": "When",
+        "b": "Where",
+        "c": "Why"
+      },
+      "q24": {
+        "prompt": "The past tense of 'make' is 'made'."
+      },
+      "q25": {
+        "prompt": "Which word completes: 'Yesterday I __ my homework.'",
+        "a": "do",
+        "b": "does",
+        "c": "did"
+      },
+      "q26": {
+        "prompt": "Comparatives for short adjectives are formed by adding '-er'."
+      },
+      "q27": {
+        "prompt": "What does 'She couldn't come to the party' mean?",
+        "a": "She didn't want to come",
+        "b": "She wasn't able to come",
+        "c": "She came to the party"
+      },
+      "q28": {
+        "prompt": "The preposition 'at' is used for specific times (e.g., at 3 o'clock)."
+      },
+      "q29": {
+        "prompt": "What is the past tense of 'write'?",
+        "a": "writed",
+        "b": "wrote",
+        "c": "written"
+      },
+      "q30": {
+        "prompt": "'Last week, she goed to the cinema' is incorrect."
+      },
+      "q31": {
+        "prompt": "Which comparative is correct?",
+        "a": "more old",
+        "b": "older",
+        "c": "oldest"
+      },
+      "q32": {
+        "prompt": "'Did you see that film?' is a correct question in the past tense."
+      },
+      "q33": {
+        "prompt": "The present perfect is formed with 'have/has + past participle'."
+      },
+      "q34": {
+        "prompt": "Which sentence uses the present perfect?",
+        "a": "I eat pizza",
+        "b": "I have eaten pizza",
+        "c": "I ate pizza"
+      },
+      "q35": {
+        "prompt": "'Must' expresses obligation or necessity."
+      },
+      "q36": {
+        "prompt": "What is the future tense of 'she goes'?",
+        "a": "she went",
+        "b": "she will go",
+        "c": "she has gone"
+      },
+      "q37": {
+        "prompt": "'Should' is used to give advice (e.g., 'You should study more')."
+      },
+      "q38": {
+        "prompt": "Which sentence is in the passive voice?",
+        "a": "The dog bit the boy",
+        "b": "The boy was bitten by the dog",
+        "c": "The boy bit the dog"
+      },
+      "q39": {
+        "prompt": "The first conditional uses 'if + present simple + will + infinitive'."
+      },
+      "q40": {
+        "prompt": "What is the past participle of 'break'?",
+        "a": "broke",
+        "b": "broken",
+        "c": "breaked"
+      },
+      "q41": {
+        "prompt": "'Might' expresses possibility (e.g., 'It might rain')."
+      },
+      "q42": {
+        "prompt": "Which is the correct reported speech of 'I am happy'?",
+        "a": "She said she was happy",
+        "b": "She said she is happy",
+        "c": "She said she were happy"
+      },
+      "q43": {
+        "prompt": "Adjectives in English normally go before the noun they describe."
+      },
+      "q44": {
+        "prompt": "Which preposition completes: 'I have been here ___ three hours'?",
+        "a": "since",
+        "b": "for",
+        "c": "during"
+      },
+      "q45": {
+        "prompt": "The second conditional is used for unreal or hypothetical situations."
+      },
+      "q46": {
+        "prompt": "What does 'I have just finished' mean?",
+        "a": "I finished a long time ago",
+        "b": "I finished very recently",
+        "c": "I will finish soon"
+      },
+      "q47": {
+        "prompt": "'Since' is used with a specific point in time (e.g., 'since Monday')."
+      },
+      "q48": {
+        "prompt": "Which sentence is grammatically correct?",
+        "a": "She don't like cats",
+        "b": "She doesn't likes cats",
+        "c": "She doesn't like cats"
+      },
+      "q49": {
+        "prompt": "Adverbs of frequency (always, usually, never) go before the main verb."
+      },
+      "q50": {
+        "prompt": "What is the superlative of 'good'?",
+        "a": "better",
+        "b": "gooder",
+        "c": "best"
+      },
+      "q51": {
+        "prompt": "The passive voice is formed with 'to be + past participle'."
+      }
     }
   }
 }

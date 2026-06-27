@@ -6,7 +6,14 @@
       "add_carry": "Carrying addition",
       "times_tables": "Times tables",
       "division_intro": "Exact division",
-      "even_odd": "Even and odd"
+      "even_odd": "Even and odd",
+      "place_value": "Place value",
+      "ordering": "Ordering numbers",
+      "rounding": "Rounding",
+      "shapes": "Shapes and geometry",
+      "time": "Time and measurement",
+      "length": "Length and distance",
+      "fractions": "Fractions"
     }
   },
   "spanish": {
@@ -20,7 +27,10 @@
       "mp_mb": "Reglas mp y mb",
       "b_v": "Reglas b y v",
       "accents": "Acentuación",
-      "punctuation": "Signos de puntuación"
+      "punctuation": "Signos de puntuación",
+      "comprehension": "Lectura comprensiva",
+      "text_types": "Tipos de texto",
+      "spelling_specific": "Ortografía específica"
     }
   },
   "science": {
@@ -61,23 +71,58 @@
       "family": "Family"
     }
   },
+  "cuarto4": {
+    "title": "4th Grade Preview",
+    "zone": "The next level",
+    "topic": {
+      "math": "Maths preview",
+      "spanish": "Spanish preview",
+      "science": "Science preview",
+      "social": "Social Science preview",
+      "english": "English preview"
+    }
+  },
   "label": {
     "challengeG4": "Grade 4 challenge",
     "surpriseMix": "Surprise mix"
   },
   "avatar": {
-    "fox":       { "name": "Fox" },
-    "turtle":    { "name": "Turtle" },
-    "parrot":    { "name": "Parrot" },
-    "crab":      { "name": "Crab" },
-    "lion":      { "name": "Lion" },
-    "penguin":   { "name": "Penguin" },
-    "elephant":  { "name": "Elephant" },
-    "butterfly": { "name": "Butterfly" },
-    "owl":       { "name": "Owl" },
-    "dolphin":   { "name": "Dolphin" },
-    "bear":      { "name": "Bear" },
-    "rabbit":    { "name": "Rabbit" }
+    "fox": {
+      "name": "Fox"
+    },
+    "turtle": {
+      "name": "Turtle"
+    },
+    "parrot": {
+      "name": "Parrot"
+    },
+    "crab": {
+      "name": "Crab"
+    },
+    "lion": {
+      "name": "Lion"
+    },
+    "penguin": {
+      "name": "Penguin"
+    },
+    "elephant": {
+      "name": "Elephant"
+    },
+    "butterfly": {
+      "name": "Butterfly"
+    },
+    "owl": {
+      "name": "Owl"
+    },
+    "dolphin": {
+      "name": "Dolphin"
+    },
+    "bear": {
+      "name": "Bear"
+    },
+    "rabbit": {
+      "name": "Rabbit"
+    }
   },
   "nickname": {
     "explorer": "Explorer",
@@ -86,32 +131,113 @@
     "champion": "Champion"
   },
   "badge": {
-    "firstSession":  { "name": "First session",       "hint": "Complete your first session" },
-    "streak2":       { "name": "2-day streak",         "hint": "Play 2 days in a row" },
-    "streak3":       { "name": "3-day streak",         "hint": "Play 3 days in a row" },
-    "streak5":       { "name": "5-day streak",         "hint": "Play 5 days in a row" },
-    "streak7":       { "name": "Week warrior",         "hint": "Play 7 days in a row" },
-    "streak14":      { "name": "Two weeks!",           "hint": "Play 14 days in a row" },
-    "streak21":      { "name": "Three weeks!",         "hint": "Play 21 days in a row" },
-    "streak30":      { "name": "One month!",           "hint": "Play 30 days in a row" },
-    "stars10":       { "name": "10 stars",             "hint": "Earn 10 stars" },
-    "stars50":       { "name": "50 stars",             "hint": "Earn 50 stars" },
-    "hundredStars":  { "name": "100 stars",            "hint": "Earn 100 stars" },
-    "stars200":      { "name": "200 stars",            "hint": "Earn 200 stars" },
-    "stars500":      { "name": "500 stars",            "hint": "Earn 500 stars" },
-    "tablesMaster":  { "name": "Times-tables master",  "hint": "Get 10 times-tables right" },
-    "explorer":      { "name": "Explorer",             "hint": "Try all 5 subjects" },
-    "firstMath":     { "name": "Number cruncher",      "hint": "Get your first maths answer right" },
-    "firstSpanish":  { "name": "Word lover",           "hint": "Get your first Spanish answer right" },
-    "firstScience":  { "name": "Junior scientist",     "hint": "Get your first Science answer right" },
-    "firstSocial":   { "name": "World explorer",       "hint": "Get your first Social Science answer right" },
-    "firstEnglish":  { "name": "Hello world",          "hint": "Get your first English answer right" },
-    "math10":        { "name": "Maths pro",            "hint": "Get 10 maths answers right" },
-    "spanish10":     { "name": "Language star",        "hint": "Get 10 Spanish answers right" },
-    "science10":     { "name": "Science star",         "hint": "Get 10 Science answers right" },
-    "social10":      { "name": "Geography whiz",       "hint": "Get 10 Social Science answers right" },
-    "english10":     { "name": "Bilingual",            "hint": "Get 10 English answers right" },
-    "dailyGoal5":    { "name": "Daily champion",       "hint": "Complete 5 daily missions" },
-    "dailyGoal10":   { "name": "Super champion",       "hint": "Complete 10 daily missions" }
+    "firstSession": {
+      "name": "First session",
+      "hint": "Complete your first session"
+    },
+    "streak2": {
+      "name": "2-day streak",
+      "hint": "Play 2 days in a row"
+    },
+    "streak3": {
+      "name": "3-day streak",
+      "hint": "Play 3 days in a row"
+    },
+    "streak5": {
+      "name": "5-day streak",
+      "hint": "Play 5 days in a row"
+    },
+    "streak7": {
+      "name": "Week warrior",
+      "hint": "Play 7 days in a row"
+    },
+    "streak14": {
+      "name": "Two weeks!",
+      "hint": "Play 14 days in a row"
+    },
+    "streak21": {
+      "name": "Three weeks!",
+      "hint": "Play 21 days in a row"
+    },
+    "streak30": {
+      "name": "One month!",
+      "hint": "Play 30 days in a row"
+    },
+    "stars10": {
+      "name": "10 stars",
+      "hint": "Earn 10 stars"
+    },
+    "stars50": {
+      "name": "50 stars",
+      "hint": "Earn 50 stars"
+    },
+    "hundredStars": {
+      "name": "100 stars",
+      "hint": "Earn 100 stars"
+    },
+    "stars200": {
+      "name": "200 stars",
+      "hint": "Earn 200 stars"
+    },
+    "stars500": {
+      "name": "500 stars",
+      "hint": "Earn 500 stars"
+    },
+    "tablesMaster": {
+      "name": "Times-tables master",
+      "hint": "Get 10 times-tables right"
+    },
+    "explorer": {
+      "name": "Explorer",
+      "hint": "Try all 5 subjects"
+    },
+    "firstMath": {
+      "name": "Number cruncher",
+      "hint": "Get your first maths answer right"
+    },
+    "firstSpanish": {
+      "name": "Word lover",
+      "hint": "Get your first Spanish answer right"
+    },
+    "firstScience": {
+      "name": "Junior scientist",
+      "hint": "Get your first Science answer right"
+    },
+    "firstSocial": {
+      "name": "World explorer",
+      "hint": "Get your first Social Science answer right"
+    },
+    "firstEnglish": {
+      "name": "Hello world",
+      "hint": "Get your first English answer right"
+    },
+    "math10": {
+      "name": "Maths pro",
+      "hint": "Get 10 maths answers right"
+    },
+    "spanish10": {
+      "name": "Language star",
+      "hint": "Get 10 Spanish answers right"
+    },
+    "science10": {
+      "name": "Science star",
+      "hint": "Get 10 Science answers right"
+    },
+    "social10": {
+      "name": "Geography whiz",
+      "hint": "Get 10 Social Science answers right"
+    },
+    "english10": {
+      "name": "Bilingual",
+      "hint": "Get 10 English answers right"
+    },
+    "dailyGoal5": {
+      "name": "Daily champion",
+      "hint": "Complete 5 daily missions"
+    },
+    "dailyGoal10": {
+      "name": "Super champion",
+      "hint": "Complete 10 daily missions"
+    }
   }
 }

@@ -10,5 +10,10 @@
     "locked": "To unlock",
     "lockedHint": "Keep playing to earn it",
     "unlockedOn": "Earned on {{date}}"
+  },
+  "progress": {
+    "title": "Your progress by topic",
+    "empty": "Play any subject to see your progress here",
+    "of": "of"
   }
 }

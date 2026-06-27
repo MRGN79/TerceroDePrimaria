@@ -36,6 +36,7 @@ export function PageLayout({
       <footer className={styles.siteFooter} aria-label="Información de la aplicación">
         <span>{t("footer.description")}</span>
         <span className={styles.version}>v{__APP_VERSION__}</span>
+        <span className={styles.howItWorks}>{t("footer.howItWorks")}</span>
         <span className={styles.privacy}>{t("footer.privacy")}</span>
       </footer>
     </div>

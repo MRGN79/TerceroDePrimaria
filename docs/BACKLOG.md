@@ -6,12 +6,24 @@ Items anotados para implementar en el futuro, ordenados por aparición. No impli
 
 ## Contenido
 
-- **Ampliar catálogo a 250 preguntas por asignatura (pendiente: Matemáticas, Inglés).** Lengua y Ciencias ya están a 256 ejercicios. Quedan Matemáticas e Inglés.
-
-- **Nueva "asignatura": Introducción a 4º de Primaria.** Una materia especial que sirva de puente entre 3º y 4º, con ejercicios de los temas que se verán en 4º.
+- **Añadir temas a Inglés** — "body parts", "food & drink", "classroom", "days & months".
 
 ---
 
-## Vista de impresión
+## Funcionalidad
 
-- **Mostrar el personaje y el apodo del niño en la cabecera de la ficha.** El emoji del avatar elegido y el apodo deben aparecer en la parte superior de la hoja impresa, junto al campo de nombre/fecha, para que el niño sienta que la ficha es suya.
+- **Modo repaso de fallos** — sesión especial que solo muestra preguntas que el niño ha fallado alguna vez, para reforzar puntos débiles.
+
+- **Sesión mixta de 10 preguntas** — opción de sesión más larga (actualmente 5) para cuando hay más tiempo disponible.
+
+- **Fichas imprimibles por tema** — ahora existe impresión por asignatura; añadir filtrado por tema específico en la pantalla de impresión.
+
+- **Modo nocturno** — tema oscuro para usar en casa por la tarde sin forzar la vista.
+
+---
+
+## Experiencia
+
+- **Animación de racha** — efecto especial al alcanzar 7, 14 y 30 días seguidos.
+
+- **Medallas por asignatura completada** — insignia cuando el niño ha respondido correctamente todas las preguntas de una asignatura.

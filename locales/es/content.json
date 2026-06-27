@@ -6,7 +6,14 @@
       "add_carry": "Sumas con llevadas",
       "times_tables": "Tablas de multiplicar",
       "division_intro": "Divisiones exactas",
-      "even_odd": "Pares e impares"
+      "even_odd": "Pares e impares",
+      "place_value": "Valor posicional",
+      "ordering": "Comparar y ordenar",
+      "rounding": "Redondeo",
+      "shapes": "Figuras y geometría",
+      "time": "El tiempo",
+      "length": "Longitud y medida",
+      "fractions": "Fracciones"
     }
   },
   "spanish": {
@@ -20,7 +27,10 @@
       "mp_mb": "Reglas mp y mb",
       "b_v": "Reglas b y v",
       "accents": "Acentuación",
-      "punctuation": "Signos de puntuación"
+      "punctuation": "Signos de puntuación",
+      "comprehension": "Lectura comprensiva",
+      "text_types": "Tipos de texto",
+      "spelling_specific": "Ortografía específica"
     }
   },
   "science": {
@@ -58,23 +68,58 @@
       "family": "Family"
     }
   },
+  "cuarto4": {
+    "title": "Intro a 4º de Primaria",
+    "zone": "El siguiente nivel",
+    "topic": {
+      "math": "Matemáticas de 4º",
+      "spanish": "Lengua de 4º",
+      "science": "Naturales de 4º",
+      "social": "Sociales de 4º",
+      "english": "Inglés de 4º"
+    }
+  },
   "label": {
     "challengeG4": "Reto 4º",
     "surpriseMix": "Mezcla sorpresa"
   },
   "avatar": {
-    "fox":       { "name": "Zorro" },
-    "turtle":    { "name": "Tortuga" },
-    "parrot":    { "name": "Loro" },
-    "crab":      { "name": "Cangrejo" },
-    "lion":      { "name": "León" },
-    "penguin":   { "name": "Pingüino" },
-    "elephant":  { "name": "Elefante" },
-    "butterfly": { "name": "Mariposa" },
-    "owl":       { "name": "Búho" },
-    "dolphin":   { "name": "Delfín" },
-    "bear":      { "name": "Oso" },
-    "rabbit":    { "name": "Conejo" }
+    "fox": {
+      "name": "Zorro"
+    },
+    "turtle": {
+      "name": "Tortuga"
+    },
+    "parrot": {
+      "name": "Loro"
+    },
+    "crab": {
+      "name": "Cangrejo"
+    },
+    "lion": {
+      "name": "León"
+    },
+    "penguin": {
+      "name": "Pingüino"
+    },
+    "elephant": {
+      "name": "Elefante"
+    },
+    "butterfly": {
+      "name": "Mariposa"
+    },
+    "owl": {
+      "name": "Búho"
+    },
+    "dolphin": {
+      "name": "Delfín"
+    },
+    "bear": {
+      "name": "Oso"
+    },
+    "rabbit": {
+      "name": "Conejo"
+    }
   },
   "nickname": {
     "explorer": "Explorador",
@@ -83,32 +128,113 @@
     "champion": "Campeón"
   },
   "badge": {
-    "firstSession":  { "name": "Primera sesión",       "hint": "Completa tu primera sesión" },
-    "streak2":       { "name": "2 días de racha",      "hint": "Juega 2 días seguidos" },
-    "streak3":       { "name": "3 días de racha",      "hint": "Juega 3 días seguidos" },
-    "streak5":       { "name": "5 días de racha",      "hint": "Juega 5 días seguidos" },
-    "streak7":       { "name": "¡Una semana!",         "hint": "Juega 7 días seguidos" },
-    "streak14":      { "name": "¡Dos semanas!",        "hint": "Juega 14 días seguidos" },
-    "streak21":      { "name": "¡Tres semanas!",       "hint": "Juega 21 días seguidos" },
-    "streak30":      { "name": "¡Un mes!",             "hint": "Juega 30 días seguidos" },
-    "stars10":       { "name": "10 estrellas",         "hint": "Consigue 10 estrellas" },
-    "stars50":       { "name": "50 estrellas",         "hint": "Consigue 50 estrellas" },
-    "hundredStars":  { "name": "100 estrellas",        "hint": "Consigue 100 estrellas" },
-    "stars200":      { "name": "200 estrellas",        "hint": "Consigue 200 estrellas" },
-    "stars500":      { "name": "500 estrellas",        "hint": "Consigue 500 estrellas" },
-    "tablesMaster":  { "name": "Maestro de las tablas","hint": "Acierta 10 tablas de multiplicar" },
-    "explorer":      { "name": "Explorador",           "hint": "Prueba las 5 materias" },
-    "firstMath":     { "name": "Matemático",           "hint": "Acierta tu primera pregunta de Matemáticas" },
-    "firstSpanish":  { "name": "Amante de la lectura", "hint": "Acierta tu primera pregunta de Lengua" },
-    "firstScience":  { "name": "Mini científico",      "hint": "Acierta tu primera pregunta de Naturales" },
-    "firstSocial":   { "name": "Viajero del mundo",    "hint": "Acierta tu primera pregunta de Sociales" },
-    "firstEnglish":  { "name": "Hello world",          "hint": "Acierta tu primera pregunta de Inglés" },
-    "math10":        { "name": "As de las mates",      "hint": "Acierta 10 preguntas de Matemáticas" },
-    "spanish10":     { "name": "Estrella de Lengua",   "hint": "Acierta 10 preguntas de Lengua" },
-    "science10":     { "name": "Estrella de Naturales","hint": "Acierta 10 preguntas de Naturales" },
-    "social10":      { "name": "Geógrafo",             "hint": "Acierta 10 preguntas de Sociales" },
-    "english10":     { "name": "Bilingüe",             "hint": "Acierta 10 preguntas de Inglés" },
-    "dailyGoal5":    { "name": "Campeón diario",       "hint": "Completa 5 misiones del día" },
-    "dailyGoal10":   { "name": "Super campeón",        "hint": "Completa 10 misiones del día" }
+    "firstSession": {
+      "name": "Primera sesión",
+      "hint": "Completa tu primera sesión"
+    },
+    "streak2": {
+      "name": "2 días de racha",
+      "hint": "Juega 2 días seguidos"
+    },
+    "streak3": {
+      "name": "3 días de racha",
+      "hint": "Juega 3 días seguidos"
+    },
+    "streak5": {
+      "name": "5 días de racha",
+      "hint": "Juega 5 días seguidos"
+    },
+    "streak7": {
+      "name": "¡Una semana!",
+      "hint": "Juega 7 días seguidos"
+    },
+    "streak14": {
+      "name": "¡Dos semanas!",
+      "hint": "Juega 14 días seguidos"
+    },
+    "streak21": {
+      "name": "¡Tres semanas!",
+      "hint": "Juega 21 días seguidos"
+    },
+    "streak30": {
+      "name": "¡Un mes!",
+      "hint": "Juega 30 días seguidos"
+    },
+    "stars10": {
+      "name": "10 estrellas",
+      "hint": "Consigue 10 estrellas"
+    },
+    "stars50": {
+      "name": "50 estrellas",
+      "hint": "Consigue 50 estrellas"
+    },
+    "hundredStars": {
+      "name": "100 estrellas",
+      "hint": "Consigue 100 estrellas"
+    },
+    "stars200": {
+      "name": "200 estrellas",
+      "hint": "Consigue 200 estrellas"
+    },
+    "stars500": {
+      "name": "500 estrellas",
+      "hint": "Consigue 500 estrellas"
+    },
+    "tablesMaster": {
+      "name": "Maestro de las tablas",
+      "hint": "Acierta 10 tablas de multiplicar"
+    },
+    "explorer": {
+      "name": "Explorador",
+      "hint": "Prueba las 5 materias"
+    },
+    "firstMath": {
+      "name": "Matemático",
+      "hint": "Acierta tu primera pregunta de Matemáticas"
+    },
+    "firstSpanish": {
+      "name": "Amante de la lectura",
+      "hint": "Acierta tu primera pregunta de Lengua"
+    },
+    "firstScience": {
+      "name": "Mini científico",
+      "hint": "Acierta tu primera pregunta de Naturales"
+    },
+    "firstSocial": {
+      "name": "Viajero del mundo",
+      "hint": "Acierta tu primera pregunta de Sociales"
+    },
+    "firstEnglish": {
+      "name": "Hello world",
+      "hint": "Acierta tu primera pregunta de Inglés"
+    },
+    "math10": {
+      "name": "As de las mates",
+      "hint": "Acierta 10 preguntas de Matemáticas"
+    },
+    "spanish10": {
+      "name": "Estrella de Lengua",
+      "hint": "Acierta 10 preguntas de Lengua"
+    },
+    "science10": {
+      "name": "Estrella de Naturales",
+      "hint": "Acierta 10 preguntas de Naturales"
+    },
+    "social10": {
+      "name": "Geógrafo",
+      "hint": "Acierta 10 preguntas de Sociales"
+    },
+    "english10": {
+      "name": "Bilingüe",
+      "hint": "Acierta 10 preguntas de Inglés"
+    },
+    "dailyGoal5": {
+      "name": "Campeón diario",
+      "hint": "Completa 5 misiones del día"
+    },
+    "dailyGoal10": {
+      "name": "Super campeón",
+      "hint": "Completa 10 misiones del día"
+    }
   }
 }
