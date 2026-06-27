@@ -26,7 +26,7 @@ import {
 } from "@/lib/catalog";
 import { exercisesByTopic, exerciseById } from "@content/registry";
 import { buildPrintSheet, type PrintItem } from "@/lib/printSheet";
-import { buildDailySession, buildReviewSession, type PreparedExercise } from "@/lib/session";
+import { buildDailySession, buildReviewSession, DEFAULT_SESSION_LENGTH, type PreparedExercise } from "@/lib/session";
 import { localDateKey, streakDisplayVariant } from "@/lib/streak";
 import { nicknameKey, DEFAULT_NICKNAME, avatarById } from "@/lib/profile";
 import { BADGES } from "@/lib/badges";
@@ -129,14 +129,14 @@ export function App() {
           setSelectedSubject(null);
           setRoute({ name: "subjects" });
         }}
-        failedCount={state.progress.failedExerciseIds?.length ?? 0}
+        failedCount={state.progress.failedExerciseIds.length}
         onReview={() => {
           setRoute({
             name: "session",
             materia: "matematicas",
             tema: null,
             isDailyGoal: false,
-            prebuilt: buildReviewSession(state.progress.failedExerciseIds ?? [], undefined, Math.random),
+            prebuilt: buildReviewSession(state.progress.failedExerciseIds, DEFAULT_SESSION_LENGTH, Math.random),
           });
         }}
         onPrint={() => {
