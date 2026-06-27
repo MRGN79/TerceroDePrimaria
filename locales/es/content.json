@@ -42,7 +42,10 @@
       "plants": "Plants",
       "senses": "The senses",
       "nutrition": "Health and nutrition",
-      "states": "States of matter"
+      "states": "States of matter",
+      "skeleton": "The Skeleton and Muscles",
+      "forces": "Forces and Movement",
+      "solar_system": "The Solar System"
     }
   },
   "social": {
