@@ -3,6 +3,7 @@
  * Escaparate del orgullo del niño. Motiva sin comparar (no hay ranking).
  * Datos vía props; medallas de ejemplo son placeholders de maquetación.
  */
+import React from "react";
 import { useTranslation } from "react-i18next";
 import {
   PageLayout,
@@ -21,12 +22,27 @@ type BadgeVM = {
   colorToken?: string;
 };
 
+type TopicProgressVM = {
+  id: string;
+  title: string;
+  mastered: number;
+  total: number;
+};
+
+type SubjectProgressVM = {
+  id: string;
+  title: string;
+  colorToken: string;
+  topics: TopicProgressVM[];
+};
+
 type BackpackScreenProps = {
   nickname?: string;
   totalStars?: number;
   currentStreak?: number;
   bestStreak?: number;
   badges?: BadgeVM[];
+  subjectProgress?: SubjectProgressVM[];
   onHome?: () => void;
 };
 
@@ -43,6 +59,7 @@ export function BackpackScreen({
   currentStreak = 0,
   bestStreak = 0,
   badges = PLACEHOLDER_BADGES,
+  subjectProgress = [],
   onHome,
 }: BackpackScreenProps) {
   const { t } = useTranslation(["backpack", "content"]);
@@ -83,6 +100,62 @@ export function BackpackScreen({
             </li>
           ))}
         </ul>
+      </section>
+
+      <section aria-labelledby="progress-title">
+        <h2 id="progress-title" className={styles.progressTitle}>
+          {t("backpack:progress.title")}
+        </h2>
+        {subjectProgress.length === 0 ? (
+          <p className={styles.progressEmpty}>{t("backpack:progress.empty")}</p>
+        ) : (
+          subjectProgress.map((subject) => (
+            <div key={subject.id} className={styles.progressSubject}>
+              <h3
+                className={styles.progressSubjectName}
+                style={{ "--subject-color": `var(${subject.colorToken})` } as React.CSSProperties}
+              >
+                {subject.title}
+              </h3>
+              <ul className={styles.topicList} role="list">
+                {subject.topics.map((topic) => {
+                  const pct =
+                    topic.total > 0
+                      ? Math.round((topic.mastered / topic.total) * 100)
+                      : 0;
+                  return (
+                    <li key={topic.id} className={styles.topicRow}>
+                      <span className={styles.topicName}>{topic.title}</span>
+                      <div className={styles.topicBar}>
+                        <div
+                          className={styles.progressBar}
+                          role="progressbar"
+                          aria-valuenow={topic.mastered}
+                          aria-valuemin={0}
+                          aria-valuemax={topic.total}
+                          aria-label={`${topic.title}: ${topic.mastered} ${t("backpack:progress.of")} ${topic.total}`}
+                        >
+                          <div
+                            className={styles.progressFill}
+                            style={
+                              {
+                                width: pct > 0 ? `max(4px, ${pct}%)` : "0",
+                                "--fill-color": `var(${subject.colorToken})`,
+                              } as React.CSSProperties
+                            }
+                          />
+                        </div>
+                        <span className={styles.topicCount} aria-hidden="true">
+                          {topic.mastered}/{topic.total}
+                        </span>
+                      </div>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+          ))
+        )}
       </section>
     </PageLayout>
   );

@@ -24,6 +24,7 @@ import {
   contentKeyFor,
   type SubjectVM,
 } from "@/lib/catalog";
+import { exercisesByTopic, exerciseById } from "@content/registry";
 import { buildPrintSheet, type PrintItem } from "@/lib/printSheet";
 import { buildDailySession, type PreparedExercise } from "@/lib/session";
 import { localDateKey, streakDisplayVariant } from "@/lib/streak";
@@ -74,6 +75,15 @@ export function App() {
   }, []);
 
   const subjectVMs = useMemo<SubjectVM[]>(() => buildSubjectVMs(t), [t]);
+
+  const masteredByTopic = useMemo(() => {
+    const result: Record<string, number> = {};
+    for (const id of state.progress.correctExerciseIds) {
+      const ex = exerciseById(id);
+      if (ex) result[ex.tema] = (result[ex.tema] ?? 0) + 1;
+    }
+    return result;
+  }, [state.progress.correctExerciseIds]);
 
   const dailyGoalDoneToday = state.dailyGoal.lastDoneDate === localDateKey();
   const streakVariant = streakDisplayVariant(state.streak);
@@ -178,6 +188,22 @@ export function App() {
         colorToken: b.colorToken,
       };
     });
+    const triedSet = new Set(state.progress.subjectsTried);
+    const subjectProgress = subjectVMs
+      .filter((s) => triedSet.has(s.id))
+      .map((s) => ({
+        id: s.id,
+        title: s.title,
+        colorToken: s.colorToken,
+        topics: buildTopicVMs(s.id, t)
+          .filter((tp) => !tp.soon)
+          .map((tp) => ({
+            id: tp.id,
+            title: tp.title,
+            mastered: masteredByTopic[tp.id] ?? 0,
+            total: exercisesByTopic(s.id, tp.id).length,
+          })),
+      }));
     return (
       <BackpackScreen
         nickname={nickname}
@@ -185,6 +211,7 @@ export function App() {
         currentStreak={state.streak.current}
         bestStreak={state.streak.longest}
         badges={badgeVMs}
+        subjectProgress={subjectProgress}
         onHome={goHome}
       />
     );

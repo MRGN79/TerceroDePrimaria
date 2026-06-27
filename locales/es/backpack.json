@@ -10,5 +10,10 @@
     "locked": "Por conseguir",
     "lockedHint": "Sigue jugando para conseguirla",
     "unlockedOn": "Conseguida el {{date}}"
+  },
+  "progress": {
+    "title": "Tu progreso por tema",
+    "empty": "Juega a cualquier asignatura para ver tu progreso aquí",
+    "of": "de"
   }
 }
