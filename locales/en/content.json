@@ -20,17 +20,17 @@
     "title": "Spanish",
     "zone": "The forest of words",
     "topic": {
-      "synonyms_antonyms": "Sinónimos y antónimos",
-      "noun": "El sustantivo",
-      "adjective": "El adjetivo",
-      "verb": "El verbo",
-      "mp_mb": "Reglas mp y mb",
-      "b_v": "Reglas b y v",
-      "accents": "Acentuación",
-      "punctuation": "Signos de puntuación",
-      "comprehension": "Lectura comprensiva",
-      "text_types": "Tipos de texto",
-      "spelling_specific": "Ortografía específica"
+      "synonyms_antonyms": "Synonyms and antonyms",
+      "noun": "The noun",
+      "adjective": "The adjective",
+      "verb": "The verb",
+      "mp_mb": "mp and mb spelling rules",
+      "b_v": "b and v spelling rules",
+      "accents": "Accents and stress",
+      "punctuation": "Punctuation marks",
+      "comprehension": "Reading comprehension",
+      "text_types": "Types of text",
+      "spelling_specific": "Specific spelling rules"
     }
   },
   "science": {

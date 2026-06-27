@@ -73,6 +73,17 @@ export function GameProvider({ children }: { children: ReactNode }) {
     [],
   );
 
+  const removeFailedExerciseIds = useCallback((ids: string[]) => {
+    const toRemove = new Set(ids);
+    setState((s) => ({
+      ...s,
+      progress: {
+        ...s.progress,
+        failedExerciseIds: s.progress.failedExerciseIds.filter((id) => !toRemove.has(id)),
+      },
+    }));
+  }, []);
+
   const value = useMemo<GameStore>(
     () => ({
       state,
@@ -84,6 +95,7 @@ export function GameProvider({ children }: { children: ReactNode }) {
       clearData,
       hasProfile: state.profile.avatarId !== null,
       consolidateSession,
+      removeFailedExerciseIds,
     }),
     [
       state,
@@ -94,6 +106,7 @@ export function GameProvider({ children }: { children: ReactNode }) {
       setProfile,
       clearData,
       consolidateSession,
+      removeFailedExerciseIds,
     ],
   );
 

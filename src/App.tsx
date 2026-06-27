@@ -44,7 +44,7 @@ type Route =
 export function App() {
   const { t, i18n } = useTranslation(["common", "content", "backpack"]);
   const store = useGameStore();
-  const { state } = store;
+  const { state, removeFailedExerciseIds } = store;
 
   const [route, setRoute] = useState<Route>({ name: "home" });
   // materia seleccionada en flujos de 2 niveles (subjects / print)
@@ -76,14 +76,6 @@ export function App() {
 
   const subjectVMs = useMemo<SubjectVM[]>(() => buildSubjectVMs(t), [t]);
 
-  const masteredByTopic = useMemo(() => {
-    const result: Record<string, number> = {};
-    for (const id of state.progress.correctExerciseIds) {
-      const ex = exerciseById(id);
-      if (ex) result[ex.tema] = (result[ex.tema] ?? 0) + 1;
-    }
-    return result;
-  }, [state.progress.correctExerciseIds]);
 
   const dailyGoalDoneToday = state.dailyGoal.lastDoneDate === localDateKey();
   const streakVariant = streakDisplayVariant(state.streak);
@@ -131,12 +123,17 @@ export function App() {
         }}
         failedCount={state.progress.failedExerciseIds.length}
         onReview={() => {
+          const allIds = state.progress.failedExerciseIds;
+          const staleIds = allIds.filter((id) => exerciseById(id) === undefined);
+          if (staleIds.length > 0) removeFailedExerciseIds(staleIds);
+          const validIds = allIds.filter((id) => exerciseById(id) !== undefined);
+          if (validIds.length === 0) return;
           setRoute({
             name: "session",
             materia: "matematicas",
             tema: null,
             isDailyGoal: false,
-            prebuilt: buildReviewSession(state.progress.failedExerciseIds, DEFAULT_SESSION_LENGTH, Math.random),
+            prebuilt: buildReviewSession(validIds, DEFAULT_SESSION_LENGTH, Math.random),
           });
         }}
         onPrint={() => {
@@ -210,7 +207,7 @@ export function App() {
           .map((tp) => ({
             id: tp.id,
             title: tp.title,
-            mastered: masteredByTopic[tp.id] ?? 0,
+            mastered: state.progress.correctByTopic[tp.id] ?? 0,
             total: exercisesByTopic(s.id, tp.id).length,
           })),
       }));

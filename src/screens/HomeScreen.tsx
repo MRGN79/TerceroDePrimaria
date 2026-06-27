@@ -96,7 +96,7 @@ export function HomeScreen({
         <Button variant="secondary" size="lg" onClick={onChooseSubject}>
           {t("home:play.chooseSubject")}
         </Button>
-        {failedCount > 0 && (
+        {failedCount > 0 && onReview && (
           <Button variant="secondary" size="lg" onClick={onReview}>
             <Icon name="retry" size={26} aria-hidden="true" />
             {t("home:review.button", { count: failedCount })}

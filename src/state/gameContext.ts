@@ -19,6 +19,7 @@ export interface GameStore {
   clearData: () => void;
   hasProfile: boolean;
   consolidateSession: (c: SessionConsolidation) => ConsolidationResult;
+  removeFailedExerciseIds: (ids: string[]) => void;
 }
 
 export const GameContext = createContext<GameStore | null>(null);
