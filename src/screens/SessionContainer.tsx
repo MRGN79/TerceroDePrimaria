@@ -66,6 +66,7 @@ export function SessionContainer({
         correctBySubject: summary.correctBySubject,
         subjectsTried: summary.subjectsTried,
         newlyCorrectIds: summary.newlyCorrectIds,
+        newlyFailedIds: summary.failedIds,
         isDailyGoal,
       });
       setResult(r);

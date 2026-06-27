@@ -21,8 +21,10 @@ type HomeScreenProps = {
   streakDays?: number;
   streakVariant?: "normal" | "empty" | "reset";
   dailyGoalDone?: boolean;
+  failedCount?: number;
   onStartDailyGoal?: () => void;
   onChooseSubject?: () => void;
+  onReview?: () => void;
   onPrint?: () => void;
   onBackpack?: () => void;
   onSettings?: () => void;
@@ -34,8 +36,10 @@ export function HomeScreen({
   streakDays = 0,
   streakVariant = "empty",
   dailyGoalDone = false,
+  failedCount = 0,
   onStartDailyGoal,
   onChooseSubject,
+  onReview,
   onPrint,
   onBackpack,
   onSettings,
@@ -92,6 +96,12 @@ export function HomeScreen({
         <Button variant="secondary" size="lg" onClick={onChooseSubject}>
           {t("home:play.chooseSubject")}
         </Button>
+        {failedCount > 0 && (
+          <Button variant="secondary" size="lg" onClick={onReview}>
+            <Icon name="retry" size={26} aria-hidden="true" />
+            {t("home:review.button", { count: failedCount })}
+          </Button>
+        )}
         <Button variant="secondary" size="lg" onClick={onPrint}>
           {t("home:print.enter")}
         </Button>

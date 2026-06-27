@@ -23,5 +23,8 @@
   },
   "print": {
     "enter": "To print"
+  },
+  "review": {
+    "button": "Practise mistakes ({{count}})"
   }
 }
