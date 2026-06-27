@@ -10,8 +10,6 @@ Items anotados para implementar en el futuro, ordenados por aparición. No impli
 
 - **Añadir temas a Inglés** — "body parts", "food & drink", "classroom", "days & months".
 
-- **Ampliar Lengua** — los temas actuales son morfología y ortografía básica; faltan lectura comprensiva, tipos de texto y ortografía de palabras concretas.
-
 ---
 
 ## Funcionalidad
