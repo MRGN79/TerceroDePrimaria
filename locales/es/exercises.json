@@ -2585,6 +2585,444 @@
         "r2": ".",
         "r3": "?"
       }
+    },
+    "read": {
+      "q1": {
+        "prompt": "¿Qué es la idea principal de un texto?",
+        "a": "El primer párrafo",
+        "b": "La información más importante del texto",
+        "c": "El título del texto"
+      },
+      "q2": {
+        "prompt": "Los detalles de un texto apoyan la idea principal."
+      },
+      "q3": {
+        "prompt": "¿Qué hacemos cuando resumimos un texto?",
+        "a": "Lo copiamos tal cual",
+        "b": "Contamos solo las ideas más importantes",
+        "c": "Lo ilustramos con dibujos"
+      },
+      "q4": {
+        "prompt": "El narrador de un cuento es siempre el mismo que el protagonista."
+      },
+      "q5": {
+        "prompt": "¿Qué es una inferencia?",
+        "a": "Copiar una frase del texto",
+        "b": "Deducir algo que no está escrito directamente",
+        "c": "Buscar palabras desconocidas"
+      },
+      "q6": {
+        "prompt": "El escenario de un cuento es el lugar y el tiempo donde ocurre la historia."
+      },
+      "q7": {
+        "prompt": "¿Cómo se llama la parte del cuento donde empieza el problema?",
+        "a": "Desenlace",
+        "b": "Nudo",
+        "c": "Introducción"
+      },
+      "q8": {
+        "prompt": "El desenlace es el principio del cuento."
+      },
+      "q9": {
+        "prompt": "¿Para qué sirve releer un párrafo que no entendemos?",
+        "a": "Para escribirlo de nuevo",
+        "b": "Para comprenderlo mejor",
+        "c": "Para copiarlo"
+      },
+      "q10": {
+        "prompt": "La causa explica por qué ocurre algo."
+      },
+      "q11": {
+        "prompt": "¿Qué pregunta respondemos al buscar la idea principal?",
+        "a": "¿Cómo se llaman los personajes?",
+        "b": "¿De qué trata principalmente el texto?",
+        "c": "¿Cuándo ocurre la historia?"
+      },
+      "q12": {
+        "prompt": "Subrayar las palabras clave ayuda a entender mejor un texto."
+      },
+      "q13": {
+        "prompt": "¿Qué elemento del cuento indica cuándo y dónde ocurre la historia?",
+        "a": "El nudo",
+        "b": "El escenario o marco",
+        "c": "El desenlace"
+      },
+      "q14": {
+        "prompt": "La secuencia es el orden en que ocurren los hechos."
+      },
+      "q15": {
+        "prompt": "¿Qué significa «predecir» en la lectura?",
+        "a": "Resumir el texto",
+        "b": "Imaginar qué puede pasar después",
+        "c": "Buscar el autor"
+      },
+      "q16": {
+        "prompt": "Para entender el significado de una palabra desconocida podemos fijarnos en las palabras de alrededor."
+      },
+      "q17": {
+        "prompt": "¿Qué pregunta te ayuda a encontrar la causa de algo?",
+        "a": "¿Quién?",
+        "b": "¿Por qué?",
+        "c": "¿Dónde?"
+      },
+      "q18": {
+        "prompt": "Las preguntas ¿quién?, ¿qué?, ¿dónde? y ¿cuándo? ayudan a comprender los hechos principales."
+      },
+      "q19": {
+        "prompt": "¿Cómo se llama quien escribe un libro?",
+        "a": "El narrador",
+        "b": "El protagonista",
+        "c": "El autor"
+      },
+      "q20": {
+        "prompt": "Un texto puede tener solo una idea principal pero varios detalles que la apoyan."
+      },
+      "q21": {
+        "prompt": "¿Cómo se llama la persona que cuenta la historia dentro del cuento?",
+        "a": "El autor",
+        "b": "El narrador",
+        "c": "El lector"
+      },
+      "q22": {
+        "prompt": "Hacerse preguntas mientras leemos ayuda a comprender mejor el texto."
+      },
+      "q23": {
+        "prompt": "¿Qué significa que dos hechos tienen relación de causa y efecto?",
+        "a": "Que ocurren al mismo tiempo",
+        "b": "Que uno provoca al otro",
+        "c": "Que son muy similares"
+      },
+      "q24": {
+        "prompt": "Los textos escritos en verso forman poemas."
+      },
+      "q25": {
+        "prompt": "En «Llovió mucho y por eso se canceló el partido», ¿cuál es el efecto?",
+        "a": "Llovió mucho",
+        "b": "Se canceló el partido",
+        "c": "Hubo tormenta"
+      },
+      "q26": {
+        "prompt": "Un personaje secundario es el más importante del cuento."
+      },
+      "q27": {
+        "prompt": "¿Qué hacemos cuando comparamos dos textos?",
+        "a": "Los leemos por separado sin relacionarlos",
+        "b": "Buscamos semejanzas y diferencias",
+        "c": "Los resumimos en uno solo"
+      },
+      "q28": {
+        "prompt": "El título de un texto normalmente nos adelanta de qué va a tratar."
+      },
+      "q29": {
+        "prompt": "¿Qué es un «hecho» en un texto?",
+        "a": "Una opinión del autor",
+        "b": "Algo que ocurrió o es comprobable",
+        "c": "Una predicción sobre el futuro"
+      },
+      "q30": {
+        "prompt": "Una opinión es un punto de vista personal, no un hecho comprobable."
+      },
+      "q31": {
+        "prompt": "Si el texto dice «Juan llegó tarde y todos lo miraron», ¿qué podemos inferir?",
+        "a": "Juan estaba enfermo",
+        "b": "Juan llegó después que los demás",
+        "c": "Juan no quería estar allí"
+      },
+      "q32": {
+        "prompt": "Leer el título y observar las imágenes antes de leer el texto ayuda a anticipar el contenido."
+      }
+    },
+    "text": {
+      "q1": {
+        "prompt": "Un cuento es un texto narrativo que cuenta una historia real o inventada."
+      },
+      "q2": {
+        "prompt": "¿Qué tipo de texto es una receta de cocina?",
+        "a": "Narrativo",
+        "b": "Instructivo",
+        "c": "Poético"
+      },
+      "q3": {
+        "prompt": "Un poema se escribe en prosa, igual que una novela."
+      },
+      "q4": {
+        "prompt": "¿Cuál es el objetivo de un texto descriptivo?",
+        "a": "Contar una historia",
+        "b": "Explicar cómo se hace algo",
+        "c": "Explicar cómo es algo o alguien"
+      },
+      "q5": {
+        "prompt": "Una noticia responde a las preguntas ¿quién?, ¿qué?, ¿dónde? y ¿cuándo?."
+      },
+      "q6": {
+        "prompt": "¿Qué tipo de texto usa verbos en imperativo como «mezcla» o «añade»?",
+        "a": "Narrativo",
+        "b": "Instructivo",
+        "c": "Poético"
+      },
+      "q7": {
+        "prompt": "La fábula es un cuento con moraleja en el que suelen hablar los animales."
+      },
+      "q8": {
+        "prompt": "¿Qué tipo de texto es un poema?",
+        "a": "Expositivo",
+        "b": "Instructivo",
+        "c": "Poético o lírico"
+      },
+      "q9": {
+        "prompt": "Una carta siempre tiene un saludo al principio y una despedida al final."
+      },
+      "q10": {
+        "prompt": "¿Cuál es la parte del cuento donde se presenta el problema?",
+        "a": "La introducción",
+        "b": "El nudo",
+        "c": "El desenlace"
+      },
+      "q11": {
+        "prompt": "Un texto expositivo da información objetiva sobre un tema."
+      },
+      "q12": {
+        "prompt": "¿Qué tipo de texto cuenta la vida de una persona famosa?",
+        "a": "Una receta",
+        "b": "Una noticia",
+        "c": "Una biografía"
+      },
+      "q13": {
+        "prompt": "Las instrucciones de montaje de un juguete son un texto instructivo."
+      },
+      "q14": {
+        "prompt": "¿Qué elemento distingue a un poema de un texto en prosa?",
+        "a": "Los párrafos",
+        "b": "Los versos y la rima",
+        "c": "Los capítulos"
+      },
+      "q15": {
+        "prompt": "El texto argumentativo defiende una idea con razones."
+      },
+      "q16": {
+        "prompt": "¿Cómo se llama el texto que describe los pasos para realizar algo?",
+        "a": "Narrativo",
+        "b": "Instructivo o procedimental",
+        "c": "Poético"
+      },
+      "q17": {
+        "prompt": "En un cuento, el protagonista es el personaje principal."
+      },
+      "q18": {
+        "prompt": "¿Qué tipo de texto es una entrada de enciclopedia?",
+        "a": "Expositivo o informativo",
+        "b": "Narrativo",
+        "c": "Instructivo"
+      },
+      "q19": {
+        "prompt": "Una obra de teatro está pensada para ser representada en el escenario."
+      },
+      "q20": {
+        "prompt": "¿Qué tipo de texto encontramos habitualmente en el periódico?",
+        "a": "Cuentos",
+        "b": "Noticias",
+        "c": "Recetas"
+      },
+      "q21": {
+        "prompt": "La leyenda es una historia que mezcla elementos reales e imaginarios."
+      },
+      "q22": {
+        "prompt": "¿Cuál de estos textos tiene estrofas y versos?",
+        "a": "Una noticia",
+        "b": "Una receta",
+        "c": "Un poema"
+      },
+      "q23": {
+        "prompt": "Una descripción explica las características de una persona, animal, lugar o cosa."
+      },
+      "q24": {
+        "prompt": "¿Qué tipo de texto es el diario personal?",
+        "a": "Instructivo",
+        "b": "Narrativo, escrito en primera persona",
+        "c": "Poético"
+      },
+      "q25": {
+        "prompt": "Los textos publicitarios tienen como objetivo convencer o persuadir."
+      },
+      "q26": {
+        "prompt": "¿Qué parte del cuento cierra la historia y resuelve el problema?",
+        "a": "La introducción",
+        "b": "El nudo",
+        "c": "El desenlace"
+      },
+      "q27": {
+        "prompt": "Un texto informativo usa un lenguaje claro y objetivo."
+      },
+      "q28": {
+        "prompt": "¿Qué tipo de texto es «Caperucita Roja»?",
+        "a": "Una noticia",
+        "b": "Un cuento",
+        "c": "Una receta"
+      },
+      "q29": {
+        "prompt": "La moraleja es la enseñanza o lección que transmite una fábula."
+      },
+      "q30": {
+        "prompt": "¿Cómo se llama el conjunto de versos dentro de un poema?",
+        "a": "Párrafo",
+        "b": "Estrofa",
+        "c": "Capítulo"
+      },
+      "q31": {
+        "prompt": "El narrador en tercera persona cuenta la historia sin participar en ella."
+      },
+      "q32": {
+        "prompt": "¿Para qué sirve el índice al inicio de un libro?",
+        "a": "Para decorar la portada",
+        "b": "Para encontrar los temas o capítulos fácilmente",
+        "c": "Para resumir la historia"
+      }
+    },
+    "spell": {
+      "q1": {
+        "prompt": "¿Cuál de estas palabras lleva «h»?",
+        "a": "ola (ola del mar)",
+        "b": "hola (saludo)",
+        "c": "ala (de pájaro)"
+      },
+      "q2": {
+        "prompt": "La «h» al principio de palabra en español no se pronuncia."
+      },
+      "q3": {
+        "prompt": "¿Cómo se escribe la expresión que significa «espera y veremos»?",
+        "a": "haber",
+        "b": "aver",
+        "c": "a ver"
+      },
+      "q4": {
+        "prompt": "«Hola» y «ola» son palabras distintas que suenan igual."
+      },
+      "q5": {
+        "prompt": "¿Cuál de estas palabras está mal escrita?",
+        "a": "hueso",
+        "b": "uevo",
+        "c": "huevo"
+      },
+      "q6": {
+        "prompt": "La «rr» solo puede aparecer entre dos vocales dentro de una palabra."
+      },
+      "q7": {
+        "prompt": "¿Cómo se escribe el recipiente para cocinar?",
+        "a": "olla",
+        "b": "oya",
+        "c": "ollya"
+      },
+      "q8": {
+        "prompt": "«Ratón» lleva «r» sencilla al principio porque esa posición siempre suena fuerte."
+      },
+      "q9": {
+        "prompt": "¿Qué sonido hace la «g» antes de «e» o «i»?",
+        "a": "El mismo que en «gato»",
+        "b": "Un sonido suave",
+        "c": "El sonido fuerte de la «j»"
+      },
+      "q10": {
+        "prompt": "«Gitano» y «jinete» tienen el mismo sonido al principio aunque se escriben diferente."
+      },
+      "q11": {
+        "prompt": "¿Cómo se escribe el sonido /k/ antes de «e»?",
+        "a": "ce (como en «ceja»)",
+        "b": "que (como en «queso»)",
+        "c": "ke (como en «ketchup»)"
+      },
+      "q12": {
+        "prompt": "La combinación «qu» aparece antes de «e» y de «i» para hacer el sonido /k/."
+      },
+      "q13": {
+        "prompt": "¿Cuál de estas palabras está bien escrita?",
+        "a": "jeografía",
+        "b": "geografía",
+        "c": "xeografía"
+      },
+      "q14": {
+        "prompt": "La palabra «llorar» se escribe con «ll», no con «y»."
+      },
+      "q15": {
+        "prompt": "¿Cuándo se usa «r» sencilla entre vocales?",
+        "a": "Nunca se usa entre vocales",
+        "b": "Siempre que va entre vocales",
+        "c": "Cuando el sonido es suave, como en «pero» (but)"
+      },
+      "q16": {
+        "prompt": "«Carro» se escribe con «rr» porque el sonido fuerte está entre dos vocales."
+      },
+      "q17": {
+        "prompt": "¿Cómo se escribe la forma del pretérito imperfecto de «hablar»?",
+        "a": "ablaba",
+        "b": "hablaba",
+        "c": "aglaba"
+      },
+      "q18": {
+        "prompt": "«Jirafa» y «girafa» se pronuncian igual, pero solo «jirafa» está bien escrita."
+      },
+      "q19": {
+        "prompt": "¿Cuál es la forma correcta?",
+        "a": "girasol",
+        "b": "jirasol",
+        "c": "xirasol"
+      },
+      "q20": {
+        "prompt": "Después de «l», «n» y «s», la «r» sencilla tiene sonido fuerte, como en «alrededor»."
+      },
+      "q21": {
+        "prompt": "¿Cómo suena la «c» antes de «a», «o» y «u»?",
+        "a": "Como /s/",
+        "b": "Como /k/",
+        "c": "Como /z/"
+      },
+      "q22": {
+        "prompt": "La «ll» en palabras como «llave» y «lluvia» suena igual que la «y» en «yate» en la mayoría del español actual."
+      },
+      "q23": {
+        "prompt": "¿Cuál de estas palabras lleva «h» intercalada?",
+        "a": "aora",
+        "b": "ahora",
+        "c": "aóra"
+      },
+      "q24": {
+        "prompt": "«Rojo» lleva «r» sencilla al principio porque esa posición siempre tiene sonido fuerte."
+      },
+      "q25": {
+        "prompt": "¿Qué palabra está correctamente escrita?",
+        "a": "valla (cerca)",
+        "b": "balla",
+        "c": "balya"
+      },
+      "q26": {
+        "prompt": "La palabra «queso» lleva «qu» porque el sonido /k/ va antes de «e»."
+      },
+      "q27": {
+        "prompt": "¿Qué ocurre con el sonido /x/ (jota) antes de «e» o «i»?",
+        "a": "Solo se escribe con «j»",
+        "b": "Puede escribirse con «j» o «g»: «jefe» y «gente»",
+        "c": "Solo se escribe con «g»"
+      },
+      "q28": {
+        "prompt": "«Jeneral» es una forma incorrecta de escribir «general»."
+      },
+      "q29": {
+        "prompt": "¿Cuál de estas palabras lleva «ll»?",
+        "a": "raya",
+        "b": "rayar",
+        "c": "llave"
+      },
+      "q30": {
+        "prompt": "«Enredar» lleva «r» sencilla aunque suene fuerte, porque va justo después de «n»."
+      },
+      "q31": {
+        "prompt": "¿Cómo se escribe el sonido /k/ antes de «i»?",
+        "a": "ci",
+        "b": "ki",
+        "c": "qui"
+      },
+      "q32": {
+        "prompt": "Las palabras «hoja», «hierba» y «humo» llevan «h» al principio aunque no suene."
+      }
     }
   },
   "science": {
