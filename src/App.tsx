@@ -85,6 +85,30 @@ export function App() {
 
   const subjectVMs = useMemo<SubjectVM[]>(() => buildSubjectVMs(t), [t]);
 
+  const subjectProgress = useMemo(() => {
+    const triedSet = new Set(state.progress.subjectsTried);
+    return subjectVMs
+      .filter((s) => triedSet.has(s.id))
+      .map((s) => ({
+        id: s.id,
+        title: s.title,
+        colorToken: s.colorToken,
+        topics: buildTopicVMs(s.id, t)
+          .filter((tp) => !tp.soon)
+          .flatMap((tp) => {
+            const exercises = exercisesByTopic(s.id, tp.id);
+            if (exercises.every(esGenerado)) return [];
+            const total = exercises.length;
+            return [{
+              id: tp.id,
+              title: tp.title,
+              mastered: Math.min(state.progress.correctByTopic[tp.id] ?? 0, total),
+              total,
+            }];
+          }),
+      }))
+      .filter((s) => s.topics.length > 0);
+  }, [subjectVMs, state.progress.correctByTopic, state.progress.subjectsTried, t]);
 
   const dailyGoalDoneToday = state.dailyGoal.lastDoneDate === localDateKey();
   const streakVariant = streakDisplayVariant(state.streak);
@@ -204,29 +228,6 @@ export function App() {
         colorToken: b.colorToken,
       };
     });
-    const triedSet = new Set(state.progress.subjectsTried);
-    const subjectProgress = subjectVMs
-      .filter((s) => triedSet.has(s.id))
-      .map((s) => ({
-        id: s.id,
-        title: s.title,
-        colorToken: s.colorToken,
-        topics: buildTopicVMs(s.id, t)
-          .filter((tp) => !tp.soon)
-          .flatMap((tp) => {
-            const exercises = exercisesByTopic(s.id, tp.id);
-            // Generated topics (single template, infinite problems) have no
-            // fixed mastery ceiling — exclude them from the progress display.
-            if (exercises.length === 0 || exercises.every(esGenerado)) return [];
-            const total = exercises.length;
-            return [{
-              id: tp.id,
-              title: tp.title,
-              mastered: Math.min(state.progress.correctByTopic[tp.id] ?? 0, total),
-              total,
-            }];
-          }),
-      }));
     return (
       <BackpackScreen
         nickname={nickname}
