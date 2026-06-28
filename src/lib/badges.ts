@@ -27,7 +27,8 @@ const ALL_SUBJECT_IDS = ["matematicas", "lengua", "ciencias", "sociales", "ingle
 const bySubject = (s: PersistedState, id: string) =>
   s.progress.correctBySubject?.[id] ?? 0;
 
-// Unique static exercises answered correctly in a subject — replay-proof.
+// correctBySubject counts every correct answer including replays of the same
+// exercise; only unique static IDs in correctExerciseIds reflect real mastery.
 const bySubjectUnique = (s: PersistedState, materiaId: string): number =>
   s.progress.correctExerciseIds.filter(
     (id) => exerciseById(id)?.materia === materiaId,
@@ -247,7 +248,7 @@ export const BADGES: BadgeDef[] = [
  */
 export function newlyEarnedBadges(state: PersistedState): string[] {
   return BADGES.filter(
-    (b) => b.isEarned(state) && !(b.id in state.badges.unlocked),
+    (b) => !(b.id in state.badges.unlocked) && b.isEarned(state),
   ).map((b) => b.id);
 }
 

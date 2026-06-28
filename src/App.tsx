@@ -17,7 +17,7 @@ import { SessionContainer } from "@/screens/SessionContainer";
 import { PrintConfigScreen } from "@/screens/PrintConfigScreen";
 import { PrintSheetScreen } from "@/screens/PrintSheetScreen";
 import { useGameStore } from "@/state/gameContext";
-import type { Materia } from "@content/types";
+import { esGenerado, type Materia } from "@content/types";
 import {
   buildSubjectVMs,
   buildTopicVMs,
@@ -213,14 +213,18 @@ export function App() {
         colorToken: s.colorToken,
         topics: buildTopicVMs(s.id, t)
           .filter((tp) => !tp.soon)
-          .map((tp) => {
-            const total = exercisesByTopic(s.id, tp.id).length;
-            return {
+          .flatMap((tp) => {
+            const exercises = exercisesByTopic(s.id, tp.id);
+            // Generated topics (single template, infinite problems) have no
+            // fixed mastery ceiling — exclude them from the progress display.
+            if (exercises.length === 0 || exercises.every(esGenerado)) return [];
+            const total = exercises.length;
+            return [{
               id: tp.id,
               title: tp.title,
               mastered: Math.min(state.progress.correctByTopic[tp.id] ?? 0, total),
               total,
-            };
+            }];
           }),
       }));
     return (

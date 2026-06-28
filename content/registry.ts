@@ -20,6 +20,8 @@ export const ALL_EXERCISES: EjercicioAny[] = [
   ...cuarto,
 ];
 
+const EXERCISE_MAP = new Map(ALL_EXERCISES.map((e) => [e.id, e]));
+
 /**
  * Materias cuyo contenido NO sigue el selector de idioma de la UI (D-1, D-5):
  * Lengua e Inglés (idioma propio) y Natural Science (fija en inglés).
@@ -57,5 +59,5 @@ export function topicsWithContent(materia: Materia): string[] {
 }
 
 export function exerciseById(id: string): EjercicioAny | undefined {
-  return ALL_EXERCISES.find((e) => e.id === id);
+  return EXERCISE_MAP.get(id);
 }
