@@ -35,7 +35,7 @@ describe("condiciones de cada medalla", () => {
     expect(def.isEarned(stateWith((s) => (s.streak.longest = 7)))).toBe(true);
   });
 
-  it("tablesMaster: >= 10 aciertos en tablas de multiplicar", () => {
+  it("tablesMaster: >= 10 aciertos en tablas de multiplicar (generados, sin dedup)", () => {
     const def = badgeDef("tablesMaster")!;
     expect(def.isEarned(stateWith((s) => (s.progress.correctByTopic[TIMES_TABLES_TOPIC] = 9)))).toBe(false);
     expect(def.isEarned(stateWith((s) => (s.progress.correctByTopic[TIMES_TABLES_TOPIC] = 10)))).toBe(true);

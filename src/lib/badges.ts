@@ -7,6 +7,7 @@
  * (content:badge.<id>.name / .hint).
  */
 import type { PersistedState } from "./storage";
+import { exerciseById } from "@content/registry";
 
 export interface BadgeDef {
   id: string;
@@ -25,6 +26,12 @@ const ALL_SUBJECT_IDS = ["matematicas", "lengua", "ciencias", "sociales", "ingle
 
 const bySubject = (s: PersistedState, id: string) =>
   s.progress.correctBySubject?.[id] ?? 0;
+
+// Unique static exercises answered correctly in a subject — replay-proof.
+const bySubjectUnique = (s: PersistedState, materiaId: string): number =>
+  s.progress.correctExerciseIds.filter(
+    (id) => exerciseById(id)?.materia === materiaId,
+  ).length;
 
 export const BADGES: BadgeDef[] = [
   /* ---- Primera sesión ---- */
@@ -186,35 +193,35 @@ export const BADGES: BadgeDef[] = [
     nameKey: "content:badge.math10.name",
     hintKey: "content:badge.math10.hint",
     colorToken: "--tdp-subject-math",
-    isEarned: (s) => bySubject(s, "matematicas") >= 10,
+    isEarned: (s) => bySubjectUnique(s, "matematicas") >= 10,
   },
   {
     id: "spanish10",
     nameKey: "content:badge.spanish10.name",
     hintKey: "content:badge.spanish10.hint",
     colorToken: "--tdp-subject-spanish",
-    isEarned: (s) => bySubject(s, "lengua") >= 10,
+    isEarned: (s) => bySubjectUnique(s, "lengua") >= 10,
   },
   {
     id: "science10",
     nameKey: "content:badge.science10.name",
     hintKey: "content:badge.science10.hint",
     colorToken: "--tdp-subject-science",
-    isEarned: (s) => bySubject(s, "ciencias") >= 10,
+    isEarned: (s) => bySubjectUnique(s, "ciencias") >= 10,
   },
   {
     id: "social10",
     nameKey: "content:badge.social10.name",
     hintKey: "content:badge.social10.hint",
     colorToken: "--tdp-subject-social",
-    isEarned: (s) => bySubject(s, "sociales") >= 10,
+    isEarned: (s) => bySubjectUnique(s, "sociales") >= 10,
   },
   {
     id: "english10",
     nameKey: "content:badge.english10.name",
     hintKey: "content:badge.english10.hint",
     colorToken: "--tdp-subject-english",
-    isEarned: (s) => bySubject(s, "ingles") >= 10,
+    isEarned: (s) => bySubjectUnique(s, "ingles") >= 10,
   },
 
   /* ---- Misión del día ---- */

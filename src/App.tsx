@@ -52,8 +52,8 @@ export function App() {
   const [includeSolutions, setIncludeSolutions] = useState(true);
   const [printItems, setPrintItems] = useState<PrintItem[]>([]);
 
-  // Elimina al montar IDs de ejercicios fallidos que ya no existen en el
-  // catálogo (ejercicios retirados entre versiones).
+  // Los IDs de ejercicios retirados entre versiones quedan huérfanos en
+  // localStorage y corrompen el pool de repaso indefinidamente si no se limpian.
   useEffect(() => {
     const staleIds = state.progress.failedExerciseIds.filter(
       (id) => exerciseById(id) === undefined,
