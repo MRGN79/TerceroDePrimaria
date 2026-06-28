@@ -1,0 +1,28 @@
+{
+  "title": "Handwriting",
+  "subtitle": "Jokes to practise",
+  "step": {
+    "read": "Read the joke",
+    "trace": "Trace with your pencil",
+    "write": "Write it on your own"
+  },
+  "footer": "What great handwriting!",
+  "button": "Handwriting sheet",
+  "joke": {
+    "1":  "Why did the maths book look sad? It had too many problems.",
+    "2":  "What do you call a fish with no eyes? A fsh.",
+    "3":  "What do you call cheese that is not yours? Nacho cheese.",
+    "4":  "Why did the tomato turn red? It saw the salad dressing.",
+    "5":  "What do you call a sleeping dinosaur? A dino-snore.",
+    "6":  "What do you call a bear with no teeth? A gummy bear.",
+    "7":  "Why did the scarecrow win an award? He was outstanding in his field.",
+    "8":  "What do you get from a pampered cow? Spoiled milk.",
+    "9":  "Why can a bicycle not stand on its own? It is two-tired.",
+    "10": "What has ears but cannot hear? A cornfield.",
+    "11": "Why did the clock go to the doctor? It was ticking.",
+    "12": "What do elves learn in school? The elf-abet.",
+    "13": "Why do cows wear bells? Because their horns do not work.",
+    "14": "What do you call a cat that gets everything it wants? Purr-suasive.",
+    "15": "Why did the bicycle fall over? It was two-tired of standing up."
+  }
+}

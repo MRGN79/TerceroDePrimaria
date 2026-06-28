@@ -18,6 +18,7 @@ type PrintConfigScreenProps = {
   onToggleSolutions: (on: boolean) => void;
   onCreate: () => void;
   canCreate: boolean;
+  onCalligraphy: () => void;
   onBack: () => void;
   onHome: () => void;
 };
@@ -32,10 +33,11 @@ export function PrintConfigScreen({
   onToggleSolutions,
   onCreate,
   canCreate,
+  onCalligraphy,
   onBack,
   onHome,
 }: PrintConfigScreenProps) {
-  const { t } = useTranslation(["print", "content"]);
+  const { t } = useTranslation(["print", "content", "calligraphy"]);
   const showingTopics = topics !== null;
 
   return (
@@ -61,6 +63,13 @@ export function PrintConfigScreen({
               </li>
             ))}
           </ul>
+          <div className={styles.calligraphySection}>
+            <h2 className={styles.calligraphyTitle}>{t("calligraphy:title")}</h2>
+            <p className={styles.calligraphySub}>{t("calligraphy:subtitle")}</p>
+            <Button variant="secondary" size="lg" onClick={onCalligraphy}>
+              {t("calligraphy:button")}
+            </Button>
+          </div>
         </>
       ) : (
         <>

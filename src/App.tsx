@@ -16,6 +16,8 @@ import { SettingsScreen } from "@/screens/SettingsScreen";
 import { SessionContainer } from "@/screens/SessionContainer";
 import { PrintConfigScreen } from "@/screens/PrintConfigScreen";
 import { PrintSheetScreen } from "@/screens/PrintSheetScreen";
+import { CalligraphySheet } from "@/screens/CalligraphySheet";
+import { pickCalligraphyJokes } from "@/lib/calligraphy";
 import { useGameStore } from "@/state/gameContext";
 import { esGenerado, type Materia } from "@content/types";
 import {
@@ -39,7 +41,8 @@ type Route =
   | { name: "settings" }
   | { name: "editProfile" }
   | { name: "print" }
-  | { name: "printSheet"; materia: Materia; tema: string | null };
+  | { name: "printSheet"; materia: Materia; tema: string | null }
+  | { name: "calligraphySheet"; jokeKeys: string[] };
 
 function formatBadgeDate(dateKey: string, lang: "en" | "es"): string {
   const [y, m, d] = dateKey.split("-").map(Number);
@@ -316,7 +319,20 @@ export function App() {
           setRoute({ name: "printSheet", materia: selectedSubject, tema: null });
         }}
         canCreate={selectedSubject !== null}
+        onCalligraphy={() =>
+          setRoute({ name: "calligraphySheet", jokeKeys: pickCalligraphyJokes(3, Math.random) })
+        }
         onBack={() => (selectedSubject ? setSelectedSubject(null) : goHome())}
+        onHome={goHome}
+      />
+    );
+  }
+
+  if (route.name === "calligraphySheet") {
+    return (
+      <CalligraphySheet
+        jokeKeys={route.jokeKeys}
+        onBack={() => setRoute({ name: "print" })}
         onHome={goHome}
       />
     );
