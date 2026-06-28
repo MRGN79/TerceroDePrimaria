@@ -112,7 +112,9 @@ export function checkNumericAnswer(prepared: PreparedExercise, value: string): b
   if (!prepared.math) return false;
   const trimmed = value.trim();
   if (trimmed === "") return false;
-  return Number(trimmed) === prepared.math.answer;
+  // Number() accepts '1e2', '0x1F', etc. — only plain integers are valid answers.
+  const n = /^-?\d+$/.test(trimmed) ? Number(trimmed) : NaN;
+  return n === prepared.math.answer;
 }
 
 /**

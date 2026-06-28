@@ -1,7 +1,7 @@
 {
   "name": "tercerodeprimaria",
   "private": true,
-  "version": "0.1.4",
+  "version": "0.1.5",
   "type": "module",
   "description": "Web de ejercicios y juegos educativos para 3º de primaria (8-9 años). 100% estática, sin backend.",
   "scripts": {
@@ -18,8 +18,7 @@
     "i18next-browser-languagedetector": "^8.0.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-i18next": "^15.1.0",
-    "react-router-dom": "^6.28.0"
+    "react-i18next": "^15.1.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",

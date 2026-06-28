@@ -145,7 +145,7 @@ export function parseState(raw: unknown): PersistedState | null {
         typeof streak.lastPlayedDate === "string" ? streak.lastPlayedDate : null,
     },
     stars: {
-      total: typeof stars.total === "number" ? stars.total : 0,
+      total: typeof stars.total === "number" && stars.total >= 0 ? Math.floor(stars.total) : 0,
     },
     badges: { unlocked },
     dailyGoal: {

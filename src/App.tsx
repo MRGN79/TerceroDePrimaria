@@ -110,6 +110,15 @@ export function App() {
       .filter((s) => s.topics.length > 0);
   }, [subjectVMs, state.progress.correctByTopic, state.progress.subjectsTried, t]);
 
+  const badgeVMs = useMemo(
+    () =>
+      BADGES.map((b) => {
+        const unlockedOn = state.badges.unlocked[b.id];
+        return { id: b.id, name: t(b.nameKey), locked: !unlockedOn, unlockedOn, colorToken: b.colorToken };
+      }),
+    [state.badges.unlocked, t],
+  );
+
   const dailyGoalDoneToday = state.dailyGoal.lastDoneDate === localDateKey();
   const streakVariant = streakDisplayVariant(state.streak);
   const nickname = state.profile.nicknameCustom
@@ -218,16 +227,6 @@ export function App() {
   }
 
   if (route.name === "backpack") {
-    const badgeVMs = BADGES.map((b) => {
-      const unlockedOn = state.badges.unlocked[b.id];
-      return {
-        id: b.id,
-        name: t(b.nameKey),
-        locked: !unlockedOn,
-        unlockedOn,
-        colorToken: b.colorToken,
-      };
-    });
     return (
       <BackpackScreen
         nickname={nickname}
