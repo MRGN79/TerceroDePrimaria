@@ -139,8 +139,8 @@ export function parseState(raw: unknown): PersistedState | null {
       nicknameCustom: typeof profile.nicknameCustom === "string" ? profile.nicknameCustom : null,
     },
     streak: {
-      current: typeof streak.current === "number" ? streak.current : 0,
-      longest: typeof streak.longest === "number" ? streak.longest : 0,
+      current: typeof streak.current === "number" && streak.current >= 0 ? Math.floor(streak.current) : 0,
+      longest: typeof streak.longest === "number" && streak.longest >= 0 ? Math.floor(streak.longest) : 0,
       lastPlayedDate:
         typeof streak.lastPlayedDate === "string" ? streak.lastPlayedDate : null,
     },
@@ -152,7 +152,7 @@ export function parseState(raw: unknown): PersistedState | null {
       lastDoneDate:
         typeof dailyGoal.lastDoneDate === "string" ? dailyGoal.lastDoneDate : null,
       totalCompleted:
-        typeof dailyGoal.totalCompleted === "number" ? dailyGoal.totalCompleted : 0,
+        typeof dailyGoal.totalCompleted === "number" && dailyGoal.totalCompleted >= 0 ? Math.floor(dailyGoal.totalCompleted) : 0,
     },
     progress: { correctByTopic, correctBySubject, subjectsTried, correctExerciseIds, failedExerciseIds },
   };

@@ -114,7 +114,7 @@ export function App() {
     () =>
       BADGES.map((b) => {
         const unlockedOn = state.badges.unlocked[b.id];
-        return { id: b.id, name: t(b.nameKey), locked: !unlockedOn, unlockedOn, colorToken: b.colorToken };
+        return { id: b.id, name: t(b.nameKey), hint: t(b.hintKey), locked: !unlockedOn, unlockedOn, colorToken: b.colorToken };
       }),
     [state.badges.unlocked, t],
   );
@@ -151,12 +151,14 @@ export function App() {
         dailyGoalDone={dailyGoalDoneToday}
         onStartDailyGoal={() => {
           const excludeIds = new Set(state.progress.correctExerciseIds);
+          const prebuilt = buildDailySession(3, Math.random, excludeIds);
+          if (prebuilt.length === 0) return;
           setRoute({
             name: "session",
             materia: "matematicas",
             tema: null,
             isDailyGoal: true,
-            prebuilt: buildDailySession(3, Math.random, excludeIds),
+            prebuilt,
           });
         }}
         onChooseSubject={() => {

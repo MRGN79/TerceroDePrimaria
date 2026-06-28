@@ -10,6 +10,8 @@ import styles from "./Badge.module.css";
 
 type BadgeProps = {
   name: string;
+  /** pista de desbloqueo específica de la medalla */
+  hint?: string;
   locked?: boolean;
   /** fecha ya formateada por Frontend (i18n del locale) */
   unlockedOn?: string;
@@ -17,7 +19,7 @@ type BadgeProps = {
   colorToken?: string;
 };
 
-export function Badge({ name, locked = false, unlockedOn, colorToken }: BadgeProps) {
+export function Badge({ name, hint, locked = false, unlockedOn, colorToken }: BadgeProps) {
   const { t } = useTranslation("backpack");
 
   return (
@@ -41,7 +43,7 @@ export function Badge({ name, locked = false, unlockedOn, colorToken }: BadgePro
         <span className={styles.name}>{name}</span>
         <span className={styles.status}>
           {locked
-            ? t("badges.locked")
+            ? (hint ?? t("badges.locked"))
             : unlockedOn
               ? t("badges.unlockedOn", { date: unlockedOn })
               : null}

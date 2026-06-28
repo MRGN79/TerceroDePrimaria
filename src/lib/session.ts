@@ -77,18 +77,20 @@ export function buildSession(
     });
   }
 
-  // Mezcla: baraja todo; si no llega a length, repite generados con números nuevos.
+  // Mezcla: baraja todo; si no llega a length, repite generados (o vuelve a
+  // recorrer los estáticos cuando no hay generados).
   const shuffled = shuffle(pool, rng);
   const out: PreparedExercise[] = [];
   let i = 0;
-  while (out.length < length && (i < shuffled.length || generated.length > 0)) {
+  while (out.length < length) {
     const next =
       i < shuffled.length
         ? shuffled[i]
-        : generated[Math.floor(rng() * generated.length)];
+        : generated.length > 0
+          ? generated[Math.floor(rng() * generated.length)]
+          : shuffled[i % shuffled.length];
     out.push(prepareExercise(next, rng));
     i++;
-    if (i >= shuffled.length && generated.length === 0) break;
   }
   return out.slice(0, length);
 }

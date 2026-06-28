@@ -17,6 +17,7 @@ import styles from "./BackpackScreen.module.css";
 type BadgeVM = {
   id: string;
   name: string;
+  hint?: string;
   locked?: boolean;
   unlockedOn?: string;
   colorToken?: string;
@@ -93,6 +94,7 @@ export function BackpackScreen({
             <li key={b.id}>
               <Badge
                 name={b.name.startsWith("content:") ? t(b.name) : b.name}
+                hint={b.hint}
                 locked={b.locked}
                 unlockedOn={b.unlockedOn}
                 colorToken={b.colorToken}

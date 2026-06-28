@@ -34,7 +34,7 @@ export function OnboardingScreen({
   const handleCustomInput = (value: string) => {
     const filtered = value.replace(/[<>"&]/g, "").slice(0, MAX_NICKNAME_LENGTH);
     setNicknameCustom(filtered);
-    if (filtered) setNickname(null);
+    if (filtered.trim()) setNickname(null);
   };
 
   const handleChipSelect = (id: string) => {
