@@ -1,0 +1,28 @@
+{
+  "title": "Caligrafía",
+  "subtitle": "Chistes para practicar",
+  "step": {
+    "read": "Lee el chiste",
+    "trace": "Repasa con el lápiz",
+    "write": "Escríbelo tú solo"
+  },
+  "footer": "¡Qué buena letra tienes!",
+  "button": "Ficha de caligrafía",
+  "joke": {
+    "1":  "¿Qué le dice un semáforo a otro? ¡Que me estoy cambiando!",
+    "2":  "¿Qué le dice un pez a otro? ¡Nada!",
+    "3":  "¿Qué hace una abeja en el gimnasio? ¡Zumba!",
+    "4":  "¿Qué le dijo el cero al ocho? ¡Bonito cinturón!",
+    "5":  "¿Por qué el libro de mates estaba triste? Tenía muchos problemas.",
+    "6":  "¿Cómo se llama el primo del hielo? ¡El cubielo!",
+    "7":  "¿Qué le dice una iguana a su hermana gemela? ¡Somos iguanas!",
+    "8":  "¿Por qué el esqueleto no fue a la fiesta? No tenía cuerpo.",
+    "9":  "¿Por qué la escoba está contenta? ¡Ha barrido el examen!",
+    "10": "¿Cómo sabes que un elefante estuvo en tu nevera? Por las huellas en el flan.",
+    "11": "¿Qué hace una vaca en el espacio? ¡Muuucho frío!",
+    "12": "¿Por qué el tomate se puso rojo? Porque vio la ensalada.",
+    "13": "¿Qué le dijo el sol a la luna? ¡A ver si te mueves, que es de noche!",
+    "14": "¿Por qué los pájaros vuelan al sur? Porque caminar es muy lejos.",
+    "15": "¿Qué animal necesitas para un jersey? ¡Una oveja y dos agujas!"
+  }
+}

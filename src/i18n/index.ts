@@ -24,6 +24,7 @@ import enPrint from "@locales/en/print.json";
 import enSettings from "@locales/en/settings.json";
 import enContent from "@locales/en/content.json";
 import enExercises from "@locales/en/exercises.json";
+import enCalligraphy from "@locales/en/calligraphy.json";
 
 import esCommon from "@locales/es/common.json";
 import esHome from "@locales/es/home.json";
@@ -36,6 +37,7 @@ import esPrint from "@locales/es/print.json";
 import esSettings from "@locales/es/settings.json";
 import esContent from "@locales/es/content.json";
 import esExercises from "@locales/es/exercises.json";
+import esCalligraphy from "@locales/es/calligraphy.json";
 
 export const NAMESPACES = [
   "common",
@@ -49,6 +51,7 @@ export const NAMESPACES = [
   "settings",
   "content",
   "exercises",
+  "calligraphy",
 ] as const;
 
 const resources = {
@@ -64,6 +67,7 @@ const resources = {
     settings: enSettings,
     content: enContent,
     exercises: enExercises,
+    calligraphy: enCalligraphy,
   },
   es: {
     common: esCommon,
@@ -77,6 +81,7 @@ const resources = {
     settings: esSettings,
     content: esContent,
     exercises: esExercises,
+    calligraphy: esCalligraphy,
   },
 } as const;
 

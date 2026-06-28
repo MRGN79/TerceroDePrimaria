@@ -1,0 +1,127 @@
+.actions {
+  display: flex;
+  gap: var(--tdp-gap-touch, 12px);
+  margin-bottom: var(--tdp-space-5);
+}
+
+.sheet {
+  background: #fff;
+  color: #000;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: var(--tdp-space-6);
+  border-radius: var(--tdp-radius-md);
+  box-shadow: var(--tdp-shadow-md);
+}
+
+.sheetTitle {
+  color: #000;
+}
+
+.subtitle {
+  margin-top: var(--tdp-space-2);
+  font-weight: var(--tdp-font-weight-bold);
+}
+
+.fields {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--tdp-space-5);
+  margin-top: var(--tdp-space-3);
+}
+
+.jokeBlock {
+  margin-top: var(--tdp-space-6);
+  padding-top: var(--tdp-space-4);
+  border-top: 1px dashed #ccc;
+}
+
+.stepLabel {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #999;
+  margin: 0 0 var(--tdp-space-1);
+}
+
+.normalText {
+  font-size: 1.35rem;
+  line-height: 1.6;
+  color: #000;
+  margin: 0 0 var(--tdp-space-4);
+}
+
+/* Texto punteado: el degradado de puntos queda recortado a la silueta del texto */
+.traceText {
+  font-size: 1.35rem;
+  line-height: 1.6;
+  color: transparent;
+  background-image: radial-gradient(circle, rgba(0, 0, 0, 0.45) 1.5px, transparent 1.5px);
+  background-size: 5px 5px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+  margin: 0 0 var(--tdp-space-4);
+}
+
+.writeLine {
+  border-bottom: 1.5px solid #bbb;
+  height: 12mm;
+  margin-bottom: 2px;
+}
+
+@media print {
+  .sheet {
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0;
+    max-width: none;
+  }
+
+  .subtitle {
+    font-size: 11pt;
+  }
+
+  .fields {
+    gap: 24pt;
+  }
+
+  .jokeBlock {
+    border-top: 1pt solid #000;
+    margin-top: 14pt;
+    padding-top: 8pt;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .stepLabel {
+    font-size: 8pt;
+    color: #555;
+    margin-bottom: 2pt;
+  }
+
+  .normalText {
+    font-size: 16pt;
+    margin-bottom: 8pt;
+  }
+
+  .traceText {
+    font-size: 16pt;
+    color: transparent;
+    background-image: radial-gradient(circle, rgba(0, 0, 0, 0.4) 1pt, transparent 1pt);
+    background-size: 4pt 4pt;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    margin-bottom: 8pt;
+  }
+
+  .writeLine {
+    border-bottom: 1.5pt solid #000;
+    height: 12mm;
+    margin-bottom: 2pt;
+  }
+}

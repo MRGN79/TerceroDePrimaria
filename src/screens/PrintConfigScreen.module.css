@@ -26,3 +26,21 @@
   gap: var(--tdp-space-4);
   margin-top: var(--tdp-space-6);
 }
+
+.calligraphySection {
+  margin-top: var(--tdp-space-8);
+  padding-top: var(--tdp-space-6);
+  border-top: 1px solid var(--tdp-color-border, #e0e0e0);
+  display: flex;
+  flex-direction: column;
+  gap: var(--tdp-space-2);
+}
+
+.calligraphyTitle {
+  margin: 0;
+}
+
+.calligraphySub {
+  margin: 0;
+  color: var(--tdp-color-text-muted, #666);
+}
