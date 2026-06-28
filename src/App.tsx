@@ -41,6 +41,13 @@ type Route =
   | { name: "print" }
   | { name: "printSheet"; materia: Materia; tema: string | null };
 
+function formatBadgeDate(dateKey: string, lang: "en" | "es"): string {
+  const [y, m, d] = dateKey.split("-").map(Number);
+  const date = new Date(y, m - 1, d);
+  const locale = lang === "es" ? "es-ES" : "en-GB";
+  return new Intl.DateTimeFormat(locale, { day: "numeric", month: "long", year: "numeric" }).format(date);
+}
+
 export function App() {
   const { t, i18n } = useTranslation(["common", "content", "backpack"]);
   const store = useGameStore();
@@ -110,13 +117,23 @@ export function App() {
       .filter((s) => s.topics.length > 0);
   }, [subjectVMs, state.progress.correctByTopic, state.progress.subjectsTried, t]);
 
+  const currentLanguage: "en" | "es" =
+    (state.preferences.language ?? i18n.language) === "es" ? "es" : "en";
+
   const badgeVMs = useMemo(
     () =>
       BADGES.map((b) => {
         const unlockedOn = state.badges.unlocked[b.id];
-        return { id: b.id, name: t(b.nameKey), hint: t(b.hintKey), locked: !unlockedOn, unlockedOn, colorToken: b.colorToken };
+        return {
+          id: b.id,
+          name: t(b.nameKey),
+          hint: t(b.hintKey),
+          locked: !unlockedOn,
+          unlockedOn: unlockedOn ? formatBadgeDate(unlockedOn, currentLanguage) : undefined,
+          colorToken: b.colorToken,
+        };
       }),
-    [state.badges.unlocked, t],
+    [state.badges.unlocked, t, currentLanguage],
   );
 
   const dailyGoalDoneToday = state.dailyGoal.lastDoneDate === localDateKey();
@@ -124,8 +141,6 @@ export function App() {
   const nickname = state.profile.nicknameCustom
     ? state.profile.nicknameCustom
     : t(nicknameKey(state.profile.nicknameId));
-  const currentLanguage: "en" | "es" =
-    (state.preferences.language ?? i18n.language) === "es" ? "es" : "en";
 
   /* ------------------------------ onboarding ------------------------------ */
   if (!store.hasProfile) {
