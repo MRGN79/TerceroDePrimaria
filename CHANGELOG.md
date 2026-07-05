@@ -7,7 +7,7 @@ y el proyecto adhiere a [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## [Unreleased]
 
-### Added
+## [0.2.0] — 2026-07-05
 
 ### Changed
 
@@ -65,10 +65,6 @@ y el proyecto adhiere a [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 - El contador de estrellas en vivo durante una sesión redondeaba al alza
   con la primera media estrella (acierto tras reintento), mostrando una
   estrella completa antes de haberla ganado del todo.
-
-### Removed
-
-### Security
 
 ## [0.1.0] — 2026-06-25
 
