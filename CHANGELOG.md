@@ -11,6 +11,21 @@ y el proyecto adhiere a [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ### Changed
 
+- **Retos de 4º rebajados a currículo realista de 4º de primaria (decisión del
+  usuario):** sustituidos 31 ejercicios que cubrían contenido de 5º/6º o de ESO,
+  manteniendo id, tipo y opción correcta (solo cambian los textos en EN y ES):
+  - Mates (4): números negativos, área del triángulo, comparación de fracciones
+    con distinto denominador y ángulo cóncavo → mayor número de 4 cifras,
+    perímetro del triángulo, fracciones con igual denominador y ángulo completo.
+  - Lengua (11): voz pasiva, condicional, complementos directo/indirecto,
+    oraciones compuestas/subordinadas/concesivas, alegoría y pretérito perfecto
+    → diminutivos y aumentativos, imperfecto, demostrativos, posesivos,
+    polisemia, palabras compuestas, homófonos y sujeto/predicado.
+  - Inglés (15): present perfect, pasiva, reported speech, first/second
+    conditional, for/since y modales avanzados → presente continuo, there
+    is/are, plurales irregulares, 3ª persona del presente simple, have got,
+    la hora y vocabulario básico.
+  - Ciencias (1): pared celular vegetal vs. animal → aparato circulatorio.
 - **Alcance del MVP (decisión del usuario, gate QA — Opción B):** los "Retos de 4º"
   (conceptos de adelanto a 4º de primaria dentro de cada materia) se difieren a la
   siguiente ola como P1, post-MVP. El release inicial cubre el repaso de 3º; el
