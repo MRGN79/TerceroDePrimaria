@@ -18,6 +18,16 @@ y el proyecto adhiere a [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ### Fixed
 
+- El barajado de chistes de la hoja de caligrafía usaba `sort` con un
+  comparador aleatorio, que no produce una permutación uniforme; ahora
+  reutiliza el Fisher–Yates ya existente para el orden de ejercicios.
+- La "misión del día" y la insignia de racha podían quedarse mostrando el
+  estado de ayer si la pantalla de inicio se dejaba abierta cruzando la
+  medianoche, hasta que otra interacción forzara un re-render.
+- El contador de estrellas en vivo durante una sesión redondeaba al alza
+  con la primera media estrella (acierto tras reintento), mostrando una
+  estrella completa antes de haberla ganado del todo.
+
 ### Removed
 
 ### Security

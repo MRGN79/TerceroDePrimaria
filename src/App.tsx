@@ -88,6 +88,23 @@ export function App() {
       : "false";
   }, [state.preferences.reducedMotion]);
 
+  // Sin esto, "hecho hoy" y la racha se quedan calculados con la fecha del
+  // último render si la pantalla se deja abierta cruzando la medianoche.
+  const [today, setToday] = useState(() => localDateKey());
+  useEffect(() => {
+    let timerId: number;
+    const scheduleNext = () => {
+      const now = new Date();
+      const nextMidnight = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1, 0, 0, 1);
+      timerId = window.setTimeout(() => {
+        setToday(localDateKey());
+        scheduleNext();
+      }, nextMidnight.getTime() - now.getTime());
+    };
+    scheduleNext();
+    return () => window.clearTimeout(timerId);
+  }, []);
+
   const goHome = useCallback(() => {
     setSelectedSubject(null);
     setRoute({ name: "home" });
@@ -139,7 +156,7 @@ export function App() {
     [state.badges.unlocked, t, currentLanguage],
   );
 
-  const dailyGoalDoneToday = state.dailyGoal.lastDoneDate === localDateKey();
+  const dailyGoalDoneToday = state.dailyGoal.lastDoneDate === today;
   const streakVariant = streakDisplayVariant(state.streak);
   const nickname = state.profile.nicknameCustom
     ? state.profile.nicknameCustom
