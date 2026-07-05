@@ -7,10 +7,25 @@ y el proyecto adhiere a [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## [Unreleased]
 
-### Added
+## [0.2.0] — 2026-07-05
 
 ### Changed
 
+- **Retos de 4º rebajados a currículo realista de 4º de primaria (decisión del
+  usuario):** sustituidos 31 ejercicios que cubrían contenido de 5º/6º o de ESO,
+  manteniendo id, tipo y opción correcta (solo cambian los textos en EN y ES):
+  - Mates (4): números negativos, área del triángulo, comparación de fracciones
+    con distinto denominador y ángulo cóncavo → mayor número de 4 cifras,
+    perímetro del triángulo, fracciones con igual denominador y ángulo completo.
+  - Lengua (11): voz pasiva, condicional, complementos directo/indirecto,
+    oraciones compuestas/subordinadas/concesivas, alegoría y pretérito perfecto
+    → diminutivos y aumentativos, imperfecto, demostrativos, posesivos,
+    polisemia, palabras compuestas, homófonos y sujeto/predicado.
+  - Inglés (15): present perfect, pasiva, reported speech, first/second
+    conditional, for/since y modales avanzados → presente continuo, there
+    is/are, plurales irregulares, 3ª persona del presente simple, have got,
+    la hora y vocabulario básico.
+  - Ciencias (1): pared celular vegetal vs. animal → aparato circulatorio.
 - **Alcance del MVP (decisión del usuario, gate QA — Opción B):** los "Retos de 4º"
   (conceptos de adelanto a 4º de primaria dentro de cada materia) se difieren a la
   siguiente ola como P1, post-MVP. El release inicial cubre el repaso de 3º; el
@@ -18,9 +33,38 @@ y el proyecto adhiere a [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ### Fixed
 
-### Removed
-
-### Security
+- **Revisión completa del contenido (1.635 ejercicios):** corregidas 9 claves
+  de respuesta erróneas y 8 textos con imprecisiones factuales o ambigüedades:
+  - Emparejar con parejas cruzadas: `len-3-acc-012` (lápiz es llana, pájaro
+    esdrújula), `sci-3-states-016` (nieve=sólido, olor=gas), `sci-3-states-021`
+    (gas se comprime, sólido mantiene forma), `sci-3-skeleton-016` (columna
+    sostiene el cuerpo, fémur para caminar), `sci-3-forces-031` (chutar inicia
+    movimiento, frenar lo detiene), `sci-3-solar-026` (luna nueva no se ve,
+    luna llena entera iluminada), `eng-3-colors-002` (Circle=Shape; tercera
+    categoría ahora inequívoca: Seven=Number).
+  - Opción múltiple: `soc-3-spain-003` (el río más largo de España es el Tajo;
+    el Ebro sigue siendo el más largo íntegramente español en `soc-3-maps-040`)
+    y `soc-3-maps-010` (en España se enseñan 6 continentes, no 7).
+  - Textos: `mat-3-len-031` (era "piscina olímpica" con respuesta 25 m — una
+    olímpica mide 50 m), `mat-3-pv-006` (aclarado "cifra de las decenas" para
+    no contradecir a `mat-3-pv-009`), `sci-3-forces-026` (dos opciones decían
+    ambas "attracted" y el motor exige la pareja exacta), `sci-3-senses-030`
+    (el "mapa de la lengua" es un mito — sustituida por sabor del limón),
+    `sci-3-skeleton-029` y `sci-3-plants-032` (afirmaciones anatómica y
+    taxonómicamente dudosas reformuladas), `eng-3-animals-035` (las jorobas
+    del camello almacenan grasa, no agua), `eng-3-family-047` (el hijo de tu
+    primo no es tu "second cousin"), `eng-3-animals-051` (la araña también
+    produce seda — distractor cambiado), `c4-math-047` (el ángulo >180° en
+    España se llama cóncavo, no "reflejo").
+- El barajado de chistes de la hoja de caligrafía usaba `sort` con un
+  comparador aleatorio, que no produce una permutación uniforme; ahora
+  reutiliza el Fisher–Yates ya existente para el orden de ejercicios.
+- La "misión del día" y la insignia de racha podían quedarse mostrando el
+  estado de ayer si la pantalla de inicio se dejaba abierta cruzando la
+  medianoche, hasta que otra interacción forzara un re-render.
+- El contador de estrellas en vivo durante una sesión redondeaba al alza
+  con la primera media estrella (acierto tras reintento), mostrando una
+  estrella completa antes de haberla ganado del todo.
 
 ## [0.1.0] — 2026-06-25
 

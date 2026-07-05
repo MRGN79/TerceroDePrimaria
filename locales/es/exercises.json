@@ -169,7 +169,7 @@
         "c": "735"
       },
       "q6": {
-        "prompt": "El número 403 tiene 0 decenas."
+        "prompt": "En el número 403, la cifra de las decenas es 0."
       },
       "q7": {
         "prompt": "¿Cuánto es 200 + 40 + 8?",
@@ -995,7 +995,7 @@
         "prompt": "1000 m = 1 km"
       },
       "q31": {
-        "prompt": "¿Cuánto mide de largo un carril de piscina olímpica?",
+        "prompt": "¿Cuánto suele medir de largo el carril de una piscina normal?",
         "a": "5 m",
         "b": "25 m",
         "c": "250 m"
@@ -3908,7 +3908,7 @@
         "prompt": "¿Qué río forma parte de la frontera entre España y Portugal?",
         "a": "Ebro",
         "b": "Guadiana",
-        "c": "Tajo"
+        "c": "Guadalquivir"
       },
       "q37": {
         "prompt": "España tiene costas en el Océano Atlántico y en el mar Mediterráneo."
@@ -4466,10 +4466,10 @@
         "prompt": "Match each word with the right group",
         "l1": "Yellow",
         "l2": "Circle",
-        "l3": "Green",
+        "l3": "Seven",
         "r1": "Shape",
         "r2": "Colour",
-        "r3": "Colour"
+        "r3": "Number"
       },
       "q3": {
         "prompt": "What colour do you get when you mix red and yellow?",
@@ -4868,19 +4868,19 @@
         "prompt": "Un cilindro tiene dos caras planas circulares y una superficie curva."
       },
       "q42": {
-        "prompt": "¿Qué fracción es mayor: 3/4 o 2/3?",
-        "a": "2/3",
+        "prompt": "¿Qué fracción es mayor: 3/4 o 1/4?",
+        "a": "1/4",
         "b": "3/4",
         "c": "Son iguales"
       },
       "q43": {
-        "prompt": "El número −5 es menor que 0."
+        "prompt": "El número 9.999 es el mayor número de cuatro cifras."
       },
       "q44": {
-        "prompt": "¿Cuánto mide el área de un triángulo de base 8 cm y altura 6 cm?",
-        "a": "24 cm²",
-        "b": "48 cm²",
-        "c": "14 cm²"
+        "prompt": "¿Cuánto mide el perímetro de un triángulo de lados 3 cm, 4 cm y 5 cm?",
+        "a": "12 cm",
+        "b": "60 cm",
+        "c": "7 cm"
       },
       "q45": {
         "prompt": "1 km = 1.000 m"
@@ -4892,7 +4892,7 @@
         "c": "7/5"
       },
       "q47": {
-        "prompt": "Un ángulo reflejo es mayor de 180°."
+        "prompt": "Un ángulo completo (una vuelta entera) mide 360°."
       },
       "q48": {
         "prompt": "¿Cuántas caras tiene un prisma triangular?",
@@ -4990,10 +4990,10 @@
         "prompt": "El sufijo '-ísimo' indica grado superlativo."
       },
       "q17": {
-        "prompt": "¿Cuál de estas es una oración compuesta?",
-        "a": "El perro ladra.",
-        "b": "El perro ladra y el gato maúlla.",
-        "c": "¡Qué bonito!"
+        "prompt": "¿Cuál de estas palabras es un diminutivo?",
+        "a": "gatazo",
+        "b": "gatito",
+        "c": "gato"
       },
       "q18": {
         "prompt": "La personificación atribuye cualidades humanas a objetos o animales."
@@ -5005,7 +5005,7 @@
         "c": "instructivo"
       },
       "q20": {
-        "prompt": "El complemento directo recibe la acción del verbo."
+        "prompt": "Toda oración tiene dos partes: sujeto y predicado."
       },
       "q21": {
         "prompt": "¿Qué palabra contiene el prefijo 'pre-' que significa 'antes'?",
@@ -5035,10 +5035,10 @@
         "prompt": "El prefijo 'des-' en 'deshacer' indica negación o inversión."
       },
       "q27": {
-        "prompt": "¿Cuál de estas es una oración en voz pasiva?",
-        "a": "El niño come pan.",
-        "b": "El pan es comido por el niño.",
-        "c": "Come pan el niño."
+        "prompt": "¿Cuál de estas palabras es un aumentativo?",
+        "a": "perrito",
+        "b": "perrazo",
+        "c": "perro"
       },
       "q28": {
         "prompt": "Un texto descriptivo presenta las características de algo o alguien."
@@ -5062,22 +5062,22 @@
         "prompt": "El pretérito indefinido del verbo 'ir' es 'fui'."
       },
       "q33": {
-        "prompt": "El condicional expresa lo que ocurriría (p. ej., 'cantaría')."
+        "prompt": "El pretérito imperfecto de 'saltar' es 'saltaba'."
       },
       "q34": {
-        "prompt": "¿Cuál es el condicional de 'hablar'?",
-        "a": "hablé",
-        "b": "hablaría",
-        "c": "hablaré"
+        "prompt": "¿Cuál es el pretérito imperfecto de 'vivir'?",
+        "a": "viví",
+        "b": "vivía",
+        "c": "viviré"
       },
       "q35": {
-        "prompt": "El complemento indirecto responde a '¿a quién?' o '¿para quién?'."
+        "prompt": "Los demostrativos 'este', 'ese' y 'aquel' indican distancia."
       },
       "q36": {
-        "prompt": "¿Qué es una oración subordinada?",
-        "a": "Una oración principal por sí sola",
-        "b": "Una oración que depende de la principal",
-        "c": "Una oración sin verbo"
+        "prompt": "¿Cuál de estas palabras es un posesivo?",
+        "a": "aquel",
+        "b": "nuestro",
+        "c": "muy"
       },
       "q37": {
         "prompt": "El sufijo '-ción' forma sustantivos a partir de verbos (p. ej., 'cantar' → 'canción')."
@@ -5098,7 +5098,7 @@
         "c": "'Rápido como una bala'"
       },
       "q41": {
-        "prompt": "Una oración adverbial de tiempo responde a la pregunta '¿cuándo?'."
+        "prompt": "Los adverbios de tiempo responden a la pregunta '¿cuándo?'."
       },
       "q42": {
         "prompt": "¿Qué tipo de conector introduce un contraste?",
@@ -5119,13 +5119,13 @@
         "prompt": "Los conectores ayudan a unir ideas dentro de un texto."
       },
       "q46": {
-        "prompt": "¿Qué es una alegoría?",
-        "a": "Una historia donde personajes u objetos representan ideas abstractas",
-        "b": "Un poema corto y divertido",
-        "c": "Un tipo de haiku"
+        "prompt": "¿Qué es una palabra polisémica?",
+        "a": "Una palabra con varios significados",
+        "b": "Una palabra sin significado",
+        "c": "Una palabra de otro idioma"
       },
       "q47": {
-        "prompt": "El pretérito perfecto ('he comido') se refiere a una acción pasada con relevancia en el presente."
+        "prompt": "La palabra 'bocacalle' es una palabra compuesta (boca + calle)."
       },
       "q48": {
         "prompt": "¿Qué oración contiene un símil?",
@@ -5134,7 +5134,7 @@
         "c": "'El viento me habló'"
       },
       "q49": {
-        "prompt": "La conjunción 'aunque' introduce una oración concesiva."
+        "prompt": "'Hecho' (de hacer) y 'echo' (de echar) suenan igual pero se escriben distinto."
       },
       "q50": {
         "prompt": "¿Qué tipo de texto usa pasos numerados y diagramas?",
@@ -5277,7 +5277,7 @@
         "c": "halcón"
       },
       "q30": {
-        "prompt": "La célula vegetal tiene pared celular, pero la célula animal no."
+        "prompt": "El corazón y los vasos sanguíneos forman el aparato circulatorio."
       },
       "q31": {
         "prompt": "¿Qué tipo de roca se forma al enfriarse la lava?",
@@ -5743,70 +5743,70 @@
         "prompt": "'Did you see that film?' es una pregunta correcta en pasado."
       },
       "q33": {
-        "prompt": "El presente perfecto se forma con 'have/has + participio pasado'."
+        "prompt": "'I am eating' está en presente continuo y significa 'estoy comiendo'."
       },
       "q34": {
-        "prompt": "¿Qué oración usa el presente perfecto?",
+        "prompt": "¿Qué oración está en presente continuo?",
         "a": "I eat pizza",
-        "b": "I have eaten pizza",
+        "b": "I am eating pizza",
         "c": "I ate pizza"
       },
       "q35": {
-        "prompt": "'Must' expresa obligación o necesidad."
+        "prompt": "'There is' se usa en singular y 'there are' en plural."
       },
       "q36": {
-        "prompt": "¿Cuál es el futuro de 'she goes'?",
-        "a": "she went",
-        "b": "she will go",
-        "c": "she has gone"
+        "prompt": "¿Cuál es el plural de 'child'?",
+        "a": "childs",
+        "b": "children",
+        "c": "childes"
       },
       "q37": {
-        "prompt": "'Should' se usa para dar consejos (p. ej., 'You should study more')."
+        "prompt": "'I like apples' significa 'me gustan las manzanas'."
       },
       "q38": {
-        "prompt": "¿Qué oración está en voz pasiva?",
-        "a": "The dog bit the boy",
-        "b": "The boy was bitten by the dog",
-        "c": "The boy bit the dog"
+        "prompt": "¿Qué oración es correcta?",
+        "a": "He like dogs",
+        "b": "He likes dogs",
+        "c": "He liking dogs"
       },
       "q39": {
-        "prompt": "El primer condicional usa 'if + presente simple + will + infinitivo'."
+        "prompt": "En inglés, los días de la semana se escriben con mayúscula inicial (Monday, Tuesday...)."
       },
       "q40": {
-        "prompt": "¿Cuál es el participio pasado de 'break'?",
-        "a": "broke",
-        "b": "broken",
-        "c": "breaked"
+        "prompt": "¿Cuál es el plural de 'foot'?",
+        "a": "foots",
+        "b": "feet",
+        "c": "footes"
       },
       "q41": {
-        "prompt": "'Might' expresa posibilidad (p. ej., 'It might rain')."
+        "prompt": "'I have got a bike' significa 'tengo una bici'."
       },
       "q42": {
-        "prompt": "¿Cuál es el estilo indirecto correcto de 'I am happy'?",
-        "a": "She said she was happy",
-        "b": "She said she is happy",
-        "c": "She said she were happy"
+        "prompt": "¿Cómo se dice 'las tres y media' en inglés?",
+        "a": "half past three",
+        "b": "three and half",
+        "c": "half to three"
       },
       "q43": {
         "prompt": "Los adjetivos en inglés normalmente van antes del sustantivo al que describen."
       },
       "q44": {
-        "prompt": "¿Qué preposición completa: 'I have been here ___ three hours'?",
-        "a": "since",
-        "b": "for",
-        "c": "during"
+        "prompt": "¿Qué palabra completa: 'She ___ TV every evening'?",
+        "a": "watch",
+        "b": "watches",
+        "c": "watching"
       },
       "q45": {
-        "prompt": "El segundo condicional se usa para situaciones irreales o hipotéticas."
+        "prompt": "'What time is it?' sirve para preguntar la hora."
       },
       "q46": {
-        "prompt": "¿Qué significa 'I have just finished'?",
-        "a": "Terminé hace mucho tiempo",
-        "b": "Terminé muy recientemente",
-        "c": "Terminaré pronto"
+        "prompt": "¿Qué significa 'I am hungry'?",
+        "a": "Tengo sueño",
+        "b": "Tengo hambre",
+        "c": "Tengo frío"
       },
       "q47": {
-        "prompt": "'Since' se usa con un momento específico en el tiempo (p. ej., 'since Monday')."
+        "prompt": "'Never' significa 'nunca'."
       },
       "q48": {
         "prompt": "¿Qué oración es gramaticalmente correcta?",
@@ -5824,7 +5824,7 @@
         "c": "best"
       },
       "q51": {
-        "prompt": "La voz pasiva se forma con 'to be + participio pasado'."
+        "prompt": "El presente continuo se forma con 'to be' + verbo terminado en '-ing'."
       }
     }
   }

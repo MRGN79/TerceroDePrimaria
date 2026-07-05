@@ -25,7 +25,7 @@ export interface PreparedExercise {
   math?: GeneratedMath;
 }
 
-function shuffle<T>(arr: T[], rng: Rng): T[] {
+export function shuffle<T>(arr: T[], rng: Rng): T[] {
   const a = [...arr];
   for (let i = a.length - 1; i > 0; i--) {
     const j = Math.floor(rng() * (i + 1));

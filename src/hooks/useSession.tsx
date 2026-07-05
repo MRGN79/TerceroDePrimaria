@@ -321,7 +321,11 @@ export function useSession(
     return {
       current: index + 1,
       total: items.length,
-      sessionStars: Math.ceil(sessionStars),
+      // Floor mientras la sesión sigue abierta: con Math.ceil, la primera
+      // media estrella (acierto tras reintento) ya mostraba "1" estrella
+      // completa sin haberla ganado del todo. El redondeo al alza queda
+      // reservado para el resumen final (ver más arriba y starsEarned).
+      sessionStars: Math.floor(sessionStars),
       prompt,
       promptLang: fixedLanguageFor(exercise.materia),
       kind,

@@ -169,7 +169,7 @@
         "c": "735"
       },
       "q6": {
-        "prompt": "The number 403 has 0 tens."
+        "prompt": "In the number 403, the tens digit is 0."
       },
       "q7": {
         "prompt": "What is 200 + 40 + 8?",
@@ -1883,7 +1883,7 @@
         "r3": "leaves fall"
       },
       "q32": {
-        "prompt": "Seaweed is a plant that lives in the sea."
+        "prompt": "Seaweed lives in the sea and makes its own food using sunlight."
       }
     },
     "senses": {
@@ -2041,10 +2041,10 @@
         "prompt": "Blind people often develop a sharper sense of hearing and touch."
       },
       "q30": {
-        "prompt": "Which part of the tongue detects sweet tastes?",
-        "a": "The back",
-        "b": "The tip",
-        "c": "The sides"
+        "prompt": "Which basic taste does a lemon have?",
+        "a": "Sweet",
+        "b": "Sour",
+        "c": "Salty"
       },
       "q31": {
         "prompt": "Match each sense organ with what it contains",
@@ -2563,7 +2563,7 @@
         "c": "They turn into fat only"
       },
       "q29": {
-        "prompt": "The ribcage also protects the stomach and liver."
+        "prompt": "The ribcage protects the brain and the eyes."
       },
       "q30": {
         "prompt": "Which of these activities is best for building strong bones?",
@@ -2722,8 +2722,8 @@
         "l1": "Iron nail",
         "l2": "Plastic bottle",
         "l3": "Steel spoon",
-        "r1": "attracted",
-        "r2": "attracted",
+        "r1": "attracted (iron is magnetic)",
+        "r2": "attracted (steel contains iron)",
         "r3": "not attracted"
       },
       "q27": {
@@ -3582,7 +3582,7 @@
         "prompt": "Which river forms part of the border between Spain and Portugal?",
         "a": "Ebro",
         "b": "Guadiana",
-        "c": "Tagus"
+        "c": "Guadalquivir"
       },
       "q37": {
         "prompt": "Spain has coastlines on both the Atlantic Ocean and the Mediterranean Sea."
@@ -4140,10 +4140,10 @@
         "prompt": "Match each word with the right group",
         "l1": "Yellow",
         "l2": "Circle",
-        "l3": "Green",
+        "l3": "Seven",
         "r1": "Shape",
         "r2": "Colour",
-        "r3": "Colour"
+        "r3": "Number"
       },
       "q3": {
         "prompt": "What colour do you get when you mix red and yellow?",
@@ -4586,7 +4586,7 @@
         "c": "ant"
       },
       "q35": {
-        "prompt": "Camels store water in their humps."
+        "prompt": "Camels store fat in their humps."
       },
       "q36": {
         "prompt": "What do you call a group of wolves?",
@@ -4672,7 +4672,7 @@
       "q51": {
         "prompt": "Which animal produces silk?",
         "a": "bee",
-        "b": "spider",
+        "b": "ant",
         "c": "silkworm"
       }
     },
@@ -5477,7 +5477,7 @@
         "c": "to have twins"
       },
       "q47": {
-        "prompt": "Your first cousin's child is your second cousin."
+        "prompt": "Your cousin is the child of your aunt or uncle."
       },
       "q48": {
         "prompt": "Match each word to its opposite in a family context.",
@@ -5688,19 +5688,19 @@
         "prompt": "A cylinder has two flat circular faces and one curved surface."
       },
       "q42": {
-        "prompt": "Which fraction is bigger: 3/4 or 2/3?",
-        "a": "2/3",
+        "prompt": "Which fraction is bigger: 3/4 or 1/4?",
+        "a": "1/4",
         "b": "3/4",
         "c": "They are equal"
       },
       "q43": {
-        "prompt": "The number -5 is less than 0."
+        "prompt": "The number 9,999 is the largest four-digit number."
       },
       "q44": {
-        "prompt": "What is the area of a triangle with base 8 cm and height 6 cm?",
-        "a": "24 cm²",
-        "b": "48 cm²",
-        "c": "14 cm²"
+        "prompt": "What is the perimeter of a triangle with sides 3 cm, 4 cm and 5 cm?",
+        "a": "12 cm",
+        "b": "60 cm",
+        "c": "7 cm"
       },
       "q45": {
         "prompt": "1 km = 1,000 m"
@@ -5712,7 +5712,7 @@
         "c": "7/5"
       },
       "q47": {
-        "prompt": "A reflex angle is greater than 180°."
+        "prompt": "A full angle (a complete turn) measures 360°."
       },
       "q48": {
         "prompt": "How many faces does a triangular prism have?",
@@ -5810,10 +5810,10 @@
         "prompt": "The suffix '-ísimo' indicates the superlative degree (very much)."
       },
       "q17": {
-        "prompt": "Which of these is a compound sentence?",
-        "a": "The dog barks.",
-        "b": "The dog barks and the cat meows.",
-        "c": "How lovely!"
+        "prompt": "Which of these words is a diminutive?",
+        "a": "gatazo (big cat)",
+        "b": "gatito (little cat)",
+        "c": "gato (cat)"
       },
       "q18": {
         "prompt": "Personification gives human qualities to objects or animals."
@@ -5825,7 +5825,7 @@
         "c": "instructional"
       },
       "q20": {
-        "prompt": "The direct object receives the action of the verb."
+        "prompt": "Every sentence has two parts: subject and predicate."
       },
       "q21": {
         "prompt": "Which word has the prefix 'pre-' meaning 'before'?",
@@ -5855,10 +5855,10 @@
         "prompt": "The prefix 'des-' in 'deshacer' (to undo) indicates negation or reversal."
       },
       "q27": {
-        "prompt": "Which of these is a passive sentence?",
-        "a": "The child eats bread.",
-        "b": "The bread is eaten by the child.",
-        "c": "Eat the bread, child."
+        "prompt": "Which of these words is an augmentative?",
+        "a": "perrito (little dog)",
+        "b": "perrazo (big dog)",
+        "c": "perro (dog)"
       },
       "q28": {
         "prompt": "A descriptive text presents the characteristics of something or someone."
@@ -5882,22 +5882,22 @@
         "prompt": "The simple past of the verb 'to go' is 'went'."
       },
       "q33": {
-        "prompt": "The conditional tense expresses what would happen (e.g., 'cantaría': 'I would sing')."
+        "prompt": "The imperfect tense of 'saltar' (to jump) is 'saltaba'."
       },
       "q34": {
-        "prompt": "Which is the conditional of 'hablar' (to speak)?",
-        "a": "hablé",
-        "b": "hablaría",
-        "c": "hablaré"
+        "prompt": "Which is the imperfect tense of 'vivir' (to live)?",
+        "a": "viví",
+        "b": "vivía",
+        "c": "viviré"
       },
       "q35": {
-        "prompt": "The indirect object answers the question 'to whom?' or 'for whom?'."
+        "prompt": "The demonstratives 'este', 'ese' and 'aquel' indicate distance."
       },
       "q36": {
-        "prompt": "What is a subordinate clause?",
-        "a": "A main sentence on its own",
-        "b": "A clause that depends on the main clause",
-        "c": "A sentence without a verb"
+        "prompt": "Which of these words is a possessive?",
+        "a": "aquel (that)",
+        "b": "nuestro (our)",
+        "c": "muy (very)"
       },
       "q37": {
         "prompt": "The suffix '-ción' forms nouns from verbs (e.g., 'cantar' → 'canción')."
@@ -5918,7 +5918,7 @@
         "c": "'As fast as a bullet'"
       },
       "q41": {
-        "prompt": "An adverbial clause of time answers the question 'when?'."
+        "prompt": "Adverbs of time answer the question 'when?'."
       },
       "q42": {
         "prompt": "What type of connective introduces a contrast?",
@@ -5939,13 +5939,13 @@
         "prompt": "Connectors help link ideas within a text."
       },
       "q46": {
-        "prompt": "What is an allegory?",
-        "a": "A story where characters or objects represent abstract ideas",
-        "b": "A short funny poem",
-        "c": "A type of haiku"
+        "prompt": "What is a polysemous word?",
+        "a": "A word with several meanings",
+        "b": "A word with no meaning",
+        "c": "A word from another language"
       },
       "q47": {
-        "prompt": "The present perfect ('he comido': 'I have eaten') refers to a past action with present relevance."
+        "prompt": "The word 'bocacalle' (side street) is a compound word (boca + calle)."
       },
       "q48": {
         "prompt": "Which sentence contains a simile?",
@@ -5954,7 +5954,7 @@
         "c": "'El viento me habló'"
       },
       "q49": {
-        "prompt": "The conjunction 'although' (aunque) introduces a concessive clause."
+        "prompt": "'Hecho' (from hacer) and 'echo' (from echar) sound the same but are spelled differently."
       },
       "q50": {
         "prompt": "Which type of text uses numbered steps and diagrams?",
@@ -6097,7 +6097,7 @@
         "c": "hawk"
       },
       "q30": {
-        "prompt": "A plant cell has a cell wall, but an animal cell does not."
+        "prompt": "The heart and the blood vessels form the circulatory system."
       },
       "q31": {
         "prompt": "Which type of rock is formed from cooled lava?",
@@ -6563,70 +6563,70 @@
         "prompt": "'Did you see that film?' is a correct question in the past tense."
       },
       "q33": {
-        "prompt": "The present perfect is formed with 'have/has + past participle'."
+        "prompt": "'I am eating' is in the present continuous."
       },
       "q34": {
-        "prompt": "Which sentence uses the present perfect?",
+        "prompt": "Which sentence uses the present continuous?",
         "a": "I eat pizza",
-        "b": "I have eaten pizza",
+        "b": "I am eating pizza",
         "c": "I ate pizza"
       },
       "q35": {
-        "prompt": "'Must' expresses obligation or necessity."
+        "prompt": "'There is' is used for singular and 'there are' for plural."
       },
       "q36": {
-        "prompt": "What is the future tense of 'she goes'?",
-        "a": "she went",
-        "b": "she will go",
-        "c": "she has gone"
+        "prompt": "What is the plural of 'child'?",
+        "a": "childs",
+        "b": "children",
+        "c": "childes"
       },
       "q37": {
-        "prompt": "'Should' is used to give advice (e.g., 'You should study more')."
+        "prompt": "'I like apples' means you enjoy apples."
       },
       "q38": {
-        "prompt": "Which sentence is in the passive voice?",
-        "a": "The dog bit the boy",
-        "b": "The boy was bitten by the dog",
-        "c": "The boy bit the dog"
+        "prompt": "Which sentence is correct?",
+        "a": "He like dogs",
+        "b": "He likes dogs",
+        "c": "He liking dogs"
       },
       "q39": {
-        "prompt": "The first conditional uses 'if + present simple + will + infinitive'."
+        "prompt": "In English, days of the week start with a capital letter (Monday, Tuesday...)."
       },
       "q40": {
-        "prompt": "What is the past participle of 'break'?",
-        "a": "broke",
-        "b": "broken",
-        "c": "breaked"
+        "prompt": "What is the plural of 'foot'?",
+        "a": "foots",
+        "b": "feet",
+        "c": "footes"
       },
       "q41": {
-        "prompt": "'Might' expresses possibility (e.g., 'It might rain')."
+        "prompt": "'I have got a bike' means you own a bike."
       },
       "q42": {
-        "prompt": "Which is the correct reported speech of 'I am happy'?",
-        "a": "She said she was happy",
-        "b": "She said she is happy",
-        "c": "She said she were happy"
+        "prompt": "How do you say 3:30 in English?",
+        "a": "half past three",
+        "b": "three and half",
+        "c": "half to three"
       },
       "q43": {
         "prompt": "Adjectives in English normally go before the noun they describe."
       },
       "q44": {
-        "prompt": "Which preposition completes: 'I have been here ___ three hours'?",
-        "a": "since",
-        "b": "for",
-        "c": "during"
+        "prompt": "Which word completes: 'She ___ TV every evening'?",
+        "a": "watch",
+        "b": "watches",
+        "c": "watching"
       },
       "q45": {
-        "prompt": "The second conditional is used for unreal or hypothetical situations."
+        "prompt": "'What time is it?' is used to ask the time."
       },
       "q46": {
-        "prompt": "What does 'I have just finished' mean?",
-        "a": "I finished a long time ago",
-        "b": "I finished very recently",
-        "c": "I will finish soon"
+        "prompt": "What does 'I am hungry' mean?",
+        "a": "You are sleepy",
+        "b": "You want to eat",
+        "c": "You are cold"
       },
       "q47": {
-        "prompt": "'Since' is used with a specific point in time (e.g., 'since Monday')."
+        "prompt": "'Never' is the opposite of 'always'."
       },
       "q48": {
         "prompt": "Which sentence is grammatically correct?",
@@ -6644,7 +6644,7 @@
         "c": "best"
       },
       "q51": {
-        "prompt": "The passive voice is formed with 'to be + past participle'."
+        "prompt": "The present continuous is formed with 'to be' + verb ending in '-ing'."
       }
     }
   }

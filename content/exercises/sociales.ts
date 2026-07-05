@@ -319,7 +319,7 @@ export const sociales: EjercicioAny[] = [
       { id: "b", textoKey: "exercises:social.spain.q3.b" },
       { id: "c", textoKey: "exercises:social.spain.q3.c" },
     ],
-    respuestaCorrecta: "b",
+    respuestaCorrecta: "a",
     imprimible: true,
   },
   {
@@ -692,7 +692,7 @@ export const sociales: EjercicioAny[] = [
 
   // ─── maps q9+ ──────────────────────────────────────────────────
   tfS("soc-3-maps-009", "landscape.maps", "exercises:social.maps.q9.prompt", "true"),
-  mcS("soc-3-maps-010", "landscape.maps", "exercises:social.maps.q10.prompt", "b", "maps", "q10"),
+  mcS("soc-3-maps-010", "landscape.maps", "exercises:social.maps.q10.prompt", "c", "maps", "q10"),
   tfS("soc-3-maps-011", "landscape.maps", "exercises:social.maps.q11.prompt", "false"),
   mcS("soc-3-maps-012", "landscape.maps", "exercises:social.maps.q12.prompt", "b", "maps", "q12"),
   tfS("soc-3-maps-013", "landscape.maps", "exercises:social.maps.q13.prompt", "true"),
