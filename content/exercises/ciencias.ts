@@ -2201,7 +2201,7 @@ export const ciencias: EjercicioAny[] = [
       { id: "r2", textoKey: "exercises:science.states.q16.r2" },
       { id: "r3", textoKey: "exercises:science.states.q16.r3" },
     ],
-    respuestaCorrecta: ["l1:r3", "l2:r2", "l3:r1"],
+    respuestaCorrecta: ["l1:r3", "l2:r1", "l3:r2"],
     imprimible: true,
   },
   {
@@ -2277,7 +2277,7 @@ export const ciencias: EjercicioAny[] = [
       { id: "r2", textoKey: "exercises:science.states.q21.r2" },
       { id: "r3", textoKey: "exercises:science.states.q21.r3" },
     ],
-    respuestaCorrecta: ["l1:r2", "l2:r1", "l3:r3"],
+    respuestaCorrecta: ["l1:r2", "l2:r3", "l3:r1"],
     imprimible: true,
   },
   {
@@ -2688,7 +2688,7 @@ export const ciencias: EjercicioAny[] = [
       { id: "r2", textoKey: "exercises:science.skeleton.q16.r2" },
       { id: "r3", textoKey: "exercises:science.skeleton.q16.r3" },
     ],
-    respuestaCorrecta: ["l1:r3", "l2:r2", "l3:r1"],
+    respuestaCorrecta: ["l1:r3", "l2:r1", "l3:r2"],
     imprimible: true,
   },
   {
@@ -3403,7 +3403,7 @@ export const ciencias: EjercicioAny[] = [
       { id: "r2", textoKey: "exercises:science.forces.q31.r2" },
       { id: "r3", textoKey: "exercises:science.forces.q31.r3" },
     ],
-    respuestaCorrecta: ["l1:r3", "l2:r1", "l3:r2"],
+    respuestaCorrecta: ["l1:r3", "l2:r2", "l3:r1"],
     imprimible: true,
   },
   {
@@ -3814,7 +3814,7 @@ export const ciencias: EjercicioAny[] = [
       { id: "r2", textoKey: "exercises:science.solar_system.q26.r2" },
       { id: "r3", textoKey: "exercises:science.solar_system.q26.r3" },
     ],
-    respuestaCorrecta: ["l1:r3", "l2:r2", "l3:r1"],
+    respuestaCorrecta: ["l1:r2", "l2:r3", "l3:r1"],
     imprimible: true,
   },
   {

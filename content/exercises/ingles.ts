@@ -74,7 +74,7 @@ export const ingles: EjercicioAny[] = [
       { id: "r2", textoKey: "exercises:english.colors.q2.r2" },
       { id: "r3", textoKey: "exercises:english.colors.q2.r3" },
     ],
-    respuestaCorrecta: ["l1:r2", "l2:r3", "l3:r1"],
+    respuestaCorrecta: ["l1:r2", "l2:r1", "l3:r3"],
     imprimible: true,
   },
   {

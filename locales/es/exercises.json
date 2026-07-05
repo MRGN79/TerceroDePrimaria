@@ -169,7 +169,7 @@
         "c": "735"
       },
       "q6": {
-        "prompt": "El número 403 tiene 0 decenas."
+        "prompt": "En el número 403, la cifra de las decenas es 0."
       },
       "q7": {
         "prompt": "¿Cuánto es 200 + 40 + 8?",
@@ -995,7 +995,7 @@
         "prompt": "1000 m = 1 km"
       },
       "q31": {
-        "prompt": "¿Cuánto mide de largo un carril de piscina olímpica?",
+        "prompt": "¿Cuánto suele medir de largo el carril de una piscina normal?",
         "a": "5 m",
         "b": "25 m",
         "c": "250 m"
@@ -3908,7 +3908,7 @@
         "prompt": "¿Qué río forma parte de la frontera entre España y Portugal?",
         "a": "Ebro",
         "b": "Guadiana",
-        "c": "Tajo"
+        "c": "Guadalquivir"
       },
       "q37": {
         "prompt": "España tiene costas en el Océano Atlántico y en el mar Mediterráneo."
@@ -4466,10 +4466,10 @@
         "prompt": "Match each word with the right group",
         "l1": "Yellow",
         "l2": "Circle",
-        "l3": "Green",
+        "l3": "Seven",
         "r1": "Shape",
         "r2": "Colour",
-        "r3": "Colour"
+        "r3": "Number"
       },
       "q3": {
         "prompt": "What colour do you get when you mix red and yellow?",
@@ -4892,7 +4892,7 @@
         "c": "7/5"
       },
       "q47": {
-        "prompt": "Un ángulo reflejo es mayor de 180°."
+        "prompt": "Un ángulo cóncavo mide más de 180°."
       },
       "q48": {
         "prompt": "¿Cuántas caras tiene un prisma triangular?",

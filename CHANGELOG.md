@@ -18,6 +18,29 @@ y el proyecto adhiere a [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ### Fixed
 
+- **Revisión completa del contenido (1.635 ejercicios):** corregidas 9 claves
+  de respuesta erróneas y 8 textos con imprecisiones factuales o ambigüedades:
+  - Emparejar con parejas cruzadas: `len-3-acc-012` (lápiz es llana, pájaro
+    esdrújula), `sci-3-states-016` (nieve=sólido, olor=gas), `sci-3-states-021`
+    (gas se comprime, sólido mantiene forma), `sci-3-skeleton-016` (columna
+    sostiene el cuerpo, fémur para caminar), `sci-3-forces-031` (chutar inicia
+    movimiento, frenar lo detiene), `sci-3-solar-026` (luna nueva no se ve,
+    luna llena entera iluminada), `eng-3-colors-002` (Circle=Shape; tercera
+    categoría ahora inequívoca: Seven=Number).
+  - Opción múltiple: `soc-3-spain-003` (el río más largo de España es el Tajo;
+    el Ebro sigue siendo el más largo íntegramente español en `soc-3-maps-040`)
+    y `soc-3-maps-010` (en España se enseñan 6 continentes, no 7).
+  - Textos: `mat-3-len-031` (era "piscina olímpica" con respuesta 25 m — una
+    olímpica mide 50 m), `mat-3-pv-006` (aclarado "cifra de las decenas" para
+    no contradecir a `mat-3-pv-009`), `sci-3-forces-026` (dos opciones decían
+    ambas "attracted" y el motor exige la pareja exacta), `sci-3-senses-030`
+    (el "mapa de la lengua" es un mito — sustituida por sabor del limón),
+    `sci-3-skeleton-029` y `sci-3-plants-032` (afirmaciones anatómica y
+    taxonómicamente dudosas reformuladas), `eng-3-animals-035` (las jorobas
+    del camello almacenan grasa, no agua), `eng-3-family-047` (el hijo de tu
+    primo no es tu "second cousin"), `eng-3-animals-051` (la araña también
+    produce seda — distractor cambiado), `c4-math-047` (el ángulo >180° en
+    España se llama cóncavo, no "reflejo").
 - El barajado de chistes de la hoja de caligrafía usaba `sort` con un
   comparador aleatorio, que no produce una permutación uniforme; ahora
   reutiliza el Fisher–Yates ya existente para el orden de ejercicios.

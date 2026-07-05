@@ -3136,7 +3136,7 @@ export const lengua: EjercicioAny[] = [
       { id: "r2", textoKey: "exercises:spanish.acc.q12.r2" },
       { id: "r3", textoKey: "exercises:spanish.acc.q12.r3" },
     ],
-    respuestaCorrecta: ["l1:r3", "l2:r1", "l3:r2"],
+    respuestaCorrecta: ["l1:r2", "l2:r1", "l3:r3"],
     imprimible: true,
   },
   {

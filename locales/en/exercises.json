@@ -169,7 +169,7 @@
         "c": "735"
       },
       "q6": {
-        "prompt": "The number 403 has 0 tens."
+        "prompt": "In the number 403, the tens digit is 0."
       },
       "q7": {
         "prompt": "What is 200 + 40 + 8?",
@@ -1883,7 +1883,7 @@
         "r3": "leaves fall"
       },
       "q32": {
-        "prompt": "Seaweed is a plant that lives in the sea."
+        "prompt": "Seaweed lives in the sea and makes its own food using sunlight."
       }
     },
     "senses": {
@@ -2041,10 +2041,10 @@
         "prompt": "Blind people often develop a sharper sense of hearing and touch."
       },
       "q30": {
-        "prompt": "Which part of the tongue detects sweet tastes?",
-        "a": "The back",
-        "b": "The tip",
-        "c": "The sides"
+        "prompt": "Which basic taste does a lemon have?",
+        "a": "Sweet",
+        "b": "Sour",
+        "c": "Salty"
       },
       "q31": {
         "prompt": "Match each sense organ with what it contains",
@@ -2563,7 +2563,7 @@
         "c": "They turn into fat only"
       },
       "q29": {
-        "prompt": "The ribcage also protects the stomach and liver."
+        "prompt": "The ribcage protects the brain and the eyes."
       },
       "q30": {
         "prompt": "Which of these activities is best for building strong bones?",
@@ -2722,8 +2722,8 @@
         "l1": "Iron nail",
         "l2": "Plastic bottle",
         "l3": "Steel spoon",
-        "r1": "attracted",
-        "r2": "attracted",
+        "r1": "attracted (iron is magnetic)",
+        "r2": "attracted (steel contains iron)",
         "r3": "not attracted"
       },
       "q27": {
@@ -3582,7 +3582,7 @@
         "prompt": "Which river forms part of the border between Spain and Portugal?",
         "a": "Ebro",
         "b": "Guadiana",
-        "c": "Tagus"
+        "c": "Guadalquivir"
       },
       "q37": {
         "prompt": "Spain has coastlines on both the Atlantic Ocean and the Mediterranean Sea."
@@ -4140,10 +4140,10 @@
         "prompt": "Match each word with the right group",
         "l1": "Yellow",
         "l2": "Circle",
-        "l3": "Green",
+        "l3": "Seven",
         "r1": "Shape",
         "r2": "Colour",
-        "r3": "Colour"
+        "r3": "Number"
       },
       "q3": {
         "prompt": "What colour do you get when you mix red and yellow?",
@@ -4586,7 +4586,7 @@
         "c": "ant"
       },
       "q35": {
-        "prompt": "Camels store water in their humps."
+        "prompt": "Camels store fat in their humps."
       },
       "q36": {
         "prompt": "What do you call a group of wolves?",
@@ -4672,7 +4672,7 @@
       "q51": {
         "prompt": "Which animal produces silk?",
         "a": "bee",
-        "b": "spider",
+        "b": "ant",
         "c": "silkworm"
       }
     },
@@ -5477,7 +5477,7 @@
         "c": "to have twins"
       },
       "q47": {
-        "prompt": "Your first cousin's child is your second cousin."
+        "prompt": "Your cousin is the child of your aunt or uncle."
       },
       "q48": {
         "prompt": "Match each word to its opposite in a family context.",
