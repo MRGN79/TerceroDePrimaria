@@ -19,7 +19,7 @@
 **Problema que resuelve:** [2-3 líneas]
 **Usuarios objetivo:** [Quiénes son, nivel técnico, geografías]
 **Stack:** [Tecnologías principales con versiones]
-**Versión actual:** [X.Y.Z]
+**Versión actual:** [X.Y.Z — scaffold A.B.C] <!-- proyecto (manifiesto) + scaffold (.claude/scaffold.json); Documentación actualiza la primera al cerrar release, la sincronización actualiza la segunda -->
 **Estado:** [En desarrollo / Beta / Producción]
 **Entornos:** [dev / staging / prod — URLs si existen]
 
