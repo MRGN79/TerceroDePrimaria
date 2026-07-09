@@ -345,7 +345,6 @@ export function useSession(
   }, [
     exercise,
     prepared,
-    materia,
     items.length,
     index,
     sessionStars,
