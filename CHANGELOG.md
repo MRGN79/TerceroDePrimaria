@@ -7,6 +7,11 @@ y el proyecto adhiere a [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## [Unreleased]
 
+### Fixed
+
+- Warning de ESLint (`react-hooks/exhaustive-deps`) por una dependencia
+  innecesaria (`materia`) en el `useMemo` de `useSession`.
+
 ## [0.3.0] — 2026-07-09
 
 ### Changed
