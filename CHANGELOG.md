@@ -7,6 +7,28 @@ y el proyecto adhiere a [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## [Unreleased]
 
+## [0.3.0] — 2026-07-09
+
+### Changed
+
+- **Interfaz renovada con un aire más divertido, dinámico y con más
+  personalidad**, sin cambiar ningún flujo, texto ni la forma de usar la app:
+  - **Ambiente de "isla de verano":** un fondo de cielo suave con un sol cálido y
+    espuma de mar que acompaña a todas las pantallas y da identidad propia al
+    conjunto. Es decorativo y se atenúa por completo al imprimir.
+  - **La app cobra vida:** la mascota Rumbo "respira" con un balanceo mínimo, los
+    contenidos entran con una pequeña cascada al abrir cada pantalla, las tarjetas
+    de materia dan un saltito al pasar por encima y la llama de la racha titila
+    suavemente cuando está activa.
+  - **Más color y energía:** botón principal con degradado tipo "caramelo", halo
+    de sol tras la misión del día y barra de progreso como una estela marina
+    turquesa→azul.
+  - **Celebraciones más festivas:** la ventana de recompensa aparece con un rebote
+    alegre además del confeti ya existente.
+- **Movimiento seguro:** todas las animaciones nuevas respetan `prefers-reduced-motion`
+  y el ajuste de "reducir movimiento" de la app (con reduce-motion todo aparece
+  colocado y legible, sin destellos), y ningún elemento parpadea (WCAG 2.3.1).
+
 ## [0.2.0] — 2026-07-05
 
 ### Changed
