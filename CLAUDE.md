@@ -385,6 +385,16 @@ El estándar es [Semantic Versioning](https://semver.org): `MAJOR.MINOR.PATCH`.
 | `1.0.0-beta.1` | Beta — funcionalidad completa, testing externo limitado |
 | `1.0.0-rc.1` | Release candidate — candidato a estable, solo bug fixes |
 
+### Versión combinada proyecto + scaffold (referencia interna)
+
+Al reportar la versión en el chat o en los meta-archivos internos, se usa el formato combinado:
+
+```
+X.Y.Z — scaffold A.B.C     (ej.: 2.3.1 — scaffold 1.14.1)
+```
+
+`X.Y.Z` es la versión del producto (manifiesto); `A.B.C` es `scaffoldVersion` de `.claude/scaffold.json`. Es la referencia del usuario para seguir el hilo de actualizaciones entre sus proyectos. **Solo aparece en el chat, `docs/backlog.md` y meta-archivos internos** — nunca en el manifiesto (rompería SemVer), la UI, el changelog de usuarios ni ningún artefacto desplegado (regla de confidencialidad de Archivos Privados).
+
 ### Dónde vive la versión
 
 - Manifiesto del proyecto: `package.json`, `pyproject.toml`, `Cargo.toml`, etc.

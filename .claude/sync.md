@@ -245,6 +245,10 @@ solo llega con la copia inicial en adopciones sin CLAUDE.md previo.
 **En MODO B:** actualiza `.claude/scaffold.json` — conserva el resto de campos existentes
 (p. ej. `adoptedAt`) y actualiza solo `scaffoldVersion` a `[SCAFFOLD_VERSION]`.
 
+**En ambos modos:** si existe `docs/backlog.md` con la línea `**Versión actual:**`, actualiza
+la parte `scaffold A.B.C` de esa línea a `scaffold [SCAFFOLD_VERSION]` (formato combinado
+`X.Y.Z — scaffold A.B.C`; la parte `X.Y.Z` del proyecto no se toca).
+
 ---
 
 ## FASE 7 — Resumen y commit
