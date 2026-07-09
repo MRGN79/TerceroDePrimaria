@@ -53,9 +53,17 @@
   min-width: var(--tdp-touch-primary);
 }
 
-/* --- Variante primary --- */
+/* --- Variante primary ---
+   Degradado "caramelo" entre dos navies oscuros: da volumen sin tocar el
+   contraste (texto blanco ≥ 10:1 sobre ambos tonos). La sombra inferior
+   mantiene la sensación de tecla física. */
 .variant-primary {
   background-color: var(--tdp-color-primary);
+  background-image: linear-gradient(
+    180deg,
+    var(--tdp-navy-700) 0%,
+    var(--tdp-color-primary) 100%
+  );
   color: var(--tdp-color-text-on-primary);
   box-shadow:
     0 4px 0 0 var(--tdp-color-primary-strong),
@@ -63,7 +71,11 @@
 }
 .variant-primary:hover {
   --btn-translate: -1px;
-  background-color: var(--tdp-color-primary-strong);
+  background-image: linear-gradient(
+    180deg,
+    var(--tdp-navy-700) 0%,
+    var(--tdp-color-primary-strong) 100%
+  );
 }
 
 /* --- Variante secondary --- */

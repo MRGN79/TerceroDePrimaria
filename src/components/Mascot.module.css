@@ -37,6 +37,14 @@
   .root[data-expression="happy"] .rays {
     animation: rumbo-spin 14s linear infinite;
   }
+
+  /* Respiración: Rumbo "vive" con un vaivén vertical mínimo (~4px), muy lento.
+     Solo en tamaños de protagonista (md/lg); el avatar xs de la barra no se mueve.
+     Amplitud pequeña y continua: nunca parpadea (A11Y-MOTION-04). */
+  .size-md .svg,
+  .size-lg .svg {
+    animation: rumbo-bob var(--tdp-duration-idle) var(--tdp-ease-in-out) infinite;
+  }
 }
 
 @keyframes rumbo-spin {
@@ -45,5 +53,15 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes rumbo-bob {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
   }
 }

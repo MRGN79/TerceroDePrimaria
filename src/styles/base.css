@@ -26,11 +26,93 @@ body {
   font-size: var(--tdp-font-size-sm); /* 18px — mínimo de cuerpo (A11Y-TYPO-01) */
   line-height: var(--tdp-line-height-base); /* 1.5 (A11Y-TYPO-02) */
   color: var(--tdp-color-text);
+  /* Atmósfera "Isla de verano": cielo claro que aterriza en la arena cálida.
+     Fijo al viewport para que las pantallas se sientan parte de un mismo mundo.
+     Tonos claros → el texto oscuro conserva el contraste (A11Y-CONTRAST). */
   background-color: var(--tdp-color-bg);
+  background-image: linear-gradient(
+    180deg,
+    var(--tdp-sky-top) 0%,
+    var(--tdp-sky-mid) 32%,
+    var(--tdp-sky-bottom) 62%
+  );
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   /* Líneas de lectura a la izquierda; nunca justificado (A11Y-TYPO-04) */
   text-align: left;
+}
+
+/* ============================================================
+   ATMÓSFERA DECORATIVA — halos de sol y mar  (identidad "Isla Viva")
+   Dos manchas suaves y difuminadas, fijas detrás de todo el contenido.
+   Puramente estéticas: pseudo-elementos, fuera del árbol de accesibilidad,
+   sin capturar el puntero. Derivan muy despacio solo si el usuario no ha
+   pedido reducir movimiento (A11Y-MOTION-01/02). Nunca parpadean.
+   ============================================================ */
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  z-index: -1;
+  pointer-events: none;
+  border-radius: 50%;
+  filter: blur(48px);
+  will-change: transform;
+}
+/* Sol cálido, esquina superior derecha */
+body::before {
+  top: -8vmin;
+  right: -6vmin;
+  width: 46vmin;
+  height: 46vmin;
+  background: radial-gradient(
+    circle at 50% 50%,
+    color-mix(in srgb, var(--tdp-glow-sun) 55%, transparent) 0%,
+    transparent 70%
+  );
+}
+/* Espuma de mar fresca, esquina inferior izquierda */
+body::after {
+  bottom: -12vmin;
+  left: -10vmin;
+  width: 52vmin;
+  height: 52vmin;
+  background: radial-gradient(
+    circle at 50% 50%,
+    color-mix(in srgb, var(--tdp-glow-sea) 42%, transparent) 0%,
+    transparent 70%
+  );
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  body::before {
+    animation: tdp-drift-sun var(--tdp-duration-drift) var(--tdp-ease-in-out)
+      infinite alternate;
+  }
+  body::after {
+    animation: tdp-drift-sea calc(var(--tdp-duration-drift) * 1.4)
+      var(--tdp-ease-in-out) infinite alternate;
+  }
+}
+
+/* Deriva mínima (≤ 3% del viewport): presencia, no distracción. Sin flashes. */
+@keyframes tdp-drift-sun {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-3vmin, 2vmin, 0);
+  }
+}
+@keyframes tdp-drift-sea {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(3vmin, -2vmin, 0);
+  }
 }
 
 img,
@@ -134,6 +216,17 @@ ol[role="list"] {
   border: 0;
 }
 
+/* Al imprimir: sin cielo ni halos (ahorro de tóner, A11Y-PRINT-01). */
+@media print {
+  body {
+    background-image: none !important;
+  }
+  body::before,
+  body::after {
+    display: none !important;
+  }
+}
+
 /* ============================================================
    MOVIMIENTO REDUCIDO  (§2.7, A11Y-MOTION-01..03)
    Default seguro: la celebración llamativa vive bajo
@@ -146,6 +239,7 @@ ol[role="list"] {
   *::before,
   *::after {
     animation-duration: 0.01ms !important;
+    animation-delay: 0s !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
@@ -156,6 +250,9 @@ html[data-reduced-motion="true"] *,
 html[data-reduced-motion="true"] *::before,
 html[data-reduced-motion="true"] *::after {
   animation-duration: 0.01ms !important;
+  /* Sin retardo: las entradas escalonadas snapean a su estado final al
+     instante en lugar de mostrar un hueco en blanco durante el delay. */
+  animation-delay: 0s !important;
   animation-iteration-count: 1 !important;
   transition-duration: 0.01ms !important;
   scroll-behavior: auto !important;
