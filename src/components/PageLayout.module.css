@@ -2,7 +2,15 @@
   display: flex;
   flex-direction: column;
   min-height: 100dvh;
-  background-color: var(--tdp-color-bg);
+  /* Transparente para dejar ver la atmósfera de isla fijada en el body.
+     El color base sigue disponible como respaldo en @media print. */
+  background-color: transparent;
+}
+
+@media print {
+  .page {
+    background-color: #fff;
+  }
 }
 
 .header {

@@ -65,6 +65,40 @@
   background-color: var(--tdp-paper-100);
 }
 
+/* --- Entrada festiva del diálogo: aparece con un rebote alegre. Solo sin
+   preferencia de reduce-motion; el estado final es el natural, así que con
+   reduce-motion el diálogo aparece ya colocado y legible (A11Y-MOTION-02/03). --- */
+@media (prefers-reduced-motion: no-preference) {
+  .dialog {
+    animation: celebrate-pop var(--tdp-duration-slow) var(--tdp-ease-bounce) both;
+  }
+  .title {
+    animation: celebrate-title 560ms var(--tdp-ease-bounce) 100ms both;
+  }
+}
+
+@keyframes celebrate-pop {
+  from {
+    opacity: 0;
+    transform: scale(0.86) translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+@keyframes celebrate-title {
+  0% {
+    transform: scale(0.72);
+  }
+  60% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 /* --- Confeti: solo cuando el usuario no pide movimiento reducido --- */
 .confetti {
   position: absolute;

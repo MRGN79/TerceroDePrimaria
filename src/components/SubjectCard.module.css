@@ -36,6 +36,12 @@
   background-color: var(--subject-color);
   color: #ffffff;
   border-radius: var(--tdp-radius-pill);
+  transition: transform var(--tdp-duration-base) var(--tdp-ease-bounce);
+}
+/* Al pasar el ratón, el icono da un saltito juguetón (con overshoot). El
+   estado por defecto es estático → seguro con reduce-motion. */
+.card:hover:not(:disabled) .iconWrap {
+  transform: scale(1.08) rotate(-4deg);
 }
 
 .body {

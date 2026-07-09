@@ -31,3 +31,23 @@
   color: var(--tdp-color-text-muted);
   fill: none;
 }
+
+/* Racha activa: la llama "titila" con un balanceo mínimo, como recompensa viva.
+   Solo escala/rotación suaves (nunca opacidad parpadeante) → cumple A11Y-MOTION-04
+   (jamás > 3 destellos/seg). Se apaga con reduce-motion. */
+@media (prefers-reduced-motion: no-preference) {
+  .root:not(.muted) .icon {
+    transform-origin: center bottom;
+    animation: streak-flicker 2400ms var(--tdp-ease-in-out) infinite;
+  }
+}
+
+@keyframes streak-flicker {
+  0%,
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.12) rotate(-2deg);
+  }
+}

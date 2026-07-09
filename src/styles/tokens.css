@@ -209,8 +209,32 @@
   --tdp-duration-fast: 120ms; /* micro-feedback (pulsar) */
   --tdp-duration-base: 220ms; /* transiciones de UI */
   --tdp-duration-slow: 450ms; /* celebraciones */
+  --tdp-duration-enter: 520ms; /* entradas de contenido (rise-in) */
+  --tdp-duration-idle: 3600ms; /* respiración/flotación ambiental, lenta y calmada */
+  --tdp-duration-drift: 30s; /* deriva del fondo de isla, casi imperceptible */
   --tdp-ease-bounce: cubic-bezier(0.34, 1.56, 0.64, 1); /* overshoot festivo */
   --tdp-ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --tdp-ease-in-out: cubic-bezier(0.45, 0, 0.55, 1); /* vaivén de ida y vuelta */
+
+  /* ============================================================
+     9. IDENTIDAD "ISLA VIVA"  — capa atmosférica y acentos festivos
+     Superficies decorativas del universo de verano. Puramente estéticas,
+     nunca portan información (A11Y). Se apagan con reduce-motion.
+     ============================================================ */
+  /* Cielo de verano: degradado suave detrás de todo el contenido. Mantiene
+     tonos claros para no comprometer el contraste del texto oscuro encima. */
+  --tdp-sky-top: #d7f0fb; /* azul cielo alto, muy claro */
+  --tdp-sky-mid: #eaf4ef; /* transición fresca */
+  --tdp-sky-bottom: var(--tdp-paper-50); /* aterriza en la arena cálida */
+
+  /* Halos decorativos (sol y espuma de mar). Se usan a baja opacidad. */
+  --tdp-glow-sun: var(--tdp-yellow-300);
+  --tdp-glow-sea: var(--tdp-teal-300);
+  --tdp-glow-coral: var(--tdp-coral-300);
+
+  /* Sombra de "juguete" tintada para acentos festivos */
+  --tdp-shadow-glow-warm: 0 10px 30px -10px
+    color-mix(in srgb, var(--tdp-orange-400) 55%, transparent);
 
   /* ============================================================
      7. OBJETIVOS TÁCTILES  (§4)  — alturas mínimas de control
