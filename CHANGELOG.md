@@ -11,6 +11,10 @@ y el proyecto adhiere a [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 - Warning de ESLint (`react-hooks/exhaustive-deps`) por una dependencia
   innecesaria (`materia`) en el `useMemo` de `useSession`.
+- Texto del pie de página que explicaba el funcionamiento de las sesiones:
+  aclara que las "5 preguntas por sesión" son al elegir una materia, y que
+  la misión de hoy combina 15 (3 de cada una), para no confundir a quien
+  ve ambos números en la misma app.
 
 ## [0.3.0] — 2026-07-09
 
