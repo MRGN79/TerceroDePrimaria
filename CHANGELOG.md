@@ -7,6 +7,8 @@ y el proyecto adhiere a [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## [Unreleased]
 
+## [0.4.0] — 2026-07-23
+
 ### Added
 
 - En la Mochila, las medallas conseguidas muestran ahora en un tooltip (al

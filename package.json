@@ -1,7 +1,7 @@
 {
   "name": "tercerodeprimaria",
   "private": true,
-  "version": "0.3.0",
+  "version": "0.4.0",
   "type": "module",
   "description": "Web de ejercicios y juegos educativos para 3º de primaria (8-9 años). 100% estática, sin backend.",
   "scripts": {
