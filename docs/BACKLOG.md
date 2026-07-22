@@ -25,3 +25,9 @@ Items anotados para implementar en el futuro, ordenados por aparición. No impli
 - **Animación de racha** — efecto especial al alcanzar 7, 14 y 30 días seguidos.
 
 - **Medallas por asignatura completada** — insignia cuando el niño ha respondido correctamente todas las preguntas de una asignatura.
+
+---
+
+## Historial
+
+- **Aclarar "5 preguntas por sesión" en el pie de página** (PR #20, mergeada) — el texto no distinguía entre la sesión por materia (5 preguntas) y la misión diaria de la home (15: 3 de cada materia), lo que parecía una inconsistencia. Ahora el pie de página lo explica en ES y EN.
