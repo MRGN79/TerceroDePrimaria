@@ -7,6 +7,12 @@ y el proyecto adhiere a [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## [Unreleased]
 
+### Added
+
+- En la Mochila, las medallas conseguidas muestran ahora en un tooltip (al
+  pasar el ratón o llegar por teclado) cómo se lograron, además de la fecha
+  de obtención que ya se mostraba.
+
 ### Fixed
 
 - Warning de ESLint (`react-hooks/exhaustive-deps`) por una dependencia
