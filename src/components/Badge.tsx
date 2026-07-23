@@ -4,6 +4,7 @@
  *  - unlocked: ilustración a color + nombre + fecha
  * La diferencia NO es solo color: silueta vs color + icono de candado (A11Y-COLOR-03).
  */
+import { useId } from "react";
 import { useTranslation } from "react-i18next";
 import { Icon } from "./Icon";
 import styles from "./Badge.module.css";
@@ -21,6 +22,10 @@ type BadgeProps = {
 
 export function Badge({ name, hint, locked = false, unlockedOn, colorToken }: BadgeProps) {
   const { t } = useTranslation("backpack");
+  const tooltipId = useId();
+  // Desbloqueada: reutilizamos la pista de desbloqueo como explicación de
+  // cómo se consiguió (el texto ya describe la condición cumplida).
+  const showTooltip = !locked && !!hint;
 
   return (
     <figure
@@ -30,6 +35,8 @@ export function Badge({ name, hint, locked = false, unlockedOn, colorToken }: Ba
           ? ({ ["--badge-color" as string]: `var(${colorToken})` } as React.CSSProperties)
           : undefined
       }
+      tabIndex={showTooltip ? 0 : undefined}
+      aria-describedby={showTooltip ? tooltipId : undefined}
     >
       <div className={styles.medal} aria-hidden="true">
         <Icon name="star" size={40} className={styles.medalIcon} />
@@ -49,6 +56,11 @@ export function Badge({ name, hint, locked = false, unlockedOn, colorToken }: Ba
               : null}
         </span>
       </figcaption>
+      {showTooltip ? (
+        <span role="tooltip" id={tooltipId} className={styles.tooltip}>
+          {hint}
+        </span>
+      ) : null}
     </figure>
   );
 }
